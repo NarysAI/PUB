@@ -1,0 +1,13 @@
+upstream_url: https://github.com/partcad/partcad-electromechanics-towerpro.git
+upstream_revision: de22a892254241d89ce10edd48092522101abcde
+synchronized_at: '2026-08-03T19:44:29.912004+00:00'
+license_status: unverified
+checksums:
+  partcad.yaml: e75044443e665a4e99d3db01cba45cfdd35866e1c92333c2a3fb8bc51a2af3cc
+  README.md: 03d8b7cffcdedebfcb929c8aee23b7d1cbc71b1d680cb013fb79055b0a755956
+  example/mg90s.assy: a9d31f284d0a83cac80c14f18e820f4d9feeda7b0398578937708a11b5b18354
+  example/mg90s.svg: 7b061e14d8e691a8f58d1af46d420a5771ee5574f86d9829efe5da9fd3d66937
+  servo/mg90s.step: 9cbc4754be61b5d651f2f1fbcb4e8db9ae0fea17abad2053865018cafa85f4b9
+  servo/mg90s.svg: 103e8dfdf0e6560a83297d5eeeb64ba83f512acd59b996c096d455a6edd66195
+  servo/shoulder-unidir.step: 8bb1855c3941619c3d81c36e08878df3e73e4b76cb70790c5106977c6ebb7b9f
+  servo/shoulder-unidir.svg: 40b947c525b11779e341b275842920db26bf3ba31ed76a4b14008549e70ccef9

@@ -1,0 +1,23 @@
+desc: PartCAD example project to demonstrate various export mechanisms
+
+parts:
+  bolt:
+    type: step
+    desc: M8x30-screw
+
+render:
+  svg:
+    prefix: ./
+  png:
+    prefix: ./
+    width: 128
+    height: 256
+  stl: ./
+  # step: ./ # TODO(clairbee): fix CadQuery's noisiness
+  3mf: ./
+  threejs: ./
+  brep: ./
+  obj: ./
+  gltf: ./
+  iges: ./
+  markdown: README.md

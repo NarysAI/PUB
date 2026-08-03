@@ -1,0 +1,9 @@
+upstream_url: https://github.com/partcad/partcad-standard-imperial-dimensional-lumber/
+upstream_revision: f43214e5c441682eff5c6255d5898e6f8cc6a1c1
+synchronized_at: '2026-08-03T19:46:22.668101+00:00'
+license_status: unverified
+checksums:
+  lumber.py: 942999e7cd7b044ba84ef08068bd99952eccb86e830568bd2ad30e7b44b64a87
+  partcad.yaml: 12a9eade004dee8fab5dd89666534d2c1fcb4429cf740f53b4f7de850b3322af
+  plywood.py: e868096c5fdb9979bba2bb94d5f75dc93c1b9b4077553421549a3ea7bc95f6cf
+  README.md: 76702ebb73b9225799381c11b652bf415f5b3ef3c4c012fd4cbf25d299717727

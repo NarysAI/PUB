@@ -1,0 +1,14 @@
+upstream_url: https://github.com/partcad/partcad-electromechanics-stepperonline.git
+upstream_revision: c86aaa1aa4d87556135e7e3ba28d7030bc3ca9b8
+synchronized_at: '2026-08-03T19:44:29.240599+00:00'
+license_status: unverified
+checksums:
+  .gitattributes: 6fecb2a0f52e1483ef4302951a36885e7bff9e762c769dd58a370eba5b869f4a
+  .gitignore: 62210cc3db781937294d20c1620f9f59669e0953525d416f77aa02e3a8e37939
+  partcad.yaml: b353c9b0007d8699ef328b93ea2a7264aa5bd1330a1dac58f713426a7eb4df81
+  .vscode/settings.json: 301ad2ad60a3cda31ce66c2c45c731d5c8ba0bb7b5d4f2f81f9a2950b57d9537
+  brushless_driver/bld510s.step: 477e287663dcc7082613f5fe173c1aa86045eac8386569da80bfbfb8c93b8ec6
+  gearbox/nema17-planetary-10.step: d16ba8a8baf3ddc0c3f5fdc08bc4886d65f38637c7c63d35d36f42e8bde5aafe
+  gearbox/nema17-planetary-100.step: 44fc5548fb0fa7e24a86cfe04d180f7e6a893295310050501db0f7bdd4f14549
+  stepper/nema17-72Ncm-with-brake.step: eab3f08e6433e164e3f6f68e561b97659ce868ef28d3193ac659eb16e82d1179
+  stepper_driver/dm556rs.step: 16e9291dbb70548e8dd3b53eca34cd5c4af510384d6b25e621a69c9d91478588

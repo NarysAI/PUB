@@ -1,0 +1,22 @@
+## Changelog
+
+- v.0.1.0 - Initial release
+- v.0.1.1 - fixed release
+- v.0.2.0 - Added new "lite" style box
+- v.0.2.1 - Added new unsupported magnet hole types
+- v.0.2.2 - Added SVG export and integrated STL exporter
+- v.0.2.3 - Updated to python build tools to make distribution
+- v.0.3.0 - Added console generator scripts: gridfinitybox and gridfinitybase
+- v.0.4.0 - Added `GridfinityRuggedBox` class and `ruggedbox` console script. Various other improvements.
+- v.0.4.1 - Fixed docstring in `__init__.py`
+- v.0.4.2 - Improved script automatic renaming
+- v.0.4.3 - Fixed regression bug with using multilevel extrusion functions from cq-kit
+- v.0.4.4 - IMPORTANT FIX: generated geometry breaks using CadQuery v.2.4+ due to changes in CadQuery's `extrude` method.  This version should work with any CQ version since it detects which CQ extrusion implementation is used at runtime.
+- v.0.4.5 - IMPORTANT FIX: fixes error in v.0.4.4 for extrusion angle
+- v.0.5.0 - Improved rugged box to make viable boxes down to 3U x 3U x 4U
+- v.0.5.1 - Increased the resolution of the gridfinity extruded base profile
+- v.0.5.2 - Adjusted geometry of box/bin floor/lip heights to exactly 7.00 mm intervals
+- v.0.5.3 - Removed a potential namespace collision for computing the height of boxes
+- v.0.5.4 - Optimized the geometry of the baseplate top height
+- v.0.5.5 - Added underside bin clearance and variable wall thickness interior radiusing
+- v.0.5.6 - Added adjustable magnet hole diameter to box. Prevent drawer spacers being rendered which fall below minimum size

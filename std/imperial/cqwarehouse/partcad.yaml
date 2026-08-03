@@ -1,0 +1,28 @@
+desc: |
+  A collection of PartCAD packages for cq_warehouse:
+  a CadQuery parametric part collection
+url: https://cq-warehouse.readthedocs.io/
+cover:
+  package: cq-warehouse-metric
+docs:
+  name: cq_warehouse for PartCAD
+  intro: |
+    This project contains two packages that are published in the public PartCAD repo as:
+
+    - [/pub/std/metric/cqwarehouse](README_metric.md)
+    - [/pub/std/imperial/cqwarehouse](README_imperial.md)
+
+import:
+  cq-warehouse-metric:
+    type: local
+    path: metric.yaml
+  cq-warehouse-imperial:
+    type: local
+    path: imperial.yaml
+  pub:
+    onlyInRoot: True
+    type: git
+    url: https://github.com/openvmp/partcad-index/
+
+render:
+  readme:

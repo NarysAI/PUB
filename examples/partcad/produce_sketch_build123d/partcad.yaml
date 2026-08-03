@@ -1,0 +1,16 @@
+desc: This example demonstrates how to define a sketch using a build123d script.
+
+docs:
+  usage: |
+    ```shell
+    pc inspect -s clock
+    ```
+
+sketches:
+  clock:
+    type: build123d
+    desc: A clock face taken from the build123d examples
+
+render:
+  readme:
+  svg:

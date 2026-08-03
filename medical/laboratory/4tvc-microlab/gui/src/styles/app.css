@@ -1,0 +1,94 @@
+/* Global Resets and layouts */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background: grey;
+}
+
+.lcd-wrapper {
+  position: relative;
+  width: 480px;
+  height: 320px;
+  margin: 0 auto;
+  background: white;
+  overflow: hidden;
+}
+
+.page {
+  padding: 0.5rem 1rem;
+  height: 260px;
+  overflow-y: auto;
+}
+
+/* Override "special snowflakes" to vertically center the home page button(s) */
+.home-page-menu.home-page-menu.home-page-menu.home-page-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* And to make the status page buttons FAR APART */
+.status-page-menu.status-page-menu.status-page-menu.status-page-menu {
+  height: 100%;
+}
+
+.status-page-menu .button-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status-page-grid {
+  height: 100%;
+}
+
+.main-menu {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  transition: transform 0.4s ease;
+  transform: translateX(100vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.menu .header.item {
+  flex-grow: 1;
+}
+
+.main-menu.active {
+  transform: translateX(0);
+}
+
+.button-list {
+  margin: 0.34rem;
+}
+
+.button-list .ui.button {
+  display: block;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+/* Pages */
+
+
+.ui.button {
+  margin-right: 0px !important;
+  padding: 8px 8px 12px 8px;
+}
+
+.cancel-button {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}

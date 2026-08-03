@@ -1,0 +1,21 @@
+desc: PartCAD example project which implements its logo.
+
+docs:
+  usage: |
+    ```shell
+    pc inspect head_half
+    pc inspect bone
+    ```
+
+parts:
+  head_half:
+    type: cadquery
+    desc: Bracket used as one side of the head on PartCAD logo
+  bone:
+    type: cadquery
+    desc: Plate used as one of the bones on PartCAD logo
+
+render:
+  readme:
+  svg:
+    prefix: ./

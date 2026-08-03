@@ -1,0 +1,27 @@
+desc: Dimensional lumber in imperial units
+
+parts:
+  lumber:
+    type: cadquery
+    parameters:
+      width:
+        type: int
+        default: 4
+      height:
+        type: int
+        default: 2
+      length:
+        type: float
+        default: 120
+  plywood:
+    type: cadquery
+    parameters:
+      width:
+        type: float
+        default: 48
+      length:
+        type: float
+        default: 48
+      thickness:
+        type: float
+        default: 0.5 # "size" units, close to "inches" but different

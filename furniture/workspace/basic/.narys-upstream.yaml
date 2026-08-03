@@ -1,0 +1,7 @@
+upstream_url: https://github.com/partcad/partcad-furniture-basic
+upstream_revision: b335cfccadb7042aaef7d5e3b2b722821d9ab469
+synchronized_at: '2026-08-03T19:45:35.695469+00:00'
+license_status: unverified
+checksums:
+  imperial-desk-1.assy: 2d547e0b69179e0b45468320e26d897a8c1d5721a2da690a1833b52c3f47109e
+  partcad.yaml: a8c413e4f859a5df51b3b56dedbc7fb179ef43b503e7f312a526567f9db82002

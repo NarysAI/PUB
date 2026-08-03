@@ -1,0 +1,17 @@
+desc: PartCAD example project to demonstrate parts defined using STL files.
+
+docs:
+  usage: |
+    ```shell
+    pc inspect cube
+    ```
+
+parts:
+  cube:
+    type: stl
+    desc: A cube defined in STL
+
+render:
+  readme:
+  svg:
+    prefix: ./

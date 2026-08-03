@@ -1,0 +1,277 @@
+desc: |
+  This example demonstrates how the same parametrized assembly
+  can be defined in three slightly different ways
+  using three approaches to connect parts to each other.
+cover:
+  assembly: connect-mates
+
+docs:
+  usage: |
+    ```shell
+    # placement == "outer"
+    pc inspect -a connect-ports
+    pc inspect -a connect-interfaces
+    pc inspect -a connect-mates
+
+    # placement == "inner"
+    pc inspect -a -p placement=inner connect-ports
+    pc inspect -a -p placement=inner connect-interfaces
+    pc inspect -a -p placement=inner connect-mates
+    ```
+
+sketches:
+  m3:
+    type: basic
+    circle: 1.5 # 1.5mm radius equals to 3mm diameter
+  m4:
+    type: basic
+    circle: 2.0
+  m5:
+    type: basic
+    circle: 2.5
+
+interfaces:
+  m3:
+    desc: Abstract 3mm circular interface
+    abstract: True
+    ports:
+      m3:
+        location: [[0, 0, 0], [0, 0, 1], 0] # redundant, for demonstration
+        sketch: m3
+  m3-opening:
+    abstract: True
+    desc: Abstract 3mm circular opening
+    inherits:
+      m3: opening
+  m3-hole-4.5:
+    desc: 4.5mm deep hole of 3mm diameter
+    inherits:
+      m3-opening: 4.5mm-hole
+  m3-thru:
+    abstract: True
+    desc: Abstract 3mm through hole
+    inherits:
+      m3-opening: thru
+  m3-thru-3:
+    desc: 3mm thick through hole of 3mm diameter
+    inherits:
+      m3-thru: 3mm
+  m4:
+    desc: Abstract 4mm circular interface
+    abstract: True
+    ports:
+      m4:
+        sketch: m4
+  m4-opening:
+    desc: Abstract 4mm circular opening
+    abstract: True
+    inherits:
+      m4: opening
+  m4-thru:
+    abstract: True
+    desc: Abstract 4mm through hole
+    inherits:
+      m4-opening: thru
+  m4-thru-3:
+    desc: 3mm thick through hole of 4mm diameter
+    inherits:
+      m4-thru: 3mm
+  m4-slotted-30-thru-3:
+    desc: 3mm thick 30mm long slotted hole of 4mm diameter (*unfinished*)
+    # TODO(clairbee): implement parametrized sketches, base interfaces for standard slotted holes, and inherit m4-slotted here
+    inherits:
+      m4-thru-3: 30mm-slotted
+    parameters:
+      offset:
+        min: -15
+        max: 15
+        dir: [1, 0, 0]
+      # Identical to:
+      # moveX: [-15, 15]
+  m5:
+    desc: Abstract 5mm circular interface
+    abstract: True
+    ports:
+      m5:
+        sketch: m5
+
+  m3-screw:
+    desc: Abstract M3 screw
+    abstract: True
+    inherits:
+      m3: screw
+  m3-screw-6mm:
+    desc: 6mm long M3 screw
+    inherits:
+      m3-screw: 6mm-long
+    mates:
+      m3-thru-3:
+        move-z:
+          min: -1 # TODO(clairbee): Is there a standard minimum depth?
+          max: 0
+          default: 0
+      m3-hole-4.5:
+        move-z:
+          min: -2 # TODO(clairbee): Is there a standard minimum depth?
+          max: -2
+          default: -2
+
+  m4-screw:
+    desc: Abstract M4 screw
+    abstract: True
+    inherits:
+      m4: screw
+  m4-screw-6mm:
+    desc: 6mm long M4 screw
+    inherits:
+      m4-screw: 6mm-long
+    mates:
+      m4-thru-3:
+        move-z:
+          min: -1 # TODO(clairbee): Is there a standard minimum depth?
+          max: 0
+          default: 0
+
+  m5-bar:
+    desc: Abstract 5mm-wide bar
+    abstract: True
+    inherits:
+      m5: bar
+  m5-bar-22:
+    desc: 22mm-long 5mm-wide bar
+    inherits:
+      m5-bar: 22mm-long
+
+  nema-17-motor-mount:
+    desc: NEMA-17 motor mount
+    inherits:
+      m3-hole-4.5:
+        TL: [[-15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 270.0] # top left
+        TR: [[15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 180.0] # top right
+        BL: [[-15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 0.0] # bottom left
+        BR: [[15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 90.0] # bottom right
+    leadPort: TR-4.5mm-hole-opening-m3
+  nema-17-motor:
+    desc: NEMA-17 motor
+    inherits:
+      nema-17-motor-mount:
+      m5-bar-22: [[0.0, 0.0, -24.0], [0.0, 1.0, 0.0], 180.0]
+  nema-17-motor-bracket:
+    desc: NEMA 17 motor bracket for motor
+    inherits:
+      m3-thru:
+        TL: [[-15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 270.0] # top left
+        TR: [[15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 180.0] # top right
+        BL: [[-15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 0.0] # bottom left
+        BR: [[15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 90.0] # bottom right
+    leadPort: TR-thru-opening-m3
+    mates: nema-17-motor-mount
+  nema-17-motor-bracket-3:
+    desc: NEMA 17 motor bracket (3mm thick) for motor
+    inherits:
+      m3-thru-3:
+        TL: [[-15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 270.0] # top left
+        TR: [[15.5, 15.5, 0.0], [0.0, 0.0, 1.0], 180.0] # top right
+        BL: [[-15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 0.0] # bottom left
+        BR: [[15.5, -15.5, 0.0], [0.0, 0.0, 1.0], 90.0] # bottom right
+    leadPort: TR-thru-3-opening-m3
+    mates: nema-17-motor-mount
+    # The below is an alternative to having leadPorts on both ends
+    # mates:
+    #   nema-17-motor-mount:
+    #     sourcePortSelector: "*TR*"
+    #     targetPortSelector: "*TR*"
+
+parts:
+  socket-head-m3-screw-6mm:
+    desc: M3 socket head screw, 6mm long
+    url: https://www.gobilda.com/zinc-plated-steel-socket-head-screw-m3-x-0-5mm-6mm-length-6-pack/
+    type: step
+    implements:
+      m3-screw-6mm: [[0.0, 0.0, -12.0], [0.0, 1.0, 0.0], 180.0]
+
+  socket-head-m4-screw-6mm:
+    desc: M4 socket head screw, 6mm long
+    url: https://www.gobilda.com/2800-series-zinc-plated-steel-socket-head-screw-m4-x-0-7mm-6mm-length-25-pack/
+    type: step
+    implements:
+      m4-screw-6mm: [[0.0, 0.0, -6.0], [0.0, 1.0, 0.0], 180.0]
+
+  example-motor:
+    desc: NEMA 17 motor bracket
+    url: https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s
+    type: step
+    implements:
+      nema-17-motor: [[0.0, 0.0, 60.0], [1.0, 0.0, 0.0], 180.0]
+
+  example-bracket:
+    desc: NEMA 17 motor bracket
+    url: https://www.omc-stepperonline.com/nema-17-bracket-for-stepper-motor-and-geared-stepper-motor-alloy-steel-bracket-st-m1
+    type: step
+    implements:
+      nema-17-motor-bracket-3:
+        inner: [[0.0, 0.0, 3.0], [0.0, 1.0, 0.0], 180.0]
+        outer: [[0.0, 0.0, 0.0], [0.0, 1.0, 0.0], 0.0]
+      m4-slotted-30-thru-3:
+        L: # top left
+          location: [[-15.0, -27.0, 27.0], [1.0, 0.0, 0.0], 90.0]
+          params: { offset: -15 }
+        R: # top right
+          location: [[15.0, -27.0, 27.0], [1.0, 0.0, 0.0], 90.0]
+          # params: {offset: -15}
+
+assemblies:
+  connect-ports:
+    type: assy
+    desc: Demonstrates how to connect parts by specifying ports.
+    parameters:
+      placement:
+        desc: Place the motor inside the bracket or outside
+        type: string
+        enum: [inner, outer]
+        default: outer
+      motor_tr_connect_to:
+        desc: Turn the motor so that the TR port matches the given bracket port
+        type: string
+        enum: [TR, TL, BR, BL]
+        default: TR
+  connect-interfaces:
+    type: assy
+    desc: Demonstrates how to connect parts by specifying interfaces.
+    parameters:
+      placement:
+        type: string
+        enum: [inner, outer]
+        default: outer
+      motor_tr_connect_to:
+        desc: Turn the motor so that the TR port matches the given bracket port
+        type: string
+        enum: [TR, TL, BR, BL]
+        default: TR
+  connect-mates:
+    type: assy
+    desc: |
+      Demonstrates how to provide the minimum information while letting PartCAD
+      determine the rest using the interfaces' mating metadata.
+    parameters:
+      placement:
+        type: string
+        enum: [inner, outer]
+        default: outer
+      motor_tr_connect_to:
+        desc: Turn the motor so that the TR port matches the given bracket port
+        type: string
+        enum: [TR, TL, BR, BL]
+        default: TR
+
+render:
+  readme:
+    exclude:
+      - sketches
+      - interfaces
+      - parts
+  svg:
+    exclude:
+      - sketches
+      - interfaces
+      - parts

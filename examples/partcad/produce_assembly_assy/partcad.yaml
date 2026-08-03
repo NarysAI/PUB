@@ -1,0 +1,28 @@
+desc: Assembly YAML examples
+
+docs:
+  usage: |
+    ```shell
+    pc inspect primitive
+    pc inspect logo
+    pc inspect logo_embedded
+    ```
+
+assemblies:
+  primitive:
+    type: assy
+  logo:
+    type: assy
+    desc: PartCAD logo
+  logo_embedded:
+    type: assy
+    desc: PartCAD logo using embedded assemblies
+  partcad_logo:
+    type: alias
+    source: logo
+  partcad_logo_short: logo
+
+render:
+  readme:
+  svg:
+    prefix: ./

@@ -1,0 +1,10 @@
+upstream_url: https://github.com/partcad/partcad-electronics-sbcs-raspberrypi.git
+upstream_revision: d130a73182fb88f2dbf7b250f252c4e1b410d14e
+synchronized_at: '2026-08-03T19:44:32.894371+00:00'
+license_status: unverified
+checksums:
+  partcad.yaml: 0ddde156f1869065d3461cf21d1853e5b3c4a13daa31b421af59e2c7a4a54087
+  README.md: 4f3fbfceed03cbaa16747bffaf9c5c31ecbb1332f0692fed39cc7e2a0981fd6e
+  rpi4b.step: 94ec5f8e647903ba67eb140440e0cac6c24969e211540f129775814fc5b9570a
+  rpi4b.svg: e1a2031aee661ea69f3a25a5efbe1e4befa32db59864912e98da4b19fa4db7f5
+  shields/rpi-touchscreen.step: 9c96e8789944f58b18809d87c81b5ccf22615bbc441a850ac23bab82a7f6359c

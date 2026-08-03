@@ -1,0 +1,114 @@
+{
+  "migrated": [
+    {
+      "path": "//pub/electrical/battery/ego",
+      "files": 2
+    },
+    {
+      "path": "//pub/electromechanics/cloudray",
+      "files": 2
+    },
+    {
+      "path": "//pub/electromechanics/stepperonline",
+      "files": 9
+    },
+    {
+      "path": "//pub/electromechanics/towerpro",
+      "files": 8
+    },
+    {
+      "path": "//pub/electronics/sbcs/arduino",
+      "files": 6
+    },
+    {
+      "path": "//pub/electronics/sbcs/intel",
+      "files": 2
+    },
+    {
+      "path": "//pub/electronics/sbcs/raspberrypi",
+      "files": 5
+    },
+    {
+      "path": "//pub/examples/competition/tootalltobby",
+      "files": 37
+    },
+    {
+      "path": "//pub/examples/partcad",
+      "files": 183
+    },
+    {
+      "path": "//pub/examples/script/build123d",
+      "files": 438
+    },
+    {
+      "path": "//pub/examples/script/cadquery",
+      "files": 184
+    },
+    {
+      "path": "//pub/examples/script/cadquery-contrib",
+      "files": 50
+    },
+    {
+      "path": "//pub/furniture/workspace/basic",
+      "files": 2
+    },
+    {
+      "path": "//pub/medical/laboratory/4tvc-microlab",
+      "files": 347
+    },
+    {
+      "path": "//pub/narysai/comp-ivins-case-4",
+      "files": 6
+    },
+    {
+      "path": "//pub/robotics/multimodal/openvmp",
+      "files": 271
+    },
+    {
+      "path": "//pub/robotics/parts/dfrobot",
+      "files": 2
+    },
+    {
+      "path": "//pub/robotics/parts/gobilda",
+      "files": 48
+    },
+    {
+      "path": "//pub/robotics/research/cloudgripper",
+      "files": 60
+    },
+    {
+      "path": "//pub/std/imperial/cqwarehouse",
+      "files": 63
+    },
+    {
+      "path": "//pub/std/imperial/dimensional-lumber",
+      "files": 4
+    },
+    {
+      "path": "//pub/std/metric/cqwarehouse",
+      "files": 63
+    },
+    {
+      "path": "//pub/std/metric/m",
+      "files": 2
+    },
+    {
+      "path": "//pub/std/metric/nema",
+      "files": 2
+    },
+    {
+      "path": "//pub/storage/workspace/gridfinity",
+      "files": 65
+    },
+    {
+      "path": "//pub/svc/commerce/gobilda",
+      "files": 5
+    },
+    {
+      "path": "//pub/svc/commerce/homedepot",
+      "files": 8
+    }
+  ],
+  "blocked": [],
+  "missing": []
+}

@@ -1,0 +1,13 @@
+upstream_url: https://github.com/partcad/svc-commerce-homedepot
+upstream_revision: af6dfd6b13a046052afb246c52e9d41176024160
+synchronized_at: '2026-08-03T19:46:27.467286+00:00'
+license_status: verified
+checksums:
+  homedepot.py: 94ee7755b58c306607c824fd151aef6f934426b941ea161221b69c4dc14a4467
+  LICENSE: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  partcad.yaml: 65a9fe16bb52710fceff6f645f68b3ab92714e8295126c649b5d97dfd7b762a1
+  README.md: 99ce0a808b569559bff1185446bcb9f55c4d2089042323a71169f5c2973e7aa7
+  requirements.txt: c45a4225a8a1b22792aeb2a4853639542843bffbfd02e5e63aa06cdefeed95d8
+  hardware/fasteners/fastener_assembly.assy: 3de97883df0280cf42376c17d3b6d91ed925f2ccd70e509af680cbe823de7753
+  hardware/fasteners/bolts/hex_bolts/m4_0_7_x_20_mm_zinc_plated_hex_bolts_2_pieces.step: 42a0afa19c78b0726ab8c17a4f75040ee56e4ec7347f535e656a550ddc40b13d
+  hardware/fasteners/nuts/hex_nuts/4_mm_0_7_zinc_plated_metric_hex_nut_2_piece.step: 1e82f772f49eba5829e784f21651693d0d78a6916c284b2847a5df4a21040bcd

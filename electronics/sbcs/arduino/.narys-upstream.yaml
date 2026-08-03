@@ -1,0 +1,11 @@
+upstream_url: https://github.com/partcad/partcad-electronics-sbcs-arduino.git
+upstream_revision: ad5edf9466734db758645cfbc58c28e0674a0643
+synchronized_at: '2026-08-03T19:44:30.527951+00:00'
+license_status: unverified
+checksums:
+  mega2560.step: f9794c078afd8603c01f270494e1c1711d8131d90e798d0db7a08d3bb2d283c9
+  mega2560.svg: 0e43eef1646e59e5e216579605047e9ed6d6af4eedff9b1d2ea10551624241ac
+  partcad.yaml: 6521629bcaeacfb5403a19ff261633c6832fd07a03aa3215cbed061c931ca977
+  README.md: 36c6d55ea04efb367f648464b25dae7c74303748ba0ad8d8439d3ac1e40b372b
+  unoR3.step: 1af118beb3f128ef88e283e2e8d1e0c559266fb29547436e525b4d91b5991901
+  unoR3.svg: a417036bfd282d5815709aaf3fa8ea5d4570fe18710019b4008c728278562326
