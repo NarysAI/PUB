@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electronics-sbcs-intel.git
 upstream_revision: 79116020b6353c1e133394b8c2b6b8b71598a655
-synchronized_at: '2026-08-03T19:44:31.615891+00:00'
+synchronized_at: '2026-08-03T20:11:04.863439+00:00'
 license_status: unverified
 checksums:
   nuc12.step: cb800b71b59441f5e04088f2d027a976a1a26c17d5fb4a0a552515113d8a2b96

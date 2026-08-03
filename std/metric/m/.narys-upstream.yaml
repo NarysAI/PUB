@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-standard-metric-m/
 upstream_revision: ecd3b5206fb3e9c5806022a8d7325e3dcdab39b2
-synchronized_at: '2026-08-03T19:46:22.836909+00:00'
+synchronized_at: '2026-08-03T20:11:40.953357+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: 48c58ead54d2eacbc6b975378b9219fb83aae2f2dcfaac645eacda81d04b9706

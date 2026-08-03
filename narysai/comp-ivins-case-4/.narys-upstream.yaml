@@ -1,6 +1,6 @@
 upstream_url: https://github.com/NarysAI/COMP-IVINS-CASE-4.git
 upstream_revision: d3039ff1a8cb3cba3a179d06996fe40537801601
-synchronized_at: '2026-08-03T19:45:59.632273+00:00'
+synchronized_at: '2026-08-03T20:11:30.699360+00:00'
 license_status: verified
 checksums:
   LICENSE: 57e566ed5861eb16a7490f9cdbef3e2a976d0bb4dc29ec8938d8ec575183c41f

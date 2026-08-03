@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/forked-cadquery-contrib
 upstream_revision: a5c734375a1b357297b7b8d583078e1118466e54
-synchronized_at: '2026-08-03T19:45:29.851614+00:00'
+synchronized_at: '2026-08-03T20:11:24.701377+00:00'
 license_status: verified
 checksums:
   .gitattributes: cbf8d3c6c2c2922590a9c04d378093984f886acb1fb52cfb2c70024994c76107

@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-robotics-part-vendor-dfrobot.git
 upstream_revision: a44bcb2ea1b165f4b83f6426f7860eb49a992345
-synchronized_at: '2026-08-03T19:46:18.610561+00:00'
+synchronized_at: '2026-08-03T20:11:36.009262+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: 3510d296b96d530a22e4f2f51b8dddf89520e2da4bd11c90b3bdbe45858b14c3

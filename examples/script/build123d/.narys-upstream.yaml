@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/build123d
 upstream_revision: 91291fdaef4ccbc8455d699524f0af386f1cf0a5
-synchronized_at: '2026-08-03T19:45:10.774070+00:00'
+synchronized_at: '2026-08-03T20:11:21.376353+00:00'
 license_status: verified
 checksums:
   .gitignore: a9de39266c161c95a36f450e6a49acbd85f0c4c54f63227ee6800fd05602f8d3

@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/openvmp-models
 upstream_revision: e3e3894af5a62a63159a2122a916e36e48cecc4a
-synchronized_at: '2026-08-03T19:46:18.391155+00:00'
+synchronized_at: '2026-08-03T20:11:35.760451+00:00'
 license_status: unverified
 checksums:
   .gitattributes: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

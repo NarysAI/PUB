@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electrical-ego.git
 upstream_revision: af20a6fae0bbaf4b591ec5b7681f2d273150f7d8
-synchronized_at: '2026-08-03T19:44:27.631676+00:00'
+synchronized_at: '2026-08-03T20:11:02.883245+00:00'
 license_status: unverified
 checksums:
   battery-7_5.step: 5f620b4c758ab5030b100abccd2c612ae42bf09424c2237818d3bb5ac09e8c85

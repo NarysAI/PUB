@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electronics-sbcs-raspberrypi.git
 upstream_revision: d130a73182fb88f2dbf7b250f252c4e1b410d14e
-synchronized_at: '2026-08-03T19:44:32.894371+00:00'
+synchronized_at: '2026-08-03T20:11:05.362254+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: 0ddde156f1869065d3461cf21d1853e5b3c4a13daa31b421af59e2c7a4a54087

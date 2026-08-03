@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/cloudgripper-robot
 upstream_revision: dcacfa52651d98b6bdc83ea3a3b04f352b5e0c1f
-synchronized_at: '2026-08-03T19:46:21.956611+00:00'
+synchronized_at: '2026-08-03T20:11:39.893845+00:00'
 license_status: verified
 checksums:
   Arm.assy: 1b9bbc43fd19afed5acaf17bc6a75ecb6561aad029ba5fbf5306c74de46a66af

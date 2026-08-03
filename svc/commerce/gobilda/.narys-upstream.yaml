@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/svc-commerce-gobilda
 upstream_revision: 95c9a6f2ab7745c54b1f76e972c47970b50d0885
-synchronized_at: '2026-08-03T19:46:27.374770+00:00'
+synchronized_at: '2026-08-03T20:11:45.758435+00:00'
 license_status: unverified
 checksums:
   gobilda.py: 5d65703300bbcc02d35d7c902b414747f6a86786cc25cde9390b872929727af4

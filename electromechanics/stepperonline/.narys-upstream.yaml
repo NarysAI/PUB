@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electromechanics-stepperonline.git
 upstream_revision: c86aaa1aa4d87556135e7e3ba28d7030bc3ca9b8
-synchronized_at: '2026-08-03T19:44:29.240599+00:00'
+synchronized_at: '2026-08-03T20:11:03.747405+00:00'
 license_status: unverified
 checksums:
   .gitattributes: 6fecb2a0f52e1483ef4302951a36885e7bff9e762c769dd58a370eba5b869f4a

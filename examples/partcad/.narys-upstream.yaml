@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad
 upstream_revision: 9dbed9247a27a42dfd89950c1ee872a1521c5f9f
-synchronized_at: '2026-08-03T19:44:39.951024+00:00'
+synchronized_at: '2026-08-03T20:11:08.213417+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: 8d59e9b176781b689a97af31f24bc3961678999cc36ea0449bddff3636c6db4d

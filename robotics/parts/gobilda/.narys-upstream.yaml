@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-robotics-part-vendor-gobilda.git
 upstream_revision: 32589db32f71f52c196e91d7f7c6f3855c8efac7
-synchronized_at: '2026-08-03T19:46:20.792619+00:00'
+synchronized_at: '2026-08-03T20:11:38.609315+00:00'
 license_status: unverified
 checksums:
   .gitattributes: 6fecb2a0f52e1483ef4302951a36885e7bff9e762c769dd58a370eba5b869f4a

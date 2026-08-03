@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/cq-gridfinity/
 upstream_revision: a0d8b38730624caa8b957f57e21a408d565680db
-synchronized_at: '2026-08-03T19:46:25.908728+00:00'
+synchronized_at: '2026-08-03T20:11:44.161755+00:00'
 license_status: verified
 checksums:
   .gitignore: cbd34ca1cdd1279be9b38ee5ce319fdf6cd21b5aa620b21f347396f4b72af527

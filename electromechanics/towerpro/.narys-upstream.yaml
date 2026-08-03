@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electromechanics-towerpro.git
 upstream_revision: de22a892254241d89ce10edd48092522101abcde
-synchronized_at: '2026-08-03T19:44:29.912004+00:00'
+synchronized_at: '2026-08-03T20:11:04.109474+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: e75044443e665a4e99d3db01cba45cfdd35866e1c92333c2a3fb8bc51a2af3cc

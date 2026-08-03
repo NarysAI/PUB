@@ -1,6 +1,6 @@
 upstream_url: https://github.com/openvmp/cadquery
 upstream_revision: 4181517fe9925ff3919dbec0b21a957b4b93f137
-synchronized_at: '2026-08-03T19:45:27.667447+00:00'
+synchronized_at: '2026-08-03T20:11:24.112098+00:00'
 license_status: verified
 checksums:
   .coveragerc: ebc0bfd409d2a9dd7d6f4162a198597b320110975b59db7028a463cd963138f8

@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electronics-sbcs-arduino.git
 upstream_revision: ad5edf9466734db758645cfbc58c28e0674a0643
-synchronized_at: '2026-08-03T19:44:30.527951+00:00'
+synchronized_at: '2026-08-03T20:11:04.408509+00:00'
 license_status: unverified
 checksums:
   mega2560.step: f9794c078afd8603c01f270494e1c1711d8131d90e798d0db7a08d3bb2d283c9

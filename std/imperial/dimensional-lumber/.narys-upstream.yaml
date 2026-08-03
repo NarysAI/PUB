@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-standard-imperial-dimensional-lumber/
 upstream_revision: f43214e5c441682eff5c6255d5898e6f8cc6a1c1
-synchronized_at: '2026-08-03T19:46:22.668101+00:00'
+synchronized_at: '2026-08-03T20:11:40.635661+00:00'
 license_status: unverified
 checksums:
   lumber.py: 942999e7cd7b044ba84ef08068bd99952eccb86e830568bd2ad30e7b44b64a87

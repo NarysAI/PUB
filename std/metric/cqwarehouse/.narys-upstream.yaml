@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-cqwarehouse/
 upstream_revision: 3b0b3e306154eb83df47d101e6261d683737951b
-synchronized_at: '2026-08-03T19:46:22.778910+00:00'
+synchronized_at: '2026-08-03T20:11:40.758383+00:00'
 license_status: unverified
 checksums:
   .gitattributes: 6fecb2a0f52e1483ef4302951a36885e7bff9e762c769dd58a370eba5b869f4a
@@ -8,7 +8,7 @@ checksums:
   imperial.yaml: d7bfb44881e2709b2ca5497faecc3bab97a233750dcdaff69e469e761c7c1cbc
   macros.j2: ac261c67e8d30789c85e7cf0bab4b39377164e34f7509e93ad8f728fab6e14ba
   metric.yaml: 25c0792f8e8e7bfbe6d7303d5f79057cc64b28b056116b5ee7cb49557de7b08b
-  partcad.yaml: 602ccc10dab52b38085404fb6f441a73032ec509268a3ae4b018e00a1783bee0
+  partcad.yaml: 25c0792f8e8e7bfbe6d7303d5f79057cc64b28b056116b5ee7cb49557de7b08b
   README.md: c41b8bac55332225b0f1dfce238d7856fb99156d85e690a02b3e035856bdc636
   README_imperial.md: 6210e7d9f0ccc4788c152b03063e30962ace2463b9fe50ba24c60546eea8bf81
   README_metric.md: 3eaea142d06bcac4ea053348d34b5da41286e35c261964d65200df9a2ef74260

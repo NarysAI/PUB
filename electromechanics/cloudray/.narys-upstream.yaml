@@ -1,6 +1,6 @@
 upstream_url: https://github.com/partcad/partcad-electromechanics-cloudray.git
 upstream_revision: 9d4451c05ddd6cd33f7d38b15bb09690b88852f8
-synchronized_at: '2026-08-03T19:44:27.782271+00:00'
+synchronized_at: '2026-08-03T20:11:02.975252+00:00'
 license_status: unverified
 checksums:
   partcad.yaml: 18f664973194b5b473413084c37360f790b50f1d83918837c26f081e35daedab
