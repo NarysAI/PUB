@@ -1,4 +1,4 @@
-name: Validate PartCAD registry
+name: Validate NarysAI registry
 on:
   push:
   pull_request:
@@ -10,5 +10,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
+      - run: pip install pyyaml jinja2
       - run: python tools/validate_registry.py .
