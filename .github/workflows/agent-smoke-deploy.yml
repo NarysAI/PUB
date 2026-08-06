@@ -1,0 +1,23 @@
+name: Agent Smoke Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Deployment environment
+        required: true
+        type: string
+
+jobs:
+  smoke-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Verify smoke test file
+        run: test -f AGENT_SMOKE_TEST.md
+      - name: Show environment
+        env:
+          DEPLOYMENT_ENVIRONMENT: ${{ inputs.environment }}
+        run: |
+          echo "Environment: $DEPLOYMENT_ENVIRONMENT"
