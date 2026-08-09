@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           lfs: true
       - uses: actions/setup-python@v5
         with:
@@ -15,3 +16,5 @@ jobs:
       - run: pip install pyyaml jinja2
       - run: python tools/validate_registry.py .
       - run: python tools/catalog_inventory.py . --check
+      - if: github.event_name == 'pull_request'
+        run: python tools/validate_release.py . "origin/${{ github.base_ref }}"

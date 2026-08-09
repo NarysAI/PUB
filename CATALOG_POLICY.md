@@ -1,41 +1,112 @@
-# NarysAI PUB catalog policy
+# NarysAI PUB change policy
 
-`PUB` is an append-safe public CAD catalog. Its stable identity is the PartCAD
-package path and the object name inside that package.
+This document is normative for every change to `NarysAI/PUB`, regardless of
+whether it is made by a person, script, migration, or AI agent.
 
-## Versioning
+## 1. Core guarantees
 
-The catalog follows Semantic Versioning and stores the current version in
-`VERSION`.
+1. **No data loss.** Existing files, packages, object names, provenance, and
+   licenses must not disappear silently.
+2. **One canonical tree.** The protected `PUB/main` directory tree is the source
+   of truth. Every PartCAD package in it must be covered by `narys-index` and
+   therefore appear in the website repository tree.
+3. **Stable identity.** A package path plus its object kind and name is a public
+   API. Moving or renaming it is a breaking change unless a working compatibility
+   alias remains.
+4. **Reproducibility.** A clean clone with Git LFS must contain everything needed
+   to validate and render the catalog.
+5. **Traceability.** Every merged change belongs to a numbered catalog version,
+   an inventory, a changelog entry, and a reviewed pull request.
 
-- **PATCH**: metadata, documentation, preview, or geometry correction that keeps
-  every existing package path and object name working.
-- **MINOR**: new packages or objects, including backward-compatible aliases.
-- **MAJOR**: removal or rename of a package/object, or any incompatible change to
-  a stable semantic path.
+## 2. Required workflow
 
-Every version change must update `CHANGELOG.md` and regenerate
-`catalog-inventory.json`.
+All changes follow this order:
 
-## Change rules
+1. Start from current `origin/main` in a dedicated branch or clean worktree.
+2. If the working directory contains unrelated or uncommitted data, create a
+   recoverable backup branch before changing or synchronizing it.
+3. Add or edit the smallest complete package. Do not mix unrelated catalog work.
+4. Update `VERSION` according to section 3.
+5. Add the release entry to `CHANGELOG.md`.
+6. Regenerate `catalog-inventory.json`.
+7. Run both repository validators and render every new or changed model.
+8. If the package tree changed, update `NarysAI/narys-index` in a separate PR.
+9. Open a PR using the repository template. Agent-authored PRs require human
+   approval. Never force-push or delete protected history.
+10. Merge only after required CI passes. Create the matching `vX.Y.Z` release tag
+    on the protected `main` merge commit, then verify the website.
 
-1. Never delete or rename a package, object, or CAD asset silently. Record the
-   old path and migration path under `Changed` or `Removed` in the changelog.
-2. Run `python tools/validate_registry.py .` and
-   `python tools/catalog_inventory.py .` before committing catalog changes.
-3. Commit the regenerated inventory with the same change. CI rejects an
-   inventory that does not exactly match package configurations and CAD assets.
-4. New external models require provenance and license information. If the
-   license is unknown, mark it `license_status: unverified`; do not claim reuse
-   rights that have not been confirmed.
-5. Changes reach `main` through a pull request. Agent-authored pull requests
-   require review; force pushes and branch deletion remain prohibited.
-6. A release tag is `v` plus the catalog version (for example `v1.2.0`) and must
-   point to protected `main`.
+Direct commits to `main`, unversioned changes, and release tags pointing outside
+protected `main` are prohibited.
 
-## Review checklist
+## 3. Semantic Versioning
 
-- Stable paths were preserved, or the version was bumped as a breaking change.
-- Inventory and changelog were updated intentionally.
-- The registry validator and inventory check pass.
-- New models appear in the Narys index and on the `/repository` page.
+The current catalog version is stored in `VERSION`.
+
+- **PATCH** (`1.1.0` → `1.1.1`): documentation, metadata, previews, rules, or a
+  compatible geometry correction that preserves all package and object IDs.
+- **MINOR** (`1.1.1` → `1.2.0`): one or more new packages or objects, with no
+  removal of existing IDs.
+- **MAJOR** (`1.2.0` → `2.0.0`): removal, rename, relocation without an alias, or
+  any other incompatible semantic-path change.
+
+Each PR must make exactly one appropriate increment. CI compares the PR against
+its base inventory and rejects an absent, insufficient, or malformed bump.
+
+## 4. Package and file rules
+
+Each publishable package must contain a valid `partcad.yaml` with a stable
+absolute `/pub/...` name. Every declared source must stay inside its package and
+must exist with exact filename casing.
+
+For new or imported models:
+
+- retain the best available editable/original source and a browser-convertible
+  model where practical;
+- document source URL, author/vendor, part number or SKU, dimensional accuracy,
+  and any known limitations in `README.md` or provenance metadata;
+- include the original license. Unknown terms must be marked
+  `license_status: unverified` and must never be represented as permissive;
+- store large supported assets through Git LFS and verify that LFS objects exist
+  on GitHub from a clean checkout;
+- do not commit caches, generated temporary files, secrets, credentials, or
+  unrelated inherited test artifacts.
+
+Generated GLB/STL previews are derivatives, not replacements for the canonical
+CAD source. A source may be removed only when the changelog explains why and the
+package remains reproducible.
+
+## 5. Modification, relocation, and deletion
+
+- Never overwrite the only copy of local work. Preserve it in Git before sync.
+- Prefer additive compatibility aliases over renames.
+- A deletion must list every removed stable package/object path in the changelog,
+  state the reason, and provide a replacement or migration path when one exists.
+- Deleting or moving an asset requires intentional inventory removal in the same
+  PR. Deleting an object/package requires a MAJOR release.
+- Bulk mechanical changes must be isolated from functional catalog changes and
+  must prove that object identities and geometry were preserved.
+
+## 6. Mandatory validation
+
+Before merge, the PR must pass:
+
+```text
+python tools/validate_registry.py .
+python tools/catalog_inventory.py . --check
+python tools/validate_release.py . origin/main
+```
+
+New or changed 3D sources must additionally render successfully through the same
+conversion path used by `narys-web`. After index merge, verify:
+
+- the package is present under `/repository` in the expected directory;
+- search returns the package and objects;
+- every changed model preview returns HTTP 200;
+- the website tree coverage workflow passes in `narys-index`.
+
+## 7. Ownership and recovery
+
+`NeoUKR` owns final catalog approval. Backup branches are not releases and must
+not be deleted until their contents are either merged, intentionally rejected,
+or archived elsewhere. Recovery actions must name the source branch and commit.

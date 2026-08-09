@@ -16,3 +16,6 @@ The catalog is versioned with Semantic Versioning. See [`VERSION`](VERSION),
 [`CHANGELOG.md`](CHANGELOG.md), and [`CATALOG_POLICY.md`](CATALOG_POLICY.md).
 Every package configuration and CAD asset is recorded with a SHA-256 digest in
 `catalog-inventory.json`; CI rejects silent additions, deletions, or changes.
+
+Every contribution must follow [`CONTRIBUTING.md`](CONTRIBUTING.md). This applies
+equally to human, automated, migration, and agent-authored changes.
