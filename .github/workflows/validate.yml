@@ -12,3 +12,4 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml jinja2
       - run: python tools/validate_registry.py .
+      - run: python tools/catalog_inventory.py . --check
