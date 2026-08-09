@@ -17,3 +17,8 @@ Changelog, and catalog versions follow Semantic Versioning.
 ### Changed
 
 - Established stable catalog paths and Semantic Versioning rules.
+
+### Removed
+
+- Broken inherited PartCAD example metadata whose two LFS image objects were
+  never present on GitHub. The KiCad source example and its CAD assets remain.
