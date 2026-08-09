@@ -2,8 +2,15 @@
 // Units: millimetres. Origin and axes follow the released manufacturer STEP.
 // Overall reference envelope: 20.872 x 27.500 x 19.208 mm (X/Y/Z).
 // This file is self-contained and imports no mesh or external CAD geometry.
+// NARYS_MATERIAL: lens=#171A1D
+// NARYS_MATERIAL: glass=#193B54
+// NARYS_MATERIAL: housing=#25282B
+// NARYS_MATERIAL: pcb=#146B3A
+// NARYS_MATERIAL: components=#202226
+// NARYS_MATERIAL: contacts=#D6A83B
 
 $fn = 96;
+narys_material = is_undef(narys_material) ? "all" : narys_material;
 
 camera_width = 19.0;
 camera_height = 19.0;
@@ -38,7 +45,7 @@ module y_rounded_plate(y_min, y_max, size, radius) {
 }
 
 module lens_barrel() {
-    color([0.055, 0.06, 0.06]) {
+    color("#171A1D") {
         y_annulus(-19.9, -16.4, 15.0, 11.0);
         y_cylinder(-16.4, -14.9, 15.0);
         y_cylinder(-14.9, -12.0, 11.348);
@@ -52,8 +59,13 @@ module lens_barrel() {
     }
 }
 
+module lens_glass() {
+    color("#193B54")
+        y_cylinder(-19.82, -19.68, 10.7);
+}
+
 module camera_housing() {
-    color([0.08, 0.085, 0.085])
+    color("#25282B")
         difference() {
             union() {
                 y_rounded_plate(0.0, 2.7, housing_size, housing_corner);
@@ -68,7 +80,7 @@ module camera_housing() {
 }
 
 module sensor_pcb() {
-    color([0.04, 0.12, 0.075])
+    color("#146B3A")
         difference() {
             translate([-camera_width/2, 2.7, -camera_height/2])
                 cube([camera_width, pcb_thickness, camera_height]);
@@ -78,24 +90,29 @@ module sensor_pcb() {
         }
 }
 
-module rear_electronics() {
-    color([0.12, 0.13, 0.13]) {
+module rear_components() {
+    color("#202226") {
         translate([3.4886, 3.8, 6.3669]) cube([5.975, 3.8, 3.0]);
         translate([-0.5364, 3.8, 6.3669]) cube([3.975, 3.8, 3.0]);
         translate([-7.8, 3.8, -7.7]) cube([3.0, 1.2, 2.1]);
         translate([4.7, 3.8, -7.4]) cube([2.6, 1.5, 2.0]);
     }
-    color([0.72, 0.72, 0.68])
+}
+
+module rear_contacts() {
+    color("#D6A83B")
         for (x=[-6.6:1.85:6.6])
             translate([x-0.325, 0.35, 9.5])
                 cube([0.65, 2.0, 0.1]);
 }
 
 module caddx_ratel_pro_2() {
-    lens_barrel();
-    camera_housing();
-    sensor_pcb();
-    rear_electronics();
+    if (narys_material == "all" || narys_material == "lens") lens_barrel();
+    if (narys_material == "all" || narys_material == "glass") lens_glass();
+    if (narys_material == "all" || narys_material == "housing") camera_housing();
+    if (narys_material == "all" || narys_material == "pcb") sensor_pcb();
+    if (narys_material == "all" || narys_material == "components") rear_components();
+    if (narys_material == "all" || narys_material == "contacts") rear_contacts();
 }
 
 caddx_ratel_pro_2();

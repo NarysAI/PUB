@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.1.4",
+  "catalog_version": "1.1.5",
   "summary": {
     "packages": 75,
     "objects": 841,
     "assets": 513,
-    "asset_bytes": 436844511
+    "asset_bytes": 436845243
   },
   "packages": [
     {
@@ -5543,8 +5543,8 @@
     },
     {
       "path": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.scad",
-      "bytes": 3111,
-      "sha256": "7ba4c28747cff6fb89d16e62900fe03adbd9a8a962cc33db2d13be9472173422"
+      "bytes": 3843,
+      "sha256": "d67c2ac79362a4f20119ca905a065ee2653eed5ab90ed1eb403d6f931d6dcbe0"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/models/raspberry-pi-16mm-lens.stl",

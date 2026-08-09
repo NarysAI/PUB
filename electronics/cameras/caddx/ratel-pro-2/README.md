@@ -17,6 +17,12 @@ Validation against the previous STEP gives envelope deltas of 0.000013 mm (X),
 1.02%, renders through OpenSCAD in about 10 seconds, and contains no external
 geometry imports.
 
+The source declares six named visualization materials: dark lens barrel,
+blue-tinted lens glass, black housing, green sensor PCB, dark rear components,
+and gold contacts. NarysAI renders these layers separately and combines them
+into a color-preserving GLB preview; the declarations do not add external
+dependencies to the SCAD model.
+
 The previous STEP and Fusion 360 files remain recoverable from PUB versions up
 to v1.1.3 and Git history. They are removed from the current package after the
 SCAD dimensional and rendering comparison so the package follows the canonical
