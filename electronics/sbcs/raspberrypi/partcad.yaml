@@ -20,23 +20,23 @@ import:
     type: local
     path: accessories/displays
 
-# Backward-compatible aliases. New consumers should use the family packages.
+# Backward-compatible concrete entries. New consumers should use the family packages.
 parts:
   rpi4b:
-    type: alias
-    source: rpi4:rpi4b
+    type: step
+    path: boards/rpi4/rpi4b.step
     desc: Raspberry Pi 4 Model B
   rpi5:
-    type: alias
-    source: rpi5:rpi5
+    type: scad
+    path: boards/rpi5/rpi5.scad
     desc: Parametric Raspberry Pi 5 with Active Cooler
   rpi5-active-cooler:
-    type: alias
-    source: rpi5:rpi5-active-cooler
+    type: scad
+    path: boards/rpi5/rpi5.scad
     desc: Raspberry Pi 5 with Active Cooler
   rpi-touchscreen:
-    type: alias
-    source: displays:rpi-touchscreen
+    type: step
+    path: accessories/displays/rpi-touchscreen.step
     desc: Raspberry Pi 7" Touchscreen Display
 
 render:

@@ -11,8 +11,8 @@ parts:
     vendor: raspberry-pi
     url: https://www.raspberrypi.com/products/raspberry-pi-5/
   rpi5-active-cooler:
-    type: alias
-    source: :rpi5
+    type: scad
+    path: rpi5.scad
     desc: Compatibility alias for the Raspberry Pi 5 Active Cooler model
 
 render:
