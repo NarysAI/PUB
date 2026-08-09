@@ -1,0 +1,41 @@
+name: /pub/electronics/modules/ec-buying
+desc: EC Buying electronic modules
+url: https://www.aliexpress.com/store/1101227751
+cover:
+  part: ky-009-smd-rgb
+
+parts:
+  ky-034-seven-color:
+    type: scad
+    desc: KY-034 style automatic seven-color LED module, black PCB
+    vendor: ec-buying
+    sku: "1005009907055446-7-colors-black-board"
+    url: https://www.aliexpress.com/item/1005009907055446.html
+  ky-009-smd-rgb:
+    type: scad
+    desc: KY-009 style SMD RGB LED module, black PCB
+    vendor: ec-buying
+    sku: "1005009907055446-smd-led-three-colors-black-board"
+    url: https://www.aliexpress.com/item/1005009907055446.html
+  ky-016-dip-rgb:
+    type: scad
+    desc: KY-016 style DIP RGB LED module, black PCB
+    vendor: ec-buying
+    sku: "1005009907055446-dip-led-three-colors-black-board"
+    url: https://www.aliexpress.com/item/1005009907055446.html
+  ky-011-f5-bicolor:
+    type: scad
+    desc: KY-011 style F5 5 mm two-color LED module, black PCB
+    vendor: ec-buying
+    sku: "1005009907055446-two-colors-f5-5mm-led"
+    url: https://www.aliexpress.com/item/1005009907055446.html
+  horizontal-dip-rgb:
+    type: scad
+    desc: Horizontal DIP three-color RGB LED module, black PCB
+    vendor: ec-buying
+    sku: "1005009907055446-three-colors-black-board"
+    url: https://www.aliexpress.com/item/1005009907055446.html
+
+render:
+  svg:
+  readme:
