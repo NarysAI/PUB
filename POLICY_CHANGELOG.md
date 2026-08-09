@@ -3,6 +3,16 @@
 Policy versions follow Semantic Versioning independently from catalog releases
 and use Git tags named `policy-vX.Y.Z`.
 
+## [3.0.0] - 2026-08-09
+
+### Changed
+
+- Replaced the paired-source rule with mutually exclusive model roles.
+- `electronic_component` objects now require SCAD only and prohibit FCStd.
+- `printable_part` objects now require FreeCAD FCStd only; STL/STEP are generated
+  from that master.
+- Website and CI architecture now expose and validate `model_role`.
+
 ## [2.0.0] - 2026-08-09
 
 ### Changed

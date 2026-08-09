@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import math
+import re
 import sys
 from pathlib import Path
 
@@ -57,6 +58,30 @@ for config_path in root.rglob("partcad.yaml"):
             errors.append(f"{config_path.relative_to(root)}: {section} must be a mapping")
             continue
         for name, raw in entries.items():
+            if isinstance(raw, dict) and raw.get("model_role"):
+                role = str(raw["model_role"])
+                source_type = str(raw.get("type", "")).casefold()
+                source_suffix = Path(str(raw.get("path", ""))).suffix
+                if role == "electronic_component":
+                    if source_type != "scad" or source_suffix != ".scad":
+                        errors.append(
+                            f"{config_path.relative_to(root)}: {section}.{name} electronic_component requires one .scad source"
+                        )
+                    elif raw.get("path"):
+                        scad_path = package_root / str(raw["path"])
+                        if scad_path.is_file() and re.search(r"\bimport\s*\(", scad_path.read_text(encoding="utf-8")):
+                            errors.append(
+                                f"{config_path.relative_to(root)}: {section}.{name} SCAD must not import mesh/CAD geometry"
+                            )
+                elif role == "printable_part":
+                    if source_type != "freecad" or source_suffix != ".FCStd":
+                        errors.append(
+                            f"{config_path.relative_to(root)}: {section}.{name} printable_part requires one .FCStd source with type: freecad"
+                        )
+                else:
+                    errors.append(
+                        f"{config_path.relative_to(root)}: {section}.{name} has invalid model_role: {role}"
+                    )
             if not isinstance(raw, dict) or not raw.get("path"):
                 continue
             source_count += 1

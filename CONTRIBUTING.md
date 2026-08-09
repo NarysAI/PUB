@@ -7,9 +7,9 @@ It is the authoritative rule set; this file is the short operational checklist.
 
 1. Update from `origin/main` and create one purpose-specific branch.
 2. Add or change the package and its provenance/license documentation.
-   Add the same model as `name.scad` for AI processing and `name.FCStd` for
-   engineering refinement and STL/STEP generation. Do not add derived
-   mesh/interchange files as canonical data.
+   Declare `model_role: electronic_component` with one `.scad` source for a
+   real-world component, or `model_role: printable_part` with one `.FCStd`
+   FreeCAD master for a manufactured/printed custom part. Never add both.
 3. Bump `VERSION` and add the matching `CHANGELOG.md` entry.
 4. Run `python tools/catalog_inventory.py .` to regenerate the inventory.
 5. Run the registry, inventory, and release validators.

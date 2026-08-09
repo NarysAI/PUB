@@ -78,34 +78,38 @@ package remains reproducible.
 
 ### Canonical CAD formats
 
-Every new or changed model must be stored as a pair of canonical source files
-with the same relative directory and filename stem:
+Every new or changed model declares exactly one `model_role`, and that role
+determines its only canonical source format:
 
-- **`model-name.scad`** is the machine-readable parametric representation used
-  for AI processing, reasoning, dimensional inspection, and website preview.
-- **`model-name.FCStd`** is the editable FreeCAD master used for engineering
-  refinement and as the source for generated STL and STEP exports. It must use
-  correct units, retain editable construction history, and contain the final
-  solid/body.
+- **`electronic_component` → `.scad` only.** Cameras, PCBs, modules, connectors,
+  motors, sensors, purchased assemblies, and other real-world components use a
+  self-contained, AI-readable OpenSCAD representation for reasoning, dimensional
+  inspection, placement, clearance, and website preview. They must not contain
+  an FCStd master in PUB.
+- **`printable_part` → `.FCStd` only.** A custom part intended to be manufactured
+  or 3D-printed uses an editable FreeCAD document with correct units, construction
+  history, and a final valid solid/body. STL and STEP are generated from this
+  master outside the canonical source tree.
 
-Neither file replaces the other. A model is complete only when both files are
-present and describe dimensionally equivalent geometry. Shared SCAD libraries
-whose filename begins with `_` are implementation helpers rather than standalone
-models and do not require their own FCStd counterpart.
+The roles and formats are mutually exclusive. A standalone object must not carry
+both SCAD and FCStd sources. Shared SCAD libraries whose filename begins with `_`
+are implementation helpers for electronic-component models and are not catalog
+objects themselves.
 
 STEP/STP, STL, 3MF, OBJ, GLB/glTF, IGES, BREP, DXF, F3D, and other CAD/mesh
 formats are not accepted as new canonical PUB data. They may be generated outside
 PUB for interchange, slicing, download, or browser caching, but they do not
-replace the paired `.scad` and `.FCStd` sources. Generated STL and STEP files are
-created from the FreeCAD master and are not stored as canonical PUB data.
+replace the role-selected `.scad` or `.FCStd` source. Generated STL and STEP files
+for printable parts are created from the FreeCAD master and are not stored as
+canonical PUB data.
 
 Legacy non-canonical assets already present in a released inventory are retained
 until a lossless, reviewed migration is available. They must not be deleted in
 bulk, silently rewritten, or treated as evidence of an editable source. Any
-change to a legacy asset requires creation of both paired sources in the same
-PR, preservation of provenance, visual/dimensional comparison, and the version
+change to a legacy asset requires migration to the correct role and format in
+the same PR, preservation of provenance, visual/dimensional comparison, and the version
 bump required by the resulting identity changes. CI blocks newly added or
-modified non-canonical CAD assets and incomplete source pairs while allowing
+modified non-canonical CAD assets and role/format mismatches while allowing
 unchanged legacy data.
 
 ## 5. Modification, relocation, and deletion

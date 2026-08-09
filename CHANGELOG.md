@@ -3,6 +3,20 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.4] - 2026-08-09
+
+### Changed
+
+- Caddx Ratel Pro 2 migrated from STEP/F3D to a self-contained parametric SCAD
+  re-render with `electronic_component` role.
+- Corrected canonical-format policy to role-based SCAD or FreeCAD FCStd storage.
+
+### Removed
+
+- `electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.step` and
+  `sources/caddx-ratel-pro-2.f3d` after dimensional/render comparison. Both remain
+  recoverable from PUB v1.1.3 and Git history.
+
 ## [1.1.3] - 2026-08-09
 
 ### Changed
