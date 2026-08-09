@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.1] - 2026-08-09
+
+### Added
+
+- Normative change policy covering preservation, package structure, provenance,
+  licenses, validation, website-tree parity, reviews, releases, and recovery.
+- Contributor workflow, mandatory pull-request checklist, and catalog owner.
+- Automated validation of the required SemVer increment against the base
+  catalog inventory.
+
 ## [1.1.0] - 2026-08-09
 
 ### Added
