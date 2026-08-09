@@ -7,6 +7,9 @@ It is the authoritative rule set; this file is the short operational checklist.
 
 1. Update from `origin/main` and create one purpose-specific branch.
 2. Add or change the package and its provenance/license documentation.
+   Use `.scad` for visualization/reference models and `.FCStd` for complete
+   manufacturable or printable parts. Do not add derived mesh/interchange files
+   as canonical data.
 3. Bump `VERSION` and add the matching `CHANGELOG.md` entry.
 4. Run `python tools/catalog_inventory.py .` to regenerate the inventory.
 5. Run the registry, inventory, and release validators.

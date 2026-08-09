@@ -19,3 +19,5 @@ Every package configuration and CAD asset is recorded with a SHA-256 digest in
 
 Every contribution must follow [`CONTRIBUTING.md`](CONTRIBUTING.md). This applies
 equally to human, automated, migration, and agent-authored changes.
+Policy releases use the independent version in [`POLICY_VERSION`](POLICY_VERSION)
+and are documented in [`POLICY_CHANGELOG.md`](POLICY_CHANGELOG.md).

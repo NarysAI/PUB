@@ -76,6 +76,30 @@ Generated GLB/STL previews are derivatives, not replacements for the canonical
 CAD source. A source may be removed only when the changelog explains why and the
 package remains reproducible.
 
+### Canonical CAD formats
+
+PUB accepts exactly two canonical 3D source formats for new or changed catalog
+data:
+
+- **`.scad`** for visualization, dimensional envelopes, reference geometry, and
+  parametric models whose purpose is placement, clearance, or website preview.
+- **`.FCStd`** for complete manufacturable parts intended for fabrication or 3D
+  printing. The FreeCAD document must contain the editable construction history,
+  correct units, and a final printable solid/body.
+
+STEP/STP, STL, 3MF, OBJ, GLB/glTF, IGES, BREP, DXF, F3D, and other CAD/mesh
+formats are not accepted as new canonical PUB data. They may be generated outside
+PUB for interchange, slicing, download, or browser caching, but they do not
+replace `.scad` or `.FCStd` sources.
+
+Legacy non-canonical assets already present in a released inventory are retained
+until a lossless, reviewed migration is available. They must not be deleted in
+bulk, silently rewritten, or treated as evidence of an editable source. Any
+change to a legacy asset requires conversion to `.scad` or `.FCStd` in the same
+PR, preservation of provenance, visual/dimensional comparison, and the version
+bump required by the resulting identity changes. CI blocks newly added or
+modified non-canonical CAD assets while allowing unchanged legacy data.
+
 ## 5. Modification, relocation, and deletion
 
 - Never overwrite the only copy of local work. Preserve it in Git before sync.
@@ -110,3 +134,15 @@ conversion path used by `narys-web`. After index merge, verify:
 `NeoUKR` owns final catalog approval. Backup branches are not releases and must
 not be deleted until their contents are either merged, intentionally rejected,
 or archived elsewhere. Recovery actions must name the source branch and commit.
+
+## 8. Policy versioning
+
+Policy versions are independent from catalog versions. `POLICY_VERSION` uses
+Semantic Versioning and every policy release is tagged `policy-vX.Y.Z`:
+
+- PATCH clarifies wording without changing obligations;
+- MINOR adds a backward-compatible requirement or validation;
+- MAJOR removes or incompatibly changes an established workflow.
+
+Policy changes are recorded in `POLICY_CHANGELOG.md`. A policy edit may also
+require a catalog PATCH because the policy files themselves are versioned in PUB.

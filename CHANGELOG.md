@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.2] - 2026-08-09
+
+### Added
+
+- Independently versioned policy metadata and changelog.
+- Canonical source-format enforcement: SCAD for visualization/reference models
+  and FreeCAD FCStd for complete manufacturable or printable parts.
+- Safe legacy-format migration rules that prohibit destructive bulk deletion.
+
 ## [1.1.1] - 2026-08-09
 
 ### Added
