@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.5] - 2026-08-09
+
+### Changed
+
+- Caddx Ratel Pro 2 now declares six semantic preview materials for its lens,
+  glass, housing, PCB, rear components, and gold contacts.
+- The SCAD remains self-contained and can render either the complete model or
+  an individual named material layer for color-preserving GLB conversion.
+
 ## [1.1.4] - 2026-08-09
 
 ### Changed
