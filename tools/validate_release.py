@@ -8,6 +8,7 @@ from pathlib import Path
 
 
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
+CANONICAL_CAD_EXTENSIONS = {".scad", ".fcstd"}
 
 
 def parse_version(value: str) -> tuple[int, int, int]:
@@ -36,6 +37,13 @@ def object_ids(inventory: dict) -> set[tuple[str, str, str]]:
     return {
         (str(item["package"]), str(item["section"]), str(item["name"]))
         for item in inventory.get("objects", [])
+    }
+
+
+def asset_digests(inventory: dict) -> dict[str, str]:
+    return {
+        str(item["path"]): str(item["sha256"])
+        for item in inventory.get("assets", [])
     }
 
 
@@ -85,6 +93,22 @@ def main() -> int:
         errors.append(f"CHANGELOG.md has no release heading for {current_version_text}")
     if str(current_inventory.get("catalog_version")) != current_version_text:
         errors.append("catalog-inventory.json catalog_version does not match VERSION")
+
+    base_assets = asset_digests(base_inventory)
+    current_assets = asset_digests(current_inventory)
+    changed_assets = {
+        path for path, digest in current_assets.items()
+        if base_assets.get(path) != digest
+    }
+    invalid_assets = sorted(
+        path for path in changed_assets
+        if Path(path).suffix.casefold() not in CANONICAL_CAD_EXTENSIONS
+    )
+    if invalid_assets:
+        errors.append(
+            "new or modified CAD assets must use .scad or .FCStd:\n- "
+            + "\n- ".join(invalid_assets)
+        )
 
     if errors:
         print("\n".join(errors))
