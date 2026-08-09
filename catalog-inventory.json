@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.1.4",
+  "catalog_version": "1.1.5",
   "summary": {
     "packages": 75,
     "objects": 841,
-    "assets": 513,
-    "asset_bytes": 436844511
+    "assets": 677,
+    "asset_bytes": 449523395
   },
   "packages": [
     {
@@ -5543,8 +5543,8 @@
     },
     {
       "path": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.scad",
-      "bytes": 3111,
-      "sha256": "7ba4c28747cff6fb89d16e62900fe03adbd9a8a962cc33db2d13be9472173422"
+      "bytes": 3843,
+      "sha256": "d67c2ac79362a4f20119ca905a065ee2653eed5ab90ed1eb403d6f931d6dcbe0"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/models/raspberry-pi-16mm-lens.stl",
@@ -5740,6 +5740,11 @@
       "path": "examples/partcad/feature_enrich/desk-no-enrich.assy",
       "bytes": 1149,
       "sha256": "3b2887f8217e0e2104011e2679292899a446e3b99bbdd37d02c9877ed38014d5"
+    },
+    {
+      "path": "examples/partcad/feature_export/bolt.step",
+      "bytes": 1714125,
+      "sha256": "967d6dc2743dcc7e7f5210057dd3bee06a133e3b4a655a37ca849d73804ba01a"
     },
     {
       "path": "examples/partcad/feature_import/AeroAssembly.step",
@@ -6147,6 +6152,11 @@
       "sha256": "a7da412f7df7bdf5ff20c6f234dc54e96b7730419f882a89f61ab9c51514cf8d"
     },
     {
+      "path": "examples/script/build123d/docs/M6-1x12-countersunk-screw.step",
+      "bytes": 503360,
+      "sha256": "9498de2cbecee702169508984ceba3b87f72c6be83029f57f2de6da2f615bf41"
+    },
+    {
       "path": "examples/script/build123d/docs/_static/heart_token.glb",
       "bytes": 153136,
       "sha256": "0d2f932714d6126ed4ce386373c28a9daf238831960907f4de7d3b37153ff483"
@@ -6155,6 +6165,816 @@
       "path": "examples/script/build123d/docs/_static/tea_cup.glb",
       "bytes": 745746,
       "sha256": "376d6700ad9439167a4dba489ce55b4be36cb6a37da1c1c8890e5146003711ae"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/align.svg",
+      "bytes": 44574,
+      "sha256": "83e3c6466fa531777f88fc66fa9dfdb6f5707193ebbf4bd5db37c42d7f1b99c5"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/arrow.svg",
+      "bytes": 710,
+      "sha256": "77fbe29f5b80525bb4e7775e8ba94ea9888bac1bb235fb10b5ddcfabc22f03c8"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/arrow_head.svg",
+      "bytes": 12095,
+      "sha256": "bc7607a2b60de3f33b488c07aa24e8271f0420e6d4b8140936a3160cfd7d5e9a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/bezier_curve_example.svg",
+      "bytes": 1368,
+      "sha256": "ae3ee8dfe543af783a34203b5e74aef7ddedf9373b889d01193c524bd1c5048b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/box_example.svg",
+      "bytes": 1362,
+      "sha256": "72c7a6bda3ab672aaf26285135c60e87aa8f509fbe70badca876330304a10a35"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/build123d_logo/logo-banner.svg",
+      "bytes": 19499,
+      "sha256": "b7492b96b41c376b508f8bd4a4867a53394f5454718a13cf94e7ca572838103b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/build123d_logo/logo-work.svg",
+      "bytes": 167153,
+      "sha256": "ab66e42e8a03c604d7d916ec8c2e300a458938867c32ab77343ce08bfb6476a9"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/build123d_logo/logo.svg",
+      "bytes": 7133,
+      "sha256": "dbb1bde959f413ab290594c7dc4cfa5fd8757320366b3fa4e20431f62b96dc26"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/buildline_example_1.svg",
+      "bytes": 413,
+      "sha256": "edad1cf326ae2c018d11672a818f8c9fc4670ace76d30a2a6f93a87415c86790"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/buildline_example_5.svg",
+      "bytes": 812,
+      "sha256": "6bebed41a1f3b0a967bf2cbd4219acf14c35b1e475fdbc66cb4d69dd74c39597"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/buildline_example_6.svg",
+      "bytes": 673,
+      "sha256": "2f2d3a5e50c9c4a94fee76837aafc721d5921e06e0f4778e71631892d7e743a2"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/buildline_example_7.svg",
+      "bytes": 3954,
+      "sha256": "b84b2381720cd4e1e8f471a9da8be2146996e3f1b2245f7c8d5d11dfbd9a339b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/buildline_example_8.svg",
+      "bytes": 4167,
+      "sha256": "41f907a5ed77e48b288d07eaf320f3c6deaeca5f28552f6094c9499f9ba88b47"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/card_box.svg",
+      "bytes": 28798,
+      "sha256": "a0962703414ff3725abcb5e3e18a76ed4742c5087a0d1f36b96cc66bc540bd89"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/center.svg",
+      "bytes": 808,
+      "sha256": "cb187c1d298f13b5060beefff32892a54f0be9940e52986dfc4e5f76dd3230aa"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/center_arc_example.svg",
+      "bytes": 430,
+      "sha256": "3608b942e3b695304c5d347489f2d98a023a66561e226205b5aa6e3e67be60df"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/circle_example.svg",
+      "bytes": 349,
+      "sha256": "8f8146c7a70736ffddaec7b516feac1b11677473ae50aaa56eba208c1c1f4ef5"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/circle_with_hole.svg",
+      "bytes": 462,
+      "sha256": "ad9f34179c27558cd64948c3904f9a96890ce052296f81f767fcf236ed9513bc"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/cone_example.svg",
+      "bytes": 1186,
+      "sha256": "00c9f3afb4e0f4626bb3a2ba7b6564cbb8eef4fc969e11668232df36c6fcc06d"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/controller.svg",
+      "bytes": 24144,
+      "sha256": "be93c9b27f151b6a8edf7a48845711ca0f5fa0472cf6cdfb998d95caeb248dea"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/counter_bore_hole_example.svg",
+      "bytes": 2648,
+      "sha256": "40b32e753ca5ac1a4fb1c8e01722969c4c141bd131e7eb377653e9ebef51070e"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/counter_sink_hole_example.svg",
+      "bytes": 2629,
+      "sha256": "8bbb9625a44ddc4c107896f77369786029c26687d9af9950239f093a67fb78e0"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/cylinder_example.svg",
+      "bytes": 1118,
+      "sha256": "670373d1420383e2950f97b7d47521960333f6c709b02b2044098c9e294d4a1a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/d_line.svg",
+      "bytes": 5724,
+      "sha256": "3b365a2605da51fcff9534328c0023bfd23c9b9033d840b836679702456d0a58"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/double_tangent_line_example.svg",
+      "bytes": 680,
+      "sha256": "9d1a1ccc398408384d8af353a5b6f6d4717350b1772d07562c43b766118451c7"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/e_line.svg",
+      "bytes": 11904,
+      "sha256": "08502235a98950e820e481e00e2cd6970f24cb9e6fa8ec3ed4398b0e2cf4f534"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/ellipse_example.svg",
+      "bytes": 409,
+      "sha256": "b10041f3df974ddf74ab1da80b6eed9be3db51631cc5e4949a8c1702a2360d15"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/elliptical_center_arc_example.svg",
+      "bytes": 431,
+      "sha256": "24e96f4195dd20b3e32cb52505931f6c1fe2dab6f8d8eaac4da57ab8e89c1a6d"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/filletpolyline_example.svg",
+      "bytes": 3928,
+      "sha256": "a78c96ac765064dc73a2b1e32c3aecd67b917778ae1cedb5673bb37d11fbfc7a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex1.svg",
+      "bytes": 1381,
+      "sha256": "6a9631d4675339b35438d5042a8e84667cb65ee9473712dd24b26675e7a9cb6b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex10.svg",
+      "bytes": 2942,
+      "sha256": "69b4c5e030a322ffa7203b43f6fcf91ec570b3610a29c7c12e11e2dbfbf7c7d2"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex10_algebra.svg",
+      "bytes": 51083,
+      "sha256": "96160ed8e0e7c8fcc50697f89326d32a739531a267d40aba14dac8074e876bcf"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex11.svg",
+      "bytes": 12319,
+      "sha256": "09ede42df8b64b3c471443b54bfa4a0e321edc11adae0e0846fce5e5ae502310"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex11_algebra.svg",
+      "bytes": 57568,
+      "sha256": "eae2e357b1da88f5e754ad7d56903fcccc162305a52a67ff5e4cab0fd4f2b566"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex12.svg",
+      "bytes": 2642,
+      "sha256": "c998d61fb733c1a9c9ce7dc1e00645706960ebc2c54bd2952c6b6e92df7ca632"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex12_algebra.svg",
+      "bytes": 20123,
+      "sha256": "e01a44051de97a4c0303fd9ecbdd9b9edb7522328a42fb0417b2e9b64d2d3f9b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex13.svg",
+      "bytes": 13808,
+      "sha256": "32bbed00732b9967da22be59f297c7609b6293dabc2f2634c77833e883906b6e"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex13_algebra.svg",
+      "bytes": 261022,
+      "sha256": "9f380dc75ac12fc6e2455d205f75707278a7b3eadb4ab61fdae4d627515b60f6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex14.svg",
+      "bytes": 3835,
+      "sha256": "143b48679fca84cb26d8badc18fa52fe4a34381f3f22dfc3441bbfc848bdac45"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex14_algebra.svg",
+      "bytes": 66465,
+      "sha256": "f284b6b3cfc2814054ce4f7a1000b93776a4f813654d3842004433e44b58ae46"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex15.svg",
+      "bytes": 2356,
+      "sha256": "d24f3299e478aa4161d4117d3dc3990489da8377a6dd9e40d56b18e67f930600"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex15_algebra.svg",
+      "bytes": 2919,
+      "sha256": "223e268ed60d8e10ef3b0dec222fcf6730a713744aa3a12a30fa466ee12c639a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex16.svg",
+      "bytes": 29518,
+      "sha256": "d08dcf13baece814b4b10323c837b1cf5795c39672467b48f6c09b3fc73d19c1"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex16_algebra.svg",
+      "bytes": 274973,
+      "sha256": "82b42df4b1693b70eb08b0d6ae5baae4d31f4593ddef8143fe666ebaf7acf7c9"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex17.svg",
+      "bytes": 2289,
+      "sha256": "f49dd02d810c92276b788d182134689d7cc501ea7c874973527da6c9964531db"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex17_algebra.svg",
+      "bytes": 2829,
+      "sha256": "de0381b7a29d625757238f79256ad4079b3242b9fd359e2927576afbd3bd8fba"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex18.svg",
+      "bytes": 6559,
+      "sha256": "75d16113cf0925b27167e9b3719baa31a33d23b8fe888fe40786e6da8253ed50"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex18_algebra.svg",
+      "bytes": 15806,
+      "sha256": "fd6d4fab9fddf6f5d1e49e90a65f8f7efe1cafef7107b30cb976e93190b57b86"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex19.svg",
+      "bytes": 2953,
+      "sha256": "cc1be71cca7baa15d5de4ff699e6f77011046a042c2c636eec687ff2ad916eb3"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex19_algebra.svg",
+      "bytes": 15987,
+      "sha256": "a33a93fe0d9f7f69c0ceeabb7d1b2550f661573c0a36f058d969a6faf725a8f7"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex1_algebra.svg",
+      "bytes": 1693,
+      "sha256": "99be4f0e8ed8f8da56ed6b57915921f3414b4a71977838a806da2da351573640"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex2.svg",
+      "bytes": 2189,
+      "sha256": "4150c0a01b0145858d066022ee7f498879105c2c9e1b33979a7a635178f9b58f"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex20.svg",
+      "bytes": 2167,
+      "sha256": "5b13d046d6c30db118eae4db3a9befc8b964e30c7baed7134e98cd5a871f675a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex20_algebra.svg",
+      "bytes": 27475,
+      "sha256": "bf1bb6e5076450077643efc4cdc08b660a001f8bd956f06e01c7dadaec69859e"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex21.svg",
+      "bytes": 3691,
+      "sha256": "005cfb94c064eb3dad16526a9c08ae1dedd7613de31f80c7390f058279b823f8"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex21_algebra.svg",
+      "bytes": 26350,
+      "sha256": "5623862e98f8e344d8ac85a0032390855c5bd57647b11b1374e7c04e5aa02bce"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex22.svg",
+      "bytes": 9460,
+      "sha256": "d5d73fd800c9363a2d00413e83229871b74852e65982d7bf5542c19dd5372326"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex22_algebra.svg",
+      "bytes": 40233,
+      "sha256": "252aa189e70b11f3c019caeb655738909b10a3bc0b7e6a746a520f7eee47dae2"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex23.svg",
+      "bytes": 3488,
+      "sha256": "a5cfd6ed157cb71f4c3bd633a27249ffd1d7ece14c3b7566959dd41b6f4809c1"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex23_algebra.svg",
+      "bytes": 88657,
+      "sha256": "6731490b3c602cc76ff60cbb65cb382b2f63dcd3245cde315bde545a03749e0b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex24.svg",
+      "bytes": 3714,
+      "sha256": "fec82d652f14292aa090cdce683fccb3e5e4599e2751b2c678026a7620991cbe"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex24_algebra.svg",
+      "bytes": 19585,
+      "sha256": "0694f58f51a06daceddebffbbec687ac44aa4276d2a47900e37ec046b3b9561f"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex25.svg",
+      "bytes": 5635,
+      "sha256": "fe6b2e91ab82759ea7e16e2e05e1c7d30f113fa435de7c58b0e83440bf6c1618"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex25_algebra.svg",
+      "bytes": 23159,
+      "sha256": "96f2bb9592ddc65407ef808f5232d127a49706b8d575b5eb2492a7e967833f63"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex26.svg",
+      "bytes": 2421,
+      "sha256": "40be4e3baaeccd8a09d66d1629ca4d5bb9d72fa3bd51cf145f6f1719374b221f"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex26_algebra.svg",
+      "bytes": 3018,
+      "sha256": "5d16edb9e1ef639a65580fe33e6f6584f8156d83fe28f6ecd39117604231a54a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex27.svg",
+      "bytes": 2238,
+      "sha256": "ea96aa299d75e3219ba4c10a50015fa0724ee559a1ae27af3c82c2e00b8e80d8"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex27_algebra.svg",
+      "bytes": 13638,
+      "sha256": "bf6e081130a32de8154e268cda78c80e4d441ff52995547f224c3885d50512aa"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex28.svg",
+      "bytes": 12634,
+      "sha256": "fd9505c246b831c4d2f2872e1aa731e9bd1cfbcbbc2d69f593f393d32e26ade4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex28_algebra.svg",
+      "bytes": 78824,
+      "sha256": "564eec944ab3f80a5a43bfdc0544b823b7617dd072084ef1c3ed0c5f4f66a589"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex29.svg",
+      "bytes": 9087,
+      "sha256": "bc524605417b116590ecb96ff18ba6cb737db340c9fabb2f3a895c46225f6881"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex29_algebra.svg",
+      "bytes": 48117,
+      "sha256": "610fdaf6e288c7ddfe2acf1c478c1a86804eb1f681f650034f8e661027fccbf4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex2_algebra.svg",
+      "bytes": 22193,
+      "sha256": "8b0ebed0786b6f9059a73dda63e5b736b3b0666e32b59c54ae401a45d4d95c81"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex3.svg",
+      "bytes": 2070,
+      "sha256": "afaf1aeeda0cee2556f9f081cef3e7a1fb9eab902e5259f4c8907fc36389eb30"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex30.svg",
+      "bytes": 5462,
+      "sha256": "766448353e5a881d944d8f76be16760e81319ec721e2c79f91783cc7d7f321f9"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex30_algebra.svg",
+      "bytes": 36612,
+      "sha256": "f9e4691b1d0252507e23237d3372e9567c4dbe5b173013e4631915fbb3699f90"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex31.svg",
+      "bytes": 25770,
+      "sha256": "2a6026354b46780b6ea4fab4d7c9c333fa0009a07a2ca92dbe33772189e8ba04"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex31_algebra.svg",
+      "bytes": 32461,
+      "sha256": "f14acd296932007ac961174c6be764e7d79f8008d799c1d3ac675822282db648"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex32.svg",
+      "bytes": 7907,
+      "sha256": "58f54df0e6c1d92ab2b74b800d70bfb6cf2855b8f1aa113b82dc59593496d746"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex32_algebra.svg",
+      "bytes": 9910,
+      "sha256": "f62dde43b0c77ace3ac85a6d5c4cf47c45934fea29481f2964e6071819e89fec"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex33.svg",
+      "bytes": 5908,
+      "sha256": "b8dcd69cad692bec6eb8b3b9d81dabeebfbcdef839d8a174ac21f13ba343060b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex33_algebra.svg",
+      "bytes": 7355,
+      "sha256": "0fea8ad4751b2c3a52cedd3bd2e62849df95a6ed6901e7b6cfcc9b314a8f3fc2"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex34.svg",
+      "bytes": 26358,
+      "sha256": "a81da782d664b4c69f93ae94609fa40591cf940d114f4eb00438bceb6931e540"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex34_algebra.svg",
+      "bytes": 145574,
+      "sha256": "f587aa116f7b260754f84de1a464790a372cafa131e5a6be0a3916b007df7551"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex35.svg",
+      "bytes": 7344,
+      "sha256": "f415355d0d71fd89346230ddf667dd3c69e53248ccf8d96b50a4342f019ce2a6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex35_algebra.svg",
+      "bytes": 88146,
+      "sha256": "9501a487f527ccae2ab00a36584099552e9bb6931d0f751c204ea3127c4711d4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex36.svg",
+      "bytes": 3942,
+      "sha256": "4ad09852da93a312fcfb192e55d89d1b939b2769eaf9f548f1fdc676b6983007"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex36_algebra.svg",
+      "bytes": 49212,
+      "sha256": "12dc70f306994e5636aa8ea296c27901abfb38e9d21fe72f005fcd8b536e552b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex3_algebra.svg",
+      "bytes": 49896,
+      "sha256": "453ea0e0184ef2b665c4b31c7421bfe578b84434951d5ea8483e334babc367e6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex4.svg",
+      "bytes": 1742,
+      "sha256": "9a2b5716993cc9182960d71a35aad657dc67cdbe631ccf043ec9c92262caead9"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex4_algebra.svg",
+      "bytes": 18330,
+      "sha256": "c4b95a2a1c5974690e5f977129cc1e61d582e9fed7c27d11c3dd40b1bd4022d9"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex5.svg",
+      "bytes": 3111,
+      "sha256": "f75075f4e1e6bc75435bc32f7439f10fb8b7cfe25449d4e8465b7c0e205ef9a7"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex5_algebra.svg",
+      "bytes": 76086,
+      "sha256": "0e14c6169bb6526b399e2f5e7d78c9304acf8cb55857cc148e5952d7e7ce21c4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex6.svg",
+      "bytes": 4054,
+      "sha256": "ee68107ec01ef9ba6e449308a30a3e668d3b0b62dd099f5b4892b71ea7d774b1"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex6_algebra.svg",
+      "bytes": 132830,
+      "sha256": "7c71d149059dc05dcbe92fc95a969eed0e3f4830a1177fafbe677415d1d75986"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex7.svg",
+      "bytes": 4315,
+      "sha256": "f0baf21f07a200bb0011c742e098d51afb0444f5cb9c89c4be0b9c39d1be1a41"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex7_algebra.svg",
+      "bytes": 5474,
+      "sha256": "a003e976109adf2d3fc21a4f4ff8944c1a54573fd3fd06fda347a26345dd0d23"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex8.svg",
+      "bytes": 3376,
+      "sha256": "5c136f1c1b353729a6333e880215a5372e2f4ddf05d54c7d7b01b612f035aca8"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex8_algebra.svg",
+      "bytes": 4153,
+      "sha256": "b7a1142eaed8abc7e4071d59ed226c94b008c231cc516c40cc418e5632c3cb39"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex9.svg",
+      "bytes": 5698,
+      "sha256": "4abd274918848862a55b587a35309479cbfca21983eb116d95603d8b50b59737"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/general_ex9_algebra.svg",
+      "bytes": 14623,
+      "sha256": "3df3798a8a8f3ca2fb3c30ca20962786298129fa68030c2aa8754add88dabc4c"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/helix_example.svg",
+      "bytes": 4489,
+      "sha256": "4d267cc4d3fbadd9a8ec938ecacd98e344ec7dfc7de773489a8c280abf6e4392"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/hole_example.svg",
+      "bytes": 2020,
+      "sha256": "efe32cce3eb66486d8403342b5d65ef0d57bf0fca2f582926cc21c8bc4fcc677"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/intersecting_line_example.svg",
+      "bytes": 569,
+      "sha256": "12504e0ff1b6a0bbd3eb002a7fc9c4961425213f4c1ed42ddde4dfed31376b6b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/jern_arc_example.svg",
+      "bytes": 644,
+      "sha256": "f6f7f2c6002c4680937b3e9a2cf44007a9359253ac0f71169eaf1ecf87df0b19"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego.svg",
+      "bytes": 32616,
+      "sha256": "480a523d764f267b408d78296058338cc3654f9518968df77950d9afb6f05504"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step10.svg",
+      "bytes": 24665,
+      "sha256": "59f8f9003c6aa9f67ff49cfb60d3f7f8d6bf475ae815329df8bea74445093c43"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step4.svg",
+      "bytes": 379,
+      "sha256": "fd2ecb8a50a79b28189f7215d8d564d2d20dec4d9461d8b03ecf1fbb9332208b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step5.svg",
+      "bytes": 458,
+      "sha256": "df9dfb8f9d3dd56c37f87d4fc5cc12a97ff283daf2cf3a72d20c70a1fb3b9350"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step6.svg",
+      "bytes": 2007,
+      "sha256": "9c68283af7ba2d321cd42f7eba696e484ac35d4675f9805532bcd282e46e2c16"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step7.svg",
+      "bytes": 1210,
+      "sha256": "0af7e18b263a0b450b7a055770e163549891454a5f0f45851f3e6eb24ca7da5a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step8.svg",
+      "bytes": 1653,
+      "sha256": "fc0f66468d6a9ca403a7d63f6aa915e885bb0d34157993e72aa62a28cf3bbe8a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/lego_step9.svg",
+      "bytes": 27295,
+      "sha256": "e6041fadf229844368b65dbf3ea7b2c763c912a7738583cd6a561319132ce226"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/line_example.svg",
+      "bytes": 444,
+      "sha256": "d155d91c24ceaa26fc7b6bdad7a48995088c327569d6ba74b63393c25ebf26eb"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/line_types.svg",
+      "bytes": 397788,
+      "sha256": "e71afb59bfe89498f337e4a67459366773cd4115cc2a10e2c47a26ed26d4bb3a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/one_d_center.svg",
+      "bytes": 810,
+      "sha256": "5f2477817cecccad1bfd858b8ab0f6de8e8ea1ae04531d7008d3b1a6b3127220"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/pack_demo_initial_state.svg",
+      "bytes": 4399,
+      "sha256": "d54c2d060b53507e1aa7c6b8e9f5f8bac9ae59635ad493852ab7297b4cd5c32c"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/pack_demo_packed_xy.svg",
+      "bytes": 4802,
+      "sha256": "32a525bf5a9ffeb0866b766eb33b78c06a90bbbd997fc2f579b38c7cd7178865"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/pack_demo_packed_z.svg",
+      "bytes": 4709,
+      "sha256": "72876e7679743fca4e9975e8365191ead334c8ed2297698e51125cf55b271e07"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/packed_boxes_input.svg",
+      "bytes": 8164,
+      "sha256": "9ec4a5a763cdce19d59ab6ec6cec0093b9625473441f612f65c81590c6b8d439"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/packed_boxes_output.svg",
+      "bytes": 45384,
+      "sha256": "8234f9ef221705446edbf23c7637f3b1b794fa32b4c6b245ac81d5e84868a8dd"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/plate.svg",
+      "bytes": 67666,
+      "sha256": "5c74ef3762b22da129c960170f9da914c336cc7cdffa48dac7aee96f193dcc69"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/polar_line_example.svg",
+      "bytes": 626,
+      "sha256": "d9771b6ed23478023485f56e82143824d81e80f607ee031c18bcadcaa0d5c3e3"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/polygon_example.svg",
+      "bytes": 568,
+      "sha256": "73996dad63f45e09a1b046387c389291303fff424b58f44c828a249150ab95fa"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/polyline_example.svg",
+      "bytes": 539,
+      "sha256": "4a107764e08302f4393dd2862552fd2c76a8af157be8a81fdf2f071fd668b3ff"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/radius_arc_example.svg",
+      "bytes": 491,
+      "sha256": "7a26e253045cbc5afe3c2198fbed6139d73057611087762cbd2c98a74ad192b4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/rectangle_example.svg",
+      "bytes": 379,
+      "sha256": "ffff3502af8d4853608878a2011c2e21cdc5b323f74715d8932491b510b4e269"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/rectangle_rounded_example.svg",
+      "bytes": 504,
+      "sha256": "2452c211e4efe1591e9fbf1b8187438c36ebe44add08d8503e9af43c22ae6be6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/regular_polygon_example.svg",
+      "bytes": 426,
+      "sha256": "f19d8251ddb4691df13ce79458d203a23b69e5739cc67e2d42bf43bb50ccf9fc"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/sagitta_arc_example.svg",
+      "bytes": 449,
+      "sha256": "ee84d1cb3ca5186877468b82eaba46e9122dfe5475870b3d07f9c89626ee71a6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/selector_after.svg",
+      "bytes": 3989,
+      "sha256": "6b984244855f2213234f42b63c27920ce06d01c8a8786e371c8c7c4979dd1cab"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/selector_before.svg",
+      "bytes": 3495,
+      "sha256": "f8019b6778580ce049ede27ee96e2ba0f62c714886552aaa16a7738c4fa53e2a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/slot_arc_example.svg",
+      "bytes": 794,
+      "sha256": "8eee8cf25a75ed04bfe3df57947a1971d9eec9fd9e7967d6cdfb01c575c60d36"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/slot_center_point_example.svg",
+      "bytes": 657,
+      "sha256": "c3cd96bb391ebefc0200898a1cd08196130e20abf6230b262ba854daa77e7065"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/slot_center_to_center_example.svg",
+      "bytes": 467,
+      "sha256": "86a793323cc311d99654ed9c11d6261838fba86342b4fb70703a78b23d410fa6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/slot_overall_example.svg",
+      "bytes": 443,
+      "sha256": "6f90bba90e53674e44659a9de297c07292a13cee857eeb85be53e71cacffd81c"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/sphere_example.svg",
+      "bytes": 876,
+      "sha256": "b2aabcf22a0fd2e7235cf3dd5a8742928e4e6fa9c029dabce90e6a79ae619936"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/spline_example.svg",
+      "bytes": 752,
+      "sha256": "be548c530a35a5e964c62fb35ccd5bee00f99503ca47d7ed7606cb6462ffeed6"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tangent_arc_example.svg",
+      "bytes": 617,
+      "sha256": "0e67359de8aea44af318e33c8dc16a7bda4bc356164d6443ff324ca8f8d9c014"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tech_drawing.svg",
+      "bytes": 71493,
+      "sha256": "047dab824c04cde4cd2b9c7a8de466be0c4c79040ae242ff4133f259e71188b0"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/text_example.svg",
+      "bytes": 2143,
+      "sha256": "71933654d20926181a7c1efa112ac718702c482089731cb60b10133eab5c1059"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/three_point_arc_example.svg",
+      "bytes": 536,
+      "sha256": "339d772414a8e24ab79b8815831a6e26cf598cb86e8736e849638081989680d4"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/torus_example.svg",
+      "bytes": 2261,
+      "sha256": "e404abdd8395d777b9363cd35f0ac48317f4af95eafebc8441c37afa8c69813d"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/trapezoid_example.svg",
+      "bytes": 2614,
+      "sha256": "a8836e64e75f06b541b8773a08ec459de813a23be34bbd88d500395033937198"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/triangle_example.svg",
+      "bytes": 8728,
+      "sha256": "a0fe52ca63deb60df3e0e61ae913be1c054dfb4aa3ab936e8ce56d5d408797d7"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint.svg",
+      "bytes": 74285,
+      "sha256": "8a36fb4cc6dc4e79c97f0742ce444c9578049e604303f66b62b7eedc9c661f2b"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_box.svg",
+      "bytes": 9324,
+      "sha256": "94e504cdc9b523ce4ea447c2ef8554bb882020eaac596913cb7d6b1e1c27e5a0"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_box_outer.svg",
+      "bytes": 23272,
+      "sha256": "3afed1c7df07fc9590c7f77c32f06ef60b21cd82baecc4425c7c5ecf0208ea6a"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_box_outer_inner.svg",
+      "bytes": 31529,
+      "sha256": "7aaeebad08b524b88534b4c996ce35a98f34257c20196c7a3de12b7aa4b975a3"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_box_outer_inner_lid.svg",
+      "bytes": 32119,
+      "sha256": "1e8bed04583d21550cc94f271863c4b50f044f88ae9b410d066697ace9a9d245"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_inner_leaf.svg",
+      "bytes": 17594,
+      "sha256": "3a1634e68aee52d2fec95cfc43eadbfd2bbafe9f9258c7c9fbb33f88836a03fb"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_lid.svg",
+      "bytes": 7075,
+      "sha256": "bedcf590836ec44820202a61048ae8dd8926bfabcf331add6dba82ce38041f86"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_m6_screw.svg",
+      "bytes": 44441,
+      "sha256": "efb4b15bc12387385cd1539b9491fc5ca868416081365ebe5a363ddb70af9453"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/tutorial_joint_outer_leaf.svg",
+      "bytes": 19918,
+      "sha256": "3ebc7a204b3f1c23ff9f8e752e2e678d3646c0eb9df1716f4974cc8986dd94f3"
+    },
+    {
+      "path": "examples/script/build123d/docs/assets/wedge_example.svg",
+      "bytes": 1352,
+      "sha256": "602c613ec1139a86541f37265f4da5e40f26dbae81dd7f6193ccfb7c2e714a96"
+    },
+    {
+      "path": "examples/script/build123d/docs/boxes_on_faces.svg",
+      "bytes": 3180,
+      "sha256": "7edf40617ee29c2baad6bedfd73f3b1f58a6e3d60d5c46ebbaa0e8f359cabc71"
+    },
+    {
+      "path": "examples/script/build123d/docs/build123d_logo.svg",
+      "bytes": 55293,
+      "sha256": "59aa9833557ed1223ec55823d65467a670dedb65aa1a398bdb7a71b7caf8952f"
+    },
+    {
+      "path": "examples/script/build123d/docs/direct_api_classes.svg",
+      "bytes": 62903,
+      "sha256": "680d6552aed27d5f8b6c6d8efe625c677d42fd4a37e4bfd211b1225b23262239"
+    },
+    {
+      "path": "examples/script/build123d/docs/reference_assembly.svg",
+      "bytes": 6825106,
+      "sha256": "c058af303db6fe5a2c99b376b26ad1f331fd02571d986f00913e59c854d871e5"
+    },
+    {
+      "path": "examples/script/build123d/examples/low_poly_benchy.stl",
+      "bytes": 49284,
+      "sha256": "7d2f347f5139421e281576e26ce234d57768a1ab4f60be677b0e9f5d33793040"
+    },
+    {
+      "path": "examples/script/build123d/tests/cyl_w_rect_hole.stl",
+      "bytes": 39084,
+      "sha256": "56d769fed1749ae03b4c0874b2cd2e5a1aeeae3969b1706e685f8e2d84eb6dae"
+    },
+    {
+      "path": "examples/script/build123d/tests/svg_import_test.svg",
+      "bytes": 2567,
+      "sha256": "f1f59cd59338427388e6f14ed433922ad7525dbe63c9172a8f5a5eb298eb8724"
     },
     {
       "path": "examples/script/cadquery-contrib/examples/vslot-2020_1.dxf",
