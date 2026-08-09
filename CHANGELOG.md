@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.3.0] - 2026-08-09
+
+### Added
+
+- Parametric KCD1-size three-position `II-O-I` rocker-switch package at
+  `electromechanics/switches/kcd1-rocker`, reconstructed from orthogonal video
+  views and cross-checked against the public 19 x 13 mm family drawing.
+- Four-material SCAD preview layers for housing, rocker, face markings, and
+  blade terminals.
+
 ## [1.2.0] - 2026-08-09
 
 ### Added
