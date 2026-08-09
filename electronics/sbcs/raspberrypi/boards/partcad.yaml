@@ -1,0 +1,4 @@
+name: /pub/electronics/sbcs/raspberrypi/boards
+desc: Raspberry Pi single-board computers
+cover:
+  package: rpi4
