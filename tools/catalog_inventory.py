@@ -18,17 +18,15 @@ ASSET_EXTENSIONS = {
     ".iges", ".igs", ".kicad_mod", ".kicad_pcb", ".kicad_pro", ".kicad_sch",
     ".obj", ".scad", ".step", ".stl", ".stp", ".svg",
 }
-TEXT_ASSET_EXTENSIONS = {
-    ".dxf", ".gltf", ".kicad_mod", ".kicad_pcb", ".kicad_pro", ".kicad_sch",
-    ".scad", ".svg",
-}
 SECTIONS = ("parts", "sketches", "assemblies")
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 
 
-def canonical_bytes(path: Path, text: bool = False) -> bytes:
+def canonical_bytes(path: Path) -> bytes:
     content = path.read_bytes()
-    return content.replace(b"\r\n", b"\n") if text else content
+    # Git may classify text-based CAD formats differently across platforms.
+    # A normalized digest stays stable while still detecting content changes.
+    return content.replace(b"\r\n", b"\n")
 
 
 def sha256(content: bytes) -> str:
@@ -74,7 +72,7 @@ def build_inventory(root: Path) -> dict:
         packages.append({
             "name": package_name,
             "config": relative_config,
-            "config_sha256": sha256(canonical_bytes(config_path, text=True)),
+            "config_sha256": sha256(canonical_bytes(config_path)),
         })
         for section in SECTIONS:
             entries = data.get(section) or {}
@@ -96,7 +94,7 @@ def build_inventory(root: Path) -> dict:
     paths = sorted(root.rglob("*"), key=lambda path: path.relative_to(root).as_posix())
     for path in paths:
         if path.is_file() and path.suffix.lower() in ASSET_EXTENSIONS:
-            content = canonical_bytes(path, text=path.suffix.lower() in TEXT_ASSET_EXTENSIONS)
+            content = canonical_bytes(path)
             assets.append({
                 "path": path.relative_to(root).as_posix(),
                 "bytes": len(content),
