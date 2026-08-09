@@ -17,16 +17,21 @@ ASSET_EXTENSIONS = {
     ".iges", ".igs", ".kicad_mod", ".kicad_pcb", ".kicad_pro", ".kicad_sch",
     ".obj", ".scad", ".step", ".stl", ".stp", ".svg",
 }
+TEXT_ASSET_EXTENSIONS = {
+    ".dxf", ".gltf", ".kicad_mod", ".kicad_pcb", ".kicad_pro", ".kicad_sch",
+    ".scad", ".svg",
+}
 SECTIONS = ("parts", "sketches", "assemblies")
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+def canonical_bytes(path: Path, text: bool = False) -> bytes:
+    content = path.read_bytes()
+    return content.replace(b"\r\n", b"\n") if text else content
+
+
+def sha256(content: bytes) -> str:
+    return hashlib.sha256(content).hexdigest()
 
 
 def load_config(path: Path) -> dict:
@@ -60,14 +65,15 @@ def load_config(path: Path) -> dict:
 def build_inventory(root: Path) -> dict:
     packages = []
     objects = []
-    for config_path in sorted(root.rglob("partcad.yaml")):
+    configs = sorted(root.rglob("partcad.yaml"), key=lambda path: path.relative_to(root).as_posix())
+    for config_path in configs:
         relative_config = config_path.relative_to(root).as_posix()
         data = load_config(config_path)
         package_name = str(data.get("name") or "/" + config_path.parent.relative_to(root).as_posix())
         packages.append({
             "name": package_name,
             "config": relative_config,
-            "config_sha256": sha256(config_path),
+            "config_sha256": sha256(canonical_bytes(config_path, text=True)),
         })
         for section in SECTIONS:
             entries = data.get(section) or {}
@@ -86,12 +92,14 @@ def build_inventory(root: Path) -> dict:
                 objects.append(item)
 
     assets = []
-    for path in sorted(root.rglob("*")):
+    paths = sorted(root.rglob("*"), key=lambda path: path.relative_to(root).as_posix())
+    for path in paths:
         if path.is_file() and path.suffix.lower() in ASSET_EXTENSIONS:
+            content = canonical_bytes(path, text=path.suffix.lower() in TEXT_ASSET_EXTENSIONS)
             assets.append({
                 "path": path.relative_to(root).as_posix(),
-                "bytes": path.stat().st_size,
-                "sha256": sha256(path),
+                "bytes": len(content),
+                "sha256": sha256(content),
             })
 
     version = (root / "VERSION").read_text(encoding="utf-8").strip()

@@ -5,378 +5,378 @@
     "packages": 74,
     "objects": 836,
     "assets": 508,
-    "asset_bytes": 444906192
+    "asset_bytes": 444625197
   },
   "packages": [
     {
       "name": "/electrical/battery/ego",
       "config": "electrical/battery/ego/partcad.yaml",
-      "config_sha256": "875fb4c9947affcc68ca5ee391786220d9f160362f99ac0fcb1e5aa4656cad6d"
+      "config_sha256": "3b6dc1e611687a2e647a4b8e57d4dc5e8868a12e99503e6ddbe81a6579d1123a"
     },
     {
       "name": "/electromechanics/cloudray",
       "config": "electromechanics/cloudray/partcad.yaml",
-      "config_sha256": "1e6b80dd2f3c5c1e3270f744c19f7a90093412fb2798d7c2df1552cc63b2a918"
+      "config_sha256": "18f664973194b5b473413084c37360f790b50f1d83918837c26f081e35daedab"
     },
     {
       "name": "/electromechanics/stepperonline",
       "config": "electromechanics/stepperonline/partcad.yaml",
-      "config_sha256": "f514fe2c885bb0bf607d0b57de6152b219894f89a036e6fd53458f570e457f39"
+      "config_sha256": "b353c9b0007d8699ef328b93ea2a7264aa5bd1330a1dac58f713426a7eb4df81"
     },
     {
       "name": "/electromechanics/towerpro",
       "config": "electromechanics/towerpro/partcad.yaml",
-      "config_sha256": "7a7f0b3e743689b714238e4ac4e8ec64b34a1f612c917e7be5064a4e6bf0e10c"
+      "config_sha256": "e75044443e665a4e99d3db01cba45cfdd35866e1c92333c2a3fb8bc51a2af3cc"
     },
     {
       "name": "/pub/electronics/cameras/caddx/ratel-pro-2",
       "config": "electronics/cameras/caddx/ratel-pro-2/partcad.yaml",
-      "config_sha256": "25d673d7701e7dea4b44fa4f4c68b4811ce1b3a835dc5c4e19d3e5d89cc7647a"
+      "config_sha256": "0908f447e24e6a68348f7099d0bd3acea8892b87b7d5cb79e350df8fb1f155bc"
     },
     {
       "name": "/pub/electronics/cameras",
       "config": "electronics/cameras/partcad.yaml",
-      "config_sha256": "b25e3a936343bbe1dc361534a94661d4fffa2ebdec4e67983b020ad2b42985f0"
+      "config_sha256": "10d71f889b58c12783840436fbaf94f8e36eabb7c9d0b4e9dda8fc8540de35bb"
     },
     {
       "name": "/pub/electronics/cameras/raspberry-pi/hq-camera",
       "config": "electronics/cameras/raspberry-pi/hq-camera/partcad.yaml",
-      "config_sha256": "c1b78cb138b65699e69a062b16fbb3b770a6ae06a1ed855c2746b8bedbbf6e08"
+      "config_sha256": "8a0af6743a72ac93d368ee083501a142f3d0f9800360cc10035923db2627eeae"
     },
     {
       "name": "/pub/electronics/power-converters",
       "config": "electronics/power-converters/partcad.yaml",
-      "config_sha256": "f0b043694e1b4a0cb97e0b2269eb32667cffcd72ed76ed1a8748ca085c740c1f"
+      "config_sha256": "f48ead724c4d42677a55b8160cfbf97ac533eb24a2c5f65ef8673f64f2a24eb5"
     },
     {
       "name": "/pub/electronics/power-converters/xl4015",
       "config": "electronics/power-converters/xl4015/partcad.yaml",
-      "config_sha256": "25a8eaba7b6443b13256437dd1a50c82787784fbb56cef09b3b694483ccfc509"
+      "config_sha256": "7c380a57322a93d4e0155f5c6fbada092d8f2ddb8446fb2e76b020fddd92b316"
     },
     {
       "name": "/pub/electronics/sbcs/arduino",
       "config": "electronics/sbcs/arduino/partcad.yaml",
-      "config_sha256": "affc78dd3c39c00fef3910ebdca4de9162ec9249ee7e971785af931f94b575d9"
+      "config_sha256": "6521629bcaeacfb5403a19ff261633c6832fd07a03aa3215cbed061c931ca977"
     },
     {
       "name": "/electronics/sbcs/intel",
       "config": "electronics/sbcs/intel/partcad.yaml",
-      "config_sha256": "762c3e8ec602d3093b595b39ddfd25b71d379cf0eadb0564ee2e90d267de1a4d"
+      "config_sha256": "ffd9545496c59dc6640baf1384bd28d2786135e47090ddb54b7b789f8910ff41"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/accessories/displays",
       "config": "electronics/sbcs/raspberrypi/accessories/displays/partcad.yaml",
-      "config_sha256": "e95b9a907906496bc90c2d50a4b6312da37fc5b517f3846e05ef3625a10bad6f"
+      "config_sha256": "4b9cc1c75cefbbd7f0d0d539ce9f698df8d9217814d4adaea9190d70a1f924e3"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/accessories",
       "config": "electronics/sbcs/raspberrypi/accessories/partcad.yaml",
-      "config_sha256": "7a59f3caea544605277c1cf1c4ed0e8f53bfd4f3c1b1fa29dc87a9089e536913"
+      "config_sha256": "a55eedaf4616361455e3b432436eec293076063a5f98a6618773563f632d4c8a"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards",
       "config": "electronics/sbcs/raspberrypi/boards/partcad.yaml",
-      "config_sha256": "dbb9125c5a9bc5bed6ddd7a83816e240a04627fccc38f9e57d3522857c66f95d"
+      "config_sha256": "84ff0f9f72357df1098e35ef99a454a8ece60f10412aeff45a790f82f83e9857"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards/rpi4",
       "config": "electronics/sbcs/raspberrypi/boards/rpi4/partcad.yaml",
-      "config_sha256": "f7815a1e3e5eb85649eb194bf005d77cd55c75096049727fb1e118fef9428061"
+      "config_sha256": "e236fe7581f25658b613b5518a1ad71c357f8c10bf3d1b21df1fa9caad83899d"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards/rpi5",
       "config": "electronics/sbcs/raspberrypi/boards/rpi5/partcad.yaml",
-      "config_sha256": "24f284c84123e61c22c8c2c1b8febd69fcefc87ab5a3df4927e12ff3203fe6b2"
+      "config_sha256": "aa4e186bdab11359996abfe3a1b0df50ab169a4edea9efca870e66c9ed1259a1"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/compute-modules",
       "config": "electronics/sbcs/raspberrypi/compute-modules/partcad.yaml",
-      "config_sha256": "6b50c3e556ea731792eac98ba4814f9d81bf06ec675379b5ee1e6d70f0d07bb3"
+      "config_sha256": "fa5fccb3d6b3ec8f42dccd4c98eeb3f31dda5e4e8fad4fef6bc9a9f7d45a6755"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/microcontrollers",
       "config": "electronics/sbcs/raspberrypi/microcontrollers/partcad.yaml",
-      "config_sha256": "774b4903c93099c7b7a22db96631053339fb49e3d8b6b60b3cc814be1cc0e6e4"
+      "config_sha256": "cfb8e777485446f0667e028cc05978e384e0ea8a5e6d18d4cce8978189081aee"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi",
       "config": "electronics/sbcs/raspberrypi/partcad.yaml",
-      "config_sha256": "44f364b0a1bec78850fdb02e7afaeac583b170e7560b9972c3b4593d9f27cc64"
+      "config_sha256": "f83f35404c04866bef8b0a8f9d3d14ff54544280823e0e8aa300b419ababa093"
     },
     {
       "name": "/pub/examples/competition/tootalltobby",
       "config": "examples/competition/tootalltobby/partcad.yaml",
-      "config_sha256": "e4e7f18d3ad3062226f9a0ab304c3b2cf457f87c817df6563d78f31016e1d1aa"
+      "config_sha256": "f075825b5a703c5484a1c989530dbc995c6596690c0f17ce8061446c89483a36"
     },
     {
       "name": "/examples/partcad/feature_convert",
       "config": "examples/partcad/feature_convert/partcad.yaml",
-      "config_sha256": "ae4c24652c6517943d06e15464a465dc2932addcd2b46e85ff29a418ccd69f3c"
+      "config_sha256": "241690ff97cc49ea7dfe75728a43996e6b6b289b21b728a3d7590ece581d120d"
     },
     {
       "name": "/examples/partcad/feature_enrich",
       "config": "examples/partcad/feature_enrich/partcad.yaml",
-      "config_sha256": "be618493a58ee637ac203b8ed004d316b19e3e50461ee5c30cee97af92b5217c"
+      "config_sha256": "326aef47bb5d3fe58f32943777aab1f71fa7d81c8236727738fc7ab2604debeb"
     },
     {
       "name": "/examples/partcad/feature_export",
       "config": "examples/partcad/feature_export/partcad.yaml",
-      "config_sha256": "d200417d3e8468220d60de0fa14b1599adfb53854ff4ab599acad8650235701d"
+      "config_sha256": "4e639bb2295ddf7a38fde05c7e4f0181e06c002664c21689d0182e6306c689a3"
     },
     {
       "name": "/examples/partcad/feature_import",
       "config": "examples/partcad/feature_import/partcad.yaml",
-      "config_sha256": "ca56b4ed35cbc933c7f2f32884fd90f2c4657eeebfe85c67a4f8310beb431d96"
+      "config_sha256": "e689c4e1e5fde2a3a5c58522b3457482c0e5e17fc8bbc532202e0d6009ac561f"
     },
     {
       "name": "/examples/partcad/feature_interface",
       "config": "examples/partcad/feature_interface/partcad.yaml",
-      "config_sha256": "4bd836a705db1bd759bc90b937f6b5a1eccba80398ffa425bd23df8916271bb9"
+      "config_sha256": "38204dd8e39e374fbd08f9a09dc4bbf8113e7cb1d3eeec051fca0e9855ba05c0"
     },
     {
       "name": "/examples/partcad/feature_monorepo/package-a",
       "config": "examples/partcad/feature_monorepo/package-a/partcad.yaml",
-      "config_sha256": "20459d95fcc33a437ec6bf3aaefc2ab534b999881255098209518f35436027b5"
+      "config_sha256": "19c05b2e7bd57cce747a7d497bf9a7d931e4f9e6960ab42620c043cc8319eb8f"
     },
     {
       "name": "/examples/partcad/feature_monorepo/package-b",
       "config": "examples/partcad/feature_monorepo/package-b/partcad.yaml",
-      "config_sha256": "8736401bdcd57c211cae35c856d9175916308dc08a8153b45e004d4fef44ef63"
+      "config_sha256": "d013c15e12ac10d450820d50c93580410168d24d84aab7ba71f10da5cbdeea78"
     },
     {
       "name": "/examples/partcad/feature_monorepo",
       "config": "examples/partcad/feature_monorepo/partcad.yaml",
-      "config_sha256": "dc72509d215e156ff27a6cd8ff44be6777a0e0019b36fd7c262cb5cd90b6d638"
+      "config_sha256": "ff4d07b6f5bd57de4087e2fd343c93814bc1d4263efe472a00fbcc58f7c80293"
     },
     {
       "name": "//pub/examples/partcad",
       "config": "examples/partcad/partcad.yaml",
-      "config_sha256": "44ff941f2f581b4cf4e45b340b63fe4fde168a1dec15ccb3a8b71e7a5d25336a"
+      "config_sha256": "8d59e9b176781b689a97af31f24bc3961678999cc36ea0449bddff3636c6db4d"
     },
     {
       "name": "/examples/partcad/produce_assembly_assy",
       "config": "examples/partcad/produce_assembly_assy/partcad.yaml",
-      "config_sha256": "15cbb9a5ac42ebbcb4dcdffde67ac3ab0eee41c456468dbe2efbd998b6a6eaca"
+      "config_sha256": "fac886b35691242523b79904f14d2b78436e056cea020276ea11cdc55e2ae840"
     },
     {
       "name": "/examples/partcad/produce_part_3mf",
       "config": "examples/partcad/produce_part_3mf/partcad.yaml",
-      "config_sha256": "07742f1ad028e0a4f516c5822c6ea789ebad5c54940f0ed856881d051f762b1f"
+      "config_sha256": "317085b3c31a7a505cdab22390acce8597c423dc101f5016fd73845d74400461"
     },
     {
       "name": "/examples/partcad/produce_part_ai_build123d",
       "config": "examples/partcad/produce_part_ai_build123d/partcad.yaml",
-      "config_sha256": "6c9f0cf3cf8b39acb433ea0da65fe695aacff6443a04dc13d3f6f9bd94c5d0d3"
+      "config_sha256": "32fc7122ab50821e8bca98aa5bc4e09c492bab000853fcd754531e086bb79c0e"
     },
     {
       "name": "/examples/partcad/produce_part_ai_cadquery",
       "config": "examples/partcad/produce_part_ai_cadquery/partcad.yaml",
-      "config_sha256": "1d729140f4697a7de651b4ada845aa69dd5604b618da78b1f4625146ef412cc7"
+      "config_sha256": "632e9dfe0d78c7f4d17a3b095d4ad5826d1e6e7a028a73f73b6d9ea91d23a017"
     },
     {
       "name": "/examples/partcad/produce_part_ai_openscad",
       "config": "examples/partcad/produce_part_ai_openscad/partcad.yaml",
-      "config_sha256": "7cbb1b5830aed8096758e1b0e88bd296ab73ba4247f9ac1774c0f176f3ddb1db"
+      "config_sha256": "962a4eaef87d188db7d2128dd978aa55e2fe85c487c59af3023451cebd46aed2"
     },
     {
       "name": "/examples/partcad/produce_part_brep",
       "config": "examples/partcad/produce_part_brep/partcad.yaml",
-      "config_sha256": "dbb7696c18d4c3b9a1a0290bde16f1bb194f1c54f3708522621117a854605ee9"
+      "config_sha256": "36d8af10dcd295c80065c214ea08b5fd09d32068710dedc077c4d944a0114ac9"
     },
     {
       "name": "/examples/partcad/produce_part_build123d_primitive",
       "config": "examples/partcad/produce_part_build123d_primitive/partcad.yaml",
-      "config_sha256": "aaa308dc26ae6772fe00497f09de42b1eb45e17649de22a85f57ddb051f7a08f"
+      "config_sha256": "248175b06503c32487e4bddb6453de7ada38c0bd084bba6e9a1aaa298b85b23b"
     },
     {
       "name": "/examples/partcad/produce_part_cadquery_logo",
       "config": "examples/partcad/produce_part_cadquery_logo/partcad.yaml",
-      "config_sha256": "7c0cef534129b322a445c8487b4ff8229c2fbfe9345acb00756664cbac608ea9"
+      "config_sha256": "e8eb895a7d79de2d1f7b21891495a55fdac2ab03eb7d18a40ab8140eea4baa61"
     },
     {
       "name": "/examples/partcad/produce_part_cadquery_primitive",
       "config": "examples/partcad/produce_part_cadquery_primitive/partcad.yaml",
-      "config_sha256": "03e4f37e619c91c1f7d58afd4d7bfe4a9eee17e18d82b6893b0a2a53e361842e"
+      "config_sha256": "3be8e803970ca766117b1f8a1f4d4114004d7a961cf8edddacc7b202153e024e"
     },
     {
       "name": "/examples/partcad/produce_part_extrude",
       "config": "examples/partcad/produce_part_extrude/partcad.yaml",
-      "config_sha256": "d9265345df9b40fd19c7c049f58a8e4ab124b9651ddf8f1bd8f9ddbd37e5bd49"
+      "config_sha256": "ce308b2aa21bde213d32a7803bccc019aa7d4060c1c136d628185f6c0cb69f0d"
     },
     {
       "name": "/examples/partcad/produce_part_kicad",
       "config": "examples/partcad/produce_part_kicad/partcad.yaml",
-      "config_sha256": "3a1b74c3585ad3c18f079e2957e8e6d7ebdd55e284898848af380fc09cc40d1b"
+      "config_sha256": "1a92c53e4ae68270830087d670b6a854c68ba9e9f0accc71840b8b2471a8b3b8"
     },
     {
       "name": "/examples/partcad/produce_part_obj",
       "config": "examples/partcad/produce_part_obj/partcad.yaml",
-      "config_sha256": "d6934207f1a11cd069b01fe4aac53063017a4825ad513a5f1d6ac2327575034a"
+      "config_sha256": "08d523581b86f5effcb5302ee82ff7d75be35578ae5cc0e5486c905c9b8ccb16"
     },
     {
       "name": "/examples/partcad/produce_part_openscad",
       "config": "examples/partcad/produce_part_openscad/partcad.yaml",
-      "config_sha256": "c55bea4b6e0af9aef55eaa69065f5c87d89887ffeb688eef28d98e4a44177822"
+      "config_sha256": "18dc5da0a3af2b531c7b47466528592164206d55f411db29ea530b25f9d6d933"
     },
     {
       "name": "/examples/partcad/produce_part_step",
       "config": "examples/partcad/produce_part_step/partcad.yaml",
-      "config_sha256": "e3f0d05ab93d41867d2afaee12768e07fbeb9cc2d0578ce3310d4ce3f2830c89"
+      "config_sha256": "2d709c8060ca407fe7da98c0c0fd6ebea52a3d0561ecbb8683ccf57ced900de1"
     },
     {
       "name": "/examples/partcad/produce_part_stl",
       "config": "examples/partcad/produce_part_stl/partcad.yaml",
-      "config_sha256": "755fec07cbf6d761ce3b8a947cfca03ed7ab7896a9dff442a618c465f681a7cc"
+      "config_sha256": "6b86377646ae7939338b6eaf6abc2ed37d5627dbcdfdca84c41799fa33386f15"
     },
     {
       "name": "/examples/partcad/produce_part_sweep",
       "config": "examples/partcad/produce_part_sweep/partcad.yaml",
-      "config_sha256": "fc57d0faa65ba97087302cba97a47e231227a9cee09b1b724ecc021dd3765473"
+      "config_sha256": "f4bfe02b358908fd56b2bcc6f0931f81d7d312fddd8b44a3fba0e62779433c8f"
     },
     {
       "name": "/examples/partcad/produce_sketch_basic",
       "config": "examples/partcad/produce_sketch_basic/partcad.yaml",
-      "config_sha256": "490f2e90f319b3f206d20afbda6e0e2c4199867b1dc2c3a82c2d31ddb26ff6fc"
+      "config_sha256": "11c86e657dc61a01deea3cb6c1dfaebab9ed62b5d46ec9e43c1acbf6ab154aca"
     },
     {
       "name": "/examples/partcad/produce_sketch_build123d",
       "config": "examples/partcad/produce_sketch_build123d/partcad.yaml",
-      "config_sha256": "d5b0ea85e2261cb327f4891444bdb039e38ed7e2df12630c2f08108756ba18fe"
+      "config_sha256": "4bac06958a7aa55b7b8590d4428c5323290e4dd19f1201b56dc051b2bae64bb2"
     },
     {
       "name": "/examples/partcad/produce_sketch_cadquery",
       "config": "examples/partcad/produce_sketch_cadquery/partcad.yaml",
-      "config_sha256": "a60e9176d11fa34de236098b0d6c01367355d3b8827175f8ade2d46b67c956b0"
+      "config_sha256": "54b6c55443de0ab770307a0a0cfbe73f74a34ce7e39b901a79f4c3e2f93ce2ce"
     },
     {
       "name": "/examples/partcad/produce_sketch_dxf",
       "config": "examples/partcad/produce_sketch_dxf/partcad.yaml",
-      "config_sha256": "5f8e5be82ae3c9bb138212b22350e5c045ac443c987b1bf7b4390c259b3e622c"
+      "config_sha256": "8c42f61225382ecb5f2fd032cfb9e1b398cda3e8ab45ec992ca130029934e7c4"
     },
     {
       "name": "/examples/partcad/produce_sketch_svg",
       "config": "examples/partcad/produce_sketch_svg/partcad.yaml",
-      "config_sha256": "db262bdea2bc09266183b96ff44445bd50b5daabde9d36e2cf62af7ff516217e"
+      "config_sha256": "8f7efda1136c68829915e7d022cb07b2f039c2824c4573d632df62a5f788e454"
     },
     {
       "name": "/examples/partcad/provider_manufacturer",
       "config": "examples/partcad/provider_manufacturer/partcad.yaml",
-      "config_sha256": "c2aeab6bd51cfe00222f08292de3a78a425544c0463b9bdd01a341834e3127c1"
+      "config_sha256": "ca77cccb80bf0834a36f3a304c56dbea02c1e0064670fb92e6a84b87c343f291"
     },
     {
       "name": "/examples/partcad/provider_store",
       "config": "examples/partcad/provider_store/partcad.yaml",
-      "config_sha256": "b111a95c6e4a20855823ac10e7e8535d5598174e76daddea9095d26c056f1991"
+      "config_sha256": "eb59f9728a9c0611ce9daa9d91e62b6d870faf8384039286075e5a8dff7c8faa"
     },
     {
       "name": "/examples/script/build123d",
       "config": "examples/script/build123d/partcad.yaml",
-      "config_sha256": "20ee655404afab2fbddd5ba854f301bc4fd1487103f501e135393468b2a995f9"
-    },
-    {
-      "name": "/pub/examples/script/cadquery",
-      "config": "examples/script/cadquery/partcad.yaml",
-      "config_sha256": "6d1a9e244f4930dab08c2353e3db2ae284fb51cc33bee3ad55f2ca2868799c33"
+      "config_sha256": "125a642f72bf33a9a7fbdf6116e7bfa3cb1ee5272dfda6602de7cb8223ea7360"
     },
     {
       "name": "/pub/examples/scripts/cadquery-contrib",
       "config": "examples/script/cadquery-contrib/partcad.yaml",
-      "config_sha256": "e2194775a9b48f058d35b8a981a83cf984ca18787ae6334c02e4a575dd46340a"
+      "config_sha256": "fe0c839277c231f545e6af89d59083be662fc72d249d62a607bf43eee75cee28"
+    },
+    {
+      "name": "/pub/examples/script/cadquery",
+      "config": "examples/script/cadquery/partcad.yaml",
+      "config_sha256": "79860cde3df9d32fc9126cb17c22f2a2755bd8f9fc44102087c83f070f4a04b5"
     },
     {
       "name": "/furniture/workspace/basic",
       "config": "furniture/workspace/basic/partcad.yaml",
-      "config_sha256": "a8c413e4f859a5df51b3b56dedbc7fb179ef43b503e7f312a526567f9db82002"
+      "config_sha256": "215ae516dea37de731a08046bad8b92a908d2ee41f87bb42c376071e3a8ba913"
     },
     {
       "name": "/pub/medical/laboratory/4tvc-microlab/v6",
       "config": "medical/laboratory/4tvc-microlab/hardware/v6/partcad.yaml",
-      "config_sha256": "d1eb3ce8bcb41835ea70e49d1ca8b9250b62dfcb0c5d9fb200c7118acb33c5d9"
+      "config_sha256": "5b3e6fd866dbb97ce27fd1e58133b372f179be7e9c8d90987fc6003686d8b3e3"
     },
     {
       "name": "/pub/medical/laboratory/4tvc-microlab",
       "config": "medical/laboratory/4tvc-microlab/partcad.yaml",
-      "config_sha256": "e67340ed60ab5f024e8c3cb2b21504e811af63803c30618de838bdd7d7871bda"
+      "config_sha256": "39b4ed52ae8be2122230cf2e5c8e0a340b8781c8f13764070bab227cf1a13c40"
     },
     {
       "name": "//pub/narysai/comp-ivins-case-4",
       "config": "narysai/comp-ivins-case-4/partcad.yaml",
-      "config_sha256": "1a1b1dce72745c85ece06e3c4a6d4ac481d4fa6388810bc92f8fb8dadd05383d"
+      "config_sha256": "0caae81f2ecad090bb0dad130bacd9f47fb2110a1ece5b943c104e965e2025f8"
     },
     {
       "name": "/robotics/multimodal/openvmp",
       "config": "robotics/multimodal/openvmp/partcad.yaml",
-      "config_sha256": "1d2bcd16753f1a7e45629fa30289a140d26b18074fb44e909269a5bab7f27b67"
+      "config_sha256": "fce55b6a91468c7d77529bb8ebce13b6cacafdbf17e466ce4eda90729493c1d8"
     },
     {
       "name": "/robotics/multimodal/openvmp/parts",
       "config": "robotics/multimodal/openvmp/parts/partcad.yaml",
-      "config_sha256": "d13f75f195987ca6246c22982a49bb0fbea7c40b044a4b159f27040a7cddbbde"
+      "config_sha256": "8862d785529bd5a0c057892814cfa6608b4466e52325623bc5c25df9b0859d57"
     },
     {
       "name": "/robotics/multimodal/openvmp/robots/don1",
       "config": "robotics/multimodal/openvmp/robots/don1/partcad.yaml",
-      "config_sha256": "1e8b5b2fea3720be8050e454f3e29054ba7019d329a3ee2c6ecacb64281fd9eb"
+      "config_sha256": "df1a04eec9433b4a453146bd8a7dc73679bbc81db0c7555d862e1cb9fa8b9bd5"
     },
     {
       "name": "/robotics/multimodal/openvmp/robots",
       "config": "robotics/multimodal/openvmp/robots/partcad.yaml",
-      "config_sha256": "f4ad69e565fbe62d6ae1b07cc25d8600732030e0a75fe7d205686f2e8ceb46a8"
+      "config_sha256": "d062094ba7aa05a96e9be74bb64903dfb2f4e4a9f3c07f69358255560b9ecce6"
     },
     {
       "name": "/robotics/parts/dfrobot",
       "config": "robotics/parts/dfrobot/partcad.yaml",
-      "config_sha256": "a2901bcc4e804c7e147a9ff7854fac8c8f19b384e1e0210fb46c6f05997b4210"
+      "config_sha256": "3510d296b96d530a22e4f2f51b8dddf89520e2da4bd11c90b3bdbe45858b14c3"
     },
     {
       "name": "/robotics/parts/gobilda",
       "config": "robotics/parts/gobilda/partcad.yaml",
-      "config_sha256": "88f34f924cab4a770797e6edbe1bd712bae0e534c420aeca2769746cab1176b4"
+      "config_sha256": "71405429ee8f8cf2d25fb811e23d84c044b0f6e0bf60e6a4617af82d01988f4d"
     },
     {
       "name": "/robotics/research/cloudgripper",
       "config": "robotics/research/cloudgripper/partcad.yaml",
-      "config_sha256": "d115ae915180828d22bc2e3bcc86e7ec6f5af7358505d9d7d1b9063ecb47d805"
+      "config_sha256": "ea56fbee723f9c3425aa572ddb508c651e91b5afc268405532654fa3df64b5aa"
     },
     {
       "name": "/std/imperial/cqwarehouse",
       "config": "std/imperial/cqwarehouse/partcad.yaml",
-      "config_sha256": "19ed27470b96ba8a8b00bb2ac8856a120c031cc3c7ed0117268554b4ed2d346b"
+      "config_sha256": "d7bfb44881e2709b2ca5497faecc3bab97a233750dcdaff69e469e761c7c1cbc"
     },
     {
       "name": "/std/imperial/dimensional-lumber",
       "config": "std/imperial/dimensional-lumber/partcad.yaml",
-      "config_sha256": "18c00d57260191c9a880110b7992c74819c5d6b57b05b7c155269004defc0d99"
+      "config_sha256": "12a9eade004dee8fab5dd89666534d2c1fcb4429cf740f53b4f7de850b3322af"
     },
     {
       "name": "/std/metric/cqwarehouse",
       "config": "std/metric/cqwarehouse/partcad.yaml",
-      "config_sha256": "13ccbdb3493c90fe5b4de11858e4979c9494a688f028592f98517c684304277f"
+      "config_sha256": "25c0792f8e8e7bfbe6d7303d5f79057cc64b28b056116b5ee7cb49557de7b08b"
     },
     {
       "name": "/std/metric/m",
       "config": "std/metric/m/partcad.yaml",
-      "config_sha256": "1c853bbd79f8cb3d6d0827d0a1b9f88b9d8e726b54f6d978ef7859c45bb32821"
+      "config_sha256": "48c58ead54d2eacbc6b975378b9219fb83aae2f2dcfaac645eacda81d04b9706"
     },
     {
       "name": "/std/metric/nema",
       "config": "std/metric/nema/partcad.yaml",
-      "config_sha256": "ae740b04dac783eae610a29ecca574aa58ad5e2e911626d46094f431f9c01354"
+      "config_sha256": "a91a312706070f320882a53020ab8baf5ec2df26ce293bcfab8dbf637abe946e"
     },
     {
       "name": "/pub/storage/workspace/gridfinity",
       "config": "storage/workspace/gridfinity/partcad.yaml",
-      "config_sha256": "cd39fda32e382b08e95b2e4f565e6446ffe2d9e4f3311947374f27fafc0a12d6"
+      "config_sha256": "f49b2cf806f9854f2d456d7466df85f56f53ad1052ecd333279d6fad2c3c6eae"
     },
     {
       "name": "/pub/svc/commerce/gobilda",
       "config": "svc/commerce/gobilda/partcad.yaml",
-      "config_sha256": "a9aeeafccf44b81f984a64d4e5101938f6830eddec6959996a911435e48d6884"
+      "config_sha256": "0af1577a2a5381cf9c354009ca445864ae6ab746b227243b3429aefc295073de"
     },
     {
       "name": "/pub/svc/commerce/homedepot",
       "config": "svc/commerce/homedepot/partcad.yaml",
-      "config_sha256": "3e7bfb7cd3e24fbee8d48bb5b1cdc234e7fba9a580d9a5cc4ecf16c51a64d558"
+      "config_sha256": "65a9fe16bb52710fceff6f645f68b3ab92714e8295126c649b5d97dfd7b762a1"
     }
   ],
   "objects": [
@@ -1626,6 +1626,90 @@
       "type": "build123d"
     },
     {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/3D_Printer_Extruder_Support",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Braille",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Classic_OCC_Bottle",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Numpy",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Panel_with_Various_Holes_for_Connector_Installation",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Parametric_Enclosure",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Reinforce_Junction_UsingFillet",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Remote_Enclosure",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Resin_Mold",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Shelled_Cube_Inside_Chamfer_With_Logical_Selector_Operators",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Tetrakaidecahedron",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/Thread",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/door",
+      "type": "cadquery"
+    },
+    {
+      "package": "/pub/examples/scripts/cadquery-contrib",
+      "section": "parts",
+      "name": "examples/tray",
+      "type": "cadquery"
+    },
+    {
       "package": "/pub/examples/script/cadquery",
       "section": "parts",
       "name": "examples/Ex001_Simple_Block",
@@ -1785,90 +1869,6 @@
       "package": "/pub/examples/script/cadquery",
       "section": "parts",
       "name": "examples/Ex100_Lego_Brick",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/3D_Printer_Extruder_Support",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Braille",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Classic_OCC_Bottle",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Numpy",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Panel_with_Various_Holes_for_Connector_Installation",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Parametric_Enclosure",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Reinforce_Junction_UsingFillet",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Remote_Enclosure",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Resin_Mold",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Shelled_Cube_Inside_Chamfer_With_Logical_Selector_Operators",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Tetrakaidecahedron",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/Thread",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/door",
-      "type": "cadquery"
-    },
-    {
-      "package": "/pub/examples/scripts/cadquery-contrib",
-      "section": "parts",
-      "name": "examples/tray",
       "type": "cadquery"
     },
     {
@@ -5482,8 +5482,8 @@
     },
     {
       "path": "electromechanics/towerpro/example/mg90s.svg",
-      "bytes": 219776,
-      "sha256": "4e086a3954bd56624fe6fe72ff4944181ad46151a2c1836956ebe3a8338b7071"
+      "bytes": 217995,
+      "sha256": "7b061e14d8e691a8f58d1af46d420a5771ee5574f86d9829efe5da9fd3d66937"
     },
     {
       "path": "electromechanics/towerpro/servo/mg90s.step",
@@ -5492,8 +5492,8 @@
     },
     {
       "path": "electromechanics/towerpro/servo/mg90s.svg",
-      "bytes": 155525,
-      "sha256": "9498b465049583f45addda0e3adbbd94ea821eda86673ca13948b2be19fb903f"
+      "bytes": 154201,
+      "sha256": "103e8dfdf0e6560a83297d5eeeb64ba83f512acd59b996c096d455a6edd66195"
     },
     {
       "path": "electromechanics/towerpro/servo/shoulder-unidir.step",
@@ -5502,8 +5502,8 @@
     },
     {
       "path": "electromechanics/towerpro/servo/shoulder-unidir.svg",
-      "bytes": 24368,
-      "sha256": "9c2325988b89fec0327ba128ae245acaf0ecca43aa7b6a03fb70c00ffbd9678f"
+      "bytes": 24180,
+      "sha256": "40b947c525b11779e341b275842920db26bf3ba31ed76a4b14008549e70ccef9"
     },
     {
       "path": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.step",
@@ -5542,23 +5542,23 @@
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/models/HQ_Camera_model.scad",
-      "bytes": 19069,
-      "sha256": "db5427b15d891cd2b0b620d4aa543cc66ad45dd2b261c1ba1cbcce0bbfdb82bc"
+      "bytes": 18541,
+      "sha256": "7f82e8e3379a2b35d8801fe5fffe122c2eebab146f0f3fd4b2ee94da7b25ce7d"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/models/Lens_16mm_model.scad",
-      "bytes": 7875,
-      "sha256": "120809f440e7ef889491c04df66e0b3c846412897bb785131793fa3d67f3a5f7"
+      "bytes": 7667,
+      "sha256": "a7606c8d1777da2631ca3543c1d964c67c50de35f33d0f8621274378dc03c850"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/models/Lens_6mm_model.scad",
-      "bytes": 6891,
-      "sha256": "02955d9280114200c4af1718852e7566e25bc7a4a8a3ccbba1fd40198e232662"
+      "bytes": 6702,
+      "sha256": "3051039ed0bd75acec7b7e686bcc26cbc35a189c1cc01b5e5b5b767226cc1d5a"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/raspi_HQ_cam_and_lens.scad",
-      "bytes": 4452,
-      "sha256": "e2df1a62959102ce91bc9a58f2d1ad5b6157444dbc6237a575a61f46b97989f6"
+      "bytes": 4292,
+      "sha256": "554576582bed81b9cfdc962299390e78f9cb8c5096b513ec4d0823ae4e739e53"
     },
     {
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",
@@ -5577,8 +5577,8 @@
     },
     {
       "path": "electronics/sbcs/arduino/mega2560.svg",
-      "bytes": 8002,
-      "sha256": "50bb307ec76eba3879a1db3bdf2e663896188662c3e19563d99357802cc168bc"
+      "bytes": 7921,
+      "sha256": "0e43eef1646e59e5e216579605047e9ed6d6af4eedff9b1d2ea10551624241ac"
     },
     {
       "path": "electronics/sbcs/arduino/unoR3.step",
@@ -5587,8 +5587,8 @@
     },
     {
       "path": "electronics/sbcs/arduino/unoR3.svg",
-      "bytes": 189132,
-      "sha256": "300605021e6af50f4b0bc2f0732a01929d6c34e920cb58b4d8a0ce76641c4b34"
+      "bytes": 187396,
+      "sha256": "a417036bfd282d5815709aaf3fa8ea5d4570fe18710019b4008c728278562326"
     },
     {
       "path": "electronics/sbcs/intel/nuc12.step",
@@ -5607,43 +5607,43 @@
     },
     {
       "path": "electronics/sbcs/raspberrypi/boards/rpi4/rpi4b.svg",
-      "bytes": 158711,
-      "sha256": "5578243d6291cff7d22bf361b7a665b859762e611862e6accda435e93f162b11"
+      "bytes": 157033,
+      "sha256": "e1a2031aee661ea69f3a25a5efbe1e4befa32db59864912e98da4b19fa4db7f5"
     },
     {
       "path": "electronics/sbcs/raspberrypi/boards/rpi5/rpi5.scad",
-      "bytes": 6902,
-      "sha256": "63871a2e38b712a198e059350c399f6534311884b8a5e67ddd39e216b2effe67"
+      "bytes": 6704,
+      "sha256": "5e2b085173ea584ed2e81844ce5b1bc1e4ece6596cb3b2892322f7a19b38af51"
     },
     {
       "path": "examples/competition/tootalltobby/tier01-24-01-01.svg",
-      "bytes": 2989,
-      "sha256": "3a6695f98863b7d8929bf4c57ea82c5ac53a15aa86de3ec922a354804f41f319"
+      "bytes": 2957,
+      "sha256": "86b41f7199478357cd98d642d2da12494d0128218064e97795500c36ba893fb5"
     },
     {
       "path": "examples/competition/tootalltobby/tier01-24-04-02.svg",
-      "bytes": 3972,
-      "sha256": "9fdfd175f00c26bebb60f81c24a2483b6cdacb2d7a61b4f5e172e5e9f4f52a24"
+      "bytes": 3945,
+      "sha256": "2eb59946a8f96f39da478acb48b519d18b0ee45797ee845435a12f5206e9b584"
     },
     {
       "path": "examples/competition/tootalltobby/tier01-24-04-04.svg",
-      "bytes": 5005,
-      "sha256": "e5ced09ade0dff871d733ef80d16aa7226395d3a877aba18d2a366e9209f87f5"
+      "bytes": 4962,
+      "sha256": "747d7e7d65c9afabc9638ce990416520ba4d2700b6a2bc7840ce2b1bb62d7c80"
     },
     {
       "path": "examples/competition/tootalltobby/tier03-24-01-03.svg",
-      "bytes": 5880,
-      "sha256": "3aa188ee09cbfece296e3497d38f77e5981b0331fc1b8d806d2d283e0701edc3"
+      "bytes": 5850,
+      "sha256": "46596df44cc5890de8ec07e70adc25b1fac4d59de281e79f9b83e67777866c8d"
     },
     {
       "path": "examples/competition/tootalltobby/tier03-24-01-04.svg",
-      "bytes": 4268,
-      "sha256": "3cd54bb30d77f74ea11918be4c669184878143d55ef84cab71488111146fcac3"
+      "bytes": 4223,
+      "sha256": "3fc5f2181ec628baec364daff115e0fe967b73453123a282d7b3447756142480"
     },
     {
       "path": "examples/competition/tootalltobby/tier04-24-01-02.svg",
-      "bytes": 4733,
-      "sha256": "b11e98d64cd79c618f3fe76b01192bdb699dd36d323652675347039ccb3cb82c"
+      "bytes": 4684,
+      "sha256": "125bdd10896b0d538dfdf78f759179f636f7a5c12d511667cab2b6af291aabd1"
     },
     {
       "path": "examples/partcad/feature_convert/3mf/cube.3mf",
@@ -5657,8 +5657,8 @@
     },
     {
       "path": "examples/partcad/feature_convert/scad/prism.scad",
-      "bytes": 431,
-      "sha256": "90ccd8d3c98d88ef554aa089d3619ef5af6bef8a8ace9f08b34424fdcdd13012"
+      "bytes": 410,
+      "sha256": "c36f0e5d77f1893d7d8f82507f1faab1089faeb70877eda8b437e449a6a12862"
     },
     {
       "path": "examples/partcad/feature_convert/step/bolt.step",
@@ -5691,16 +5691,6 @@
       "sha256": "08254a9a93d28b015df9cd54ccb864f2d28c723a2cf30fb632e1f296cfa1f51a"
     },
     {
-      "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrame_Cap.step",
-      "bytes": 491913,
-      "sha256": "b737dd391ab880114fa0d54fcde8e37b58d905621ad8e9c2eb421206728c3330"
-    },
-    {
-      "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrame_Plate.step",
-      "bytes": 303492,
-      "sha256": "dd8e9c00e8ea5b40b25be7cf03664c90f1d090dab5054c69ca67dc562b278a08"
-    },
-    {
       "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrameAssembly_solid1.step",
       "bytes": 293725,
       "sha256": "92dbf16028c2d3ef6ba1650fb9a1d3dedcd5205ec18054847f422bd3974be129"
@@ -5714,6 +5704,16 @@
       "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrameAssembly_solid3.step",
       "bytes": 633451,
       "sha256": "eebb334f3ac3e9aded1e57647939bc4af4cb635458ecffa6adadebce5c9b1aa5"
+    },
+    {
+      "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrame_Cap.step",
+      "bytes": 491913,
+      "sha256": "b737dd391ab880114fa0d54fcde8e37b58d905621ad8e9c2eb421206728c3330"
+    },
+    {
+      "path": "examples/partcad/feature_import/AeroAssembly_assy_example/AeroFrame_Plate.step",
+      "bytes": 303492,
+      "sha256": "dd8e9c00e8ea5b40b25be7cf03664c90f1d090dab5054c69ca67dc562b278a08"
     },
     {
       "path": "examples/partcad/feature_import/AeroAssembly_assy_example/MirrorAeroFrameAssembly_solid1.step",
@@ -5742,8 +5742,8 @@
     },
     {
       "path": "examples/partcad/feature_interface/connect-interfaces.svg",
-      "bytes": 101816,
-      "sha256": "e823dcd74fd6c1cd86064d7ad89e38f1be039c79d6aa25803a0440af8debb0c3"
+      "bytes": 101112,
+      "sha256": "b28e1583d84358a421c1bb7579ecc36b6392ccac43eb8b8f6feffe0c343328ad"
     },
     {
       "path": "examples/partcad/feature_interface/connect-mates.assy",
@@ -5752,8 +5752,8 @@
     },
     {
       "path": "examples/partcad/feature_interface/connect-mates.svg",
-      "bytes": 105419,
-      "sha256": "934fc375357a6c596869b256cf53548751c029abb27b0e29c4f26b0f9d88300a"
+      "bytes": 104690,
+      "sha256": "3773231471c5564f046cf3bac953f4886f323ae93ecefe8d723ce4d96b939b22"
     },
     {
       "path": "examples/partcad/feature_interface/connect-ports.assy",
@@ -5762,8 +5762,8 @@
     },
     {
       "path": "examples/partcad/feature_interface/connect-ports.svg",
-      "bytes": 105782,
-      "sha256": "74390aa669d266d49786934cfc010e9d8aac8b571b9e908bff66fd3702f69dea"
+      "bytes": 105053,
+      "sha256": "bfd26cb4c31deac49a7d2182e51b08aa2f1df70d394e8de29e7ea38cf7313ba0"
     },
     {
       "path": "examples/partcad/feature_interface/example-bracket.step",
@@ -5792,8 +5792,8 @@
     },
     {
       "path": "examples/partcad/produce_assembly_assy/logo.svg",
-      "bytes": 50459,
-      "sha256": "550e6b00e9b323e8a215d1db16dcc7574c70dc8e50b78ebdc228d1e5ae4c2fa5"
+      "bytes": 50116,
+      "sha256": "3af97f0dd6d057025ecb90c6f39e2ba37c3cd3662a80d6b26b7a06535b5f6312"
     },
     {
       "path": "examples/partcad/produce_assembly_assy/logo_embedded.assy",
@@ -5802,8 +5802,8 @@
     },
     {
       "path": "examples/partcad/produce_assembly_assy/logo_embedded.svg",
-      "bytes": 50578,
-      "sha256": "96a27c998d6a552329614dc48b5f02a52e1407b9a906bda3ecd6a0c904dbaed6"
+      "bytes": 50234,
+      "sha256": "3a68a5091e7eed483baab4fea83d8836c11f8b34d9b42c1c60e21995918bc167"
     },
     {
       "path": "examples/partcad/produce_assembly_assy/primitive.assy",
@@ -5812,8 +5812,8 @@
     },
     {
       "path": "examples/partcad/produce_assembly_assy/primitive.svg",
-      "bytes": 1452,
-      "sha256": "d1dd54f479a4d929224f73c57205315786663227462f1f33e95cc4449abb5d24"
+      "bytes": 1434,
+      "sha256": "d612696d99ca7d554423f4eff7f58a490707ed0a6a17d269ad0804033cf621ac"
     },
     {
       "path": "examples/partcad/produce_part_3mf/cube.3mf",
@@ -5822,68 +5822,68 @@
     },
     {
       "path": "examples/partcad/produce_part_3mf/cube.svg",
-      "bytes": 1181,
-      "sha256": "a177dcef9688a77a88ba1db3dcf3e815ef9090d572971a76d9b75787aff006ea"
+      "bytes": 1166,
+      "sha256": "171a4b361f85c9a3d8547b07c598adfb6d9e6e7cba517361f8d27a11168bbd77"
     },
     {
       "path": "examples/partcad/produce_part_ai_build123d/cube.svg",
-      "bytes": 1088,
-      "sha256": "4742c87a2801e443abb2ea734458c3338479083d3e005563237f26d047f3251f"
+      "bytes": 1073,
+      "sha256": "01927f6b3fbce389d9bab37bb9fdfa4e6e0905b669aa02fc957de5db4f21243c"
     },
     {
       "path": "examples/partcad/produce_part_ai_build123d/prism.svg",
-      "bytes": 1545,
-      "sha256": "60957eed0959ecc6295b104edae502f7a01864c2abfb61fe7ae5ab9389327f29"
+      "bytes": 1526,
+      "sha256": "8bb56948d4b6977f007b7eb28ffe613544e6edf1411c5cf6abbe1c068dbfd3c1"
     },
     {
       "path": "examples/partcad/produce_part_ai_build123d/tetrahedron.svg",
-      "bytes": 825,
-      "sha256": "215e6243528753a14e5ffa7319745b85fcd33a04becc8d31a2d45e43b0feacd0"
+      "bytes": 814,
+      "sha256": "0a1753589dae070bcf906361989e64f6b421ecb81fe397bae78c341b688e7dec"
     },
     {
       "path": "examples/partcad/produce_part_ai_cadquery/cube.svg",
-      "bytes": 1088,
-      "sha256": "4742c87a2801e443abb2ea734458c3338479083d3e005563237f26d047f3251f"
+      "bytes": 1073,
+      "sha256": "01927f6b3fbce389d9bab37bb9fdfa4e6e0905b669aa02fc957de5db4f21243c"
     },
     {
       "path": "examples/partcad/produce_part_ai_cadquery/prism.svg",
-      "bytes": 1385,
-      "sha256": "c7aac43f7b593756260e97b8fb8068e68c1768b897efbe0f915ee64ade83b4a6"
+      "bytes": 1368,
+      "sha256": "0e06c6bc6d1b9b8adad521f50df063990a2766cb8e173f19fc9f8d6ad07c38be"
     },
     {
       "path": "examples/partcad/produce_part_ai_cadquery/tetrahedron.svg",
-      "bytes": 834,
-      "sha256": "a4fa46f0fcf6325fd20305a73bb241368737342e6b59fd405572c0f980614332"
+      "bytes": 823,
+      "sha256": "d5bd88db8b59abaea6af0549924218eaaa74957414d87be2ce3cc81455bf4050"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/cube.scad",
-      "bytes": 65,
-      "sha256": "994ce8639188497e6a420575d478e46a9c84c6b0696af3660b6915a9d04bc294"
+      "bytes": 61,
+      "sha256": "5624feabd52f871896a07b2fd1cc68da5735b96bf99377275fbf18e07f95311a"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/cube.svg",
-      "bytes": 1181,
-      "sha256": "a177dcef9688a77a88ba1db3dcf3e815ef9090d572971a76d9b75787aff006ea"
+      "bytes": 1166,
+      "sha256": "171a4b361f85c9a3d8547b07c598adfb6d9e6e7cba517361f8d27a11168bbd77"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/prism.scad",
-      "bytes": 431,
-      "sha256": "90ccd8d3c98d88ef554aa089d3619ef5af6bef8a8ace9f08b34424fdcdd13012"
+      "bytes": 410,
+      "sha256": "c36f0e5d77f1893d7d8f82507f1faab1089faeb70877eda8b437e449a6a12862"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/prism.svg",
-      "bytes": 1545,
-      "sha256": "a8e7f046b34eb59b20f26009e506e71f21bd122d5a9e260307d4eb5528e3252f"
+      "bytes": 1526,
+      "sha256": "71f8a7e7e2814b520d9a5e57dfc422f9e85b574e8a312cd53dc738bed41a71a0"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/tetrahedron.scad",
-      "bytes": 656,
-      "sha256": "645f1312a00dec6b5715c619b1a8fee3be2faebb2827e783840692b4d3d72414"
+      "bytes": 634,
+      "sha256": "00cb8ac895c0bfdeff2ddf06480999040335fee1f43c6ef7a71915a4b1e03061"
     },
     {
       "path": "examples/partcad/produce_part_ai_openscad/tetrahedron.svg",
-      "bytes": 833,
-      "sha256": "cd060d7d900169f439c4ca52a2f27ac03fd067f3a9f28cced2c78c61c0401efd"
+      "bytes": 822,
+      "sha256": "9a142d7d416efe94ea750999fb851109bb24be083e2c6f195084da631973b021"
     },
     {
       "path": "examples/partcad/produce_part_brep/box.brep",
@@ -5892,73 +5892,73 @@
     },
     {
       "path": "examples/partcad/produce_part_build123d_primitive/cube.svg",
-      "bytes": 1087,
-      "sha256": "3a68e5ca84294de10db5c73727d543c23b0fce87fe1e27035486311d1faa2109"
+      "bytes": 1072,
+      "sha256": "2cbcc82788b389a45f391ee70cee5c72dd645bf68fa67413d5eab79feb267b8b"
     },
     {
       "path": "examples/partcad/produce_part_cadquery_logo/bone.svg",
-      "bytes": 1227,
-      "sha256": "035ed8529b1d3f4ee4dbc5a82e90cb54f643bf724fd75ce68bbf5ef0eb99df00"
+      "bytes": 1212,
+      "sha256": "6a3d7151d0f2ee4f45f619c14d58bee40ac2e3bec7802b039614c66a074ca231"
     },
     {
       "path": "examples/partcad/produce_part_cadquery_logo/head_half.svg",
-      "bytes": 2135,
-      "sha256": "331da98d803918aa7c7b055d476047a715c7797cdd7a213fecadfd73e46c8b37"
+      "bytes": 2110,
+      "sha256": "55eac0dbc7b2ae72219c8189596000b7717580b0c6872119d0791244651ce95a"
     },
     {
       "path": "examples/partcad/produce_part_cadquery_primitive/cube.svg",
-      "bytes": 1088,
-      "sha256": "4742c87a2801e443abb2ea734458c3338479083d3e005563237f26d047f3251f"
+      "bytes": 1073,
+      "sha256": "01927f6b3fbce389d9bab37bb9fdfa4e6e0905b669aa02fc957de5db4f21243c"
     },
     {
       "path": "examples/partcad/produce_part_cadquery_primitive/cylinder.svg",
-      "bytes": 1003,
-      "sha256": "ad96502d9efe0d7a687478fc5eb6d9855abca76e7716c53be80385956bfebd79"
+      "bytes": 990,
+      "sha256": "0ab483365942f3ad6713976db658b6780f5a0b44f2085b88667501e4b25d7dbd"
     },
     {
       "path": "examples/partcad/produce_part_extrude/clock.svg",
-      "bytes": 136048,
-      "sha256": "008d3266c80c5806a64c5ae29deb6d3a5cd4af7329aa51fae2a15fcc918a1c6f"
+      "bytes": 134882,
+      "sha256": "15b2341a400e54c9219f8c429e36b5346f8e2a7799f2bd38fbed952b46d4c02d"
     },
     {
       "path": "examples/partcad/produce_part_extrude/cylinder.svg",
-      "bytes": 984,
-      "sha256": "d9045efbb25159c1ce854cf6f299be0255638689899c95c1e1179223eab672dc"
+      "bytes": 971,
+      "sha256": "b13b0618ea31ead498bc168d35ae0acf0067bf84c11eed3310c6fb0014aa3fc2"
     },
     {
       "path": "examples/partcad/produce_part_extrude/dxf.svg",
-      "bytes": 18800,
-      "sha256": "44a4d194c455b127c7c3a12b8f60cd030227634cb6b99c6bb5649ef12f53fcec"
+      "bytes": 18618,
+      "sha256": "851cc246beada0605808596182c43aa8edbc7d959809498279996f29d14e523e"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_MountingHole.pretty/MountingHole_1.2mm.kicad_mod",
-      "bytes": 1025,
-      "sha256": "95b2cbcb4bde87c3b07936a471497425f8d7ecd7f0514e8ca4f7b788baf14419"
+      "bytes": 1005,
+      "sha256": "81ff8b7b3fa0303ed5b5710524160c1b5e5ebd6eeaed6d88dbdc966d4d8d1ef9"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_MountingHole.pretty/MountingHole_3.2mm.kicad_mod",
-      "bytes": 1031,
-      "sha256": "7b3e5e272173599d251227219ecca6d3b0c069f04a73fda2b540714816bae694"
+      "bytes": 1011,
+      "sha256": "e7afa10a362f526f003dea1e18dc5674098a3e008fff1093d1f70b57dc6670b0"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_Nano.kicad_pcb",
-      "bytes": 29984,
-      "sha256": "4869bedf55b6ff713ccf78eb0bcc85e702e984d658ecae8d4b564253249f3a00"
+      "bytes": 28568,
+      "sha256": "d747ca43ffa07e2872733e981fbc21972842b120d3673805c33cc4bdc88da971"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_Nano.kicad_pro",
-      "bytes": 12310,
-      "sha256": "6802c99fd332310cd9d392c9d73754b9964675b35863aaeb23d32b5d1e9033f5"
+      "bytes": 11783,
+      "sha256": "7f385a13ef260a41de170e0871945b08b5be92c954f830f057b930cb287347b4"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_Nano.kicad_sch",
-      "bytes": 35826,
-      "sha256": "ff8a184ae85024991415517d38d831960d9563c6069bc2313dfc9a847cf37ec5"
+      "bytes": 33672,
+      "sha256": "321d72898d0feefa7df96a874f5030368dfd545049af822b452156c7bd793667"
     },
     {
       "path": "examples/partcad/produce_part_kicad/Arduino_Nano.svg",
-      "bytes": 16458,
-      "sha256": "e0ff86614cc58979e7f13827bd9489b4a99af500d82127aa45045f512d80eae7"
+      "bytes": 16307,
+      "sha256": "e1cffd6b9e58161070cb469e9f14e9642b007418a8e1bb4a3d8a4c12ac1ca0bc"
     },
     {
       "path": "examples/partcad/produce_part_obj/cube.obj",
@@ -5967,18 +5967,18 @@
     },
     {
       "path": "examples/partcad/produce_part_obj/cube.svg",
-      "bytes": 2531,
-      "sha256": "887e38043ac5d25c302bf35f6c5d9e106386fafa9be96d968e356ec851719876"
+      "bytes": 2501,
+      "sha256": "8ba7a65ed2bf7566b7b22d6c5640c9983e93b00f195a4a9c33f3a9eb4d7c9d36"
     },
     {
       "path": "examples/partcad/produce_part_openscad/cube.scad",
-      "bytes": 43,
-      "sha256": "0110b0d2fbaa59f6d3358d04fe4b1230853454f9ba4cdce60462321aedf6f4f0"
+      "bytes": 42,
+      "sha256": "0422f89abcce68a2f3c47adda000322ddb72903d157cb77ba953f74c8068e3f6"
     },
     {
       "path": "examples/partcad/produce_part_openscad/cube.svg",
-      "bytes": 1181,
-      "sha256": "a177dcef9688a77a88ba1db3dcf3e815ef9090d572971a76d9b75787aff006ea"
+      "bytes": 1166,
+      "sha256": "171a4b361f85c9a3d8547b07c598adfb6d9e6e7cba517361f8d27a11168bbd77"
     },
     {
       "path": "examples/partcad/produce_part_step/bolt.step",
@@ -5987,8 +5987,8 @@
     },
     {
       "path": "examples/partcad/produce_part_step/bolt.svg",
-      "bytes": 42774,
-      "sha256": "43918f6cd7c4fa24234c0185b087c0adfa41ca00ae6b05bbe2278fb195bc2f5c"
+      "bytes": 42514,
+      "sha256": "5f9b3a1374130675cae36fb9960d05202801686d6a226d2c75eda9f55fd6cd94"
     },
     {
       "path": "examples/partcad/produce_part_stl/cube.stl",
@@ -5997,83 +5997,83 @@
     },
     {
       "path": "examples/partcad/produce_part_stl/cube.svg",
-      "bytes": 1181,
-      "sha256": "a177dcef9688a77a88ba1db3dcf3e815ef9090d572971a76d9b75787aff006ea"
+      "bytes": 1166,
+      "sha256": "171a4b361f85c9a3d8547b07c598adfb6d9e6e7cba517361f8d27a11168bbd77"
     },
     {
       "path": "examples/partcad/produce_part_sweep/clock.svg",
-      "bytes": 119903,
-      "sha256": "099d89e95bd25e14ec28e64d97195c829097039ac2121d7219581d87509e1c1a"
+      "bytes": 118712,
+      "sha256": "00178ffcb331534ce41198b97fafa3dbca6948ab65b5b5d3a67b00c6ddf314ca"
     },
     {
       "path": "examples/partcad/produce_part_sweep/dxf.svg",
-      "bytes": 22523,
-      "sha256": "55b326cbd4808c7d7e994fd1b52bf182a1accab0fa1620d9259b109564d5f599"
+      "bytes": 22309,
+      "sha256": "308c3e8985beffc1977ad2ba20bb33728e3e875c1bb32132457fd9d95d65aef7"
     },
     {
       "path": "examples/partcad/produce_part_sweep/pipe.svg",
-      "bytes": 5782,
-      "sha256": "b330695fea5048c1f92bf07ff99015472d02533b8ab30af840dfa3982ef7d8d5"
+      "bytes": 5769,
+      "sha256": "23b38b904c8454283f89d20bb3c4504b95457ed88532024bba29230089dd1410"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/circle_01.svg",
-      "bytes": 541,
-      "sha256": "054ed9803024a5415dbf426935bfaa48f67f9c2841cdbb228c8446078656feee"
+      "bytes": 532,
+      "sha256": "5cf1dc9e128c18332a7b982d4e1e52c959c0472aa8e57620cd7f1ffe440d9110"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/circle_02.svg",
-      "bytes": 560,
-      "sha256": "a25f3f8d07cfac86b1d074dab9c58583d97f2417e2bd82360556234328281358"
+      "bytes": 553,
+      "sha256": "d7dff3c161ee3c67ba2ac19331671c5478be452f5d2ba80b8af4829be7f434c4"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/circle_03.svg",
-      "bytes": 563,
-      "sha256": "9feefa837c53c684927bd7fedf4df5a3ba6690c443e75f00e0511f48efb8f898"
+      "bytes": 556,
+      "sha256": "e973f81da4e43a0ac38d83a290ace78c43cfd62cc2350e7725130f0e5ce441ef"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/circle_04.svg",
-      "bytes": 728,
-      "sha256": "3817745a9b9c9342d81414b74df4e6881e8c8904c64199d93b2caae6f8d4b83e"
+      "bytes": 720,
+      "sha256": "09a874c33b223f2f73323fc0a140d00360cc1a27c85ca59afa1dc12115218db8"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/circle_05.svg",
-      "bytes": 814,
-      "sha256": "9fa526a33a4ad3740117dd33a1bcb95745b80526235a9330e7f06687df9e9084"
+      "bytes": 803,
+      "sha256": "9fc635df5d833c4d5a2b1ec2a74cb0b34109a4cae9966adde08c187671c08acf"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/rect_01.svg",
-      "bytes": 743,
-      "sha256": "625e8af3f83cf371f4c716e097d70c153bf5fae72e193fbea9312736bdc14b05"
+      "bytes": 733,
+      "sha256": "6b60c14c2e4f035ffb0f6b5222afb77a8f740e75dd7b258ea254901d71bffbb9"
     },
     {
       "path": "examples/partcad/produce_sketch_basic/square_01.svg",
-      "bytes": 664,
-      "sha256": "3b724730bb849b1b616275d95560340336d9397413c009cc326f681ce241f228"
+      "bytes": 654,
+      "sha256": "9c236802956313f53eadc5e1d945b6b7fabdd6f930e7c6ffed8a95b4af5387fb"
     },
     {
       "path": "examples/partcad/produce_sketch_build123d/clock.svg",
-      "bytes": 83296,
-      "sha256": "93be8e919f04a2c9663ac676faaf75c4b1be9e43a7504fcfa1b9986000dfac0f"
+      "bytes": 82651,
+      "sha256": "c0b8b8bd2e6e5a60f4c53e38066bbd7843fbdf93572ac7578b4a83f81f10c736"
     },
     {
       "path": "examples/partcad/produce_sketch_cadquery/sketch.svg",
-      "bytes": 1819,
-      "sha256": "8057b8705b2aa6155969797b470a6f6f773ccba8870284c8d04d79f9c7a2a220"
+      "bytes": 1797,
+      "sha256": "b9de0e4445b2fce609da144aa9bb2e4b5e59ea58b56d6e4f85dcbeb5319f81ea"
     },
     {
       "path": "examples/partcad/produce_sketch_dxf/dxf_01.dxf",
-      "bytes": 209583,
-      "sha256": "3792c5b9c0d5c6900924eb14317667e3aaf8f1f152466e6b902a88ba3d61a145"
+      "bytes": 184423,
+      "sha256": "608a7157a70e4783a398357cc2e6f91f9b03c0b45b125b58a71ab1674032232c"
     },
     {
       "path": "examples/partcad/produce_sketch_dxf/dxf_01.svg",
-      "bytes": 9537,
-      "sha256": "7a5b375f5026622e2a7fd99604b6ff3bf8d858b089c4368a13dc40f0d50bc5f7"
+      "bytes": 9454,
+      "sha256": "fbf0c2537d6fcc92a42359376a325b0375bfaa80e0feb536a2fe7d5e808677e5"
     },
     {
       "path": "examples/partcad/produce_sketch_svg/svg_01.svg",
-      "bytes": 1109,
-      "sha256": "c0adcc52818230c708a111cb76f2ec4f601fe97822125c927d4209c18794df2d"
+      "bytes": 1093,
+      "sha256": "dd6d47772b669be600bf21e976c14d3c58238636b15ed72a8bac038588fbbeb4"
     },
     {
       "path": "examples/partcad/provider_manufacturer/assembly.assy",
@@ -6082,8 +6082,8 @@
     },
     {
       "path": "examples/partcad/provider_store/nut.svg",
-      "bytes": 9587,
-      "sha256": "eedbf9afbaaf598835bb79d293ed8aedb5e36ee4fe450a8b532a6c4608c22743"
+      "bytes": 9526,
+      "sha256": "a7da412f7df7bdf5ff20c6f234dc54e96b7730419f882a89f61ab9c51514cf8d"
     },
     {
       "path": "examples/script/build123d/docs/_static/heart_token.glb",
@@ -6094,6 +6094,11 @@
       "path": "examples/script/build123d/docs/_static/tea_cup.glb",
       "bytes": 745776,
       "sha256": "79b622d70a6eaf28560679868550a2e0d46357d0148679f3cb0ab982a07c2a34"
+    },
+    {
+      "path": "examples/script/cadquery-contrib/examples/vslot-2020_1.dxf",
+      "bytes": 48010,
+      "sha256": "0aaaa16452dc422c423f249f03e098e3cad75e954963cbaad85ef52181f81dc7"
     },
     {
       "path": "examples/script/cadquery/doc/_static/importexport/box_custom_options.svg",
@@ -6132,13 +6137,8 @@
     },
     {
       "path": "examples/script/cadquery/doc/vslot-2020_1.dxf",
-      "bytes": 56566,
-      "sha256": "6b6d98d6b1fc6674b45c7c72c81f2fe7de522b0d59933e46822167c89d8a0aaf"
-    },
-    {
-      "path": "examples/script/cadquery-contrib/examples/vslot-2020_1.dxf",
-      "bytes": 56566,
-      "sha256": "6b6d98d6b1fc6674b45c7c72c81f2fe7de522b0d59933e46822167c89d8a0aaf"
+      "bytes": 48010,
+      "sha256": "0aaaa16452dc422c423f249f03e098e3cad75e954963cbaad85ef52181f81dc7"
     },
     {
       "path": "furniture/workspace/basic/imperial-desk-1.assy",
@@ -6262,28 +6262,28 @@
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/microlab.svg",
-      "bytes": 265758,
-      "sha256": "adb7b8700953231d265fc183123ab0fc6e40cfd54cc9f477fd6d036a53d3938c"
+      "bytes": 263252,
+      "sha256": "37a5bf52873f90645804e4f3ccaaa56b29c636d7bad9edd92ed8913e832b0c8a"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/control-box-flat.svg",
-      "bytes": 69131,
-      "sha256": "e7f5a001d979db98ad372cb70e2bf56baecf963dcb5b0e41de2aa077e1e9ac09"
+      "bytes": 68465,
+      "sha256": "d80ccd26eca7bf561e3735856528a9108fc686a1b10aa3298a69c17627e16953"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/control-box-lid-flat.svg",
-      "bytes": 125237,
-      "sha256": "65c2f8cc07f98e3c952083b2287f806ab4386777f91f79add69f8ce83bc49b77"
+      "bytes": 124180,
+      "sha256": "fe567d67ca46a7cfe000015c3947b537f14a7571ad89ccd25e41edcd4ac175e4"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/control-box-lid.svg",
-      "bytes": 131529,
-      "sha256": "70fd799d3ceac8f71f93d33754151377b8b6a79a419b73e156d8f286cd7bf0f7"
+      "bytes": 130460,
+      "sha256": "e8c8661476f586a887b50bab8bff13b5a6c6bb2f611e458802c2a05293456f0e"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/control-box.svg",
-      "bytes": 51623,
-      "sha256": "b59917c0ad4c7682dd533ff259421fb1958a7b53615da77c0eab7b402fd15b15"
+      "bytes": 51107,
+      "sha256": "6b8f7043ef1acb98979d225ace28b87385d8a63010f43384a9c9ef33f82b946b"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/control-unit.assy",
@@ -6327,23 +6327,23 @@
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/relay-board-case.svg",
-      "bytes": 9251,
-      "sha256": "086b78beec55847e4fe675c2900eba4a418e18cf2b9e0dd775229062abce71a1"
+      "bytes": 9158,
+      "sha256": "0863f63ba0c1d8058f1a4fc2b98656609b45d9c92962c445d630732435acdcc0"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/relay-case-no-top.svg",
-      "bytes": 9251,
-      "sha256": "086b78beec55847e4fe675c2900eba4a418e18cf2b9e0dd775229062abce71a1"
+      "bytes": 9158,
+      "sha256": "0863f63ba0c1d8058f1a4fc2b98656609b45d9c92962c445d630732435acdcc0"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/relay-case.svg",
-      "bytes": 7225,
-      "sha256": "50f32ae60ec34ac83679a1aa89c3b86001f38e32501a2e3e50af91f89c1227a7"
+      "bytes": 7154,
+      "sha256": "371f314357cce6544f0bd5baf85242f0351a10e0d982a16d4dfd2f006e95507c"
     },
     {
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/stepdown-case.svg",
-      "bytes": 7240,
-      "sha256": "cfc982051b0f0ab70ceefc4beb246bd80e044ca068e49a02cf1658ab3e6b43b3"
+      "bytes": 7168,
+      "sha256": "70605ae55938691fcbfb81fa194aa48832d0ac158cd265b5cdd39cdd071a0260"
     },
     {
       "path": "narysai/comp-ivins-case-4/tmp/input/Raspberry_pi_5__case_with_pineboards_AI_Bundle_BOTTOM_v1.stl",
@@ -6367,8 +6367,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/arduino/mega2560.svg",
-      "bytes": 30810,
-      "sha256": "63743464536766a83ea067d741ab8a1414149cb2c9e37937c14bb131beb887ad"
+      "bytes": 30714,
+      "sha256": "1b1ab8425b54df1146c97817a1704ae3bf927f90620881f0d5779a6839c0f835"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/cloudray/driver-stepper-dm556sx2.stl",
@@ -6377,8 +6377,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/cloudray/driver-stepper-dm556sx2.svg",
-      "bytes": 24695,
-      "sha256": "f8de55c9440640bd1754955bff833f956e932b51d79a683f1a75c734bbe45d2d"
+      "bytes": 24617,
+      "sha256": "e723a0b22a51b5ab497d41ecc1be523fb1cad57d3c95f7a1ec1c506b0f82d904"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_board_bottom.stl",
@@ -6387,8 +6387,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_board_bottom.svg",
-      "bytes": 354056,
-      "sha256": "0eec8a953f8f7d9e4e58657922bd6a7c434010886b3fe0a4633de9b1d0036dd5"
+      "bytes": 353713,
+      "sha256": "b7a0c66785020c6ae0ca73b9451a4a0a7313cf2b4419080e7a89fe94b8116b92"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_board_top.stl",
@@ -6397,8 +6397,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_board_top.svg",
-      "bytes": 114105,
-      "sha256": "618ed3ad455cc6f146c34c5869169c8cf9efd473deee98ca44dd5db47f3ed968"
+      "bytes": 114006,
+      "sha256": "7a53b053b061a31d4fa3f52eb860d4d42648b5cc0590b18f6f3d36222d3ea953"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_turntable.stl",
@@ -6407,8 +6407,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/don1_turntable.svg",
-      "bytes": 55283,
-      "sha256": "c44f1eb48c53c68c39008d42546b00be99f40a2dc3a580fcfd4f53affab147b6"
+      "bytes": 55251,
+      "sha256": "c49cb0776b7a883c96221bad89545733e3f8116d42bf5df7263f87e5ae547c98"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-0.stl",
@@ -6417,8 +6417,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-0.svg",
-      "bytes": 60231,
-      "sha256": "22a1ef9dc0fc17c2e9e5b8eda61285022590029313306087c37952736be82e0d"
+      "bytes": 60075,
+      "sha256": "608a4009f0afe5f1de736ef9259ad480f944aad5d54109c0aa3a2f467342b293"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-1.stl",
@@ -6427,8 +6427,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-1.svg",
-      "bytes": 69083,
-      "sha256": "b98a5e930ee3316f50e58c9a2ca9de5c2717d22bc8dbacbd0ce2ad95d9915aba"
+      "bytes": 68921,
+      "sha256": "9615013e6625b7fa1d3edfdd522828430960eecb4130bb9543ac81fc7b50bb3d"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-2.stl",
@@ -6437,8 +6437,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-2.svg",
-      "bytes": 33759,
-      "sha256": "bce2f9766624363f7bd02082a34c585d8659135c20854a2976e3417434cf7c72"
+      "bytes": 33665,
+      "sha256": "9df833c06e5a4fccaa907aba3d5baa51573e0299b47ee2455779db3cf0e5636d"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-3.stl",
@@ -6447,8 +6447,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-3.svg",
-      "bytes": 8772,
-      "sha256": "2c70eba0827bf0608583b0787ba92c50b715b5caf03b68ee58d685db8cf58cb4"
+      "bytes": 8736,
+      "sha256": "d95fa0842d5a522babf4494baa9b660d3ff71e74ab9adca3e002d8c536770b26"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-4.stl",
@@ -6457,8 +6457,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-4.svg",
-      "bytes": 43483,
-      "sha256": "83c1cf36070d529a01e5da6e3f9cfc6859d5cf5e884068e0411bf704751a75d5"
+      "bytes": 43258,
+      "sha256": "74276c140330981c5feafe73b4b2f4df4f461c584a41dd5be40bace0f9d16717"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-5.stl",
@@ -6467,8 +6467,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-5.svg",
-      "bytes": 45607,
-      "sha256": "7db6f2c0c63f6534fb988fe9fbc8a323f481a1354c2dcb58f6256b41fc1ec6bd"
+      "bytes": 45375,
+      "sha256": "2781b76e5a6af8614ba16e4249484537744320ffec2b2101d6d11e291b040fae"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-6.stl",
@@ -6477,8 +6477,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-6.svg",
-      "bytes": 32483,
-      "sha256": "3288712a6b643d0f7f2d260ff79ac365592975e75ab96d3303a416021f6e6414"
+      "bytes": 32305,
+      "sha256": "79de386f13e9dbb3bdf566ef48e4fe2fe4e22ff209c924adce4949726ebaca34"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-7.stl",
@@ -6487,8 +6487,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/enclosure-7.svg",
-      "bytes": 30054,
-      "sha256": "65d2e417441e303aa5658e1d2737a0137334ee1bfea6bc92921564092c14cae8"
+      "bytes": 29899,
+      "sha256": "e38ded1a4ce8451e1644696aa20ca227c70f3439708cab37f358e18e8f632cc5"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/hook.stl",
@@ -6497,8 +6497,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/hook.svg",
-      "bytes": 514763,
-      "sha256": "997dea6665355dfc9d8dd01b921c32837ca1f5c0a79820c6f4c66dd42683ddba"
+      "bytes": 509399,
+      "sha256": "dbc402d0f7821f786ca22e222df7d05b950880aeb5c5b8ac492eb4f8042ecdb0"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-flush-pad.stl",
@@ -6507,8 +6507,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-flush-pad.svg",
-      "bytes": 31372,
-      "sha256": "5fc068402edfd6465ed2cf982f98b6c5f071e72a26803db96f4cb8a21738f471"
+      "bytes": 31320,
+      "sha256": "924dd166605e2d4c4d5362888f8464816ac694c331d81fce613552c53f6169fe"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-mount-wide.stl",
@@ -6517,8 +6517,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-mount-wide.svg",
-      "bytes": 49394,
-      "sha256": "a29eb4fb67d703ad73f42e0554c184ccbb3f1368110d1a3574f75618a13f79ef"
+      "bytes": 49316,
+      "sha256": "de023edb355091f62636316b6cecba39e77e6c0c356e3befaf6237c63def5ac1"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-mount.stl",
@@ -6527,8 +6527,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/nema17-mount.svg",
-      "bytes": 50592,
-      "sha256": "41dc707da9aac7be75314612a6cfd523a9b78d11509aec58f9bc23993e9f7616"
+      "bytes": 50514,
+      "sha256": "516ea1210b71114b066b1f2b936eacbd4cf017aaba5010244b71fa0008fd0fb9"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/turntable_attachment_hex.stl",
@@ -6537,8 +6537,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/custom/turntable_attachment_hex.svg",
-      "bytes": 34391,
-      "sha256": "49248205991dd9773a559f1eb58d5ebb53e6fa0ff606d25038f5c1c3f1b45809"
+      "bytes": 34331,
+      "sha256": "de933bbbca92d3db45b6c38c605b099c23334c06d978bdc67ac625489830bacf"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/dfrobot/rubber-wheel.stl",
@@ -6547,8 +6547,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/dfrobot/rubber-wheel.svg",
-      "bytes": 371283,
-      "sha256": "d3b41cb1b73818e5d323231f31f82438029e41e61528c0a04d13d1cb64e3ee14"
+      "bytes": 370315,
+      "sha256": "3023cfbc1129169b260398e5ff913359ad9f7b0e84c91e4b7b0e3b570cd4d9b4"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/ego/battery-7.5.stl",
@@ -6557,8 +6557,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/ego/battery-7.5.svg",
-      "bytes": 374187,
-      "sha256": "41f60682ca8103acbe940a57b9c911786e7b5be764fd9a5eb1795e1a3a31978d"
+      "bytes": 370283,
+      "sha256": "5f41b96d9da3e357ca7824d74bd798a21f2d31b8a7b2c1bf36b80e83047e8b58"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-nut-m4-0.7mm.stl",
@@ -6567,8 +6567,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-nut-m4-0.7mm.svg",
-      "bytes": 29892,
-      "sha256": "fd83daa4e67171dbfc82bae444085d39cd6a38a96f7efd5c0e05667fb0f491a1"
+      "bytes": 29808,
+      "sha256": "a068145aaab9cae9a93db8ce54598a943b32461d3d9d3b465c94d1dc1e3dbe07"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-plate-channel-conn.stl",
@@ -6577,8 +6577,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-plate-channel-conn.svg",
-      "bytes": 41549,
-      "sha256": "e58f463582642588f0e1146a04b4b34afc6ba73e1db2c11e7a4b0511ad5b5bcf"
+      "bytes": 41453,
+      "sha256": "c44e72c235e50ba2f599e238493030207068888011bcfa6533d72973ca5bb869"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-plastic-5mm-1mm.stl",
@@ -6587,8 +6587,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-plastic-5mm-1mm.svg",
-      "bytes": 19958,
-      "sha256": "880bc97847ce233a0f98250b241ee90cba1fecd25a53b733d3c5e7babd417b75"
+      "bytes": 19923,
+      "sha256": "c81fb79fec9954f8b01e64ded5f844f2a0f89a6768c2f44228dd702f9fe07318"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-plastic-8mm-1mm.stl",
@@ -6597,8 +6597,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-plastic-8mm-1mm.svg",
-      "bytes": 21202,
-      "sha256": "afcfb87d0555b40b23377e61264bb2447379f2ed3cd26e7042f4327fad3cd68e"
+      "bytes": 21167,
+      "sha256": "b2c0a72602e1cbbf99b7c4bbea724accae841315e7f0c9a047d28c7beeede877"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-steel-8mm-4mm.stl",
@@ -6607,8 +6607,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/hardware-spacer-steel-8mm-4mm.svg",
-      "bytes": 39989,
-      "sha256": "232192ad774cb2be4d5449783e3324fa9e421ac2379875bd72927de0bc7d7cf1"
+      "bytes": 39935,
+      "sha256": "450b90ffc64bd41b6e34c5414a7fbe1bc19b1bcdead0ec62d11572ed059f2499"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-5mm.stl",
@@ -6617,8 +6617,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-5mm.svg",
-      "bytes": 142358,
-      "sha256": "918aea42f183292651eec38afa3cca5da54897651a7ba8c0c1096dc7c6ef0446"
+      "bytes": 142231,
+      "sha256": "8d43b83ea9a5296d5fde997ca2cb742a05498775ea226bb3f868654ce8294d7a"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-6mm.stl",
@@ -6627,8 +6627,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-6mm.svg",
-      "bytes": 138899,
-      "sha256": "3a2516e4286ba4d2e8c296a7613a563acd759d3fb4b7aafb93e0c1cf8579b9d9"
+      "bytes": 138779,
+      "sha256": "8cdbeb0abc1fe62a5693feaab578e3b568b66c423f547c85446a4645b1b7e3f7"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-8mm.stl",
@@ -6637,8 +6637,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-8mm.svg",
-      "bytes": 148907,
-      "sha256": "2f264bb7f09f6ae27490f85dc90327e28d2a21cd216596d7d8eebcd73d44767d"
+      "bytes": 148786,
+      "sha256": "370f18d0c53f19086a8442f3c0467e627e32c0e28e39e90769ff5ad2f5275795"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-8mmREX.stl",
@@ -6647,8 +6647,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-bearing-flanged-8mmREX.svg",
-      "bytes": 147278,
-      "sha256": "2860000eba2095020f83aeaf01f50d4c98e91eee5ab9a7f30f5cec2813868958"
+      "bytes": 147130,
+      "sha256": "d1bdd8f38274140e8d95912eda34ddfd79e6c6abe4f31f904ad5295ae7955a45"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-collar-clamping-8mmREX.stl",
@@ -6657,8 +6657,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-collar-clamping-8mmREX.svg",
-      "bytes": 53895,
-      "sha256": "9cf5ca08353f17f9051323199ef34178ed85bc2cf855df0291d5390ccb65749e"
+      "bytes": 53768,
+      "sha256": "d160c56e609a983fa970a9201d15d120ee9c8cf1b178229ba596a7575cf54083"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-collar-set-6mm.stl",
@@ -6667,8 +6667,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-collar-set-6mm.svg",
-      "bytes": 41385,
-      "sha256": "8d06245be8ee7b73076029b029a3126b508af0d48c5007318266d951cd75d587"
+      "bytes": 41311,
+      "sha256": "72767b2bfdca811386d78d0d6020b52d5858a65f88a92b50e96946204a6097d3"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-coupler-hyper-8mm-8mmREX.stl",
@@ -6677,8 +6677,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-coupler-hyper-8mm-8mmREX.svg",
-      "bytes": 92586,
-      "sha256": "a41356cd25be3f387974f5b88d391dc4ddecb1d8a3d6116d42ac3543669bc41f"
+      "bytes": 92388,
+      "sha256": "0b4c4d45fb204d8920ac74bb58e3fb58287f8b5aa860b62c92d0676e0ff05f8a"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-hyper-8mmREX.stl",
@@ -6687,8 +6687,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-hyper-8mmREX.svg",
-      "bytes": 69432,
-      "sha256": "7b9df7561be2f8b3d995de423013a7f0581365411384a8b2e8508ae3b87015c4"
+      "bytes": 69238,
+      "sha256": "de20e403740211e842cf403b10e14423b7e1de0c1ba01206b1864fac3c443809"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-sonic-5mm.stl",
@@ -6697,8 +6697,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-sonic-5mm.svg",
-      "bytes": 86405,
-      "sha256": "d6d183ce0a0d319cf42ec4173ec00bf99fad603cd1bdd60d941f58e364ab4e21"
+      "bytes": 86222,
+      "sha256": "36c5f50d26446e8711a1272b7f627d7bca239359e2e04383a185bb59be98913a"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-sonic-8mmREX.stl",
@@ -6707,8 +6707,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-hub-sonic-8mmREX.svg",
-      "bytes": 87485,
-      "sha256": "8eba3e0eecffae53c1e6c118c1811f85b4f8a27e8c9b9f7bfd8fa55dd09129e4"
+      "bytes": 87284,
+      "sha256": "153fe175b842d9ca614e13c3fb0ea853cb864c396dd6f0602739a39690830878"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-attach-arm-25t.stl",
@@ -6717,8 +6717,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-attach-arm-25t.svg",
-      "bytes": 46449,
-      "sha256": "000022299b222616df86e7132c9cdecae0a8f984200a7e9fb61a88cca7c7e5c3"
+      "bytes": 46237,
+      "sha256": "3d7339a1c975720bf481ede5cac8af245ba82bdf0ca44d9e31e12c9cb11b4b00"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-attach-hub-low-25t.stl",
@@ -6727,8 +6727,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-attach-hub-low-25t.svg",
-      "bytes": 165187,
-      "sha256": "1048615a9dd94ecaea20fc583f16638740e263c8ec81747fbb5887f07143272d"
+      "bytes": 164812,
+      "sha256": "37be92beb49549c4c3943923a9e06b27e08c4fc22cdb86d0f287192cc4b0904f"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-hs-488hb.stl",
@@ -6737,8 +6737,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-servo-hs-488hb.svg",
-      "bytes": 244848,
-      "sha256": "f2c92c0396ed1a16832682dd5634bc609a597f1d7d3507af9e63b54330a2fa80"
+      "bytes": 243814,
+      "sha256": "4e3974c8d7467802ef4639558d0c69c2b342fefaa1456dd975d6402ddc1923b3"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-6mmD-70mm.stl",
@@ -6747,8 +6747,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-6mmD-70mm.svg",
-      "bytes": 14868,
-      "sha256": "dfb6632df39f39a0f9aa9eeb15962d39b93b9c12cac7568d5d6eb1cbb33f9efd"
+      "bytes": 14826,
+      "sha256": "de43da0bfe2a83b05114c2a2929d4a1f7880bd2d539838ce5768c58485b8911e"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-56mm.stl",
@@ -6757,8 +6757,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-56mm.svg",
-      "bytes": 70244,
-      "sha256": "8e83b2d89f7fd0b12c10c2832195eb34e5e2fc3d2359c3b8d91d6ec8b2c64664"
+      "bytes": 70089,
+      "sha256": "568b8700b97e95a098001f0abd97828d656569a178bbb40bd731d1e6bdcc5b35"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-64mm.stl",
@@ -6767,8 +6767,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-64mm.svg",
-      "bytes": 49531,
-      "sha256": "7a4c3c9662e8ed5678aeee8f745e5606bd59f57e0ffe55dd5f02002add8c34ab"
+      "bytes": 49404,
+      "sha256": "440841fb9b46e85678ca2f96f71858bbdf808cfbaf7799ef9c159e9e98073be7"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-72mm.stl",
@@ -6777,8 +6777,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-72mm.svg",
-      "bytes": 49503,
-      "sha256": "b2112ada0da97116ec16b81ba18da546952d86b1e89e44273e4378b6afccb70c"
+      "bytes": 49376,
+      "sha256": "6cc151bd4e38dabf6e8ce149edcdaaf2c9b981e6470f6bf0f190b91fad81aabe"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-80mm.stl",
@@ -6787,8 +6787,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-80mm.svg",
-      "bytes": 49506,
-      "sha256": "eab7853f65acf15c3be6ad201a8bd3555472384d49618db54a63fe1f1cc7beda"
+      "bytes": 49379,
+      "sha256": "0e024699d0456987e1f0d5d05b93fe73826b23e9c0fc3e8b269fec8b86141767"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-clip.stl",
@@ -6797,8 +6797,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-shaft-8mmREX-clip.svg",
-      "bytes": 27701,
-      "sha256": "f3d3c1247fd6ec4ba5e73d37baafb19aab78e4be50128d65977c8fe71106176a"
+      "bytes": 27623,
+      "sha256": "66b524e804b6a12b96c984e2752298c8127cb54db7d1774a2a0a36a348313bb2"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-sprocket-plastic-14mm-16t.stl",
@@ -6807,8 +6807,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-sprocket-plastic-14mm-16t.svg",
-      "bytes": 119485,
-      "sha256": "1bdc5f4fd4efbd4f576922eda9955faa9aa44d706d910718806c30d3176164b7"
+      "bytes": 119116,
+      "sha256": "c07fccc6c5737b05d1542d46410ca84ccbf6e5b298f1c4a2c3e801863acae72b"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-sprocket-steel-14mm-14t.stl",
@@ -6817,8 +6817,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-sprocket-steel-14mm-14t.svg",
-      "bytes": 173144,
-      "sha256": "19fe00ed7fb6ac9dc533e5fa9bb6d534735111089e0cfebc11befb9218fc1fb4"
+      "bytes": 172733,
+      "sha256": "d8a9d588ae7c4efb992f1865ef9860853c39670e99915c123483eb0ca1e28fdc"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-worm-8mmREX.stl",
@@ -6827,8 +6827,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-worm-8mmREX.svg",
-      "bytes": 225189,
-      "sha256": "fd64e982b97ccb5a75facd53f5524c986ec0c460e7c4e288e5ae483809a581c6"
+      "bytes": 224901,
+      "sha256": "84d0dffb6fdad91fed981cd747dcdccfa679f0c1381fba614d5180f111b80980"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-worm-gear-28t.stl",
@@ -6837,8 +6837,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/motion-worm-gear-28t.svg",
-      "bytes": 281255,
-      "sha256": "2d52b1e8a88524856798eab272285c42c6e947c333e3d1ac2a99a74d29974cc3"
+      "bytes": 280585,
+      "sha256": "9aca9f2b711e59559fb3aeb53c43824978e8a449a50411e0f0396a9a8672ea1e"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-beam-15.stl",
@@ -6847,8 +6847,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-beam-15.svg",
-      "bytes": 179936,
-      "sha256": "5bc47e16a63ffd2e3338ccad1393095ebb2a00b33f0892c0c2d1633f3537a02b"
+      "bytes": 179738,
+      "sha256": "47f23b3a899292cc7617984db07cf99ce5db66cc4847435e753f7004cf390885"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-bracket-flat-1-2.stl",
@@ -6857,8 +6857,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-bracket-flat-1-2.svg",
-      "bytes": 239592,
-      "sha256": "5e8a577b77d98bffd116a560ebc8e4509445ecc69fbc70e236f01a48c27f990b"
+      "bytes": 239311,
+      "sha256": "7a13e8176f676632c0c546b4a23e0c1de6f1e019a5ca1ebc3522f7a816d5f5e9"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-bracket-flat-2-3.stl",
@@ -6867,8 +6867,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-bracket-flat-2-3.svg",
-      "bytes": 348648,
-      "sha256": "ca46c5a08bbb9a347f29d9e13c527e5362bc4f03bbcadfa6ada6c6ddded6181b"
+      "bytes": 348270,
+      "sha256": "c998c6cb6d314f445d7064688670b65efc9deff0c98583d799e68e897e1390da"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-mount-quad-block.stl",
@@ -6877,8 +6877,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-mount-quad-block.svg",
-      "bytes": 194767,
-      "sha256": "e5ceb2d0bb49726a71551283b84aed27d3e78ec97618652f198883df93511908"
+      "bytes": 194546,
+      "sha256": "5a37532b3375c5d119e107dadc85b81fe012f7464c094423e8eb07eeea2792e4"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-mount-servo-43mm-std.stl",
@@ -6887,8 +6887,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-mount-servo-43mm-std.svg",
-      "bytes": 358786,
-      "sha256": "97a72e479ad3285643fe1d0d9db35a0426ff81a1081b62aa556f3f3dd0b0c297"
+      "bytes": 358124,
+      "sha256": "a3e1194dbf3a401ec4c022cebe5d3c17925c50d1f9e8d9e96335fd3cdd0c9a9d"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-standoff-m4-43mm.stl",
@@ -6897,8 +6897,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-standoff-m4-43mm.svg",
-      "bytes": 40459,
-      "sha256": "069995fddc64ca71e7c527e551419289ee97793a1971f717f1cfdec1d443b0be"
+      "bytes": 40386,
+      "sha256": "884bbd7526abfc0b8946c3e634b843aa131d35f4f1a0157f11d14713383afd79"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-2.stl",
@@ -6907,8 +6907,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-2.svg",
-      "bytes": 529153,
-      "sha256": "7bda373646d2032349827258030a66c2e0a9b53c16f1f6ddea29c2fd08958598"
+      "bytes": 528474,
+      "sha256": "1439efa0266d3e690746b013648b1b34eff14b01a15e96b42971783bff29622c"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-5.stl",
@@ -6917,8 +6917,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-5.svg",
-      "bytes": 1000562,
-      "sha256": "a271d047e59d56db672e8afaf62a928ab74403b870dfda51dd45d8f5918027db"
+      "bytes": 999284,
+      "sha256": "77a70f0ffc0e043a9ab98e561996609c27537e490dc8a513388e804c69af1967"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-7.stl",
@@ -6927,8 +6927,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-7.svg",
-      "bytes": 1316972,
-      "sha256": "cd7114f19cf24cd4672c3c25c56dc1c2ba68f5756307cdf5f7c7833bf7d6ad11"
+      "bytes": 1315293,
+      "sha256": "ae357f0f0c04a664dc08ab784217cf9e025165056c8302e0e5c2703566aabf98"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-9.stl",
@@ -6937,8 +6937,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-9.svg",
-      "bytes": 1632588,
-      "sha256": "21459d9786bb98b71d70f395907da348f5a7c734d8ff98a99359fb5e8f284efc"
+      "bytes": 1630506,
+      "sha256": "ac3cf047edae1b4ea47a62e001a8bea73bf59813ce0699bcd7721943c4a753b4"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-low-3.stl",
@@ -6947,8 +6947,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-low-3.svg",
-      "bytes": 403171,
-      "sha256": "305da65c8c94d5f12eaa18de5ee81a9086b483debb41f80a68fbbf8390e11ee6"
+      "bytes": 402674,
+      "sha256": "988fb01757e84208d8ad98c7729dfc6361dad639c01b3d0f731a43214693a36a"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-low-7.stl",
@@ -6957,8 +6957,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/gobilda/structure-u-channel-low-7.svg",
-      "bytes": 828141,
-      "sha256": "9fb7da286f7e2534a38913821dff52bbaa20e0aea1114f291d843fb046994f61"
+      "bytes": 827152,
+      "sha256": "c6258aa03b974802e551783a85c9e8e3e2912ed028c5d2dadd1a565448bbe689"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/intel/nuc12.stl",
@@ -6967,8 +6967,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/intel/nuc12.svg",
-      "bytes": 1428851,
-      "sha256": "3e3e16e137230f27944d55925a658ebcb88148cf1c32a1f4c0ad65b373888314"
+      "bytes": 1419990,
+      "sha256": "7758ad57b1525a76b04866f7fbc5507a5f701b919f43298d68c0c5abaacb6a67"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/raspberry-pi/rpi4b.stl",
@@ -6977,8 +6977,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/raspberry-pi/rpi4b.svg",
-      "bytes": 197954,
-      "sha256": "50b948d34c7995b11c3d210e0cff5462f9f35d491ec966f135daf9f20ff85089"
+      "bytes": 196709,
+      "sha256": "014e1667e5d5a0731418d091a53ccc7310c27ca816455520e5101c482729bc28"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/driver-brushless-bld510s.stl",
@@ -6987,8 +6987,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/driver-brushless-bld510s.svg",
-      "bytes": 772365,
-      "sha256": "1121e54818dd9ad109ea63edb36597d559e3e2124188d5d61e77cbd2d87bda0f"
+      "bytes": 767098,
+      "sha256": "5312de76bbd898fc0d8263b90d2d6fa865836f4fb79ebe4d0a91babfc2cca79d"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/driver-stepper-dm556rs.stl",
@@ -6997,8 +6997,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/driver-stepper-dm556rs.svg",
-      "bytes": 286737,
-      "sha256": "f82177b8e05e45bff166ad51e0d15e7c71002bfa5da157732d113b96adf816fd"
+      "bytes": 285093,
+      "sha256": "e029a170af4a33bce03172b8e919ba9c8d8e636718e70e08d1cc994ed45fb663"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-gearbox-planetary-10.stl",
@@ -7007,8 +7007,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-gearbox-planetary-10.svg",
-      "bytes": 207389,
-      "sha256": "f203face061e6d9d6a4bd5cb38ab174ef357b2081424651805a81bf210e1646f"
+      "bytes": 207075,
+      "sha256": "e20d46ab6bfefa130a44d58535fce6a8f7a6de33e3d4a2529c2a45e6c97e198b"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-gearbox-planetary-100.stl",
@@ -7017,8 +7017,8 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-gearbox-planetary-100.svg",
-      "bytes": 207555,
-      "sha256": "ac3010091743c2a022669e29c2f249139c57096f10b6d232c0cbcf9ea34a043a"
+      "bytes": 207241,
+      "sha256": "55dc91381eb7db99e232ba2a9cba2bd684c04448100ba225b873b4b3b6561760"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-stepper-brake-72Ncm.stl",
@@ -7027,33 +7027,33 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/stepperonline/nema17-stepper-brake-72Ncm.svg",
-      "bytes": 192839,
-      "sha256": "0292ce10c9060a9b236645e23e20070cbc02c2b5f9d4b7930af885da83f64693"
+      "bytes": 192443,
+      "sha256": "65714728016d6b909d9899a748d646b123e4f38749f23edfea413fd6c43c9f7a"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/base.svg",
-      "bytes": 5616051,
-      "sha256": "05490112ef4c7095b53b55d4a589872f8588054539c053c7ac646b2df4e2afea"
+      "bytes": 5598962,
+      "sha256": "db5ed2f6b253bc58cd65e8ff92a2de1cc724ace1623525c6d7e5c0cf22fe5fe0"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/camera.svg",
-      "bytes": 426206,
-      "sha256": "1124bb439ed492ed43480451159cd9fd40219d12058616d3be2bc494fd20e584"
+      "bytes": 425515,
+      "sha256": "d3989b56909381ae5312863db9c872e3debd576366da7dbba0e02e36148d1448"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/camera_servo.svg",
-      "bytes": 862593,
-      "sha256": "26c88e63ecb64e61a9e63e116eef5f2f81ffac35119ce1d73ea09125d19baf8b"
+      "bytes": 859872,
+      "sha256": "d6d67631b72f14805058262c455daa04ae58b144f1e99f17b903acfd52cfa29c"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/hip.svg",
-      "bytes": 6300155,
-      "sha256": "70b6bfc703d298a5a04ef6e4679e25440ec804a63cece2f5bbe7c21570361547"
+      "bytes": 6289276,
+      "sha256": "62a5a3d75d9aed6b5366b9c74d6728538936338621b1ae2dbc52e6285f49fdaf"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/lower_arm.svg",
-      "bytes": 2411003,
-      "sha256": "745d7e6bdf3d77927b28b3def4c69aa6acb88c4f62d5a91ad45e2241ac0ccf95"
+      "bytes": 2406986,
+      "sha256": "0d0889b7c3d40fcb06bc6c7cf94f3b745f46f0eba59140e1f082dd7de932a698"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/robot.stl",
@@ -7062,23 +7062,23 @@
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/robot.svg",
-      "bytes": 38277299,
-      "sha256": "a0ac478e470bf581538acfc0109ffc312bd4bf65e59a13bfb034432d2d5098dd"
+      "bytes": 38190927,
+      "sha256": "d904810e01bcfb3c9038d066031ff6c8153719e7d9ec72305281544f23144ff4"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/turn_table.svg",
-      "bytes": 653174,
-      "sha256": "beb9b134f7724fbac9bce234ac1f2682ada506dce02418ee700e0569a97e0795"
+      "bytes": 652369,
+      "sha256": "eb11005bf964a015b2150ff47b851f95a9bff9b25c8eae4b4fac315636d3a6bb"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/upper_arm.svg",
-      "bytes": 4113064,
-      "sha256": "0102b14f1c8324cd5314a420acf57ecabaa3cbbfac0fdd9ba652a9cc9844f8f0"
+      "bytes": 4103162,
+      "sha256": "8ce3bc4355945f0e02a4022c26ceaa09cfc3947803000da048a23fd616f00587"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/robots/don1/wheel.svg",
-      "bytes": 410415,
-      "sha256": "bcd2d84e59094e21fb7aa071b3bd26fa17ae8f2b8e130d161a156d91fe75c9e1"
+      "bytes": 409440,
+      "sha256": "6aa8ade30be7fcf8b207ec2b7af5b76345b7f03999933c4ac6d808c0feaf31d9"
     },
     {
       "path": "robotics/multimodal/openvmp/parts/don1-board-bottom.step",
@@ -7222,8 +7222,8 @@
     },
     {
       "path": "robotics/parts/gobilda/examples/wormgear.svg",
-      "bytes": 349629,
-      "sha256": "8b70c9a3f84e98f7ce2f1ea4bd1636171941322e850abf144b565aab02ed45c0"
+      "bytes": 347068,
+      "sha256": "c82df6b7dedde3fc534e486f66d2bfe3983f130dd102c0193ccba1a827bafadc"
     },
     {
       "path": "robotics/parts/gobilda/hardware/nut_m4_0_7mm.step",
@@ -7431,6 +7431,16 @@
       "sha256": "d82baa88790cd8cf664a6eceba22d1bc1f8755927a7c0e0d57dabff8d65be880"
     },
     {
+      "path": "robotics/research/cloudgripper/Arm.assy",
+      "bytes": 8768,
+      "sha256": "d1f6e07baaa56e5114859a9b28df36d0538ca27f7e34e825259558d7f6b52fec"
+    },
+    {
+      "path": "robotics/research/cloudgripper/Arm.svg",
+      "bytes": 184012,
+      "sha256": "7f79b71a464350a389f8e2f8b5c2a47bafac06b7e4277e33a3d8ccf7146be438"
+    },
+    {
       "path": "robotics/research/cloudgripper/Arm/Arm.stl",
       "bytes": 32585184,
       "sha256": "9af02d4e73e708a6c23e73240f189370961ffa27f85977527510a4a8ae64d5bb"
@@ -7447,8 +7457,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_base.svg",
-      "bytes": 10533,
-      "sha256": "151df5a6f8cb4ef5787b538388a233bf92f0c31408ba6c45531874a93793c8f0"
+      "bytes": 10441,
+      "sha256": "00daa9b69c7177d148552435b440b8103f5762c902085229b3e54d8234556a51"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_finger_left.step",
@@ -7462,8 +7472,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_finger_left.svg",
-      "bytes": 10008,
-      "sha256": "117a17347130d65c1c61d84f0f8fa3387f32f998e30817a46648f603885a30dc"
+      "bytes": 9900,
+      "sha256": "8416bab69100fe812e42b06ffe120175471f9281ca8aec098a35dce5755f98f3"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_finger_right.step",
@@ -7477,8 +7487,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_finger_right.svg",
-      "bytes": 8376,
-      "sha256": "64fdc3ee4e4ddd096b12ea2447353b955f3f497d1145c8e8824333d62ce6dbb5"
+      "bytes": 8287,
+      "sha256": "c9c2b79d9658b3dae48cb356522e8b3d36f4a4edada2804116f5c24e74911fef"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_link2.step",
@@ -7492,8 +7502,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_grip_link2.svg",
-      "bytes": 2455,
-      "sha256": "0befb54cee08d9891f1992465df27897f4da33840128195a8c7544a8f3fdff3c"
+      "bytes": 2430,
+      "sha256": "8c689b683956e0813c65256e07be5ac3e604ee8750bec6e08f6bd2396e545593"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_holder.step",
@@ -7507,8 +7517,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_holder.svg",
-      "bytes": 12884,
-      "sha256": "56a0ea72297da97e49603418ef1f718ea1b9424e485ed08f73e3c4ffd4cec7a7"
+      "bytes": 12755,
+      "sha256": "9a7857c7327b872221adc879a415b9c7071368b4dd985e336277b6b91a012b0d"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_linear_gear.step",
@@ -7522,8 +7532,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_linear_gear.svg",
-      "bytes": 32137,
-      "sha256": "a61a566229825eed95233fee1fc2e2e63ef309a143ba32009e1fee5b5ac54581"
+      "bytes": 31951,
+      "sha256": "5cee12b831203cdfa9bcf7c2ccb2ef2725392572f87bbe332bc14f51c3998d05"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_linear_pinion_gear.step",
@@ -7537,8 +7547,8 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_linear_pinion_gear.svg",
-      "bytes": 27607,
-      "sha256": "99ca03902e12448a27f9c3ec405d60e16e1740fe94cad3f3e08839019c90c9a1"
+      "bytes": 27341,
+      "sha256": "d3d4217913095d72da4376bba3375af2e6954b5e6eba4f1daf30444a8cc8ba43"
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_rotation_base.step",
@@ -7552,18 +7562,13 @@
     },
     {
       "path": "robotics/research/cloudgripper/Arm/Arm_rotation_base.svg",
-      "bytes": 7874,
-      "sha256": "2fa8c5674ec99007c6f66afc8584c958419d11dac5cf5d9723bd4e0b21df94fe"
+      "bytes": 7802,
+      "sha256": "ed1cb83544afedfcc5626ff539d71f9b089c85a96b5aea16f7cd2b8c907cbc54"
     },
     {
-      "path": "robotics/research/cloudgripper/Arm.assy",
-      "bytes": 8768,
-      "sha256": "d1f6e07baaa56e5114859a9b28df36d0538ca27f7e34e825259558d7f6b52fec"
-    },
-    {
-      "path": "robotics/research/cloudgripper/Arm.svg",
-      "bytes": 185527,
-      "sha256": "e4c285ecfea5bc3657664020af5f343218a0cd2ff4ab24292949979cc3ea1ab9"
+      "path": "robotics/research/cloudgripper/Drag_chain.assy",
+      "bytes": 8,
+      "sha256": "5233e72cae71ac599315bad5a86bdbb88c29dea84d90511d62fbbb4da59e1b9a"
     },
     {
       "path": "robotics/research/cloudgripper/Drag_chain/Drag_chain.step",
@@ -7596,7 +7601,7 @@
       "sha256": "4dc11d3ecb5c9d0cc5b6e6caf53eef1eab77ab9ed73964e3a99ca8a411474766"
     },
     {
-      "path": "robotics/research/cloudgripper/Drag_chain.assy",
+      "path": "robotics/research/cloudgripper/Electronics_case.assy",
       "bytes": 8,
       "sha256": "5233e72cae71ac599315bad5a86bdbb88c29dea84d90511d62fbbb4da59e1b9a"
     },
@@ -7606,7 +7611,7 @@
       "sha256": "9717295c70f9063896c97e698bba47718fb1b98749c62f767b8e4538c23ba50b"
     },
     {
-      "path": "robotics/research/cloudgripper/Electronics_case.assy",
+      "path": "robotics/research/cloudgripper/Robot.assy",
       "bytes": 8,
       "sha256": "5233e72cae71ac599315bad5a86bdbb88c29dea84d90511d62fbbb4da59e1b9a"
     },
@@ -7614,6 +7619,16 @@
       "path": "robotics/research/cloudgripper/Robot/XY.stl",
       "bytes": 51854184,
       "sha256": "d65dc0ccc39431fd38e7d42521795ded85c5745b9f7ae01e0af321ffdd2d6db4"
+    },
+    {
+      "path": "robotics/research/cloudgripper/Robot/XY_IR_holder.step",
+      "bytes": 22318,
+      "sha256": "3f386e51e653f8b0e9d6e3fc133d31d163d65d52eaa024ec7525f85a1d2a275d"
+    },
+    {
+      "path": "robotics/research/cloudgripper/Robot/XY_IR_holder.stl",
+      "bytes": 45784,
+      "sha256": "eda194d24b47e962157b25376b9c000ccb877ba191298ad62beb162e07357eed"
     },
     {
       "path": "robotics/research/cloudgripper/Robot/XY_attachment_left.step",
@@ -7646,16 +7661,6 @@
       "sha256": "c82713b56c775d8b54cf9a23ee9a08e8ac6002f6268f3f525c47d1e0f4fa5819"
     },
     {
-      "path": "robotics/research/cloudgripper/Robot/XY_IR_holder.step",
-      "bytes": 22318,
-      "sha256": "3f386e51e653f8b0e9d6e3fc133d31d163d65d52eaa024ec7525f85a1d2a275d"
-    },
-    {
-      "path": "robotics/research/cloudgripper/Robot/XY_IR_holder.stl",
-      "bytes": 45784,
-      "sha256": "eda194d24b47e962157b25376b9c000ccb877ba191298ad62beb162e07357eed"
-    },
-    {
       "path": "robotics/research/cloudgripper/Robot/XY_nema_bracket.step",
       "bytes": 97121,
       "sha256": "87645632d6458a1f8ccb204cbc2cb3a18b7870458c94977d7c62e55ad2d6e341"
@@ -7686,279 +7691,274 @@
       "sha256": "b16896796db6a83dd54d6f1204a3d6ef6b81636bc3fcbe5a41dd7663e5063cef"
     },
     {
-      "path": "robotics/research/cloudgripper/Robot.assy",
-      "bytes": 8,
-      "sha256": "5233e72cae71ac599315bad5a86bdbb88c29dea84d90511d62fbbb4da59e1b9a"
-    },
-    {
       "path": "std/imperial/cqwarehouse/fastener/buttonhead-iso7380-1.svg",
-      "bytes": 50210,
-      "sha256": "310ffd99321a60e983ad5e09a0ce8b33d4e982e9fc37aba22481d21bc057fef5"
+      "bytes": 49850,
+      "sha256": "768f13c7f2121767f757a6117c05f7f8d503390d885b03f435dd6cec30588550"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/buttonheadwithcollar-iso7380-2.svg",
-      "bytes": 50285,
-      "sha256": "f7f9313bb960c161380123a3107d6a85a1616a64b41e6948d79d8597be25e936"
+      "bytes": 49928,
+      "sha256": "f21a8ae967394d4feb837260e7f6927209ab7befc4a20008e87e5867a9c9bade"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/cheesehead-iso1207.svg",
-      "bytes": 79907,
-      "sha256": "a7d56b4fc3d818b96d682ecb9ca6bc6095b30629c622bbacef28becae2c3c7f4"
+      "bytes": 79320,
+      "sha256": "27928fcac66ea68f7be4dd90aa3deaa3881544003759b12d3643a477deac548e"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/cheesehead-iso14580.svg",
-      "bytes": 83611,
-      "sha256": "57f6086471baf795940fa6fb91cb0a1fc192b2c524d3e357b8e63aa2ed70eb82"
+      "bytes": 82972,
+      "sha256": "e752a28f35cb083f426968a93bc0597c49af3d0b7abf4630d331d89b6db9c94f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/cheesehead-iso7048.svg",
-      "bytes": 68799,
-      "sha256": "a870daaec9cf820ad65e4f1d61948e33bedabdbc167ac3592c616acb0e3f61df"
+      "bytes": 68313,
+      "sha256": "44348e66ee03e02009e6b3a2d68dd5e5ec54218e2961dd06f3ff20c75dd2ce8f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/countersunk-iso10642.svg",
-      "bytes": 66215,
-      "sha256": "3daf86f7bc4f1ef7415e715e1b8fd125f8bb3811f286ee59e50c123cf4d2ef02"
+      "bytes": 65731,
+      "sha256": "05b66ebb19863d0b66df22946b66afd229fbe1fc4dfd2537dc64bf658fcace4a"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/countersunk-iso14581.svg",
-      "bytes": 70911,
-      "sha256": "9f63c00302de22e96b952766ea72f7167bb66687a8d3449eb03c2b2ef7d0f673"
+      "bytes": 70404,
+      "sha256": "808d13c296bb06c4cc690407a10225fba5866f3e641d61d0464fb4d6d14b2eb9"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/countersunk-iso14582.svg",
-      "bytes": 75363,
-      "sha256": "b4458045f6d30e257f88a426d4d0d563fdbf4b3f9e626f0edd79e40635865b54"
+      "bytes": 74800,
+      "sha256": "f8a380b98697585e9bb01dcc47a426d60963023ef052593dfcce8d9fb14b533f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/countersunk-iso2009.svg",
-      "bytes": 120684,
-      "sha256": "d0198cf5861301dcb4919d348ac2fa1b2479ffee2286a2a698a23d2caa4f077a"
+      "bytes": 119805,
+      "sha256": "48aa7500a9145ffeb2329ade2d2c50481da15882e7e25835199b037feb64c60f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/countersunk-iso7046.svg",
-      "bytes": 72823,
-      "sha256": "d36ad0aa6760d2b1d558938c3537335dc08d706bb44b1e249e660cf9450b7b07"
+      "bytes": 72277,
+      "sha256": "a78c65d3c6b395255b741548ea84a8b8923645492259b3b22db6f1cafd263707"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/hexhead-din931.svg",
-      "bytes": 51842,
-      "sha256": "03fa755565e8cd1f03a91879fbcedf26250888b0f5e2dd19d64983ce7f400349"
+      "bytes": 51469,
+      "sha256": "569d08b3e2514cad50181dfa8cddb6173ef84fcc4bfd14a36832db1d7e26e05e"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/hexhead-iso4014.svg",
-      "bytes": 79338,
-      "sha256": "7cb8645319abb0da1c036ea67d4a412aa78190b786a215e028baecf5c6f8826e"
+      "bytes": 78756,
+      "sha256": "844dbebe048668920e1cf9f66b3517ef731f94f3e7d24dd34d00d3cc8f76d5dc"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/hexhead-iso4017.svg",
-      "bytes": 79338,
-      "sha256": "7cb8645319abb0da1c036ea67d4a412aa78190b786a215e028baecf5c6f8826e"
+      "bytes": 78756,
+      "sha256": "844dbebe048668920e1cf9f66b3517ef731f94f3e7d24dd34d00d3cc8f76d5dc"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/hexheadwithflange-din1662.svg",
-      "bytes": 25766,
-      "sha256": "7d67e4f406dd1812b8713049303d3df795645c8af70d52bcf18ae53ded8e103c"
+      "bytes": 25612,
+      "sha256": "771ed32a334cf93a2395faccf1f80083f9da6386c85fded13d6befc1722df395"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/hexheadwithflange-din1665.svg",
-      "bytes": 25325,
-      "sha256": "36f3b7b04172abb4ccc37c5fe02c8e0531165642564fd6eccdef2d9221a5cac3"
+      "bytes": 25177,
+      "sha256": "08aed31649f5fe384af5281ead859222a1b99dab0f4c2098a968d36a8e4a294a"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/panhead-asme_b_18_6_3.svg",
-      "bytes": 38221,
-      "sha256": "7e340ad9b64099322f6f931d52da995829b8bec5cef77d281ce35bfd94b1e241"
+      "bytes": 37966,
+      "sha256": "b21a89314f8387961b6648e22cb630ed77aeea39b50ee535abb9b9dcdc4cd87a"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/panhead-iso14583.svg",
-      "bytes": 82394,
-      "sha256": "892c73546210c44d7e1b88da422846ba38b5b2d2d35a047b9ea3ea97a30abbd5"
+      "bytes": 81771,
+      "sha256": "afb010322a41b6c8991c150dd50349accdb48ac594ad4a9de5306a17fdb50659"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/panhead-iso1580.svg",
-      "bytes": 78371,
-      "sha256": "e50cbd29733593c62eb40a5941eb3a05cc090de6018f40a2178a852a68100223"
+      "bytes": 77806,
+      "sha256": "4b25e508f092ee8f6d17d7540e920a3903433f810c0077b1b415fd10005836e0"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/panheadwithcollar-din967.svg",
-      "bytes": 49662,
-      "sha256": "022abc73c7ffe9a73792003236c0c2e16c67766075e660a5b1ca5eed00b40d55"
+      "bytes": 49310,
+      "sha256": "e4ca98c70d7cfe0dce44e7a3f9950559580afcbf427a0165efe2327de898b31f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/raisedcheesehead-iso7045.svg",
-      "bytes": 81621,
-      "sha256": "0afce6b61eb98334becd4ef411fd0835f376e5c768f92260d278cd5f014c263d"
+      "bytes": 81025,
+      "sha256": "72df34002ff1c51e4945ea4575fe3ec662e9a5ad30fdf1ab0096e3eba5e0be8f"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/raisedcountersunkovalhead-iso14584.svg",
-      "bytes": 71247,
-      "sha256": "3231451f12c722d3672f5d320a22a7d727188e0d259779992b83bce847e04dc8"
+      "bytes": 70736,
+      "sha256": "596051892902da8a077d05ef25c2c631cc825e6bd70ac1cd47515b1a108dfbbe"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/raisedcountersunkovalhead-iso2010.svg",
-      "bytes": 120681,
-      "sha256": "efa4dbfefd33f152f44544f35ac45adff97caa320ab09638704a615b452958dd"
+      "bytes": 119804,
+      "sha256": "77f8a8a4f3dd2017be4aa2fe366def5167726583cea35a4a800e34d4583dab09"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/raisedcountersunkovalhead-iso7047.svg",
-      "bytes": 74214,
-      "sha256": "6a3ef8c346747b9968b0aef9dec3476b533a3ba50a177b1e44c08790b5e187b9"
+      "bytes": 73669,
+      "sha256": "c96d031a704f8e6b4026b044a2f9615021f39bdef2b5ad0260ad390cdc29ed0e"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/socketheadcap-asme_b_18_3.svg",
-      "bytes": 116029,
-      "sha256": "108b4e9a30c28d9041ece9e7e8464a2437b590ead76365117d9dd23016552c94"
+      "bytes": 115125,
+      "sha256": "3dfc79d48c1119b69e4bee54800ee91df4c990ae262b20d0a61e901acb55f0f9"
     },
     {
       "path": "std/imperial/cqwarehouse/fastener/socketheadcap-iso4762.svg",
-      "bytes": 79824,
-      "sha256": "7e17e11303c9a3a09a9b5c14242047abe6eff231ac87e155466070dc79603c0e"
+      "bytes": 79243,
+      "sha256": "32acdc4c5055a921784d3d083b78a33548d33cc7acf434abbe29c7404b19b856"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/buttonhead-iso7380-1.svg",
-      "bytes": 50210,
-      "sha256": "310ffd99321a60e983ad5e09a0ce8b33d4e982e9fc37aba22481d21bc057fef5"
+      "bytes": 49850,
+      "sha256": "768f13c7f2121767f757a6117c05f7f8d503390d885b03f435dd6cec30588550"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/buttonheadwithcollar-iso7380-2.svg",
-      "bytes": 50285,
-      "sha256": "f7f9313bb960c161380123a3107d6a85a1616a64b41e6948d79d8597be25e936"
+      "bytes": 49928,
+      "sha256": "f21a8ae967394d4feb837260e7f6927209ab7befc4a20008e87e5867a9c9bade"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/cheesehead-iso1207.svg",
-      "bytes": 79907,
-      "sha256": "a7d56b4fc3d818b96d682ecb9ca6bc6095b30629c622bbacef28becae2c3c7f4"
+      "bytes": 79320,
+      "sha256": "27928fcac66ea68f7be4dd90aa3deaa3881544003759b12d3643a477deac548e"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/cheesehead-iso14580.svg",
-      "bytes": 83611,
-      "sha256": "57f6086471baf795940fa6fb91cb0a1fc192b2c524d3e357b8e63aa2ed70eb82"
+      "bytes": 82972,
+      "sha256": "e752a28f35cb083f426968a93bc0597c49af3d0b7abf4630d331d89b6db9c94f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/cheesehead-iso7048.svg",
-      "bytes": 68799,
-      "sha256": "a870daaec9cf820ad65e4f1d61948e33bedabdbc167ac3592c616acb0e3f61df"
+      "bytes": 68313,
+      "sha256": "44348e66ee03e02009e6b3a2d68dd5e5ec54218e2961dd06f3ff20c75dd2ce8f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/countersunk-iso10642.svg",
-      "bytes": 66215,
-      "sha256": "3daf86f7bc4f1ef7415e715e1b8fd125f8bb3811f286ee59e50c123cf4d2ef02"
+      "bytes": 65731,
+      "sha256": "05b66ebb19863d0b66df22946b66afd229fbe1fc4dfd2537dc64bf658fcace4a"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/countersunk-iso14581.svg",
-      "bytes": 70911,
-      "sha256": "9f63c00302de22e96b952766ea72f7167bb66687a8d3449eb03c2b2ef7d0f673"
+      "bytes": 70404,
+      "sha256": "808d13c296bb06c4cc690407a10225fba5866f3e641d61d0464fb4d6d14b2eb9"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/countersunk-iso14582.svg",
-      "bytes": 75363,
-      "sha256": "b4458045f6d30e257f88a426d4d0d563fdbf4b3f9e626f0edd79e40635865b54"
+      "bytes": 74800,
+      "sha256": "f8a380b98697585e9bb01dcc47a426d60963023ef052593dfcce8d9fb14b533f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/countersunk-iso2009.svg",
-      "bytes": 120684,
-      "sha256": "d0198cf5861301dcb4919d348ac2fa1b2479ffee2286a2a698a23d2caa4f077a"
+      "bytes": 119805,
+      "sha256": "48aa7500a9145ffeb2329ade2d2c50481da15882e7e25835199b037feb64c60f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/countersunk-iso7046.svg",
-      "bytes": 72823,
-      "sha256": "d36ad0aa6760d2b1d558938c3537335dc08d706bb44b1e249e660cf9450b7b07"
+      "bytes": 72277,
+      "sha256": "a78c65d3c6b395255b741548ea84a8b8923645492259b3b22db6f1cafd263707"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/hexhead-din931.svg",
-      "bytes": 51842,
-      "sha256": "03fa755565e8cd1f03a91879fbcedf26250888b0f5e2dd19d64983ce7f400349"
+      "bytes": 51469,
+      "sha256": "569d08b3e2514cad50181dfa8cddb6173ef84fcc4bfd14a36832db1d7e26e05e"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/hexhead-iso4014.svg",
-      "bytes": 79338,
-      "sha256": "7cb8645319abb0da1c036ea67d4a412aa78190b786a215e028baecf5c6f8826e"
+      "bytes": 78756,
+      "sha256": "844dbebe048668920e1cf9f66b3517ef731f94f3e7d24dd34d00d3cc8f76d5dc"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/hexhead-iso4017.svg",
-      "bytes": 79338,
-      "sha256": "7cb8645319abb0da1c036ea67d4a412aa78190b786a215e028baecf5c6f8826e"
+      "bytes": 78756,
+      "sha256": "844dbebe048668920e1cf9f66b3517ef731f94f3e7d24dd34d00d3cc8f76d5dc"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/hexheadwithflange-din1662.svg",
-      "bytes": 25766,
-      "sha256": "7d67e4f406dd1812b8713049303d3df795645c8af70d52bcf18ae53ded8e103c"
+      "bytes": 25612,
+      "sha256": "771ed32a334cf93a2395faccf1f80083f9da6386c85fded13d6befc1722df395"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/hexheadwithflange-din1665.svg",
-      "bytes": 25325,
-      "sha256": "36f3b7b04172abb4ccc37c5fe02c8e0531165642564fd6eccdef2d9221a5cac3"
+      "bytes": 25177,
+      "sha256": "08aed31649f5fe384af5281ead859222a1b99dab0f4c2098a968d36a8e4a294a"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/panhead-asme_b_18_6_3.svg",
-      "bytes": 38221,
-      "sha256": "7e340ad9b64099322f6f931d52da995829b8bec5cef77d281ce35bfd94b1e241"
+      "bytes": 37966,
+      "sha256": "b21a89314f8387961b6648e22cb630ed77aeea39b50ee535abb9b9dcdc4cd87a"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/panhead-iso14583.svg",
-      "bytes": 82394,
-      "sha256": "892c73546210c44d7e1b88da422846ba38b5b2d2d35a047b9ea3ea97a30abbd5"
+      "bytes": 81771,
+      "sha256": "afb010322a41b6c8991c150dd50349accdb48ac594ad4a9de5306a17fdb50659"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/panhead-iso1580.svg",
-      "bytes": 78371,
-      "sha256": "e50cbd29733593c62eb40a5941eb3a05cc090de6018f40a2178a852a68100223"
+      "bytes": 77806,
+      "sha256": "4b25e508f092ee8f6d17d7540e920a3903433f810c0077b1b415fd10005836e0"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/panheadwithcollar-din967.svg",
-      "bytes": 49662,
-      "sha256": "022abc73c7ffe9a73792003236c0c2e16c67766075e660a5b1ca5eed00b40d55"
+      "bytes": 49310,
+      "sha256": "e4ca98c70d7cfe0dce44e7a3f9950559580afcbf427a0165efe2327de898b31f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/raisedcheesehead-iso7045.svg",
-      "bytes": 81621,
-      "sha256": "0afce6b61eb98334becd4ef411fd0835f376e5c768f92260d278cd5f014c263d"
+      "bytes": 81025,
+      "sha256": "72df34002ff1c51e4945ea4575fe3ec662e9a5ad30fdf1ab0096e3eba5e0be8f"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/raisedcountersunkovalhead-iso14584.svg",
-      "bytes": 71247,
-      "sha256": "3231451f12c722d3672f5d320a22a7d727188e0d259779992b83bce847e04dc8"
+      "bytes": 70736,
+      "sha256": "596051892902da8a077d05ef25c2c631cc825e6bd70ac1cd47515b1a108dfbbe"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/raisedcountersunkovalhead-iso2010.svg",
-      "bytes": 120681,
-      "sha256": "efa4dbfefd33f152f44544f35ac45adff97caa320ab09638704a615b452958dd"
+      "bytes": 119804,
+      "sha256": "77f8a8a4f3dd2017be4aa2fe366def5167726583cea35a4a800e34d4583dab09"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/raisedcountersunkovalhead-iso7047.svg",
-      "bytes": 74214,
-      "sha256": "6a3ef8c346747b9968b0aef9dec3476b533a3ba50a177b1e44c08790b5e187b9"
+      "bytes": 73669,
+      "sha256": "c96d031a704f8e6b4026b044a2f9615021f39bdef2b5ad0260ad390cdc29ed0e"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/socketheadcap-asme_b_18_3.svg",
-      "bytes": 116029,
-      "sha256": "108b4e9a30c28d9041ece9e7e8464a2437b590ead76365117d9dd23016552c94"
+      "bytes": 115125,
+      "sha256": "3dfc79d48c1119b69e4bee54800ee91df4c990ae262b20d0a61e901acb55f0f9"
     },
     {
       "path": "std/metric/cqwarehouse/fastener/socketheadcap-iso4762.svg",
-      "bytes": 79824,
-      "sha256": "7e17e11303c9a3a09a9b5c14242047abe6eff231ac87e155466070dc79603c0e"
+      "bytes": 79243,
+      "sha256": "32acdc4c5055a921784d3d083b78a33548d33cc7acf434abbe29c7404b19b856"
     },
     {
       "path": "storage/workspace/gridfinity/cqgridfinity/shims/baseplate.svg",
-      "bytes": 17708,
-      "sha256": "926354e2d63d83dfd9fee542eba8dfa79d52eba02b0543eda0f33293b21b5d91"
+      "bytes": 17533,
+      "sha256": "196b5e9d96d0c7aaacaac35068d5da5bd158e8cb34aab7a39e570e937eb8d37f"
     },
     {
       "path": "storage/workspace/gridfinity/cqgridfinity/shims/box.svg",
-      "bytes": 18253,
-      "sha256": "a22579cc8d7efb983f511bb6bf2a432616e2b828a2789c02ae8f018785ad7186"
+      "bytes": 18076,
+      "sha256": "80c24a66840d4b7710b9f3a962ba578b12cad6bf4e80435ae88463cd4da61fb0"
     },
     {
       "path": "storage/workspace/gridfinity/cqgridfinity/shims/drawerspacer.svg",
-      "bytes": 12911,
-      "sha256": "6c347da92d62565ccaf62229ae3ab0e65581bcafbdcd513f7ddea147f8b685d4"
+      "bytes": 12784,
+      "sha256": "95a2c13ad0dfd6faeefa9aac5715a92e364d4e39b1eadd4cf9d58046bd6c8e96"
     },
     {
       "path": "storage/workspace/gridfinity/cqgridfinity/shims/ruggedbox.svg",
-      "bytes": 260913,
-      "sha256": "bc0152d2adb9ea9d5ccaa8417a94d5f786c37e8b17b5ae36253878e3c064c81f"
+      "bytes": 258418,
+      "sha256": "2b9dd90173e47c5db7f4f93926acf940548fdb6392272fbdfc5e4c78d963aa3a"
     },
     {
       "path": "storage/workspace/gridfinity/examples/demo1.assy",
