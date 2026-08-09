@@ -4,7 +4,7 @@ import json
 import re
 import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
@@ -109,6 +109,31 @@ def main() -> int:
             "new or modified CAD assets must use .scad or .FCStd:\n- "
             + "\n- ".join(invalid_assets)
         )
+
+    canonical_assets = {
+        path.casefold(): path
+        for path in current_assets
+        if PurePosixPath(path).suffix.casefold() in CANONICAL_CAD_EXTENSIONS
+    }
+    incomplete_pairs: list[str] = []
+    invalid_case: list[str] = []
+    for path in sorted(changed_assets):
+        source = PurePosixPath(path)
+        suffix = source.suffix.casefold()
+        if suffix not in CANONICAL_CAD_EXTENSIONS or source.stem.startswith("_"):
+            continue
+        if suffix == ".scad" and source.suffix != ".scad":
+            invalid_case.append(path)
+        if suffix == ".fcstd" and source.suffix != ".FCStd":
+            invalid_case.append(path)
+        scad = str(source.with_suffix(".scad"))
+        fcstd = str(source.with_suffix(".FCStd"))
+        if scad.casefold() not in canonical_assets or fcstd.casefold() not in canonical_assets:
+            incomplete_pairs.append(f"{path} requires both {scad} and {fcstd}")
+    if invalid_case:
+        errors.append("canonical extensions must be exactly .scad and .FCStd:\n- " + "\n- ".join(invalid_case))
+    if incomplete_pairs:
+        errors.append("incomplete canonical model pairs:\n- " + "\n- ".join(incomplete_pairs))
 
     if errors:
         print("\n".join(errors))

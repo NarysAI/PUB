@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.3] - 2026-08-09
+
+### Changed
+
+- Canonical source policy now requires a same-stem SCAD and FreeCAD FCStd pair
+  for every new or modified standalone model.
+- FreeCAD is defined as the editable master and source for generated STL/STEP;
+  SCAD is the parallel representation for AI processing.
+
 ## [1.1.2] - 2026-08-09
 
 ### Added
