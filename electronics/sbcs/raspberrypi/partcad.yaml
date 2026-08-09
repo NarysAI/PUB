@@ -1,6 +1,7 @@
 name: /pub/electronics/sbcs/raspberrypi
-desc: Raspberry Pi
+desc: Raspberry Pi product catalog
 url: https://www.raspberrypi.com/
+partcad: ">=0.6.0"
 cover:
   part: rpi4b
 
@@ -9,45 +10,34 @@ import:
     onlyInRoot: True
     type: git
     url: https://github.com/openvmp/partcad-index.git
+  rpi4:
+    type: local
+    path: boards/rpi4
+  rpi5:
+    type: local
+    path: boards/rpi5
+  displays:
+    type: local
+    path: accessories/displays
 
+# Backward-compatible aliases. New consumers should use the family packages.
 parts:
   rpi4b:
-    type: step
+    type: alias
+    source: rpi4:rpi4b
     desc: Raspberry Pi 4 Model B
-    vendor: raspberry-pi
-    sku: PI4-8GB
-    url: https://www.canakit.com/raspberry-pi-4-8gb.html?cid=usd&src=raspberrypi
-    implements:
-      "/pub/std/metric/m:m2.5-thru":
-        top-back-left: [[3.5, 52.5, 1.5], [1, 0, 0], 180]
-        top-back-right: [[61.5, 52.5, 1.5], [1, 0, 0], 180]
-        top-front-left: [[3.5, 3.5, 1.5], [1, 0, 0], 180]
-        top-front-right: [[61.5, 3.5, 1.5], [1, 0, 0], 180]
-        bottom-back-left: [[3.5, 52.5, 0], [1, 0, 0], 0]
-        bottom-back-right: [[61.5, 52.5, 0], [1, 0, 0], 0]
-        bottom-front-left: [[3.5, 3.5, 0], [1, 0, 0], 0]
-        bottom-front-right: [[61.5, 3.5, 0], [1, 0, 0], 0]
-    ports:
-      corner-bottom-back-left: [[0, 56, 0], [0, 0, 1], 270]
-      corner-bottom-back-right: [[85, 56, 0], [0, 0, 1], 180]
-      corner-bottom-front-left: [[0, 0, 0], [0, 0, 1], 0]
-      corner-bottom-front-right: [[85, 0, 0], [0, 0, 1], 90]
+  rpi5:
+    type: alias
+    source: rpi5:rpi5
+    desc: Parametric Raspberry Pi 5 with Active Cooler
+  rpi5-active-cooler:
+    type: alias
+    source: rpi5:rpi5-active-cooler
+    desc: Raspberry Pi 5 with Active Cooler
   rpi-touchscreen:
-    # TODO: this is an assembly in fact 
-    # (shield + adapter + stand-offs/screws + connector)
-    type: step
-    path: shields/rpi-touchscreen.step
+    type: alias
+    source: displays:rpi-touchscreen
     desc: Raspberry Pi 7" Touchscreen Display
-    vendor: raspberry-pi
-    sku: RSP-DISPLAY
-    url: https://www.canakit.com/raspberry-pi-lcd-display-touchscreen.html?cid=usd&src=raspberrypi    
-    implements:
-      # TODO: hole depth not known so far
-      "/pub/std/metric/m:m2.5-threaded-hole-9":   
-        top-back-left: [[-22.5, 21.0, 21.76], [1, 0, 0], 180]
-        top-back-right: [[35.5, 21.0, 21.76], [1, 0, 0], 180]
-        top-front-left: [[-22.5, -28.0, 21.76], [1, 0, 0], 180]
-        top-front-right: [[35.5, -28.0, 21.76], [1, 0, 0], 180]
 
 render:
   svg:

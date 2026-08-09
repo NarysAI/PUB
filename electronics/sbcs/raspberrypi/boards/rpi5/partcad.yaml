@@ -1,0 +1,20 @@
+name: /pub/electronics/sbcs/raspberrypi/boards/rpi5
+desc: Raspberry Pi 5 family
+url: https://www.raspberrypi.com/products/raspberry-pi-5/
+cover:
+  part: rpi5
+
+parts:
+  rpi5:
+    type: scad
+    desc: Parametric Raspberry Pi 5 with Active Cooler
+    vendor: raspberry-pi
+    url: https://www.raspberrypi.com/products/raspberry-pi-5/
+  rpi5-active-cooler:
+    type: alias
+    source: :rpi5
+    desc: Compatibility alias for the Raspberry Pi 5 Active Cooler model
+
+render:
+  svg:
+  readme:
