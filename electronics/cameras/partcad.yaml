@@ -1,0 +1,12 @@
+name: /pub/electronics/cameras
+desc: Camera modules and reference models
+cover:
+  package: caddx-ratel-pro-2
+
+import:
+  caddx-ratel-pro-2:
+    type: local
+    path: caddx/ratel-pro-2
+  raspberry-pi-hq-camera:
+    type: local
+    path: raspberry-pi/hq-camera
