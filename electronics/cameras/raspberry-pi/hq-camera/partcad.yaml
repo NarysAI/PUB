@@ -1,0 +1,37 @@
+name: /pub/electronics/cameras/raspberry-pi/hq-camera
+desc: Raspberry Pi HQ Camera and 6 mm / 16 mm lens reference models
+url: https://www.thingiverse.com/thing:4335497
+license: CC-BY
+cover:
+  part: hq-camera-with-6mm-lens
+
+parts:
+  hq-camera:
+    type: stl
+    path: models/raspberry-pi-hq-camera.stl
+    desc: Raspberry Pi High Quality Camera module
+    vendor: raspberry-pi
+  6mm-lens:
+    type: stl
+    path: models/raspberry-pi-6mm-lens.stl
+    desc: 6 mm wide-angle lens for the Raspberry Pi HQ Camera
+    vendor: raspberry-pi
+  16mm-lens:
+    type: stl
+    path: models/raspberry-pi-16mm-lens.stl
+    desc: 16 mm telephoto lens for the Raspberry Pi HQ Camera
+    vendor: raspberry-pi
+  hq-camera-with-6mm-lens:
+    type: stl
+    path: models/raspberry-pi-hq-camera-with-6mm-lens.stl
+    desc: Raspberry Pi HQ Camera assembled with the 6 mm lens
+    vendor: raspberry-pi
+  hq-camera-with-16mm-lens:
+    type: stl
+    path: models/raspberry-pi-hq-camera-with-16mm-lens.stl
+    desc: Raspberry Pi HQ Camera assembled with the 16 mm lens
+    vendor: raspberry-pi
+
+render:
+  svg:
+  readme:
