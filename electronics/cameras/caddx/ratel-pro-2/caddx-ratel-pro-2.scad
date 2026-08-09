@@ -2,11 +2,17 @@
 // Units: millimetres. Origin and axes follow the released manufacturer STEP.
 // Overall reference envelope: 20.872 x 27.500 x 19.208 mm (X/Y/Z).
 // This file is self-contained and imports no mesh or external CAD geometry.
-// NARYS_MATERIAL: lens=#171A1D
-// NARYS_MATERIAL: glass=#193B54
-// NARYS_MATERIAL: housing=#25282B
-// NARYS_MATERIAL: pcb=#146B3A
-// NARYS_MATERIAL: components=#202226
+// NARYS_MATERIAL: lens_front=#303942
+// NARYS_MATERIAL: lens_outer=#171C21
+// NARYS_MATERIAL: lens_mid=#3B444C
+// NARYS_MATERIAL: lens_focus=#222A31
+// NARYS_MATERIAL: lens_rear=#465058
+// NARYS_MATERIAL: transition=#30363C
+// NARYS_MATERIAL: glass=#176080
+// NARYS_MATERIAL: housing=#4A5259
+// NARYS_MATERIAL: pcb=#1C824A
+// NARYS_MATERIAL: connector=#D7D9D8
+// NARYS_MATERIAL: components=#282E33
 // NARYS_MATERIAL: contacts=#D6A83B
 
 $fn = 96;
@@ -44,28 +50,48 @@ module y_rounded_plate(y_min, y_max, size, radius) {
                 rounded_square_2d(size, radius);
 }
 
-module lens_barrel() {
-    color("#171A1D") {
+module lens_front() {
+    color("#303942") {
         y_annulus(-19.9, -16.4, 15.0, 11.0);
         y_cylinder(-16.4, -14.9, 15.0);
+    }
+}
+
+module lens_outer() {
+    color("#171C21")
         y_cylinder(-14.9, -12.0, 11.348);
+}
+
+module lens_mid() {
+    color("#3B444C")
         y_cylinder(-12.0, -9.0, 11.62);
+}
+
+module lens_focus() {
+    color("#222A31")
         y_cylinder(-9.0, -6.1, 13.95);
+}
+
+module lens_rear() {
+    color("#465058")
         y_cylinder(-6.1, -3.45, 14.0);
+}
+
+module lens_transition() {
+    color("#30363C")
         hull() {
             y_cylinder(-3.46, -3.44, 14.0);
             y_rounded_plate(-0.02, 0.0, housing_size, housing_corner);
         }
-    }
 }
 
 module lens_glass() {
-    color("#193B54")
+    color("#176080")
         y_cylinder(-19.82, -19.68, 10.7);
 }
 
 module camera_housing() {
-    color("#25282B")
+    color("#4A5259")
         difference() {
             union() {
                 y_rounded_plate(0.0, 2.7, housing_size, housing_corner);
@@ -80,7 +106,7 @@ module camera_housing() {
 }
 
 module sensor_pcb() {
-    color("#146B3A")
+    color("#1C824A")
         difference() {
             translate([-camera_width/2, 2.7, -camera_height/2])
                 cube([camera_width, pcb_thickness, camera_height]);
@@ -91,11 +117,16 @@ module sensor_pcb() {
 }
 
 module rear_components() {
-    color("#202226") {
-        translate([3.4886, 3.8, 6.3669]) cube([5.975, 3.8, 3.0]);
-        translate([-0.5364, 3.8, 6.3669]) cube([3.975, 3.8, 3.0]);
+    color("#282E33") {
         translate([-7.8, 3.8, -7.7]) cube([3.0, 1.2, 2.1]);
         translate([4.7, 3.8, -7.4]) cube([2.6, 1.5, 2.0]);
+    }
+}
+
+module rear_connector() {
+    color("#D7D9D8") {
+        translate([3.4886, 3.8, 6.3669]) cube([5.975, 3.8, 3.0]);
+        translate([-0.5364, 3.8, 6.3669]) cube([3.975, 3.8, 3.0]);
     }
 }
 
@@ -107,10 +138,16 @@ module rear_contacts() {
 }
 
 module caddx_ratel_pro_2() {
-    if (narys_material == "all" || narys_material == "lens") lens_barrel();
+    if (narys_material == "all" || narys_material == "lens_front") lens_front();
+    if (narys_material == "all" || narys_material == "lens_outer") lens_outer();
+    if (narys_material == "all" || narys_material == "lens_mid") lens_mid();
+    if (narys_material == "all" || narys_material == "lens_focus") lens_focus();
+    if (narys_material == "all" || narys_material == "lens_rear") lens_rear();
+    if (narys_material == "all" || narys_material == "transition") lens_transition();
     if (narys_material == "all" || narys_material == "glass") lens_glass();
     if (narys_material == "all" || narys_material == "housing") camera_housing();
     if (narys_material == "all" || narys_material == "pcb") sensor_pcb();
+    if (narys_material == "all" || narys_material == "connector") rear_connector();
     if (narys_material == "all" || narys_material == "components") rear_components();
     if (narys_material == "all" || narys_material == "contacts") rear_contacts();
 }

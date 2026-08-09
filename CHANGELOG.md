@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.1.6] - 2026-08-09
+
+### Changed
+
+- Increased visual separation of Caddx Ratel Pro 2 components with twelve
+  realistic material layers: five lens stages, transition, glass, housing,
+  PCB, connector, rear components, and contacts.
+- Lightened adjacent graphite shades and modeled the rear connector in light
+  gray so individual components remain readable against the dark viewer.
+
 ## [1.1.5] - 2026-08-09
 
 ### Changed
