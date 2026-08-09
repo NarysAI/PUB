@@ -1,0 +1,15 @@
+name: /pub/electronics/power-converters/xl4015
+desc: XL4015 5 A CC/CV step-down DC-DC converter module
+cover:
+  part: xl4015-step-down-5a-cc-cv
+
+parts:
+  xl4015-step-down-5a-cc-cv:
+    type: step
+    path: xl4015-step-down-5a-cc-cv.step
+    desc: XL4015 adjustable 5 A constant-current and constant-voltage buck converter module
+    sku: XL4015
+
+render:
+  svg:
+  readme:
