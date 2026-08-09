@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.0",
+  "catalog_version": "1.1.0",
   "summary": {
-    "packages": 74,
-    "objects": 836,
-    "assets": 508,
-    "asset_bytes": 441338033
+    "packages": 75,
+    "objects": 841,
+    "assets": 514,
+    "asset_bytes": 441341685
   },
   "packages": [
     {
@@ -42,6 +42,11 @@
       "name": "/pub/electronics/cameras/raspberry-pi/hq-camera",
       "config": "electronics/cameras/raspberry-pi/hq-camera/partcad.yaml",
       "config_sha256": "8a0af6743a72ac93d368ee083501a142f3d0f9800360cc10035923db2627eeae"
+    },
+    {
+      "name": "/pub/electronics/modules/ec-buying",
+      "config": "electronics/modules/ec-buying/partcad.yaml",
+      "config_sha256": "a71d1eff28ac4abf4afecee277499f8cedcdf5de9afdf9ff44d55a34ddae9b72"
     },
     {
       "name": "/pub/electronics/power-converters",
@@ -481,6 +486,36 @@
       "name": "hq-camera-with-6mm-lens",
       "type": "stl",
       "source": "electronics/cameras/raspberry-pi/hq-camera/models/raspberry-pi-hq-camera-with-6mm-lens.stl"
+    },
+    {
+      "package": "/pub/electronics/modules/ec-buying",
+      "section": "parts",
+      "name": "horizontal-dip-rgb",
+      "type": "scad"
+    },
+    {
+      "package": "/pub/electronics/modules/ec-buying",
+      "section": "parts",
+      "name": "ky-009-smd-rgb",
+      "type": "scad"
+    },
+    {
+      "package": "/pub/electronics/modules/ec-buying",
+      "section": "parts",
+      "name": "ky-011-f5-bicolor",
+      "type": "scad"
+    },
+    {
+      "package": "/pub/electronics/modules/ec-buying",
+      "section": "parts",
+      "name": "ky-016-dip-rgb",
+      "type": "scad"
+    },
+    {
+      "package": "/pub/electronics/modules/ec-buying",
+      "section": "parts",
+      "name": "ky-034-seven-color",
+      "type": "scad"
     },
     {
       "package": "/pub/electronics/power-converters/xl4015",
@@ -5559,6 +5594,36 @@
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/raspi_HQ_cam_and_lens.scad",
       "bytes": 4292,
       "sha256": "554576582bed81b9cfdc962299390e78f9cb8c5096b513ec4d0823ae4e739e53"
+    },
+    {
+      "path": "electronics/modules/ec-buying/_led-module-common.scad",
+      "bytes": 2460,
+      "sha256": "fd63ccbf4760b2620b8b471024ae5fb7653133aed19d48100b800230f8744bb8"
+    },
+    {
+      "path": "electronics/modules/ec-buying/horizontal-dip-rgb.scad",
+      "bytes": 301,
+      "sha256": "81748c614496fbf1999727ba19a73908222fdd6930fe1b4a56a5960392e811bf"
+    },
+    {
+      "path": "electronics/modules/ec-buying/ky-009-smd-rgb.scad",
+      "bytes": 216,
+      "sha256": "f816a97794cd4f1e9a505301baa2d26ef4779c8f357cf67c3442c6d7d1f2597b"
+    },
+    {
+      "path": "electronics/modules/ec-buying/ky-011-f5-bicolor.scad",
+      "bytes": 230,
+      "sha256": "04ff50d85c7aa3a372f8826319b14402a173945e4a0bd20636f06cf5765302e4"
+    },
+    {
+      "path": "electronics/modules/ec-buying/ky-016-dip-rgb.scad",
+      "bytes": 223,
+      "sha256": "b010416cfddfafd5c92ab4dc159b3f63fea86188a80fb44cb2b9a1e4b80aff30"
+    },
+    {
+      "path": "electronics/modules/ec-buying/ky-034-seven-color.scad",
+      "bytes": 222,
+      "sha256": "4b1e9f2525167bd0a993fc98420a80b328bc5c12b206ad74a194c913e54e363c"
     },
     {
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",
