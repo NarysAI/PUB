@@ -62,9 +62,3 @@ checksums:
   images/rugged_box_shell.png: 8d61ddca6079befd282679375a28954506f021a40d4b0570c5e11db285c47225
   images/screwdriver_drawer.png: 16e9d44340b513b28a04d9376922f727b3ad482daf84aa7cac84c35b2ad65f41
   images/socket_drawer.png: fc3d4d7b67c4473c0fe2398e6afcc6228911b3d5ff5b0b6b0b6003b946bee6d5
-  tests/common_test.py: 18cfb76542113aaf7b6d48337e3d9868284d5be5df5d695e889bfb0fbd671dd2
-  tests/test_baseplate.py: 3282080b12452afdd7c8f6c993435c847abd989fe924d2bc432d07edb77d1a84
-  tests/test_box.py: 40b79808176ccf70c7c0487cf1e8553964dca2c081751507a4c4bdb82c82dee0
-  tests/test_rbox.py: 4896e6530da4a52a6359bacfd81d222b46683607df511f7920b25f4c785dce43
-  tests/test_spacer.py: aed17c4029d41ba2c8691a423ac612448b81e44c13b96c033c7b0bdeadcb11b1
-  tests/testfiles/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
