@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [1.2.0] - 2026-08-09
+
+### Added
+
+- Added `electromechanics/switches/button-a6`, a self-contained parametric
+  OpenSCAD envelope of the generic red square two-terminal panel pushbutton
+  reconstructed from user-provided reference videos.
+- Documented the video-derived dimensional accuracy, unknown manufacturer and
+  part number, unverified license status, and required physical measurements.
+
 ## [1.1.6] - 2026-08-09
 
 ### Changed
