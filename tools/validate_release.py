@@ -40,6 +40,13 @@ def object_ids(inventory: dict) -> set[tuple[str, str, str]]:
     }
 
 
+def object_records(inventory: dict) -> dict[tuple[str, str, str], dict]:
+    return {
+        (str(item["package"]), str(item["section"]), str(item["name"])): item
+        for item in inventory.get("objects", [])
+    }
+
+
 def asset_digests(inventory: dict) -> dict[str, str]:
     return {
         str(item["path"]): str(item["sha256"])
@@ -110,30 +117,42 @@ def main() -> int:
             + "\n- ".join(invalid_assets)
         )
 
-    canonical_assets = {
-        path.casefold(): path
-        for path in current_assets
-        if PurePosixPath(path).suffix.casefold() in CANONICAL_CAD_EXTENSIONS
+    base_records = object_records(base_inventory)
+    current_records = object_records(current_inventory)
+    changed_records = {
+        key: record for key, record in current_records.items()
+        if base_records.get(key) != record
     }
-    incomplete_pairs: list[str] = []
-    invalid_case: list[str] = []
+    source_records = {
+        str(record.get("source", "")).casefold(): record
+        for record in current_records.values() if record.get("source")
+    }
+
+    def validate_role(record: dict, label: str) -> None:
+        role = str(record.get("model_role", ""))
+        source = PurePosixPath(str(record.get("source", "")))
+        source_type = str(record.get("type", "")).casefold()
+        if role == "electronic_component":
+            if source_type != "scad" or source.suffix != ".scad":
+                errors.append(f"{label}: electronic_component requires one .scad source with type: scad")
+        elif role == "printable_part":
+            if source_type != "freecad" or source.suffix != ".FCStd":
+                errors.append(f"{label}: printable_part requires one .FCStd source with type: freecad")
+        else:
+            errors.append(f"{label}: changed object requires model_role electronic_component or printable_part")
+
+    for key, record in changed_records.items():
+        validate_role(record, ":".join(key))
+
     for path in sorted(changed_assets):
         source = PurePosixPath(path)
-        suffix = source.suffix.casefold()
-        if suffix not in CANONICAL_CAD_EXTENSIONS or source.stem.startswith("_"):
+        if source.suffix == ".scad" and source.stem.startswith("_"):
             continue
-        if suffix == ".scad" and source.suffix != ".scad":
-            invalid_case.append(path)
-        if suffix == ".fcstd" and source.suffix != ".FCStd":
-            invalid_case.append(path)
-        scad = str(source.with_suffix(".scad"))
-        fcstd = str(source.with_suffix(".FCStd"))
-        if scad.casefold() not in canonical_assets or fcstd.casefold() not in canonical_assets:
-            incomplete_pairs.append(f"{path} requires both {scad} and {fcstd}")
-    if invalid_case:
-        errors.append("canonical extensions must be exactly .scad and .FCStd:\n- " + "\n- ".join(invalid_case))
-    if incomplete_pairs:
-        errors.append("incomplete canonical model pairs:\n- " + "\n- ".join(incomplete_pairs))
+        record = source_records.get(path.casefold())
+        if source.suffix.casefold() in CANONICAL_CAD_EXTENSIONS and not record:
+            errors.append(f"{path}: canonical model asset is not referenced by a catalog object")
+        elif record:
+            validate_role(record, path)
 
     if errors:
         print("\n".join(errors))

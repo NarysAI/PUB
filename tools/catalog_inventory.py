@@ -86,6 +86,8 @@ def build_inventory(root: Path) -> dict:
                     "name": str(name),
                     "type": str(raw.get("type") or "native"),
                 }
+                if raw.get("model_role"):
+                    item["model_role"] = str(raw["model_role"])
                 if raw.get("path"):
                     item["source"] = (config_path.parent / str(raw["path"])).relative_to(root).as_posix()
                 objects.append(item)

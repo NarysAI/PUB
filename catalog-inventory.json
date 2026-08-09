@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.1.3",
+  "catalog_version": "1.1.4",
   "summary": {
     "packages": 75,
     "objects": 841,
-    "assets": 514,
-    "asset_bytes": 441341685
+    "assets": 513,
+    "asset_bytes": 436844511
   },
   "packages": [
     {
@@ -31,7 +31,7 @@
     {
       "name": "/pub/electronics/cameras/caddx/ratel-pro-2",
       "config": "electronics/cameras/caddx/ratel-pro-2/partcad.yaml",
-      "config_sha256": "0908f447e24e6a68348f7099d0bd3acea8892b87b7d5cb79e350df8fb1f155bc"
+      "config_sha256": "ba8a492bf9b7bd036db891259c3559646eab11d7fe61ae35511eb031141e85a1"
     },
     {
       "name": "/pub/electronics/cameras",
@@ -449,8 +449,9 @@
       "package": "/pub/electronics/cameras/caddx/ratel-pro-2",
       "section": "parts",
       "name": "caddx-ratel-pro-2",
-      "type": "step",
-      "source": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.step"
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.scad"
     },
     {
       "package": "/pub/electronics/cameras/raspberry-pi/hq-camera",
@@ -5541,14 +5542,9 @@
       "sha256": "40b947c525b11779e341b275842920db26bf3ba31ed76a4b14008549e70ccef9"
     },
     {
-      "path": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.step",
-      "bytes": 2436347,
-      "sha256": "e05ba52a5f8f6e9ea89a8aab5c70e4affbf57f52ef4a99e695871f01d284eea5"
-    },
-    {
-      "path": "electronics/cameras/caddx/ratel-pro-2/sources/caddx-ratel-pro-2.f3d",
-      "bytes": 2063938,
-      "sha256": "f96aa1c70301be54972672c3b7f839a00a9b8546fc9b4f91cf29fb02171955b6"
+      "path": "electronics/cameras/caddx/ratel-pro-2/caddx-ratel-pro-2.scad",
+      "bytes": 3111,
+      "sha256": "7ba4c28747cff6fb89d16e62900fe03adbd9a8a962cc33db2d13be9472173422"
     },
     {
       "path": "electronics/cameras/raspberry-pi/hq-camera/models/raspberry-pi-16mm-lens.stl",

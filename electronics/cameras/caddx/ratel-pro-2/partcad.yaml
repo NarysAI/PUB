@@ -5,8 +5,9 @@ cover:
 
 parts:
   caddx-ratel-pro-2:
-    type: step
-    path: caddx-ratel-pro-2.step
+    type: scad
+    path: caddx-ratel-pro-2.scad
+    model_role: electronic_component
     desc: Caddx Ratel Pro 2 FPV camera
     vendor: caddx
     sku: RATEL-PRO-2
