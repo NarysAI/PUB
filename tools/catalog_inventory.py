@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import math
@@ -136,8 +137,17 @@ def main() -> int:
     destination = root / "catalog-inventory.json"
     rendered = serialize(build_inventory(root))
     if args.check:
-        if not destination.is_file() or destination.read_text(encoding="utf-8") != rendered:
+        current = destination.read_text(encoding="utf-8") if destination.is_file() else ""
+        if current != rendered:
             print("catalog-inventory.json is stale; run: python tools/catalog_inventory.py .", file=sys.stderr)
+            diff = difflib.unified_diff(
+                current.splitlines(), rendered.splitlines(),
+                fromfile="committed/catalog-inventory.json",
+                tofile="generated/catalog-inventory.json",
+                n=2,
+            )
+            for line in list(diff)[:80]:
+                print(line, file=sys.stderr)
             return 1
         print("Catalog inventory is complete and current")
         return 0
