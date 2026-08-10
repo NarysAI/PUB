@@ -40,9 +40,11 @@ the catalog BOM.
 repository as the conversion input. `h30-enclosed.stl` is a direct FreeCAD
 tessellation of its top-level assembly plus the three missing instances of the
 existing STEP cover screw. No housing, cover, connector, hole, or marking
-geometry is remodeled or repositioned. `h30-enclosed.scad` is a compact wrapper
-around that exact STL. The housing, cover, and two fastener component files are
-direct tessellations of the corresponding individual STEP objects.
+geometry is remodeled or repositioned. Every SCAD representation embeds the
+corresponding exact tessellation as `polyhedron` data and is self-contained:
+there are no `import`, `include`, or external-file dependencies. The housing,
+cover, and two fastener component files are direct tessellations of the
+corresponding individual STEP objects.
 
 SCAD and STL are explicitly marked `geometry_scope: exterior`. A future STEP
 representation is `geometry_scope: interior` and is accepted only when every

@@ -10,6 +10,8 @@ Changelog, and catalog versions follow Semantic Versioning.
 - Added the three missing M3x4 cover screws to H30 Enclosed by copying the
   existing official STEP screw into the other three exact countersunk-hole
   centers. The vendor housing and cover geometry remain unchanged.
+- Made every H30 SCAD representation self-contained by embedding its exact
+  tessellation as `polyhedron` data, with no mesh imports or included helpers.
 
 ## [4.1.1] - 2026-08-10
 
