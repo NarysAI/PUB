@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [2.1.0] - 2026-08-10
+
+### Added
+
+- Added `std/metric/standoffs` with parametric M2–M6 hexagonal threaded
+  standoffs in female-female, male-female and male-male arrangements.
+- Documented recommended ISO coarse pitches, manufacturer-specific width
+  choices, dimensional limitations and MISUMI/Essentra provenance.
+
 ## [2.0.0] - 2026-08-10
 
 ### Added

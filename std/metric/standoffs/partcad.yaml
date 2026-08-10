@@ -1,0 +1,59 @@
+name: /pub/std/metric/standoffs
+desc: Parametric metric hexagonal threaded standoffs
+url: https://github.com/NarysAI/PUB/tree/main/std/metric/standoffs
+cover:
+  part: hex-standoff-male-female
+
+parts:
+  hex-standoff-female-female:
+    type: scad
+    path: hex-standoff-female-female.scad
+    model_role: electronic_component
+    desc: Parametric metric hex standoff with female threads at both ends (FF)
+    vendor: generic
+    sku: metric-hex-standoff-ff
+    url: https://uk.misumi-ec.com/pdf/fa/p1187.pdf
+    parameters:
+      thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
+      thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
+      body_length: {type: float, default: 10.0, min: 4.0, max: 100.0}
+      hex_width: {type: float, default: 5.5, min: 3.5, max: 13.0}
+      female_depth: {type: float, default: 6.0, min: 2.0, max: 30.0}
+      bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+
+  hex-standoff-male-female:
+    type: scad
+    path: hex-standoff-male-female.scad
+    model_role: electronic_component
+    desc: Parametric metric hex standoff with male and female threads (MF)
+    vendor: generic
+    sku: metric-hex-standoff-mf
+    url: https://uk.misumi-ec.com/pdf/fa/p1189.pdf
+    parameters:
+      thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
+      thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
+      body_length: {type: float, default: 10.0, min: 4.0, max: 100.0}
+      hex_width: {type: float, default: 5.5, min: 3.5, max: 13.0}
+      male_length: {type: float, default: 6.0, min: 2.0, max: 30.0}
+      female_depth: {type: float, default: 6.0, min: 2.0, max: 30.0}
+      bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+
+  hex-standoff-male-male:
+    type: scad
+    path: hex-standoff-male-male.scad
+    model_role: electronic_component
+    desc: Parametric metric hex standoff with male threads at both ends (MM)
+    vendor: generic
+    sku: metric-hex-standoff-mm
+    url: https://www.essentracomponents.com/en-ca/p/male-to-male-standoff-hexagonal-insulator-nylon-brass/hsm4-8-32-3
+    parameters:
+      thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
+      thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
+      body_length: {type: float, default: 10.0, min: 4.0, max: 100.0}
+      hex_width: {type: float, default: 5.5, min: 3.5, max: 13.0}
+      male_length: {type: float, default: 6.0, min: 2.0, max: 30.0}
+      bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+
+render:
+  svg:
+  readme:
