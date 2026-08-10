@@ -1,5 +1,5 @@
 /*
-  WHEELTEC H30WP IMU board - approximate visual/mechanical model
+  WHEELTEC H30 PCB - approximate visual/mechanical model
   Reconstructed from a single top-view photograph.
 
   Coordinate system:
@@ -64,7 +64,6 @@ module at_xy(p, z=0) {
                (p[1]/layout_height-0.5)*pcb_height,
                z]) children();
 }
-
 module rounded_rect_2d(size=[10,10], r=1) {
     offset(r=r)
         square([size[0]-2*r, size[1]-2*r], center=true);
@@ -290,7 +289,7 @@ module central_sensor_package() {
         at_xy([18.77,18.57],pcb_thickness+1.675)
             linear_extrude(height=0.035)
                 rotate([0,0,90])
-                    text("H30WP",size=0.92,halign="center",valign="center",
+                    text("H30",size=1.15,halign="center",valign="center",
                          font="Liberation Sans:style=Bold");
     }
 }
@@ -460,7 +459,7 @@ module silkscreen() {
     silk_text("UART",[34.1,12.25],0.92,90);
     silk_text("485",[31.9,12.35],0.92,90);
     silk_text("A",[11.0,34.25],1.55,180);
-    silk_text("H30WP",[22.5,34.0],0.66,180);
+    silk_text("H30",[22.5,34.0],0.78,180);
 
     // X/Y orientation marker near the upper-left hole.
     silk_line([2.65,27.7],[2.65,30.9],0.24);
@@ -488,7 +487,7 @@ module silkscreen() {
 
 // ---------- Assembly ----------
 
-module wheeltec_h30wp_board() {
+module wheeltec_h30_pcb() {
     pcb();
     mounting_rings();
 
@@ -501,5 +500,3 @@ module wheeltec_h30wp_board() {
     if (show_silkscreen && detail > 0)
         silkscreen();
 }
-
-wheeltec_h30wp_board();

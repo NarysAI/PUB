@@ -8,7 +8,7 @@ from pathlib import Path, PurePosixPath
 
 
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
-CANONICAL_CAD_EXTENSIONS = {".scad", ".fcstd"}
+CANONICAL_CAD_EXTENSIONS = {".scad", ".fcstd", ".stl", ".step", ".stp"}
 DECLARATIVE_ASSEMBLY_EXTENSION = ".assy"
 
 
@@ -114,7 +114,7 @@ def main() -> int:
     )
     if invalid_assets:
         errors.append(
-            "new or modified CAD assets must use .scad or .FCStd; declarative assemblies use .assy:\n- "
+            "new or modified CAD assets must use SCAD, STL, STEP, or FCStd; declarative assemblies use .assy:\n- "
             + "\n- ".join(invalid_assets)
         )
 
@@ -127,6 +127,12 @@ def main() -> int:
     source_records = {
         str(record.get("source", "")).casefold(): record
         for record in current_records.values() if record.get("source")
+    }
+    representation_records = {
+        str(representation.get("source", "")).casefold(): record
+        for record in current_records.values()
+        for representation in record.get("representations", [])
+        if isinstance(representation, dict) and representation.get("source")
     }
     assembly_sources = {
         str(
@@ -142,8 +148,9 @@ def main() -> int:
         source = PurePosixPath(str(record.get("source", "")))
         source_type = str(record.get("type", "")).casefold()
         if role == "electronic_component":
-            if source_type != "scad" or source.suffix != ".scad":
-                errors.append(f"{label}: electronic_component requires one .scad source with type: scad")
+            allowed = {"scad": {".scad"}, "stl": {".stl"}, "step": {".step", ".stp"}}
+            if source.suffix.casefold() not in allowed.get(source_type, set()):
+                errors.append(f"{label}: electronic_component requires matching SCAD, STL, or STEP")
         elif role == "printable_part":
             if source_type != "freecad" or source.suffix != ".FCStd":
                 errors.append(f"{label}: printable_part requires one .FCStd source with type: freecad")
@@ -156,7 +163,7 @@ def main() -> int:
 
     for path in sorted(changed_assets):
         source = PurePosixPath(path)
-        record = source_records.get(path.casefold())
+        record = source_records.get(path.casefold()) or representation_records.get(path.casefold())
         if source.suffix.casefold() == DECLARATIVE_ASSEMBLY_EXTENSION:
             if path.casefold() not in assembly_sources:
                 errors.append(f"{path}: declarative assembly source is not referenced by an assembly object")
@@ -165,7 +172,7 @@ def main() -> int:
             continue
         if source.suffix.casefold() in CANONICAL_CAD_EXTENSIONS and not record:
             errors.append(f"{path}: canonical model asset is not referenced by a catalog object")
-        elif record:
+        elif record and source_records.get(path.casefold()):
             validate_role(record, path)
 
     if errors:
