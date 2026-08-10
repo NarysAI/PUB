@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.1.2",
+  "catalog_version": "4.1.3",
   "summary": {
     "packages": 78,
     "objects": 428,
     "assets": 531,
-    "asset_bytes": 527274574
+    "asset_bytes": 515170326
   },
   "packages": [
     {
@@ -71,7 +71,7 @@
     {
       "name": "//pub/electronics/modules/wheeltec-h30",
       "config": "electronics/modules/wheeltec-h30/partcad.yaml",
-      "config_sha256": "168cd33ff20ca330256dc928fc3a89163f823a1d516ae201a147290697240b26",
+      "config_sha256": "edc823738fd49ceebd252ed1c3b0a4dcd6dd80e4063c9f131b77987ffe9da45e",
       "entry_type": "package"
     },
     {
@@ -3369,13 +3369,13 @@
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-enclosed.scad",
-      "bytes": 6578956,
-      "sha256": "26782c30d7606613c324541db4f6c98439f7550262591c7bb76f800b390aacdf"
+      "bytes": 582220,
+      "sha256": "2b91cd9adc10e303994b09381b8dcfd5b1699c0a332b772ebab1897585e0583f"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-enclosed.stl",
-      "bytes": 6761194,
-      "sha256": "a51c5535f1839fad6ffebd1aabc4a44843bf28a06fd983988fcac7ea0174be37"
+      "bytes": 653682,
+      "sha256": "07bbe4eee7db60facce33bc64595216d8fca450b7f91b992e054a08516a71d65"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-main-housing.scad",

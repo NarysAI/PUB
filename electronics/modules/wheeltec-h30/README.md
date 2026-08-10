@@ -31,17 +31,18 @@ sensor:
 FreeCAD inspection of the official metal-housing STEP gives an overall envelope
 of 46.0 x 59.5 x 11.7 mm. The source assembly is incomplete: it contains only
 one instance of each mounting fastener even though the physical product uses
-four of each. Revision 1.3 leaves the vendor housing and cover unchanged and
+four of each. Revision 1.4 leaves the vendor housing and cover unchanged and
 copies the existing M3x4 STEP screw into the three empty cover-hole centers, so
 all four cover screws are present. The `4 + 4` physical quantities remain in
 the catalog BOM.
 
 `WHEELTEC_H30 Sensor (metal housing).stp` is used byte-for-byte from the official
-repository as the conversion input. `h30-enclosed.stl` is a direct FreeCAD
-tessellation of its top-level assembly plus the three missing instances of the
-existing STEP cover screw. No housing, cover, connector, hole, or marking
-geometry is remodeled or repositioned. Every SCAD representation embeds the
-corresponding exact tessellation as `polyhedron` data and is self-contained:
+repository as the conversion input. `h30-enclosed.stl` is an exterior-only
+FreeCAD tessellation containing the vendor housing, cover, and four cover
+screws. The PCB and other hidden STEP objects are intentionally omitted. No
+visible housing, cover, connector, hole, screw, or marking geometry is
+remodeled or repositioned. Every SCAD representation embeds the corresponding
+exact tessellation as `polyhedron` data and is self-contained:
 there are no `import`, `include`, or external-file dependencies. The housing,
 cover, and two fastener component files are direct tessellations of the
 corresponding individual STEP objects.

@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.3] - 2026-08-11
+
+### Changed
+
+- Optimized the self-contained H30 Enclosed SCAD/STL to exterior geometry only:
+  the original housing, cover, and four cover screws remain while the PCB and
+  other hidden STEP objects are omitted.
+- Reduced H30 Enclosed from 135,223 to 13,072 facets, cutting the SCAD size by
+  91.2% and the STL size by 90.3% without changing the visible envelope.
+
 ## [4.1.2] - 2026-08-10
 
 ### Fixed
