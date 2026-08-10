@@ -4,8 +4,8 @@
   "summary": {
     "packages": 78,
     "objects": 424,
-    "assets": 522,
-    "asset_bytes": 509010522
+    "assets": 524,
+    "asset_bytes": 513457090
   },
   "packages": [
     {
@@ -71,7 +71,7 @@
     {
       "name": "//pub/electronics/modules/wheeltec-h30",
       "config": "electronics/modules/wheeltec-h30/partcad.yaml",
-      "config_sha256": "8c7dde2800836d97a3d5462020b61ef35f681196e2dab2b516c43952c61af4dc",
+      "config_sha256": "05715c1713452632a91d0f5190c25fed1a82075624a9c6fc6553cd518f2fcfc3",
       "entry_type": "package"
     },
     {
@@ -635,7 +635,19 @@
       "name": "h30-enclosed",
       "type": "scad",
       "model_role": "electronic_component",
-      "source": "electronics/modules/wheeltec-h30/h30-enclosed.scad"
+      "source": "electronics/modules/wheeltec-h30/h30-enclosed.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/modules/wheeltec-h30/h30-enclosed.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/modules/wheeltec-h30/h30-enclosed.stl"
+        }
+      ]
     },
     {
       "package": "//pub/electronics/modules/wheeltec-h30",
@@ -643,7 +655,19 @@
       "name": "h30-pcb",
       "type": "scad",
       "model_role": "electronic_component",
-      "source": "electronics/modules/wheeltec-h30/h30-pcb.scad"
+      "source": "electronics/modules/wheeltec-h30/h30-pcb.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/modules/wheeltec-h30/h30-pcb.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/modules/wheeltec-h30/h30-pcb.stl"
+        }
+      ]
     },
     {
       "package": "/pub/electronics/power-converters/xl4015",
@@ -3254,9 +3278,19 @@
       "sha256": "25959d9bca1b6c57adb73f7d9b2e03583751ce8d4144a676ff9960d89716096a"
     },
     {
+      "path": "electronics/modules/wheeltec-h30/h30-enclosed.stl",
+      "bytes": 2320284,
+      "sha256": "26ff1b0f1343594a0fda842379225a209f13baa4bf503d6464fb86555d8f3c15"
+    },
+    {
       "path": "electronics/modules/wheeltec-h30/h30-pcb.scad",
       "bytes": 126,
       "sha256": "ab1cca464a343cd69d35ebd94bd3722a247ecb887e9d5d8b813ab2a6232e603f"
+    },
+    {
+      "path": "electronics/modules/wheeltec-h30/h30-pcb.stl",
+      "bytes": 2126284,
+      "sha256": "f0604c841d4e7c02e86492c1305aaf48f4342c371971f3232d333212f4e84015"
     },
     {
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",

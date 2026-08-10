@@ -33,9 +33,17 @@ and two M3 screws. The enclosed SCAD model preserves that overall envelope and
 component relationship with simplified AI-readable primitives rather than an
 embedded STEP mesh.
 
-`h30-pcb.scad` and `h30-enclosed.scad` are the two canonical entry sources.
-Both reuse `_h30-pcb-model.scad`, a package-local helper, so the enclosed model
-contains the same PCB geometry rather than a duplicated approximation.
+`h30-pcb.scad` and `h30-enclosed.scad` are the two primary parametric entry
+sources. Their checked-in STL representations contain the same exterior
+geometry. Both SCAD files reuse `_h30-pcb-model.scad`, a package-local helper,
+so the enclosed model contains the same PCB geometry rather than a duplicated
+approximation.
+
+SCAD and STL are explicitly marked `geometry_scope: exterior`. A future STEP
+representation is `geometry_scope: interior` and is accepted only when every
+component exists as an exact catalog object and its STEP name contains
+`narys:<kind>/<semantic_path>`. This package does not publish the vendor STEP
+until those component identities and reuse terms are complete.
 
 The official bare-board STEP gives an envelope of approximately
 43.9 x 31.5 x 4.9 mm including populated components. The current PCB SCAD began

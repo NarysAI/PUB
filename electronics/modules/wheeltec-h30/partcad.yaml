@@ -12,6 +12,16 @@ parts:
     sku: H30-PCB
     url: https://github.com/Seeed-Projects/WHEELTEC-H30-IMU/tree/main/5.Mechanical%20model%20files
     narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: h30-pcb.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: h30-pcb.stl
+            geometry_scope: exterior
       product:
         schema_version: 1
         family_id: wheeltec-h30
@@ -33,6 +43,16 @@ parts:
     sku: H30-ENCLOSED
     url: https://github.com/Seeed-Projects/WHEELTEC-H30-IMU/blob/main/5.Mechanical%20model%20files/WHEELTEC_H30%20Sensor%20%28metal%20housing%29.stp
     narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: h30-enclosed.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: h30-enclosed.stl
+            geometry_scope: exterior
       product:
         schema_version: 1
         family_id: wheeltec-h30

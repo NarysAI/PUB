@@ -96,6 +96,19 @@ def build_inventory(root: Path) -> dict:
                     item["model_role"] = str(raw["model_role"])
                 if raw.get("path"):
                     item["source"] = (config_path.parent / str(raw["path"])).relative_to(root).as_posix()
+                narys = raw.get("narys") if isinstance(raw.get("narys"), dict) else {}
+                representation_meta = narys.get("representations") if isinstance(narys.get("representations"), dict) else {}
+                representation_files = representation_meta.get("files", [])
+                if isinstance(representation_files, list) and representation_files:
+                    item["representations"] = [
+                        {
+                            "format": str(representation.get("format", "")),
+                            "scope": str(representation.get("geometry_scope", "")),
+                            "source": (config_path.parent / str(representation.get("path", ""))).relative_to(root).as_posix(),
+                        }
+                        for representation in representation_files
+                        if isinstance(representation, dict) and representation.get("path")
+                    ]
                 objects.append(item)
 
     assets = []
