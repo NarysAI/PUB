@@ -9,6 +9,7 @@ from pathlib import Path, PurePosixPath
 
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 CANONICAL_CAD_EXTENSIONS = {".scad", ".fcstd"}
+DECLARATIVE_ASSEMBLY_EXTENSION = ".assy"
 
 
 def parse_version(value: str) -> tuple[int, int, int]:
@@ -109,11 +110,11 @@ def main() -> int:
     }
     invalid_assets = sorted(
         path for path in changed_assets
-        if Path(path).suffix.casefold() not in CANONICAL_CAD_EXTENSIONS
+        if Path(path).suffix.casefold() not in CANONICAL_CAD_EXTENSIONS | {DECLARATIVE_ASSEMBLY_EXTENSION}
     )
     if invalid_assets:
         errors.append(
-            "new or modified CAD assets must use .scad or .FCStd:\n- "
+            "new or modified CAD assets must use .scad or .FCStd; declarative assemblies use .assy:\n- "
             + "\n- ".join(invalid_assets)
         )
 
@@ -126,6 +127,14 @@ def main() -> int:
     source_records = {
         str(record.get("source", "")).casefold(): record
         for record in current_records.values() if record.get("source")
+    }
+    assembly_sources = {
+        str(
+            PurePosixPath(str(record["package"]).lstrip("/"))
+            / str(record.get("source") or f"{record['name']}.assy")
+        ).casefold()
+        for record in current_records.values()
+        if record.get("section") == "assemblies" and record.get("type") == "assy"
     }
 
     def validate_role(record: dict, label: str) -> None:
@@ -147,9 +156,13 @@ def main() -> int:
 
     for path in sorted(changed_assets):
         source = PurePosixPath(path)
+        record = source_records.get(path.casefold())
+        if source.suffix.casefold() == DECLARATIVE_ASSEMBLY_EXTENSION:
+            if path.casefold() not in assembly_sources:
+                errors.append(f"{path}: declarative assembly source is not referenced by an assembly object")
+            continue
         if source.suffix == ".scad" and source.stem.startswith("_"):
             continue
-        record = source_records.get(path.casefold())
         if source.suffix.casefold() in CANONICAL_CAD_EXTENSIONS and not record:
             errors.append(f"{path}: canonical model asset is not referenced by a catalog object")
         elif record:

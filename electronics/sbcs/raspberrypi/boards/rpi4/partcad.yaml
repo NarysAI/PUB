@@ -18,7 +18,7 @@ parts:
     sku: PI4-8GB
     url: https://www.canakit.com/raspberry-pi-4-8gb.html?cid=usd&src=raspberrypi
     implements:
-      "/pub/std/metric/m:m2.5-thru":
+      "/pub/std/metric/cqwarehouse:m2.5-thru":
         top-back-left: [[3.5, 52.5, 1.5], [1, 0, 0], 180]
         top-back-right: [[61.5, 52.5, 1.5], [1, 0, 0], 180]
         top-front-left: [[3.5, 3.5, 1.5], [1, 0, 0], 180]
