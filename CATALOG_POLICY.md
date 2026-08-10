@@ -17,6 +17,9 @@ whether it is made by a person, script, migration, or AI agent.
    to validate and render the catalog.
 5. **Traceability.** Every merged change belongs to a numbered catalog version,
    an inventory, a changelog entry, and a reviewed pull request.
+6. **Project separation.** Active open projects keep editable CAD history in a
+   standalone canonical Git repository. PUB contains a metadata pointer, not a
+   moving copy of project CAD files.
 
 ## 2. Required workflow
 
@@ -111,6 +114,18 @@ the same PR, preservation of provenance, visual/dimensional comparison, and the 
 bump required by the resulting identity changes. CI blocks newly added or
 modified non-canonical CAD assets and role/format mismatches while allowing
 unchanged legacy data.
+
+### Active project pointers
+
+An active open project is represented by a source-free `partcad.yaml` with a
+top-level `narys_project` schema version 1. The pointer declares `kind: project`,
+`access: public`, an HTTPS GitHub `canonical_repo`, default branch, contribution
+and issues URLs, current immutable drawing tag, and category.
+
+A project pointer must not declare PartCAD objects or contain CAD/model assets.
+`narys-index` loads the canonical project repository directly; PUB preserves the
+stable catalog identity and discovery link only. Private projects never receive
+a PUB pointer and are registered exclusively through the private index.
 
 ## 5. Modification, relocation, and deletion
 

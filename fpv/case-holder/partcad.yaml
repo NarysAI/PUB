@@ -1,0 +1,14 @@
+name: //pub/fpv/case-holder
+desc: Open FPV Case_holder project with editable FreeCAD history in Git.
+
+narys_project:
+  schema_version: 1
+  kind: project
+  access: public
+  canonical_repo: https://github.com/NarysAI/Case_holder
+  default_branch: main
+  contribution_url: https://github.com/NarysAI/Case_holder/blob/main/CONTRIBUTING.md
+  issues_url: https://github.com/NarysAI/Case_holder/issues
+  current_drawing: drawing-v1.0.0
+  category: FPV
+
