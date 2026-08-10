@@ -3,6 +3,16 @@
 Policy versions follow Semantic Versioning independently from catalog releases
 and use Git tags named `policy-vX.Y.Z`.
 
+## [3.1.0] - 2026-08-10
+
+### Added
+
+- Source-free `narys_project` pointers for active open Git projects.
+- Validation that project pointers contain collaboration metadata and no CAD
+  objects or assets.
+- Explicit separation between PUB discovery identity, public canonical project
+  Git, and private-project indexing.
+
 ## [3.0.0] - 2026-08-09
 
 ### Changed

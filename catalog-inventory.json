@@ -1,397 +1,476 @@
 {
-  "schema_version": 1,
-  "catalog_version": "1.3.0",
+  "schema_version": 2,
+  "catalog_version": "2.0.0",
   "summary": {
     "packages": 77,
-    "objects": 843,
-    "assets": 515,
-    "asset_bytes": 436855071
+    "objects": 840,
+    "assets": 512,
+    "asset_bytes": 436475065
   },
   "packages": [
     {
       "name": "/electrical/battery/ego",
       "config": "electrical/battery/ego/partcad.yaml",
-      "config_sha256": "3b6dc1e611687a2e647a4b8e57d4dc5e8868a12e99503e6ddbe81a6579d1123a"
+      "config_sha256": "3b6dc1e611687a2e647a4b8e57d4dc5e8868a12e99503e6ddbe81a6579d1123a",
+      "entry_type": "package"
     },
     {
       "name": "/electromechanics/cloudray",
       "config": "electromechanics/cloudray/partcad.yaml",
-      "config_sha256": "18f664973194b5b473413084c37360f790b50f1d83918837c26f081e35daedab"
+      "config_sha256": "18f664973194b5b473413084c37360f790b50f1d83918837c26f081e35daedab",
+      "entry_type": "package"
     },
     {
       "name": "/electromechanics/stepperonline",
       "config": "electromechanics/stepperonline/partcad.yaml",
-      "config_sha256": "b353c9b0007d8699ef328b93ea2a7264aa5bd1330a1dac58f713426a7eb4df81"
+      "config_sha256": "b353c9b0007d8699ef328b93ea2a7264aa5bd1330a1dac58f713426a7eb4df81",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electromechanics/switches/button-a6",
       "config": "electromechanics/switches/button-a6/partcad.yaml",
-      "config_sha256": "97d1b1efc74a3ea61891f2cf8b9c8de310adcec7f3cc2d73d4a093b3fc8e0e4d"
+      "config_sha256": "97d1b1efc74a3ea61891f2cf8b9c8de310adcec7f3cc2d73d4a093b3fc8e0e4d",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electromechanics/switches/kcd1-rocker",
       "config": "electromechanics/switches/kcd1-rocker/partcad.yaml",
-      "config_sha256": "08800619b58be7666690e055c047e040126d5d790f0754e8ac7692d469ccfbc6"
+      "config_sha256": "08800619b58be7666690e055c047e040126d5d790f0754e8ac7692d469ccfbc6",
+      "entry_type": "package"
     },
     {
       "name": "/electromechanics/towerpro",
       "config": "electromechanics/towerpro/partcad.yaml",
-      "config_sha256": "e75044443e665a4e99d3db01cba45cfdd35866e1c92333c2a3fb8bc51a2af3cc"
+      "config_sha256": "e75044443e665a4e99d3db01cba45cfdd35866e1c92333c2a3fb8bc51a2af3cc",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/cameras/caddx/ratel-pro-2",
       "config": "electronics/cameras/caddx/ratel-pro-2/partcad.yaml",
-      "config_sha256": "ba8a492bf9b7bd036db891259c3559646eab11d7fe61ae35511eb031141e85a1"
+      "config_sha256": "ba8a492bf9b7bd036db891259c3559646eab11d7fe61ae35511eb031141e85a1",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/cameras",
       "config": "electronics/cameras/partcad.yaml",
-      "config_sha256": "10d71f889b58c12783840436fbaf94f8e36eabb7c9d0b4e9dda8fc8540de35bb"
+      "config_sha256": "10d71f889b58c12783840436fbaf94f8e36eabb7c9d0b4e9dda8fc8540de35bb",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/cameras/raspberry-pi/hq-camera",
       "config": "electronics/cameras/raspberry-pi/hq-camera/partcad.yaml",
-      "config_sha256": "8a0af6743a72ac93d368ee083501a142f3d0f9800360cc10035923db2627eeae"
+      "config_sha256": "8a0af6743a72ac93d368ee083501a142f3d0f9800360cc10035923db2627eeae",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/modules/ec-buying",
       "config": "electronics/modules/ec-buying/partcad.yaml",
-      "config_sha256": "a71d1eff28ac4abf4afecee277499f8cedcdf5de9afdf9ff44d55a34ddae9b72"
+      "config_sha256": "a71d1eff28ac4abf4afecee277499f8cedcdf5de9afdf9ff44d55a34ddae9b72",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/power-converters",
       "config": "electronics/power-converters/partcad.yaml",
-      "config_sha256": "f48ead724c4d42677a55b8160cfbf97ac533eb24a2c5f65ef8673f64f2a24eb5"
+      "config_sha256": "f48ead724c4d42677a55b8160cfbf97ac533eb24a2c5f65ef8673f64f2a24eb5",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/power-converters/xl4015",
       "config": "electronics/power-converters/xl4015/partcad.yaml",
-      "config_sha256": "7c380a57322a93d4e0155f5c6fbada092d8f2ddb8446fb2e76b020fddd92b316"
+      "config_sha256": "7c380a57322a93d4e0155f5c6fbada092d8f2ddb8446fb2e76b020fddd92b316",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/arduino",
       "config": "electronics/sbcs/arduino/partcad.yaml",
-      "config_sha256": "6521629bcaeacfb5403a19ff261633c6832fd07a03aa3215cbed061c931ca977"
+      "config_sha256": "6521629bcaeacfb5403a19ff261633c6832fd07a03aa3215cbed061c931ca977",
+      "entry_type": "package"
     },
     {
       "name": "/electronics/sbcs/intel",
       "config": "electronics/sbcs/intel/partcad.yaml",
-      "config_sha256": "ffd9545496c59dc6640baf1384bd28d2786135e47090ddb54b7b789f8910ff41"
+      "config_sha256": "ffd9545496c59dc6640baf1384bd28d2786135e47090ddb54b7b789f8910ff41",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/accessories/displays",
       "config": "electronics/sbcs/raspberrypi/accessories/displays/partcad.yaml",
-      "config_sha256": "4b9cc1c75cefbbd7f0d0d539ce9f698df8d9217814d4adaea9190d70a1f924e3"
+      "config_sha256": "4b9cc1c75cefbbd7f0d0d539ce9f698df8d9217814d4adaea9190d70a1f924e3",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/accessories",
       "config": "electronics/sbcs/raspberrypi/accessories/partcad.yaml",
-      "config_sha256": "a55eedaf4616361455e3b432436eec293076063a5f98a6618773563f632d4c8a"
+      "config_sha256": "a55eedaf4616361455e3b432436eec293076063a5f98a6618773563f632d4c8a",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards",
       "config": "electronics/sbcs/raspberrypi/boards/partcad.yaml",
-      "config_sha256": "84ff0f9f72357df1098e35ef99a454a8ece60f10412aeff45a790f82f83e9857"
+      "config_sha256": "84ff0f9f72357df1098e35ef99a454a8ece60f10412aeff45a790f82f83e9857",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards/rpi4",
       "config": "electronics/sbcs/raspberrypi/boards/rpi4/partcad.yaml",
-      "config_sha256": "e236fe7581f25658b613b5518a1ad71c357f8c10bf3d1b21df1fa9caad83899d"
+      "config_sha256": "e236fe7581f25658b613b5518a1ad71c357f8c10bf3d1b21df1fa9caad83899d",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/boards/rpi5",
       "config": "electronics/sbcs/raspberrypi/boards/rpi5/partcad.yaml",
-      "config_sha256": "aa4e186bdab11359996abfe3a1b0df50ab169a4edea9efca870e66c9ed1259a1"
+      "config_sha256": "aa4e186bdab11359996abfe3a1b0df50ab169a4edea9efca870e66c9ed1259a1",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/compute-modules",
       "config": "electronics/sbcs/raspberrypi/compute-modules/partcad.yaml",
-      "config_sha256": "fa5fccb3d6b3ec8f42dccd4c98eeb3f31dda5e4e8fad4fef6bc9a9f7d45a6755"
+      "config_sha256": "fa5fccb3d6b3ec8f42dccd4c98eeb3f31dda5e4e8fad4fef6bc9a9f7d45a6755",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi/microcontrollers",
       "config": "electronics/sbcs/raspberrypi/microcontrollers/partcad.yaml",
-      "config_sha256": "cfb8e777485446f0667e028cc05978e384e0ea8a5e6d18d4cce8978189081aee"
+      "config_sha256": "cfb8e777485446f0667e028cc05978e384e0ea8a5e6d18d4cce8978189081aee",
+      "entry_type": "package"
     },
     {
       "name": "/pub/electronics/sbcs/raspberrypi",
       "config": "electronics/sbcs/raspberrypi/partcad.yaml",
-      "config_sha256": "f83f35404c04866bef8b0a8f9d3d14ff54544280823e0e8aa300b419ababa093"
+      "config_sha256": "f83f35404c04866bef8b0a8f9d3d14ff54544280823e0e8aa300b419ababa093",
+      "entry_type": "package"
     },
     {
       "name": "/pub/examples/competition/tootalltobby",
       "config": "examples/competition/tootalltobby/partcad.yaml",
-      "config_sha256": "f075825b5a703c5484a1c989530dbc995c6596690c0f17ce8061446c89483a36"
+      "config_sha256": "f075825b5a703c5484a1c989530dbc995c6596690c0f17ce8061446c89483a36",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_convert",
       "config": "examples/partcad/feature_convert/partcad.yaml",
-      "config_sha256": "241690ff97cc49ea7dfe75728a43996e6b6b289b21b728a3d7590ece581d120d"
+      "config_sha256": "241690ff97cc49ea7dfe75728a43996e6b6b289b21b728a3d7590ece581d120d",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_enrich",
       "config": "examples/partcad/feature_enrich/partcad.yaml",
-      "config_sha256": "326aef47bb5d3fe58f32943777aab1f71fa7d81c8236727738fc7ab2604debeb"
+      "config_sha256": "326aef47bb5d3fe58f32943777aab1f71fa7d81c8236727738fc7ab2604debeb",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_export",
       "config": "examples/partcad/feature_export/partcad.yaml",
-      "config_sha256": "4e639bb2295ddf7a38fde05c7e4f0181e06c002664c21689d0182e6306c689a3"
+      "config_sha256": "4e639bb2295ddf7a38fde05c7e4f0181e06c002664c21689d0182e6306c689a3",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_import",
       "config": "examples/partcad/feature_import/partcad.yaml",
-      "config_sha256": "e689c4e1e5fde2a3a5c58522b3457482c0e5e17fc8bbc532202e0d6009ac561f"
+      "config_sha256": "e689c4e1e5fde2a3a5c58522b3457482c0e5e17fc8bbc532202e0d6009ac561f",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_interface",
       "config": "examples/partcad/feature_interface/partcad.yaml",
-      "config_sha256": "38204dd8e39e374fbd08f9a09dc4bbf8113e7cb1d3eeec051fca0e9855ba05c0"
+      "config_sha256": "38204dd8e39e374fbd08f9a09dc4bbf8113e7cb1d3eeec051fca0e9855ba05c0",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_monorepo/package-a",
       "config": "examples/partcad/feature_monorepo/package-a/partcad.yaml",
-      "config_sha256": "19c05b2e7bd57cce747a7d497bf9a7d931e4f9e6960ab42620c043cc8319eb8f"
+      "config_sha256": "19c05b2e7bd57cce747a7d497bf9a7d931e4f9e6960ab42620c043cc8319eb8f",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_monorepo/package-b",
       "config": "examples/partcad/feature_monorepo/package-b/partcad.yaml",
-      "config_sha256": "d013c15e12ac10d450820d50c93580410168d24d84aab7ba71f10da5cbdeea78"
+      "config_sha256": "d013c15e12ac10d450820d50c93580410168d24d84aab7ba71f10da5cbdeea78",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/feature_monorepo",
       "config": "examples/partcad/feature_monorepo/partcad.yaml",
-      "config_sha256": "ff4d07b6f5bd57de4087e2fd343c93814bc1d4263efe472a00fbcc58f7c80293"
+      "config_sha256": "ff4d07b6f5bd57de4087e2fd343c93814bc1d4263efe472a00fbcc58f7c80293",
+      "entry_type": "package"
     },
     {
       "name": "//pub/examples/partcad",
       "config": "examples/partcad/partcad.yaml",
-      "config_sha256": "8d59e9b176781b689a97af31f24bc3961678999cc36ea0449bddff3636c6db4d"
+      "config_sha256": "8d59e9b176781b689a97af31f24bc3961678999cc36ea0449bddff3636c6db4d",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_assembly_assy",
       "config": "examples/partcad/produce_assembly_assy/partcad.yaml",
-      "config_sha256": "fac886b35691242523b79904f14d2b78436e056cea020276ea11cdc55e2ae840"
+      "config_sha256": "fac886b35691242523b79904f14d2b78436e056cea020276ea11cdc55e2ae840",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_3mf",
       "config": "examples/partcad/produce_part_3mf/partcad.yaml",
-      "config_sha256": "317085b3c31a7a505cdab22390acce8597c423dc101f5016fd73845d74400461"
+      "config_sha256": "317085b3c31a7a505cdab22390acce8597c423dc101f5016fd73845d74400461",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_ai_build123d",
       "config": "examples/partcad/produce_part_ai_build123d/partcad.yaml",
-      "config_sha256": "32fc7122ab50821e8bca98aa5bc4e09c492bab000853fcd754531e086bb79c0e"
+      "config_sha256": "32fc7122ab50821e8bca98aa5bc4e09c492bab000853fcd754531e086bb79c0e",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_ai_cadquery",
       "config": "examples/partcad/produce_part_ai_cadquery/partcad.yaml",
-      "config_sha256": "632e9dfe0d78c7f4d17a3b095d4ad5826d1e6e7a028a73f73b6d9ea91d23a017"
+      "config_sha256": "632e9dfe0d78c7f4d17a3b095d4ad5826d1e6e7a028a73f73b6d9ea91d23a017",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_ai_openscad",
       "config": "examples/partcad/produce_part_ai_openscad/partcad.yaml",
-      "config_sha256": "962a4eaef87d188db7d2128dd978aa55e2fe85c487c59af3023451cebd46aed2"
+      "config_sha256": "962a4eaef87d188db7d2128dd978aa55e2fe85c487c59af3023451cebd46aed2",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_brep",
       "config": "examples/partcad/produce_part_brep/partcad.yaml",
-      "config_sha256": "36d8af10dcd295c80065c214ea08b5fd09d32068710dedc077c4d944a0114ac9"
+      "config_sha256": "36d8af10dcd295c80065c214ea08b5fd09d32068710dedc077c4d944a0114ac9",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_build123d_primitive",
       "config": "examples/partcad/produce_part_build123d_primitive/partcad.yaml",
-      "config_sha256": "248175b06503c32487e4bddb6453de7ada38c0bd084bba6e9a1aaa298b85b23b"
+      "config_sha256": "248175b06503c32487e4bddb6453de7ada38c0bd084bba6e9a1aaa298b85b23b",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_cadquery_logo",
       "config": "examples/partcad/produce_part_cadquery_logo/partcad.yaml",
-      "config_sha256": "e8eb895a7d79de2d1f7b21891495a55fdac2ab03eb7d18a40ab8140eea4baa61"
+      "config_sha256": "e8eb895a7d79de2d1f7b21891495a55fdac2ab03eb7d18a40ab8140eea4baa61",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_cadquery_primitive",
       "config": "examples/partcad/produce_part_cadquery_primitive/partcad.yaml",
-      "config_sha256": "3be8e803970ca766117b1f8a1f4d4114004d7a961cf8edddacc7b202153e024e"
+      "config_sha256": "3be8e803970ca766117b1f8a1f4d4114004d7a961cf8edddacc7b202153e024e",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_extrude",
       "config": "examples/partcad/produce_part_extrude/partcad.yaml",
-      "config_sha256": "ce308b2aa21bde213d32a7803bccc019aa7d4060c1c136d628185f6c0cb69f0d"
+      "config_sha256": "ce308b2aa21bde213d32a7803bccc019aa7d4060c1c136d628185f6c0cb69f0d",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_kicad",
       "config": "examples/partcad/produce_part_kicad/partcad.yaml",
-      "config_sha256": "1a92c53e4ae68270830087d670b6a854c68ba9e9f0accc71840b8b2471a8b3b8"
+      "config_sha256": "1a92c53e4ae68270830087d670b6a854c68ba9e9f0accc71840b8b2471a8b3b8",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_obj",
       "config": "examples/partcad/produce_part_obj/partcad.yaml",
-      "config_sha256": "08d523581b86f5effcb5302ee82ff7d75be35578ae5cc0e5486c905c9b8ccb16"
+      "config_sha256": "08d523581b86f5effcb5302ee82ff7d75be35578ae5cc0e5486c905c9b8ccb16",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_openscad",
       "config": "examples/partcad/produce_part_openscad/partcad.yaml",
-      "config_sha256": "18dc5da0a3af2b531c7b47466528592164206d55f411db29ea530b25f9d6d933"
+      "config_sha256": "18dc5da0a3af2b531c7b47466528592164206d55f411db29ea530b25f9d6d933",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_step",
       "config": "examples/partcad/produce_part_step/partcad.yaml",
-      "config_sha256": "2d709c8060ca407fe7da98c0c0fd6ebea52a3d0561ecbb8683ccf57ced900de1"
+      "config_sha256": "2d709c8060ca407fe7da98c0c0fd6ebea52a3d0561ecbb8683ccf57ced900de1",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_stl",
       "config": "examples/partcad/produce_part_stl/partcad.yaml",
-      "config_sha256": "6b86377646ae7939338b6eaf6abc2ed37d5627dbcdfdca84c41799fa33386f15"
+      "config_sha256": "6b86377646ae7939338b6eaf6abc2ed37d5627dbcdfdca84c41799fa33386f15",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_part_sweep",
       "config": "examples/partcad/produce_part_sweep/partcad.yaml",
-      "config_sha256": "f4bfe02b358908fd56b2bcc6f0931f81d7d312fddd8b44a3fba0e62779433c8f"
+      "config_sha256": "f4bfe02b358908fd56b2bcc6f0931f81d7d312fddd8b44a3fba0e62779433c8f",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_sketch_basic",
       "config": "examples/partcad/produce_sketch_basic/partcad.yaml",
-      "config_sha256": "11c86e657dc61a01deea3cb6c1dfaebab9ed62b5d46ec9e43c1acbf6ab154aca"
+      "config_sha256": "11c86e657dc61a01deea3cb6c1dfaebab9ed62b5d46ec9e43c1acbf6ab154aca",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_sketch_build123d",
       "config": "examples/partcad/produce_sketch_build123d/partcad.yaml",
-      "config_sha256": "4bac06958a7aa55b7b8590d4428c5323290e4dd19f1201b56dc051b2bae64bb2"
+      "config_sha256": "4bac06958a7aa55b7b8590d4428c5323290e4dd19f1201b56dc051b2bae64bb2",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_sketch_cadquery",
       "config": "examples/partcad/produce_sketch_cadquery/partcad.yaml",
-      "config_sha256": "54b6c55443de0ab770307a0a0cfbe73f74a34ce7e39b901a79f4c3e2f93ce2ce"
+      "config_sha256": "54b6c55443de0ab770307a0a0cfbe73f74a34ce7e39b901a79f4c3e2f93ce2ce",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_sketch_dxf",
       "config": "examples/partcad/produce_sketch_dxf/partcad.yaml",
-      "config_sha256": "8c42f61225382ecb5f2fd032cfb9e1b398cda3e8ab45ec992ca130029934e7c4"
+      "config_sha256": "8c42f61225382ecb5f2fd032cfb9e1b398cda3e8ab45ec992ca130029934e7c4",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/produce_sketch_svg",
       "config": "examples/partcad/produce_sketch_svg/partcad.yaml",
-      "config_sha256": "8f7efda1136c68829915e7d022cb07b2f039c2824c4573d632df62a5f788e454"
+      "config_sha256": "8f7efda1136c68829915e7d022cb07b2f039c2824c4573d632df62a5f788e454",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/provider_manufacturer",
       "config": "examples/partcad/provider_manufacturer/partcad.yaml",
-      "config_sha256": "ca77cccb80bf0834a36f3a304c56dbea02c1e0064670fb92e6a84b87c343f291"
+      "config_sha256": "ca77cccb80bf0834a36f3a304c56dbea02c1e0064670fb92e6a84b87c343f291",
+      "entry_type": "package"
     },
     {
       "name": "/examples/partcad/provider_store",
       "config": "examples/partcad/provider_store/partcad.yaml",
-      "config_sha256": "eb59f9728a9c0611ce9daa9d91e62b6d870faf8384039286075e5a8dff7c8faa"
+      "config_sha256": "eb59f9728a9c0611ce9daa9d91e62b6d870faf8384039286075e5a8dff7c8faa",
+      "entry_type": "package"
     },
     {
       "name": "/examples/script/build123d",
       "config": "examples/script/build123d/partcad.yaml",
-      "config_sha256": "125a642f72bf33a9a7fbdf6116e7bfa3cb1ee5272dfda6602de7cb8223ea7360"
+      "config_sha256": "125a642f72bf33a9a7fbdf6116e7bfa3cb1ee5272dfda6602de7cb8223ea7360",
+      "entry_type": "package"
     },
     {
       "name": "/pub/examples/scripts/cadquery-contrib",
       "config": "examples/script/cadquery-contrib/partcad.yaml",
-      "config_sha256": "fe0c839277c231f545e6af89d59083be662fc72d249d62a607bf43eee75cee28"
+      "config_sha256": "fe0c839277c231f545e6af89d59083be662fc72d249d62a607bf43eee75cee28",
+      "entry_type": "package"
     },
     {
       "name": "/pub/examples/script/cadquery",
       "config": "examples/script/cadquery/partcad.yaml",
-      "config_sha256": "79860cde3df9d32fc9126cb17c22f2a2755bd8f9fc44102087c83f070f4a04b5"
+      "config_sha256": "79860cde3df9d32fc9126cb17c22f2a2755bd8f9fc44102087c83f070f4a04b5",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/fpv/case-holder",
+      "config": "fpv/case-holder/partcad.yaml",
+      "config_sha256": "e39f8570f87f20842f2fa76a95dcae075b69b259ca5b2b11001256193a2d39ba",
+      "entry_type": "project",
+      "canonical_repo": "https://github.com/NarysAI/Case_holder",
+      "current_drawing": "drawing-v1.0.0"
     },
     {
       "name": "/furniture/workspace/basic",
       "config": "furniture/workspace/basic/partcad.yaml",
-      "config_sha256": "215ae516dea37de731a08046bad8b92a908d2ee41f87bb42c376071e3a8ba913"
+      "config_sha256": "215ae516dea37de731a08046bad8b92a908d2ee41f87bb42c376071e3a8ba913",
+      "entry_type": "package"
     },
     {
       "name": "/pub/medical/laboratory/4tvc-microlab/v6",
       "config": "medical/laboratory/4tvc-microlab/hardware/v6/partcad.yaml",
-      "config_sha256": "5b3e6fd866dbb97ce27fd1e58133b372f179be7e9c8d90987fc6003686d8b3e3"
+      "config_sha256": "5b3e6fd866dbb97ce27fd1e58133b372f179be7e9c8d90987fc6003686d8b3e3",
+      "entry_type": "package"
     },
     {
       "name": "/pub/medical/laboratory/4tvc-microlab",
       "config": "medical/laboratory/4tvc-microlab/partcad.yaml",
-      "config_sha256": "39b4ed52ae8be2122230cf2e5c8e0a340b8781c8f13764070bab227cf1a13c40"
-    },
-    {
-      "name": "//pub/narysai/comp-ivins-case-4",
-      "config": "narysai/comp-ivins-case-4/partcad.yaml",
-      "config_sha256": "0caae81f2ecad090bb0dad130bacd9f47fb2110a1ece5b943c104e965e2025f8"
+      "config_sha256": "39b4ed52ae8be2122230cf2e5c8e0a340b8781c8f13764070bab227cf1a13c40",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/multimodal/openvmp",
       "config": "robotics/multimodal/openvmp/partcad.yaml",
-      "config_sha256": "fce55b6a91468c7d77529bb8ebce13b6cacafdbf17e466ce4eda90729493c1d8"
+      "config_sha256": "fce55b6a91468c7d77529bb8ebce13b6cacafdbf17e466ce4eda90729493c1d8",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/multimodal/openvmp/parts",
       "config": "robotics/multimodal/openvmp/parts/partcad.yaml",
-      "config_sha256": "8862d785529bd5a0c057892814cfa6608b4466e52325623bc5c25df9b0859d57"
+      "config_sha256": "8862d785529bd5a0c057892814cfa6608b4466e52325623bc5c25df9b0859d57",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/multimodal/openvmp/robots/don1",
       "config": "robotics/multimodal/openvmp/robots/don1/partcad.yaml",
-      "config_sha256": "df1a04eec9433b4a453146bd8a7dc73679bbc81db0c7555d862e1cb9fa8b9bd5"
+      "config_sha256": "df1a04eec9433b4a453146bd8a7dc73679bbc81db0c7555d862e1cb9fa8b9bd5",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/multimodal/openvmp/robots",
       "config": "robotics/multimodal/openvmp/robots/partcad.yaml",
-      "config_sha256": "d062094ba7aa05a96e9be74bb64903dfb2f4e4a9f3c07f69358255560b9ecce6"
+      "config_sha256": "d062094ba7aa05a96e9be74bb64903dfb2f4e4a9f3c07f69358255560b9ecce6",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/parts/dfrobot",
       "config": "robotics/parts/dfrobot/partcad.yaml",
-      "config_sha256": "3510d296b96d530a22e4f2f51b8dddf89520e2da4bd11c90b3bdbe45858b14c3"
+      "config_sha256": "3510d296b96d530a22e4f2f51b8dddf89520e2da4bd11c90b3bdbe45858b14c3",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/parts/gobilda",
       "config": "robotics/parts/gobilda/partcad.yaml",
-      "config_sha256": "71405429ee8f8cf2d25fb811e23d84c044b0f6e0bf60e6a4617af82d01988f4d"
+      "config_sha256": "71405429ee8f8cf2d25fb811e23d84c044b0f6e0bf60e6a4617af82d01988f4d",
+      "entry_type": "package"
     },
     {
       "name": "/robotics/research/cloudgripper",
       "config": "robotics/research/cloudgripper/partcad.yaml",
-      "config_sha256": "ea56fbee723f9c3425aa572ddb508c651e91b5afc268405532654fa3df64b5aa"
+      "config_sha256": "ea56fbee723f9c3425aa572ddb508c651e91b5afc268405532654fa3df64b5aa",
+      "entry_type": "package"
     },
     {
       "name": "/std/imperial/cqwarehouse",
       "config": "std/imperial/cqwarehouse/partcad.yaml",
-      "config_sha256": "d7bfb44881e2709b2ca5497faecc3bab97a233750dcdaff69e469e761c7c1cbc"
+      "config_sha256": "d7bfb44881e2709b2ca5497faecc3bab97a233750dcdaff69e469e761c7c1cbc",
+      "entry_type": "package"
     },
     {
       "name": "/std/imperial/dimensional-lumber",
       "config": "std/imperial/dimensional-lumber/partcad.yaml",
-      "config_sha256": "12a9eade004dee8fab5dd89666534d2c1fcb4429cf740f53b4f7de850b3322af"
+      "config_sha256": "12a9eade004dee8fab5dd89666534d2c1fcb4429cf740f53b4f7de850b3322af",
+      "entry_type": "package"
     },
     {
       "name": "/std/metric/cqwarehouse",
       "config": "std/metric/cqwarehouse/partcad.yaml",
-      "config_sha256": "25c0792f8e8e7bfbe6d7303d5f79057cc64b28b056116b5ee7cb49557de7b08b"
+      "config_sha256": "25c0792f8e8e7bfbe6d7303d5f79057cc64b28b056116b5ee7cb49557de7b08b",
+      "entry_type": "package"
     },
     {
       "name": "/std/metric/m",
       "config": "std/metric/m/partcad.yaml",
-      "config_sha256": "48c58ead54d2eacbc6b975378b9219fb83aae2f2dcfaac645eacda81d04b9706"
+      "config_sha256": "48c58ead54d2eacbc6b975378b9219fb83aae2f2dcfaac645eacda81d04b9706",
+      "entry_type": "package"
     },
     {
       "name": "/std/metric/nema",
       "config": "std/metric/nema/partcad.yaml",
-      "config_sha256": "a91a312706070f320882a53020ab8baf5ec2df26ce293bcfab8dbf637abe946e"
+      "config_sha256": "a91a312706070f320882a53020ab8baf5ec2df26ce293bcfab8dbf637abe946e",
+      "entry_type": "package"
     },
     {
       "name": "/pub/storage/workspace/gridfinity",
       "config": "storage/workspace/gridfinity/partcad.yaml",
-      "config_sha256": "f49b2cf806f9854f2d456d7466df85f56f53ad1052ecd333279d6fad2c3c6eae"
+      "config_sha256": "f49b2cf806f9854f2d456d7466df85f56f53ad1052ecd333279d6fad2c3c6eae",
+      "entry_type": "package"
     },
     {
       "name": "/pub/svc/commerce/gobilda",
       "config": "svc/commerce/gobilda/partcad.yaml",
-      "config_sha256": "0af1577a2a5381cf9c354009ca445864ae6ab746b227243b3429aefc295073de"
+      "config_sha256": "0af1577a2a5381cf9c354009ca445864ae6ab746b227243b3429aefc295073de",
+      "entry_type": "package"
     },
     {
       "name": "/pub/svc/commerce/homedepot",
       "config": "svc/commerce/homedepot/partcad.yaml",
-      "config_sha256": "65a9fe16bb52710fceff6f645f68b3ab92714e8295126c649b5d97dfd7b762a1"
+      "config_sha256": "65a9fe16bb52710fceff6f645f68b3ab92714e8295126c649b5d97dfd7b762a1",
+      "entry_type": "package"
     }
   ],
   "objects": [
@@ -2228,27 +2307,6 @@
       "section": "assemblies",
       "name": "microlab",
       "type": "alias"
-    },
-    {
-      "package": "//pub/narysai/comp-ivins-case-4",
-      "section": "parts",
-      "name": "enclosure-bottom",
-      "type": "stl",
-      "source": "narysai/comp-ivins-case-4/tmp/input/Raspberry_pi_5__case_with_pineboards_AI_Bundle_BOTTOM_v1.stl"
-    },
-    {
-      "package": "//pub/narysai/comp-ivins-case-4",
-      "section": "parts",
-      "name": "enclosure-top",
-      "type": "stl",
-      "source": "narysai/comp-ivins-case-4/tmp/input/Raspberry_pi_5__case_with_pineboards_AI_Bundle_TOP_v1.stl"
-    },
-    {
-      "package": "//pub/narysai/comp-ivins-case-4",
-      "section": "parts",
-      "name": "thermal-insert",
-      "type": "3mf",
-      "source": "narysai/comp-ivins-case-4/tmp/input/thermal2.3mf"
     },
     {
       "package": "/robotics/multimodal/openvmp/parts",
@@ -6441,21 +6499,6 @@
       "path": "medical/laboratory/4tvc-microlab/hardware/v6/stepdown-case.svg",
       "bytes": 7168,
       "sha256": "70605ae55938691fcbfb81fa194aa48832d0ac158cd265b5cdd39cdd071a0260"
-    },
-    {
-      "path": "narysai/comp-ivins-case-4/tmp/input/Raspberry_pi_5__case_with_pineboards_AI_Bundle_BOTTOM_v1.stl",
-      "bytes": 186784,
-      "sha256": "d70345234af0ef1f12074b95fa0ab13f18d0b2584b6583d0750aa0efe1dca370"
-    },
-    {
-      "path": "narysai/comp-ivins-case-4/tmp/input/Raspberry_pi_5__case_with_pineboards_AI_Bundle_TOP_v1.stl",
-      "bytes": 134584,
-      "sha256": "4d6a114218761683a2f5d406530bbcbb0515251e4dd758c31cf526777b463991"
-    },
-    {
-      "path": "narysai/comp-ivins-case-4/tmp/input/thermal2.3mf",
-      "bytes": 58638,
-      "sha256": "fd1e6562ca609249f9500b9d8738ce4079f971513016bc5ba160118cc850f36b"
     },
     {
       "path": "robotics/multimodal/openvmp/generated_files/parts/arduino/mega2560.stl",

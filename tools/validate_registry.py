@@ -4,6 +4,7 @@ import math
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader, StrictUndefined
@@ -43,6 +44,47 @@ def load_config(path: Path) -> dict:
     return data
 
 
+def validate_project_pointer(config_path: Path, data: dict, package_root: Path) -> bool:
+    metadata = data.get("narys_project")
+    if metadata is None:
+        return False
+    label = config_path.relative_to(root)
+    if not isinstance(metadata, dict):
+        errors.append(f"{label}: narys_project must be a mapping")
+        return True
+    required = {
+        "schema_version", "kind", "access", "canonical_repo", "default_branch",
+        "contribution_url", "issues_url", "current_drawing", "category",
+    }
+    missing = sorted(required - metadata.keys())
+    if missing:
+        errors.append(f"{label}: narys_project is missing: {', '.join(missing)}")
+    if metadata.get("schema_version") != 1:
+        errors.append(f"{label}: narys_project.schema_version must be 1")
+    if metadata.get("kind") != "project":
+        errors.append(f"{label}: narys_project.kind must be project")
+    if metadata.get("access") != "public":
+        errors.append(f"{label}: PUB project pointers must have public access")
+    canonical = str(metadata.get("canonical_repo", ""))
+    parsed = urlparse(canonical)
+    if parsed.scheme != "https" or parsed.netloc != "github.com" or len(parsed.path.strip("/").split("/")) != 2:
+        errors.append(f"{label}: canonical_repo must be an HTTPS GitHub repository URL")
+    for key in ("contribution_url", "issues_url"):
+        value = str(metadata.get(key, ""))
+        if not value.startswith(canonical.rstrip("/") + "/"):
+            errors.append(f"{label}: {key} must point inside canonical_repo")
+    for section in ("parts", "sketches", "assemblies"):
+        if data.get(section):
+            errors.append(f"{label}: project pointer must not declare {section}")
+    cad_extensions = {
+        ".fcstd", ".step", ".stp", ".stl", ".3mf", ".obj", ".glb", ".gltf",
+        ".iges", ".igs", ".brep", ".dxf", ".f3d", ".scad",
+    }
+    if any(path.is_file() and path.suffix.casefold() in cad_extensions for path in package_root.rglob("*")):
+        errors.append(f"{label}: project pointer contains CAD assets")
+    return True
+
+
 for config_path in root.rglob("partcad.yaml"):
     config_count += 1
     try:
@@ -52,6 +94,8 @@ for config_path in root.rglob("partcad.yaml"):
         continue
 
     package_root = config_path.parent.resolve()
+    if validate_project_pointer(config_path, data, package_root):
+        continue
     for section in ("parts", "sketches", "assemblies"):
         entries = data.get(section) or {}
         if not isinstance(entries, dict):

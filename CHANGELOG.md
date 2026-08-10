@@ -3,6 +3,29 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [2.0.0] - 2026-08-10
+
+### Added
+
+- `//pub/fpv/case-holder` as the first source-free active-project pointer,
+  linking to the canonical `NarysAI/Case_holder` Git repository and drawing
+  checkpoint `drawing-v1.0.0`.
+- Inventory schema 2, which distinguishes released packages from project
+  pointers and records canonical project repositories.
+
+### Removed
+
+- Public package `//pub/narysai/comp-ivins-case-4` and its three legacy object
+  IDs. Ongoing COMP development moves to a private standalone repository and is
+  available in NarysAI only to authenticated users. The released bytes remain
+  recoverable from PUB 1.3.0 and protected Git history.
+
+### Migration
+
+- See `MIGRATIONS/2.0.0-COMP-IVINS-CASE-4.md` for stable IDs, recovery, and the
+  private replacement path.
+
+
 ## [1.3.0] - 2026-08-09
 
 ### Added

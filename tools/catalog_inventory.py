@@ -69,11 +69,17 @@ def build_inventory(root: Path) -> dict:
         relative_config = config_path.relative_to(root).as_posix()
         data = load_config(config_path)
         package_name = str(data.get("name") or "/" + config_path.parent.relative_to(root).as_posix())
-        packages.append({
+        project = data.get("narys_project") if isinstance(data.get("narys_project"), dict) else None
+        package_record = {
             "name": package_name,
             "config": relative_config,
             "config_sha256": sha256(canonical_bytes(config_path)),
-        })
+            "entry_type": "project" if project else "package",
+        }
+        if project:
+            package_record["canonical_repo"] = str(project.get("canonical_repo", ""))
+            package_record["current_drawing"] = str(project.get("current_drawing", ""))
+        packages.append(package_record)
         for section in SECTIONS:
             entries = data.get(section) or {}
             if not isinstance(entries, dict):
@@ -110,7 +116,7 @@ def build_inventory(root: Path) -> dict:
     if len(package_names) != len(set(package_names)):
         raise ValueError("duplicate PartCAD package names found")
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "catalog_version": version,
         "summary": {
             "packages": len(packages),
