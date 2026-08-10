@@ -53,6 +53,20 @@ parts:
             path: h30-enclosed.stl
             geometry_scope: exterior
             primary: true
+          - format: step
+            path: h30-enclosed.step
+            geometry_scope: interior
+            components:
+              - kind: part
+                semantic_path: electronics/modules/wheeltec-h30:h30-pcb
+              - kind: part
+                semantic_path: electronics/modules/wheeltec-h30:h30-main-housing
+              - kind: part
+                semantic_path: electronics/modules/wheeltec-h30:h30-cover
+              - kind: part
+                semantic_path: electronics/modules/wheeltec-h30:h30-cover-screw
+              - kind: part
+                semantic_path: electronics/modules/wheeltec-h30:h30-plastic-damper-screw
       product:
         schema_version: 1
         family_id: wheeltec-h30
@@ -60,7 +74,7 @@ parts:
         variant_id: h30-enclosed
         variant_name: H30 Enclosed
         variant_kind: enclosed
-        revision: "1.4"
+        revision: "1.5"
         base_variant:
           kind: part
           semantic_path: electronics/modules/wheeltec-h30:h30-pcb

@@ -31,7 +31,7 @@ sensor:
 FreeCAD inspection of the official metal-housing STEP gives an overall envelope
 of 46.0 x 59.5 x 11.7 mm. The source assembly is incomplete: it contains only
 one instance of each mounting fastener even though the physical product uses
-four of each. Revision 1.4 leaves the vendor housing and cover unchanged and
+four of each. Revision 1.5 leaves the vendor housing and cover unchanged and
 copies the existing M3x4 STEP screw into the three empty cover-hole centers, so
 all four cover screws are present. The `4 + 4` physical quantities remain in
 the catalog BOM.
@@ -47,14 +47,14 @@ there are no `import`, `include`, or external-file dependencies. The housing,
 cover, and two fastener component files are direct tessellations of the
 corresponding individual STEP objects.
 
-SCAD and STL are explicitly marked `geometry_scope: exterior`. A future STEP
-representation is `geometry_scope: interior` and is accepted only when every
-component exists as an exact catalog object and its STEP name contains
-`narys:<kind>/<semantic_path>`. The unchanged vendor STEP is referenced by its
-official URL and SHA-256 rather than declared as a canonical STEP
-representation: its internal product names do not yet contain those
-identifiers. Altering those names would change the vendor file and violate the
-source-preservation rule.
+SCAD and STL are explicitly marked `geometry_scope: exterior`; STEP is marked
+`geometry_scope: interior`. Revision 1.5 supplies the
+component-linked STEP: its 11 instances are the PCB, housing, cover, four cover
+screws, and four mounting damper screws. Every STEP `PRODUCT` name contains the
+exact `narys:<kind>/<semantic_path>` identifier of its catalog component. The
+unchanged vendor STEP remains the source reference identified by the official
+URL and SHA-256; the catalog STEP is a derived assembly that adds only the
+missing repeated fastener instances and catalog identifiers.
 
 The official bare-board STEP gives an envelope of approximately
 43.9 x 31.5 x 4.9 mm including populated components. The current PCB SCAD began
