@@ -1,0 +1,15 @@
+name: //pub/fpv/frames/10in-tube-frame
+desc: Complete 10-inch FPV tube-frame mechanical reference assembly.
+license_status: unverified
+
+parts:
+  frame-10in:
+    type: scad
+    path: frame-10in.scad
+    model_role: electronic_component
+    desc: Self-contained OpenSCAD assembly of the tube frame, plates, panels, connectors, mounts, and standoffs.
+
+render:
+  readme:
+  png:
+    prefix: ./

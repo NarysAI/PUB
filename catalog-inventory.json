@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "2.1.0",
+  "catalog_version": "2.2.0",
   "summary": {
-    "packages": 78,
-    "objects": 843,
-    "assets": 515,
-    "asset_bytes": 436480668
+    "packages": 82,
+    "objects": 847,
+    "assets": 519,
+    "asset_bytes": 508989792
   },
   "packages": [
     {
@@ -363,6 +363,30 @@
       "entry_type": "project",
       "canonical_repo": "https://github.com/NarysAI/Case_holder",
       "current_drawing": "drawing-v1.0.0"
+    },
+    {
+      "name": "//pub/fpv/drones/reference-10in",
+      "config": "fpv/drones/reference-10in/partcad.yaml",
+      "config_sha256": "820aa8715755a8151d0301166d1995f9037205c431ba41180bb599548235fffe",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/fpv/frames/10in-tube-frame",
+      "config": "fpv/frames/10in-tube-frame/partcad.yaml",
+      "config_sha256": "fafdc0c5a5d4acd663c148b01f5c842f5f7e1461a191d7a7a49c7f2203b7982b",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/fpv/motors/reference-35mm",
+      "config": "fpv/motors/reference-35mm/partcad.yaml",
+      "config_sha256": "1239da1db29d0072c5f6c91c500eee75e0fb2b6ae4dace182560669105986125",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/fpv/propellers/reference-10in",
+      "config": "fpv/propellers/reference-10in/partcad.yaml",
+      "config_sha256": "1e8ded2362cd40a84cc99581ef3e8adf0d21a8886155285ca3e795ed8086725c",
+      "entry_type": "package"
     },
     {
       "name": "/furniture/workspace/basic",
@@ -2017,6 +2041,38 @@
       "section": "parts",
       "name": "examples/Ex100_Lego_Brick",
       "type": "cadquery"
+    },
+    {
+      "package": "//pub/fpv/drones/reference-10in",
+      "section": "parts",
+      "name": "reference-drone-10in",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "fpv/drones/reference-10in/reference-drone-10in.scad"
+    },
+    {
+      "package": "//pub/fpv/frames/10in-tube-frame",
+      "section": "parts",
+      "name": "frame-10in",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "fpv/frames/10in-tube-frame/frame-10in.scad"
+    },
+    {
+      "package": "//pub/fpv/motors/reference-35mm",
+      "section": "parts",
+      "name": "reference-motor-35mm",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "fpv/motors/reference-35mm/reference-motor-35mm.scad"
+    },
+    {
+      "package": "//pub/fpv/propellers/reference-10in",
+      "section": "parts",
+      "name": "reference-propeller-10in",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "fpv/propellers/reference-10in/reference-propeller-10in.scad"
     },
     {
       "package": "/furniture/workspace/basic",
@@ -6324,6 +6380,26 @@
       "path": "examples/script/cadquery/doc/vslot-2020_1.dxf",
       "bytes": 48010,
       "sha256": "0aaaa16452dc422c423f249f03e098e3cad75e954963cbaad85ef52181f81dc7"
+    },
+    {
+      "path": "fpv/drones/reference-10in/reference-drone-10in.scad",
+      "bytes": 53887027,
+      "sha256": "6f6ebb718a22aeb700bb98a3a955897a17036752251b307413eae34006492b1a"
+    },
+    {
+      "path": "fpv/frames/10in-tube-frame/frame-10in.scad",
+      "bytes": 8774781,
+      "sha256": "a5a904ac5c61c9a38b0b6947465e6dc3e4c7fc5f90c19d432c3b98b7d1463b27"
+    },
+    {
+      "path": "fpv/motors/reference-35mm/reference-motor-35mm.scad",
+      "bytes": 2385718,
+      "sha256": "c8472895544b0673e7efd9507b4c579ff90a57e61a5a84017b6976e6592fd085"
+    },
+    {
+      "path": "fpv/propellers/reference-10in/reference-propeller-10in.scad",
+      "bytes": 7461598,
+      "sha256": "74e7a3e15d88492ce96b3c30119cbebe5b7eca656814153db1aed7ac845b5676"
     },
     {
       "path": "furniture/workspace/basic/imperial-desk-1.assy",

@@ -3,6 +3,23 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [2.2.0] - 2026-08-10
+
+### Added
+
+- `//pub/fpv/motors/reference-35mm`, a self-contained SCAD conversion of the
+  approximately 35 mm motor found in the supplied 10-inch drone STEP assembly.
+- `//pub/fpv/propellers/reference-10in`, a self-contained SCAD conversion of the
+  nominal 10-inch three-blade propeller.
+- `//pub/fpv/frames/10in-tube-frame`, the complete tube-frame construction with
+  four arms, fourteen standoffs, plates, side panels, connectors, and mounts.
+- `//pub/fpv/drones/reference-10in`, the complete available assembly containing
+  the frame, four motors, and four propellers.
+
+All four packages record the missing upstream URL and license as unverified,
+retain the supplied STEP hash, and make no upstream ownership or flight-safety
+claim.
+
 ## [2.1.0] - 2026-08-10
 
 ### Added

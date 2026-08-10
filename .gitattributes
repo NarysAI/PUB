@@ -1,0 +1,4 @@
+fpv/drones/reference-10in/reference-drone-10in.scad filter=lfs diff=lfs merge=lfs -text
+fpv/frames/10in-tube-frame/frame-10in.scad filter=lfs diff=lfs merge=lfs -text
+fpv/motors/reference-35mm/reference-motor-35mm.scad filter=lfs diff=lfs merge=lfs -text
+fpv/propellers/reference-10in/reference-propeller-10in.scad filter=lfs diff=lfs merge=lfs -text

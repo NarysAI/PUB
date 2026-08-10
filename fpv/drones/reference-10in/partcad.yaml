@@ -1,0 +1,15 @@
+name: //pub/fpv/drones/reference-10in
+desc: Complete available 10-inch FPV drone mechanical reference assembly.
+license_status: unverified
+
+parts:
+  reference-drone-10in:
+    type: scad
+    path: reference-drone-10in.scad
+    model_role: electronic_component
+    desc: Full self-contained OpenSCAD assembly with frame, four motors, and four nominal 10-inch three-blade propellers.
+
+render:
+  readme:
+  png:
+    prefix: ./
