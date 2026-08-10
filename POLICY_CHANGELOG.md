@@ -3,6 +3,15 @@
 Policy versions follow Semantic Versioning independently from catalog releases
 and use Git tags named `policy-vX.Y.Z`.
 
+## [3.1.1] - 2026-08-10
+
+### Fixed
+
+- Clarified that canonical 3D `model_role` requirements apply to parts, not
+  two-dimensional PartCAD sketches and interface profiles.
+- Allowed compatible sketch geometry corrections to use CadQuery, Build123d,
+  SVG, DXF, or `basic` sources without assigning an inapplicable 3D role.
+
 ## [3.1.0] - 2026-08-10
 
 ### Added

@@ -30,6 +30,12 @@
   A slotted thru opening of the specified depth and width.
   E.g. ``m2-thru-8-slotted-30`` for a 30mm wide slot in an 8mm thick surface.
 
+  The referenced ``m*-slotted-*`` sketch is a capsule profile: the first
+  value is its diameter (slot width) and the second is its overall length.
+  Legacy combinations whose requested length is shorter than their diameter
+  are retained for stable identity and resolve to the smallest valid capsule,
+  a circle of the requested diameter.
+
 * ``m*-threaded-hole-*``
 
   A threaded hole of the corresponding depth (not a thru).

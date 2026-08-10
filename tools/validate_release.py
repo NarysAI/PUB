@@ -142,7 +142,8 @@ def main() -> int:
             errors.append(f"{label}: changed object requires model_role electronic_component or printable_part")
 
     for key, record in changed_records.items():
-        validate_role(record, ":".join(key))
+        if record.get("section") == "parts":
+            validate_role(record, ":".join(key))
 
     for path in sorted(changed_assets):
         source = PurePosixPath(path)

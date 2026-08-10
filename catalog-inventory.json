@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "catalog_version": "2.2.0",
+  "catalog_version": "2.2.1",
   "summary": {
     "packages": 82,
     "objects": 847,
@@ -469,7 +469,7 @@
     {
       "name": "/std/metric/m",
       "config": "std/metric/m/partcad.yaml",
-      "config_sha256": "48c58ead54d2eacbc6b975378b9219fb83aae2f2dcfaac645eacda81d04b9706",
+      "config_sha256": "91484f1a6c474c63bb731a9204446ced6fb5d5f431033ec8d670cc4ecffb2eb3",
       "entry_type": "package"
     },
     {
@@ -3022,97 +3022,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3124,97 +3140,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.2-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3226,97 +3258,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.4-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3328,97 +3376,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m1.6-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3430,97 +3494,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m10-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3532,97 +3612,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m12-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3634,97 +3730,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m14-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3736,97 +3848,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m16-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3838,97 +3966,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -3940,97 +4084,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m2.5-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4042,97 +4202,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m20-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4144,97 +4320,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m24-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4246,97 +4438,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4348,97 +4556,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m3.5-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4450,97 +4674,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m30-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4552,97 +4792,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m32-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4654,97 +4910,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m36-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4756,97 +5028,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m4-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4858,97 +5146,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m42-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -4960,97 +5264,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m48-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -5062,97 +5382,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m5-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -5164,97 +5500,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m56-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -5266,97 +5618,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m6-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -5368,97 +5736,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m64-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
@@ -5470,97 +5854,113 @@
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-1",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-1.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-10",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-12",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-16",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-2",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-2.5",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-20",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-24",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-25",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-30",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-32",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-4",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-40",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-6",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/std/metric/m",
       "section": "sketches",
       "name": "m8-slotted-8",
-      "type": "basic"
+      "type": "cadquery",
+      "source": "std/metric/m/_slotted.py"
     },
     {
       "package": "/pub/std/metric/standoffs",

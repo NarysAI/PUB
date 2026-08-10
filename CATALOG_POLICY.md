@@ -81,7 +81,7 @@ package remains reproducible.
 
 ### Canonical CAD formats
 
-Every new or changed model declares exactly one `model_role`, and that role
+Every new or changed 3D part declares exactly one `model_role`, and that role
 determines its only canonical source format:
 
 - **`electronic_component` → `.scad` only.** Cameras, PCBs, modules, connectors,
@@ -98,6 +98,13 @@ The roles and formats are mutually exclusive. A standalone object must not carry
 both SCAD and FCStd sources. Shared SCAD libraries whose filename begins with `_`
 are implementation helpers for electronic-component models and are not catalog
 objects themselves.
+
+Two-dimensional `sketches` and interface profiles do not declare a 3D
+`model_role`. They use the PartCAD-supported sketch sources appropriate to
+their geometry, including `basic`, CadQuery, Build123d, SVG, and DXF. Changing
+a sketch source type while preserving its package, kind, and name is a
+compatible geometry correction when the semantic profile is unchanged or
+made more accurate.
 
 STEP/STP, STL, 3MF, OBJ, GLB/glTF, IGES, BREP, DXF, F3D, and other CAD/mesh
 formats are not accepted as new canonical PUB data. They may be generated outside

@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [2.2.1] - 2026-08-10
+
+### Fixed
+
+- Replaced the placeholder circular geometry of all existing
+  `std/metric/m:m*-slotted-*` sketches with a shared parametric CadQuery
+  capsule profile while preserving every stable sketch and interface ID.
+- Defined the second slot value as overall length and retained legacy
+  shorter-than-diameter combinations as diameter-sized circular profiles.
+
 ## [2.2.0] - 2026-08-10
 
 ### Added
