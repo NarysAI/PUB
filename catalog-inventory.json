@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "3.0.0",
+  "catalog_version": "3.1.0",
   "summary": {
-    "packages": 77,
-    "objects": 422,
-    "assets": 519,
-    "asset_bytes": 508990092
+    "packages": 78,
+    "objects": 423,
+    "assets": 520,
+    "asset_bytes": 509005879
   },
   "packages": [
     {
@@ -66,6 +66,12 @@
       "name": "/pub/electronics/modules/ec-buying",
       "config": "electronics/modules/ec-buying/partcad.yaml",
       "config_sha256": "a71d1eff28ac4abf4afecee277499f8cedcdf5de9afdf9ff44d55a34ddae9b72",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/electronics/modules/wheeltec-h30wp",
+      "config": "electronics/modules/wheeltec-h30wp/partcad.yaml",
+      "config_sha256": "d4cbd4bf799c9117924bf3b61afdd2f6adfff8fdf2b6a53b7e6ed49511b260cc",
       "entry_type": "package"
     },
     {
@@ -622,6 +628,14 @@
       "section": "parts",
       "name": "ky-034-seven-color",
       "type": "scad"
+    },
+    {
+      "package": "//pub/electronics/modules/wheeltec-h30wp",
+      "section": "parts",
+      "name": "wheeltec-h30wp",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/modules/wheeltec-h30wp/wheeltec_h30wp.scad"
     },
     {
       "package": "/pub/electronics/power-converters/xl4015",
@@ -3220,6 +3234,11 @@
       "path": "electronics/modules/ec-buying/ky-034-seven-color.scad",
       "bytes": 222,
       "sha256": "4b1e9f2525167bd0a993fc98420a80b328bc5c12b206ad74a194c913e54e363c"
+    },
+    {
+      "path": "electronics/modules/wheeltec-h30wp/wheeltec_h30wp.scad",
+      "bytes": 15787,
+      "sha256": "7a44bd997568157059226bff1bd2a5d371aa38e6ec8ce8a67a5041ba5efc5a59"
     },
     {
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",
