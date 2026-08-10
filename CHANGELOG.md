@@ -3,6 +3,25 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [3.0.0] - 2026-08-10
+
+### Removed
+
+- Removed the sketch-only `//pub/std/metric/m` package and all 425 generated
+  circle/slot object IDs. The complete stable-ID removal ledger and recovery
+  path are recorded in `MIGRATIONS/3.0.0-PRUNE-EMPTY-PACKAGES.md`.
+- Removed empty placeholder packages for metric NEMA interfaces, Raspberry Pi
+  compute modules and microcontrollers, and the non-functional goBILDA commerce
+  provider. None contained a part, assembly or usable sketch.
+
+### Migration
+
+- Moved the metric mating-interface templates, without their 425 catalog
+  sketches, into the populated `//pub/std/metric/cqwarehouse` package and
+  redirected all dependent packages and assemblies to the new namespace.
+- `//pub/std/metric/standoffs` remains unchanged with its three configurable
+  FF, MF and MM objects and six selectable metric size presets.
+
 ## [2.2.2] - 2026-08-10
 
 ### Fixed

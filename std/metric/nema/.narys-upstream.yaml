@@ -1,7 +1,0 @@
-upstream_url: https://github.com/partcad/partcad-standard-metric-nema/
-upstream_revision: f7870994946401f5bb8a5ab50ec3303e828b17df
-synchronized_at: '2026-08-03T20:11:42.554745+00:00'
-license_status: unverified
-checksums:
-  partcad.yaml: ae740b04dac783eae610a29ecca574aa58ad5e2e911626d46094f431f9c01354
-  README.md: cbade3baea95b075d82f210493fe3cb57e9fe6c944c29eb0ccb1ded270e89186

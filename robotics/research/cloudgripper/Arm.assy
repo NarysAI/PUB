@@ -10,13 +10,13 @@ links:
       withParams:
         turnZ: 270
       name: base
-      to: /pub/std/metric/m:m2.5-thru
+      to: /pub/std/metric/cqwarehouse:m2.5-thru
       toInstance: servo-screw
   - part: servo/mg90s
     package: /pub/electromechanics/towerpro
     name: servo_rotate
     connect:
-      with: /pub/std/metric/m:m2.5-threaded-hole-4
+      with: /pub/std/metric/cqwarehouse:m2.5-threaded-hole-4
       name: shoulder
       toInstance: inner
 
@@ -29,7 +29,7 @@ links:
       withParams:
         turnZ: 112
       name: base
-      to: /pub/std/metric/m:m2-thru-8
+      to: /pub/std/metric/cqwarehouse:m2-thru-8
       toInstance: front-right-top
   - part: Arm/Arm_grip_link2
     name: grip_link_front_bottom_right
@@ -38,7 +38,7 @@ links:
       withParams:
         turnZ: 68
       name: base
-      to: /pub/std/metric/m:m2-thru-8
+      to: /pub/std/metric/cqwarehouse:m2-thru-8
       toInstance: front-right-bottom
   - part: fastener/socketheadcap-iso4762
     package: /pub/std/metric/cqwarehouse
@@ -102,7 +102,7 @@ links:
       withParams:
         turnZ: 248
       name: base
-      to: /pub/std/metric/m:m2-thru-8
+      to: /pub/std/metric/cqwarehouse:m2-thru-8
       toInstance: front-left-top
   - part: Arm/Arm_grip_link2
     name: grip_link_front_bottom_left
@@ -111,7 +111,7 @@ links:
       withParams:
         turnZ: 292
       name: base
-      to: /pub/std/metric/m:m2-thru-8
+      to: /pub/std/metric/cqwarehouse:m2-thru-8
       toInstance: front-left-bottom
   - part: Arm/Arm_grip_finger_left
     name: grip_finger_left
@@ -173,16 +173,16 @@ links:
     name: servo_grip
     # Alternatively, we could connect to the base instead
     # connect:
-    #   with: /pub/std/metric/m:m2.5-thru-2.5
+    #   with: /pub/std/metric/cqwarehouse:m2.5-thru-2.5
     #   withInstance: top-front
     #   # withPort: top-front*
     #   withParams:
     #     turnZ: 90
     #   name: base
-    #   to: /pub/std/metric/m:m2-thru
+    #   to: /pub/std/metric/cqwarehouse:m2-thru
     #   toInstance: servo-grip-top
     connect:
-      with: /pub/std/metric/m:m2.5-threaded-hole-4
+      with: /pub/std/metric/cqwarehouse:m2.5-threaded-hole-4
       withParams:
         turnZ: 112
         moveZ: 2.9
@@ -197,7 +197,7 @@ links:
       length: 10
     connect:
       name: base
-      to: /pub/std/metric/m:m2-thru
+      to: /pub/std/metric/cqwarehouse:m2-thru
       toInstance: servo-grip-top
       toParams:
         moveZ: 2.5
@@ -209,7 +209,7 @@ links:
       length: 10
     connect:
       name: base
-      to: /pub/std/metric/m:m2-hole-6
+      to: /pub/std/metric/cqwarehouse:m2-hole-6
       toInstance: servo-grip-bottom
       toParams:
         moveZ: 2.5
@@ -218,12 +218,12 @@ links:
   - part: Arm/Arm_rotation_base
     name: rotation_base
     connect:
-      with: /pub/std/metric/m:m2.5-thru
+      with: /pub/std/metric/cqwarehouse:m2.5-thru
       withInstance: bottom
       withParams:
         turnZ: 180
       name: servo_rotate
-      to: /pub/std/metric/m:m2.5-thru-2.5
+      to: /pub/std/metric/cqwarehouse:m2.5-thru-2.5
       toInstance: bottom-front
   # FIXME(clairbee): figure out whe the servo doesn't fit into the below part
   - part: Arm/Arm_linear_gear
@@ -292,13 +292,13 @@ links:
     package: /pub/electromechanics/towerpro
     name: servo_linear
     connect:
-      with: /pub/std/metric/m:m2.5-thru-2.5
+      with: /pub/std/metric/cqwarehouse:m2.5-thru-2.5
       withInstance: bottom-front
       withParams:
         turnZ: 180
         moveX: 0.7
       name: holder
-      to: /pub/std/metric/m:m2-thru-9
+      to: /pub/std/metric/cqwarehouse:m2-thru-9
       toInstance: servo-bottom
   - part: fastener/socketheadcap-iso4762
     package: /pub/std/metric/cqwarehouse
@@ -308,7 +308,7 @@ links:
       length: 12
     connect:
       name: holder
-      to: /pub/std/metric/m:m2-thru-9
+      to: /pub/std/metric/cqwarehouse:m2-thru-9
       toInstance: servo-top
       toParams:
         moveZ: 2.5
@@ -320,7 +320,7 @@ links:
       length: 12
     connect:
       name: holder
-      to: /pub/std/metric/m:m2-thru-9
+      to: /pub/std/metric/cqwarehouse:m2-thru-9
       toInstance: servo-bottom
       toParams:
         moveZ: 2.5
