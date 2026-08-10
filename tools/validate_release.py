@@ -147,15 +147,15 @@ def main() -> int:
         role = str(record.get("model_role", ""))
         source = PurePosixPath(str(record.get("source", "")))
         source_type = str(record.get("type", "")).casefold()
-        if role == "electronic_component":
+        if role in {"electronic_component", "mechanical_component"}:
             allowed = {"scad": {".scad"}, "stl": {".stl"}, "step": {".step", ".stp"}}
             if source.suffix.casefold() not in allowed.get(source_type, set()):
-                errors.append(f"{label}: electronic_component requires matching SCAD, STL, or STEP")
+                errors.append(f"{label}: catalog component requires matching SCAD, STL, or STEP")
         elif role == "printable_part":
             if source_type != "freecad" or source.suffix != ".FCStd":
                 errors.append(f"{label}: printable_part requires one .FCStd source with type: freecad")
         else:
-            errors.append(f"{label}: changed object requires model_role electronic_component or printable_part")
+            errors.append(f"{label}: changed object requires a supported catalog model_role")
 
     for key, record in changed_records.items():
         if record.get("section") == "parts":

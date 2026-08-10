@@ -3,6 +3,26 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.0] - 2026-08-10
+
+### Added
+
+- Added exact catalog components for the H30 main housing, cover, cover screw,
+  and plastic damper screw.
+
+### Changed
+
+- Corrected H30 Enclosed to revision 1.1: centered the front USB-C opening,
+  removed visible top screws, separated housing and cover, and modeled four
+  concealed cover screws plus four plastic vibration-isolating screws.
+- Added the `mechanical_component` model role for reusable physical assembly
+  parts linked by exact catalog identifiers.
+
+### Migration
+
+- See `MIGRATIONS/4.1.0-H30-ENCLOSED-CORRECTION.md` for the corrected geometry
+  and physical BOM.
+
 ## [4.0.0] - 2026-08-10
 
 ### Added

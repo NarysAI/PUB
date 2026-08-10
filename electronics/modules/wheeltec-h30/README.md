@@ -10,9 +10,10 @@ H30 IMU product family.
 | H30 PCB | `h30-pcb` | Bare sensor PCB and component population. |
 | H30 Enclosed | `h30-enclosed` | Complete sensor with the H30 PCB inside the standard metal housing. |
 
-`H30 Enclosed` declares `H30 PCB` as its base variant and as a quantity-one
-component. The initial BOM intentionally groups the remaining supplied hardware
-as one metal enclosure and two M3 cover screws; it is not a procurement BOM.
+`H30 Enclosed` revision 1.1 declares `H30 PCB` as its base variant and records
+the corrected physical composition: one main housing, one separate cover, four
+concealed cover screws, and four plastic vibration-isolating mounting screws.
+Every one of these component types is now an exact linked catalog object.
 
 ## Official geometry
 
@@ -28,10 +29,11 @@ sensor:
   `8025c79e0b8f5afe1afa9c49ff12876bb73349e8cfb3a2087d11a3bd214607c5`.
 
 FreeCAD inspection of the official metal-housing STEP gives an overall envelope
-of 46.0 x 59.5 x 11.7 mm. Its assembly contains the enclosure, H30 PCB, cover,
-and two M3 screws. The enclosed SCAD model preserves that overall envelope and
-component relationship with simplified AI-readable primitives rather than an
-embedded STEP mesh.
+of 46.0 x 59.5 x 11.7 mm. The source assembly is incomplete: it contains only
+one instance of a cover screw and one plastic damper even though the physical
+product uses four of each. Revision 1.1 corrects those quantities, centers the
+USB-C opening on the front long wall, separates the main housing from the
+sloped cover, and keeps the four cover screws concealed below the cover.
 
 `h30-pcb.scad` and `h30-enclosed.scad` are the two primary parametric entry
 sources. Their checked-in STL representations contain the same exterior
