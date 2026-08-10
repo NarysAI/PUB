@@ -14,7 +14,8 @@
 - [ ] Стабільні шляхи пакетів та об’єктів збережені або зміна позначена як MAJOR.
 - [ ] Для нових моделей додано походження, автора/виробника та ліцензію або
       `license_status: unverified`.
-- [ ] Вказано рівно одну роль: `electronic_component` зі SCAD/STL/STEP або
+- [ ] Вказано рівно одну роль: `electronic_component` / `mechanical_component`
+      зі SCAD/STL/STEP або
       `printable_part` із FreeCAD FCStd.
 - [ ] Електронний/покупний компонент не містить FCStd, а друкована деталь не
       використовує SCAD як канонічне джерело.

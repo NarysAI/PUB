@@ -13,6 +13,8 @@ Changelog, and catalog versions follow Semantic Versioning.
   relationships, revisions, BOM components, and compatibility aliases.
 - Added SCAD/STL exterior representations for both H30 variants and the
   schema/validation contract for component-linked STEP interior models.
+- Added exact catalog components for the H30 main housing, cover, cover screw,
+  and plastic damper screw.
 
 ### Changed
 
@@ -22,6 +24,9 @@ Changelog, and catalog versions follow Semantic Versioning.
   The website resolves the old object path as a compatibility alias.
 - Expanded canonical electronic-component formats to SCAD, STL, and STEP with
   enforced exterior/interior geometry scopes.
+- Corrected H30 Enclosed to revision 1.1: centered the front USB-C opening,
+  removed visible top screws, separated housing and cover, and modeled four
+  concealed cover screws plus four plastic vibration-isolating screws.
 
 ### Migration
 
