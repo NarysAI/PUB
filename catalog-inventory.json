@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "2.1.0",
+  "catalog_version": "2.2.0",
   "summary": {
-    "packages": 81,
-    "objects": 844,
-    "assets": 516,
-    "asset_bytes": 508984189
+    "packages": 82,
+    "objects": 847,
+    "assets": 519,
+    "asset_bytes": 508989792
   },
   "packages": [
     {
@@ -476,6 +476,12 @@
       "name": "/std/metric/nema",
       "config": "std/metric/nema/partcad.yaml",
       "config_sha256": "a91a312706070f320882a53020ab8baf5ec2df26ce293bcfab8dbf637abe946e",
+      "entry_type": "package"
+    },
+    {
+      "name": "/pub/std/metric/standoffs",
+      "config": "std/metric/standoffs/partcad.yaml",
+      "config_sha256": "862526b293f606dbedaba1999f12046c14b6692bfe3da9e8aab8f3c4219350c9",
       "entry_type": "package"
     },
     {
@@ -5557,6 +5563,30 @@
       "type": "basic"
     },
     {
+      "package": "/pub/std/metric/standoffs",
+      "section": "parts",
+      "name": "hex-standoff-female-female",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "std/metric/standoffs/hex-standoff-female-female.scad"
+    },
+    {
+      "package": "/pub/std/metric/standoffs",
+      "section": "parts",
+      "name": "hex-standoff-male-female",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "std/metric/standoffs/hex-standoff-male-female.scad"
+    },
+    {
+      "package": "/pub/std/metric/standoffs",
+      "section": "parts",
+      "name": "hex-standoff-male-male",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "std/metric/standoffs/hex-standoff-male-male.scad"
+    },
+    {
       "package": "/pub/storage/workspace/gridfinity",
       "section": "parts",
       "name": "baseplate",
@@ -8155,6 +8185,21 @@
       "path": "std/metric/cqwarehouse/fastener/socketheadcap-iso4762.svg",
       "bytes": 79243,
       "sha256": "32acdc4c5055a921784d3d083b78a33548d33cc7acf434abbe29c7404b19b856"
+    },
+    {
+      "path": "std/metric/standoffs/hex-standoff-female-female.scad",
+      "bytes": 1635,
+      "sha256": "2ac524466f7f32d79f5d799a32ed60539f42c589b5fdd52dd853413902950cd0"
+    },
+    {
+      "path": "std/metric/standoffs/hex-standoff-male-female.scad",
+      "bytes": 2209,
+      "sha256": "1e5d8093ce34f8a72afdf8df915b32367578c931e6d60717edb20ad36aec8be8"
+    },
+    {
+      "path": "std/metric/standoffs/hex-standoff-male-male.scad",
+      "bytes": 1759,
+      "sha256": "ce1539b7efafe8ebddf99780ca1fc4540ee958b439d79258601d625954ff98fb"
     },
     {
       "path": "storage/workspace/gridfinity/cqgridfinity/shims/baseplate.svg",
