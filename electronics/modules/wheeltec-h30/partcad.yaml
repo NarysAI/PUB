@@ -35,8 +35,8 @@ parts:
             semantic_path: electronics/modules/wheeltec-h30wp:wheeltec-h30wp
 
   h30-enclosed:
-    type: scad
-    path: h30-enclosed.scad
+    type: stl
+    path: h30-enclosed.stl
     model_role: electronic_component
     desc: WHEELTEC H30 enclosed variant with the H30 PCB inside a metal housing.
     vendor: WHEELTEC
@@ -49,10 +49,10 @@ parts:
           - format: scad
             path: h30-enclosed.scad
             geometry_scope: exterior
-            primary: true
           - format: stl
             path: h30-enclosed.stl
             geometry_scope: exterior
+            primary: true
       product:
         schema_version: 1
         family_id: wheeltec-h30
@@ -60,7 +60,7 @@ parts:
         variant_id: h30-enclosed
         variant_name: H30 Enclosed
         variant_kind: enclosed
-        revision: "1.1"
+        revision: "1.2"
         base_variant:
           kind: part
           semantic_path: electronics/modules/wheeltec-h30:h30-pcb
@@ -93,8 +93,8 @@ parts:
             role: vibration_isolator
 
   h30-main-housing:
-    type: scad
-    path: h30-main-housing.scad
+    type: stl
+    path: h30-main-housing.stl
     model_role: mechanical_component
     desc: Main metal housing and mounting base for the WHEELTEC H30 Enclosed variant.
     vendor: WHEELTEC
@@ -105,14 +105,14 @@ parts:
           - format: scad
             path: h30-main-housing.scad
             geometry_scope: exterior
-            primary: true
           - format: stl
             path: h30-main-housing.stl
             geometry_scope: exterior
+            primary: true
 
   h30-cover:
-    type: scad
-    path: h30-cover.scad
+    type: stl
+    path: h30-cover.stl
     model_role: mechanical_component
     desc: Separate metal cover for the WHEELTEC H30 Enclosed variant.
     vendor: WHEELTEC
@@ -123,14 +123,14 @@ parts:
           - format: scad
             path: h30-cover.scad
             geometry_scope: exterior
-            primary: true
           - format: stl
             path: h30-cover.stl
             geometry_scope: exterior
+            primary: true
 
   h30-cover-screw:
-    type: scad
-    path: h30-cover-screw.scad
+    type: stl
+    path: h30-cover-screw.stl
     model_role: mechanical_component
     desc: One concealed cover-fastening screw; four are used in H30 Enclosed.
     vendor: WHEELTEC
@@ -141,14 +141,14 @@ parts:
           - format: scad
             path: h30-cover-screw.scad
             geometry_scope: exterior
-            primary: true
           - format: stl
             path: h30-cover-screw.stl
             geometry_scope: exterior
+            primary: true
 
   h30-plastic-damper-screw:
-    type: scad
-    path: h30-plastic-damper-screw.scad
+    type: stl
+    path: h30-plastic-damper-screw.stl
     model_role: mechanical_component
     desc: One plastic vibration-isolating mounting screw; four are used in H30 Enclosed.
     vendor: WHEELTEC
@@ -159,10 +159,10 @@ parts:
           - format: scad
             path: h30-plastic-damper-screw.scad
             geometry_scope: exterior
-            primary: true
           - format: stl
             path: h30-plastic-damper-screw.stl
             geometry_scope: exterior
+            primary: true
 
 render:
   readme:
