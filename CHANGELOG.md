@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.4] - 2026-08-11
+
+### Added
+
+- Added the component-linked H30 Enclosed STEP representation with the PCB,
+  housing, cover, four cover screws, and four mounting damper screws.
+- Embedded each exact Narys catalog identifier in the corresponding STEP
+  `PRODUCT` name so every internal component resolves back to the catalog.
+
 ## [4.1.3] - 2026-08-11
 
 ### Changed
