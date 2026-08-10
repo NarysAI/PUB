@@ -1,3 +1,2 @@
-/* WHEELTEC H30 main metal housing component. */
-include <_h30-enclosure-model.scad>
-color("#D7DBDE") h30_main_housing();
+/* Direct main-housing tessellation of the unmodified official WHEELTEC H30 STEP. */
+import("h30-main-housing.stl", convexity=10);

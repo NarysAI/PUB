@@ -3,6 +3,21 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.1] - 2026-08-10
+
+### Fixed
+
+- Replaced the reconstructed H30 Enclosed exterior and its mechanical component
+  models with direct tessellations of the unmodified official vendor STEP.
+- Removed geometry that was not present in the vendor file, including the
+  rounded/sloped reconstructed cover, added markings, and duplicated fasteners.
+- Corrected the recorded SHA-256 provenance and used the original
+  metal-housing STEP byte-for-byte as the conversion source.
+
+### Migration
+
+- See `MIGRATIONS/4.1.1-H30-ORIGINAL-STEP.md` for the source-preservation rule.
+
 ## [4.1.0] - 2026-08-10
 
 ### Added

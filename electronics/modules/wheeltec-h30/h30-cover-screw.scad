@@ -1,3 +1,2 @@
-/* WHEELTEC H30 cover screw component. */
-include <_h30-enclosure-model.scad>
-color("#636A70") h30_cover_screw();
+/* Direct M3x4 fastener tessellation of the unmodified official WHEELTEC H30 STEP. */
+import("h30-cover-screw.stl", convexity=10);
