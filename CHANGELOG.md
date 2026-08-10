@@ -3,6 +3,19 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [2.2.2] - 2026-08-10
+
+### Fixed
+
+- Kept the metric standoff package to exactly three useful FF, MF and MM
+  objects while adding linked M2, M2.5, M3, M4, M5 and M6 size presets.
+- Added finite selectable body, male-thread and female-thread dimensions for
+  configurable previews instead of publishing duplicate size cards.
+- Removed fabricated generic SKUs and replaced the imperial male/male example
+  with metric manufacturer references and downloadable CAD families.
+- Documented that the lightweight thread geometry is an envelope preview, not
+  a manufacturing thread profile.
+
 ## [2.2.1] - 2026-08-10
 
 ### Fixed

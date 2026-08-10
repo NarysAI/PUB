@@ -1,6 +1,6 @@
 # Metric hexagonal threaded standoffs
 
-AI-readable, parametric envelope models for the three common hexagonal
+AI-readable parametric envelope models for the three common hexagonal
 threaded-standoff arrangements:
 
 - `hex-standoff-female-female` (`FF`): internal thread at both ends;
@@ -8,24 +8,25 @@ threaded-standoff arrangements:
   thread at the other;
 - `hex-standoff-male-male` (`MM`): external thread at both ends.
 
-All dimensions are millimetres. Each model exposes thread diameter and pitch,
-hex width across flats, body length, end-thread length/depth and edge bevel.
-The declared range covers the common M2, M2.5, M3, M4, M5 and M6 families.
+All dimensions are millimetres. NarysAI keeps exactly these three catalog
+objects and provides a size configurator instead of creating hundreds of
+nearly identical cards. Select a linked M2, M2.5, M3, M4, M5 or M6 thread
+family, then choose the available body and thread-end dimensions.
 
-## Recommended coarse-thread presets
+## Coarse-thread presets
 
-| Thread | Pitch | Typical width across flats |
-| --- | ---: | ---: |
-| M2 | 0.40 | 4.0 |
-| M2.5 | 0.45 | 5.0 |
-| M3 | 0.50 | 5.5 or 6.0 |
-| M4 | 0.70 | 7.0 or 8.0 |
-| M5 | 0.80 | 8.0 or 10.0 |
-| M6 | 1.00 | 10.0 or 12.0 |
+| Thread | Pitch | Width across flats | Default body | Default thread end |
+| --- | ---: | ---: | ---: | ---: |
+| M2 | 0.40 | 4.0 | 6 | 4 |
+| M2.5 | 0.45 | 5.0 | 8 | 5 |
+| M3 | 0.50 | 5.5 | 10 | 6 |
+| M4 | 0.70 | 7.0 | 12 | 8 |
+| M5 | 0.80 | 8.0 | 15 | 10 |
+| M6 | 1.00 | 10.0 | 20 | 12 |
 
 Widths and body lengths are manufacturer-specific rather than a single
-universal standoff standard. Set the parameters to the selected supplier's
-drawing before using a model for interference or tooling decisions.
+universal standoff standard. Use the preset as a starting point and verify the
+selected supplier drawing before using a model for tooling or procurement.
 
 ## Geometry and accuracy
 
@@ -38,18 +39,15 @@ thread profiles. Use a standards-compliant thread tool for fabrication.
 ## Provenance
 
 The models were independently authored for NarysAI from published dimensional
-families. No supplier CAD geometry was copied or redistributed.
+families. No supplier CAD geometry was copied or redistributed. The catalog
+links below provide real dimensional examples and downloadable manufacturer
+CAD for comparison.
 
-- MISUMI, *Hexagonal Posts — Both Ends Female Thread*, catalogue pp. 1187–1188:
-  https://uk.misumi-ec.com/pdf/fa/p1187.pdf
-- MISUMI, *Hexagonal Posts — One End Male, One End Female Thread*, catalogue
-  pp. 1189–1190: https://uk.misumi-ec.com/pdf/fa/p1189.pdf
-- Essentra, male-to-male hexagonal M4 example HSM4-8-32-3:
-  https://www.essentracomponents.com/en-ca/p/male-to-male-standoff-hexagonal-insulator-nylon-brass/hsm4-8-32-3
-- Essentra, male-to-female M3 example 1221465:
-  https://www.essentracomponents.com/en-gb/p/standoffs/1221465
-- Essentra, female-to-female M3 example MTNSP-M3-10-1:
-  https://www.essentracomponents.com/en-us/p/female-to-female-standoff-hexagonal-bottom-metric-threaded-insulator-nylon-brass/mtnsp-m3-10-1
+- Wuerth Elektronik WA-SBRII, metric internal/internal brass spacer studs:
+  https://www.we-online.com/en/components/products/SBRII_BRASS_SPACER_STUD_METRIC_INTERNAL_INTERNAL
+- Wuerth Elektronik WA-SBRIE, metric internal/external brass spacer studs:
+  https://www.we-online.com/en/components/products/em/assembly/assembly_spacer_studs/spacer_studs_internal_external_thread
+- MISUMI, metric hexagonal posts with FF, MF and MM arrangements:
+  https://sg.misumi-ec.com/pdf/fa/2010/p1_1795.pdf
 
-Source-code license: Apache-2.0 under the repository contribution terms.
 Supplier pages and drawings remain the property of their respective owners.

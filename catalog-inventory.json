@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "catalog_version": "2.2.1",
+  "catalog_version": "2.2.2",
   "summary": {
     "packages": 82,
     "objects": 847,
@@ -481,7 +481,7 @@
     {
       "name": "/pub/std/metric/standoffs",
       "config": "std/metric/standoffs/partcad.yaml",
-      "config_sha256": "862526b293f606dbedaba1999f12046c14b6692bfe3da9e8aab8f3c4219350c9",
+      "config_sha256": "77a2ca369667305c422385ab3653a03cae1f5905a4f84e79c74d31caf834b143",
       "entry_type": "package"
     },
     {

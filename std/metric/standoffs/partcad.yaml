@@ -10,9 +10,7 @@ parts:
     path: hex-standoff-female-female.scad
     model_role: electronic_component
     desc: Parametric metric hex standoff with female threads at both ends (FF)
-    vendor: generic
-    sku: metric-hex-standoff-ff
-    url: https://uk.misumi-ec.com/pdf/fa/p1187.pdf
+    url: https://www.we-online.com/en/components/products/SBRII_BRASS_SPACER_STUD_METRIC_INTERNAL_INTERNAL
     parameters:
       thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
       thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
@@ -20,15 +18,30 @@ parts:
       hex_width: {type: float, default: 5.5, min: 3.5, max: 13.0}
       female_depth: {type: float, default: 6.0, min: 2.0, max: 30.0}
       bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+    narys:
+      default_preset: m3
+      hidden_parameters: [thread_diameter, thread_pitch, hex_width, bevel]
+      parameter_options:
+        thread_diameter: [2.0, 2.5, 3.0, 4.0, 5.0, 6.0]
+        thread_pitch: [0.4, 0.45, 0.5, 0.7, 0.8, 1.0]
+        body_length: [4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0, 40.0, 50.0, 60.0, 80.0, 100.0]
+        hex_width: [4.0, 5.0, 5.5, 7.0, 8.0, 10.0]
+        female_depth: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0]
+        bevel: [0.25]
+      presets:
+        m2: {label: "M2 · SW4 · L6", parameters: {thread_diameter: 2.0, thread_pitch: 0.4, body_length: 6.0, hex_width: 4.0, female_depth: 4.0}}
+        m2_5: {label: "M2.5 · SW5 · L8", parameters: {thread_diameter: 2.5, thread_pitch: 0.45, body_length: 8.0, hex_width: 5.0, female_depth: 5.0}}
+        m3: {label: "M3 · SW5.5 · L10", parameters: {thread_diameter: 3.0, thread_pitch: 0.5, body_length: 10.0, hex_width: 5.5, female_depth: 6.0}}
+        m4: {label: "M4 · SW7 · L12", parameters: {thread_diameter: 4.0, thread_pitch: 0.7, body_length: 12.0, hex_width: 7.0, female_depth: 8.0}}
+        m5: {label: "M5 · SW8 · L15", parameters: {thread_diameter: 5.0, thread_pitch: 0.8, body_length: 15.0, hex_width: 8.0, female_depth: 10.0}}
+        m6: {label: "M6 · SW10 · L20", parameters: {thread_diameter: 6.0, thread_pitch: 1.0, body_length: 20.0, hex_width: 10.0, female_depth: 12.0}}
 
   hex-standoff-male-female:
     type: scad
     path: hex-standoff-male-female.scad
     model_role: electronic_component
     desc: Parametric metric hex standoff with male and female threads (MF)
-    vendor: generic
-    sku: metric-hex-standoff-mf
-    url: https://uk.misumi-ec.com/pdf/fa/p1189.pdf
+    url: https://www.we-online.com/en/components/products/em/assembly/assembly_spacer_studs/spacer_studs_internal_external_thread
     parameters:
       thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
       thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
@@ -37,15 +50,31 @@ parts:
       male_length: {type: float, default: 6.0, min: 2.0, max: 30.0}
       female_depth: {type: float, default: 6.0, min: 2.0, max: 30.0}
       bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+    narys:
+      default_preset: m3
+      hidden_parameters: [thread_diameter, thread_pitch, hex_width, bevel]
+      parameter_options:
+        thread_diameter: [2.0, 2.5, 3.0, 4.0, 5.0, 6.0]
+        thread_pitch: [0.4, 0.45, 0.5, 0.7, 0.8, 1.0]
+        body_length: [4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0, 40.0, 50.0, 60.0, 80.0, 100.0]
+        hex_width: [4.0, 5.0, 5.5, 7.0, 8.0, 10.0]
+        male_length: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0]
+        female_depth: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0]
+        bevel: [0.25]
+      presets:
+        m2: {label: "M2 · SW4 · L6", parameters: {thread_diameter: 2.0, thread_pitch: 0.4, body_length: 6.0, hex_width: 4.0, male_length: 4.0, female_depth: 4.0}}
+        m2_5: {label: "M2.5 · SW5 · L8", parameters: {thread_diameter: 2.5, thread_pitch: 0.45, body_length: 8.0, hex_width: 5.0, male_length: 5.0, female_depth: 5.0}}
+        m3: {label: "M3 · SW5.5 · L10", parameters: {thread_diameter: 3.0, thread_pitch: 0.5, body_length: 10.0, hex_width: 5.5, male_length: 6.0, female_depth: 6.0}}
+        m4: {label: "M4 · SW7 · L12", parameters: {thread_diameter: 4.0, thread_pitch: 0.7, body_length: 12.0, hex_width: 7.0, male_length: 8.0, female_depth: 8.0}}
+        m5: {label: "M5 · SW8 · L15", parameters: {thread_diameter: 5.0, thread_pitch: 0.8, body_length: 15.0, hex_width: 8.0, male_length: 10.0, female_depth: 10.0}}
+        m6: {label: "M6 · SW10 · L20", parameters: {thread_diameter: 6.0, thread_pitch: 1.0, body_length: 20.0, hex_width: 10.0, male_length: 12.0, female_depth: 12.0}}
 
   hex-standoff-male-male:
     type: scad
     path: hex-standoff-male-male.scad
     model_role: electronic_component
     desc: Parametric metric hex standoff with male threads at both ends (MM)
-    vendor: generic
-    sku: metric-hex-standoff-mm
-    url: https://www.essentracomponents.com/en-ca/p/male-to-male-standoff-hexagonal-insulator-nylon-brass/hsm4-8-32-3
+    url: https://sg.misumi-ec.com/pdf/fa/2010/p1_1795.pdf
     parameters:
       thread_diameter: {type: float, default: 3.0, min: 2.0, max: 6.0}
       thread_pitch: {type: float, default: 0.5, min: 0.4, max: 1.0}
@@ -53,6 +82,23 @@ parts:
       hex_width: {type: float, default: 5.5, min: 3.5, max: 13.0}
       male_length: {type: float, default: 6.0, min: 2.0, max: 30.0}
       bevel: {type: float, default: 0.25, min: 0.0, max: 1.0}
+    narys:
+      default_preset: m3
+      hidden_parameters: [thread_diameter, thread_pitch, hex_width, bevel]
+      parameter_options:
+        thread_diameter: [2.0, 2.5, 3.0, 4.0, 5.0, 6.0]
+        thread_pitch: [0.4, 0.45, 0.5, 0.7, 0.8, 1.0]
+        body_length: [4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0, 40.0, 50.0, 60.0, 80.0, 100.0]
+        hex_width: [4.0, 5.0, 5.5, 7.0, 8.0, 10.0]
+        male_length: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0]
+        bevel: [0.25]
+      presets:
+        m2: {label: "M2 · SW4 · L6", parameters: {thread_diameter: 2.0, thread_pitch: 0.4, body_length: 6.0, hex_width: 4.0, male_length: 4.0}}
+        m2_5: {label: "M2.5 · SW5 · L8", parameters: {thread_diameter: 2.5, thread_pitch: 0.45, body_length: 8.0, hex_width: 5.0, male_length: 5.0}}
+        m3: {label: "M3 · SW5.5 · L10", parameters: {thread_diameter: 3.0, thread_pitch: 0.5, body_length: 10.0, hex_width: 5.5, male_length: 6.0}}
+        m4: {label: "M4 · SW7 · L12", parameters: {thread_diameter: 4.0, thread_pitch: 0.7, body_length: 12.0, hex_width: 7.0, male_length: 8.0}}
+        m5: {label: "M5 · SW8 · L15", parameters: {thread_diameter: 5.0, thread_pitch: 0.8, body_length: 15.0, hex_width: 8.0, male_length: 10.0}}
+        m6: {label: "M6 · SW10 · L20", parameters: {thread_diameter: 6.0, thread_pitch: 1.0, body_length: 20.0, hex_width: 10.0, male_length: 12.0}}
 
 render:
   svg:
