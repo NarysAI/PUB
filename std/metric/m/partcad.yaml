@@ -14,9 +14,16 @@ sketches:
     circle: {{ size / 2.0 }}  # radius
   {% for width in widths %}
   m{{ size }}-slotted-{{ width }}:
-    # TODO(clairbee): Use a CadQuery script to define the face of a slotted hole
-    type: basic
-    circle: {{ size / 2.0 }}
+    type: cadquery
+    path: _slotted.py
+    desc: {{ width }}mm long capsule slot with {{ size }}mm width
+    parameters:
+      diameter:
+        type: float
+        default: {{ size }}
+      length:
+        type: float
+        default: {{ width }}
   {% endfor %}
 {% endfor %}
 
