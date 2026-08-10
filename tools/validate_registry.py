@@ -124,7 +124,7 @@ for config_path in root.rglob("partcad.yaml"):
                 role = str(raw["model_role"])
                 source_type = str(raw.get("type", "")).casefold()
                 source_suffix = Path(str(raw.get("path", ""))).suffix
-                if role == "electronic_component":
+                if role in {"electronic_component", "mechanical_component"}:
                     allowed = {
                         "scad": {".scad"},
                         "stl": {".stl"},
@@ -132,7 +132,7 @@ for config_path in root.rglob("partcad.yaml"):
                     }
                     if source_suffix.casefold() not in allowed.get(source_type, set()):
                         errors.append(
-                            f"{config_path.relative_to(root)}: {section}.{name} electronic_component requires matching SCAD, STL, or STEP"
+                            f"{config_path.relative_to(root)}: {section}.{name} catalog component requires matching SCAD, STL, or STEP"
                         )
                     elif source_type == "scad" and raw.get("path"):
                         scad_path = package_root / str(raw["path"])
