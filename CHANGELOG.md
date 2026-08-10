@@ -3,6 +3,27 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.0.0] - 2026-08-10
+
+### Added
+
+- Added the exact `H30 Enclosed` variant with a simplified SCAD reconstruction
+  of the official 46.0 x 59.5 x 11.7 mm metal-housing STEP model.
+- Added schema-versioned product-family metadata for exact variants, base-model
+  relationships, revisions, BOM components, and compatibility aliases.
+
+### Changed
+
+- Renamed and relocated the previously misidentified H30WP object to the exact
+  `//pub/electronics/modules/wheeltec-h30:h30-pcb` base variant.
+- Replaced the package identity `wheeltec-h30wp` with the WHEELTEC H30 family.
+  The website resolves the old object path as a compatibility alias.
+
+### Migration
+
+- See `MIGRATIONS/4.0.0-WHEELTEC-H30-FAMILY.md` for the stable-path mapping and
+  official-source provenance.
+
 ## [3.1.0] - 2026-08-10
 
 ### Added
