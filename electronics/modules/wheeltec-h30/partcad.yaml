@@ -60,7 +60,7 @@ parts:
         variant_id: h30-enclosed
         variant_name: H30 Enclosed
         variant_kind: enclosed
-        revision: "1.2"
+        revision: "1.3"
         base_variant:
           kind: part
           semantic_path: electronics/modules/wheeltec-h30:h30-pcb

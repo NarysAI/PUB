@@ -3,6 +3,14 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.2] - 2026-08-10
+
+### Fixed
+
+- Added the three missing M3x4 cover screws to H30 Enclosed by copying the
+  existing official STEP screw into the other three exact countersunk-hole
+  centers. The vendor housing and cover geometry remain unchanged.
+
 ## [4.1.1] - 2026-08-10
 
 ### Fixed
