@@ -1,0 +1,15 @@
+name: //pub/fpv/motors/reference-35mm
+desc: Generic 35 mm FPV motor reference recovered from a 10-inch drone assembly.
+license_status: unverified
+
+parts:
+  reference-motor-35mm:
+    type: scad
+    path: reference-motor-35mm.scad
+    model_role: electronic_component
+    desc: Self-contained OpenSCAD reference envelope for the assembly's approximately 35 mm motor.
+
+render:
+  readme:
+  png:
+    prefix: ./

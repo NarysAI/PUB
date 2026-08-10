@@ -1,0 +1,15 @@
+name: //pub/fpv/propellers/reference-10in
+desc: Generic three-blade 10-inch FPV propeller reference from a complete drone assembly.
+license_status: unverified
+
+parts:
+  reference-propeller-10in:
+    type: scad
+    path: reference-propeller-10in.scad
+    model_role: electronic_component
+    desc: Self-contained native OpenSCAD representation of the source assembly's nominal 10-inch three-blade propeller.
+
+render:
+  readme:
+  png:
+    prefix: ./
