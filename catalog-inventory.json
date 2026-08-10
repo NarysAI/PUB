@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.1.1",
+  "catalog_version": "4.1.2",
   "summary": {
     "packages": 78,
     "objects": 428,
-    "assets": 532,
-    "asset_bytes": 518076537
+    "assets": 531,
+    "asset_bytes": 527274574
   },
   "packages": [
     {
@@ -71,7 +71,7 @@
     {
       "name": "//pub/electronics/modules/wheeltec-h30",
       "config": "electronics/modules/wheeltec-h30/partcad.yaml",
-      "config_sha256": "8bbb54b010d6d2bf5d4c70e967f4a731e85ba42d30ad0ae12b5ec302ed597140",
+      "config_sha256": "168cd33ff20ca330256dc928fc3a89163f823a1d516ae201a147290697240b26",
       "entry_type": "package"
     },
     {
@@ -3348,14 +3348,9 @@
       "sha256": "4b1e9f2525167bd0a993fc98420a80b328bc5c12b206ad74a194c913e54e363c"
     },
     {
-      "path": "electronics/modules/wheeltec-h30/_h30-pcb-model.scad",
-      "bytes": 15745,
-      "sha256": "883ed9f8c304e61f801bf4df36da4c940c6b6e2502caac73d0ba8e50fc73e379"
-    },
-    {
       "path": "electronics/modules/wheeltec-h30/h30-cover-screw.scad",
-      "bytes": 131,
-      "sha256": "729e3b3e49b54edb25337ea8afd728e974b44cd225fa896c47d3483a0889893d"
+      "bytes": 78129,
+      "sha256": "fe4faef4dbe8f0a995ae61be673914a64737aa48515fb5cf096721a849fb0b87"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-cover-screw.stl",
@@ -3364,8 +3359,8 @@
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-cover.scad",
-      "bytes": 117,
-      "sha256": "0da7bb24a71b813dedb2f4209c262963fb24b1b74a246b295490508d8deed11d"
+      "bytes": 69567,
+      "sha256": "57bb77f8e0e5759b90ffeebd8aced69d5e9c771e7c6c775eff3bd1a36abf47e9"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-cover.stl",
@@ -3374,18 +3369,18 @@
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-enclosed.scad",
-      "bytes": 132,
-      "sha256": "7208d6ce8ec0609eb4aec8a0b0a9791f8089d4390fcd48dadd01da6ed8664314"
+      "bytes": 6578956,
+      "sha256": "26782c30d7606613c324541db4f6c98439f7550262591c7bb76f800b390aacdf"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-enclosed.stl",
-      "bytes": 6478295,
-      "sha256": "73f4585092207fdbba5478704f855ebb68fc4c5193af24b2fb0122e3775bb50e"
+      "bytes": 6761194,
+      "sha256": "a51c5535f1839fad6ffebd1aabc4a44843bf28a06fd983988fcac7ea0174be37"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-main-housing.scad",
-      "bytes": 131,
-      "sha256": "1fd95d7ebc2b615cf10918a938f3fd2a9e752ea79747a339deec045c03a0090d"
+      "bytes": 166345,
+      "sha256": "f19e6f1f89b4953eb6df4a438ee7914a69a555fef17f093e5129d7afb2853022"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-main-housing.stl",
@@ -3394,8 +3389,8 @@
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-pcb.scad",
-      "bytes": 126,
-      "sha256": "ab1cca464a343cd69d35ebd94bd3722a247ecb887e9d5d8b813ab2a6232e603f"
+      "bytes": 1959892,
+      "sha256": "f423598a5b69238a9fb655984b2fab8d76a645027090dbe4f2ddfd5b64cf18ff"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-pcb.stl",
@@ -3404,8 +3399,8 @@
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-plastic-damper-screw.scad",
-      "bytes": 149,
-      "sha256": "9129bb61858ce3563e349d0117c51ff314307c8e0d200d4b54b4ae03dd3d9ac6"
+      "bytes": 78780,
+      "sha256": "1e6f9d13ebc9a30f296282942f61000b3685ba36d78d69dda9dbd7423d6d0f08"
     },
     {
       "path": "electronics/modules/wheeltec-h30/h30-plastic-damper-screw.stl",

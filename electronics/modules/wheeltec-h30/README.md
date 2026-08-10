@@ -10,7 +10,7 @@ H30 IMU product family.
 | H30 PCB | `h30-pcb` | Bare sensor PCB and component population. |
 | H30 Enclosed | `h30-enclosed` | Complete sensor with the H30 PCB inside the standard metal housing. |
 
-`H30 Enclosed` revision 1.2 declares `H30 PCB` as its base variant and records
+`H30 Enclosed` revision 1.3 declares `H30 PCB` as its base variant and records
 the corrected physical composition: one main housing, one separate cover, four
 concealed cover screws, and four plastic vibration-isolating mounting screws.
 Every one of these component types is now an exact linked catalog object.
@@ -31,15 +31,20 @@ sensor:
 FreeCAD inspection of the official metal-housing STEP gives an overall envelope
 of 46.0 x 59.5 x 11.7 mm. The source assembly is incomplete: it contains only
 one instance of each mounting fastener even though the physical product uses
-four of each. Revision 1.2 preserves the vendor assembly geometry exactly and
-records the physical `4 + 4` quantities only in the catalog BOM.
+four of each. Revision 1.3 leaves the vendor housing and cover unchanged and
+copies the existing M3x4 STEP screw into the three empty cover-hole centers, so
+all four cover screws are present. The `4 + 4` physical quantities remain in
+the catalog BOM.
 
 `WHEELTEC_H30 Sensor (metal housing).stp` is used byte-for-byte from the official
 repository as the conversion input. `h30-enclosed.stl` is a direct FreeCAD
-tessellation of its top-level assembly, with no remodeling, repositioning,
-added markings, or duplicated fasteners. `h30-enclosed.scad` is a compact
-wrapper around that exact STL. The housing, cover, and two fastener component
-files are direct tessellations of the corresponding individual STEP objects.
+tessellation of its top-level assembly plus the three missing instances of the
+existing STEP cover screw. No housing, cover, connector, hole, or marking
+geometry is remodeled or repositioned. Every SCAD representation embeds the
+corresponding exact tessellation as `polyhedron` data and is self-contained:
+there are no `import`, `include`, or external-file dependencies. The housing,
+cover, and two fastener component files are direct tessellations of the
+corresponding individual STEP objects.
 
 SCAD and STL are explicitly marked `geometry_scope: exterior`. A future STEP
 representation is `geometry_scope: interior` and is accepted only when every
