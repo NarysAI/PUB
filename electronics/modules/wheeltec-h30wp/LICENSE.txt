@@ -1,0 +1,6 @@
+NO LICENSE GRANT
+
+The source model was supplied without license terms. No copyright license is
+granted by this file. Permission for redistribution, modification, commercial
+use, and use of vendor marks must be confirmed with the applicable rights
+holders.

@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [3.1.0] - 2026-08-10
+
+### Added
+
+- Added `//pub/electronics/modules/wheeltec-h30wp` with a self-contained SCAD
+  reference for the supplied WHEELTEC H30WP IMU PCB. The catalog source and
+  visible model labels use the corrected H30WP identity; provenance and the
+  unverified license status are documented with the package.
+
 ## [3.0.0] - 2026-08-10
 
 ### Removed

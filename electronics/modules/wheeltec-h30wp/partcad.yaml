@@ -1,0 +1,18 @@
+name: //pub/electronics/modules/wheeltec-h30wp
+desc: WHEELTEC H30WP IMU board reference model.
+license_status: unverified
+
+parts:
+  wheeltec-h30wp:
+    type: scad
+    path: wheeltec_h30wp.scad
+    model_role: electronic_component
+    desc: Approximate visual and mechanical OpenSCAD model of the WHEELTEC H30WP IMU PCB.
+    vendor: WHEELTEC
+    sku: H30WP
+    url: https://wiki.seeedstudio.com/wheeltec_imu/
+
+render:
+  readme:
+  png:
+    prefix: ./
