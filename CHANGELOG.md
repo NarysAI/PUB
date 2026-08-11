@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.4.0] - 2026-08-11
+
+### Added
+
+- Added `//pub/electromechanics/switches/kcd1-203-dpdt-rocker` as a separate
+  six-terminal DPDT `II-O-I` rocker reconstructed from the supplied videos and
+  ruler photographs, without changing the existing three-terminal KCD1 object.
+- Added the required self-contained SCAD/STL exterior representation pair with
+  four semantic preview materials and a documented KCD1-203-compatible identity.
+
 ## [4.3.0] - 2026-08-11
 
 ### Added
@@ -31,7 +41,6 @@ Changelog, and catalog versions follow Semantic Versioning.
 ### Migration
 
 - See `MIGRATIONS/4.2.0-XL4015-TWO-VARIANTS.md` for identity and accuracy notes.
-
 ## [4.1.6] - 2026-08-11
 
 ### Changed
