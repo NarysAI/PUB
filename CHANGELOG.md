@@ -3,6 +3,20 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.5] - 2026-08-11
+
+### Fixed
+
+- Restored `xl4015-step-down-5a-cc-cv` to its original detailed STEP model after
+  it was incorrectly replaced by a reconstructed SCAD/STL exterior.
+- Removed the incorrect GrabCAD `xl4015-1` attribution from the original object.
+  `XL4015` and `xl4015-1` are distinct variants and must have separate object IDs
+  and source-derived SCAD/STL bundles.
+
+### Migration
+
+- See `MIGRATIONS/4.1.5-RESTORE-XL4015.md` for the identity correction.
+
 ## [4.1.4] - 2026-08-11
 
 ### Changed

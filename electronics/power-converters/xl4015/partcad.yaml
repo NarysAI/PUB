@@ -1,28 +1,15 @@
 name: /pub/electronics/power-converters/xl4015
 desc: XL4015 5 A CC/CV step-down DC-DC converter module
-license_status: unverified
 cover:
   part: xl4015-step-down-5a-cc-cv
 
 parts:
   xl4015-step-down-5a-cc-cv:
-    type: stl
-    path: xl4015-step-down-5a-cc-cv.stl
+    type: step
+    path: xl4015-step-down-5a-cc-cv.step
     model_role: electronic_component
     desc: XL4015 adjustable 5 A constant-current and constant-voltage buck converter module
     sku: XL4015
-    url: https://grabcad.com/library/xl4015-1
-    narys:
-      representations:
-        schema_version: 1
-        files:
-          - format: scad
-            path: xl4015-step-down-5a-cc-cv.scad
-            geometry_scope: exterior
-          - format: stl
-            path: xl4015-step-down-5a-cc-cv.stl
-            geometry_scope: exterior
-            primary: true
 
 render:
   svg:
