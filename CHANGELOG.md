@@ -10,6 +10,9 @@ Changelog, and catalog versions follow Semantic Versioning.
 - Required every newly added 3D part to ship a complete optimized SCAD/STL
   representation pair, with automated validation of pairing, self-containment,
   STL validity, and a 250,000-triangle ceiling.
+- Defined catalog completion as successful production publication: merge,
+  release tag, production refresh, public search/download checks, and visible
+  3D-preview verification are mandatory before work may be reported done.
 
 ## [4.1.3] - 2026-08-11
 

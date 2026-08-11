@@ -14,6 +14,12 @@ and use Git tags named `policy-vX.Y.Z`.
   triangles.
 - Printable parts retain FCStd as their canonical engineering master while
   adding SCAD and STL delivery representations.
+- Local branches, commits, PRs, and localhost previews no longer qualify as
+  completed catalog delivery.
+- Production refresh and verification of the public HTTPS page, search results,
+  representation downloads, and visible 3D preview are mandatory after merge.
+- Publication must be reported as pending whenever merge, deployment, refresh,
+  or production verification has not happened.
 
 ## [3.1.1] - 2026-08-10
 

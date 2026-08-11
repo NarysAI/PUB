@@ -17,7 +17,9 @@ It is the authoritative rule set; this file is the short operational checklist.
 6. Render every changed model.
 7. Open a PR and complete every checkbox in the template.
 8. If package paths changed, open the corresponding `narys-index` PR.
-9. After merge, tag the merge commit and verify `/repository`.
+9. After merge, tag the merge commit, refresh production, and verify the public
+   HTTPS object page, search, downloads, and 3D preview. Do not mark the task
+   complete while the change exists only locally or in a PR.
 
 ## Local work that must be preserved
 

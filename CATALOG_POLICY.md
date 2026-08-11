@@ -20,6 +20,9 @@ whether it is made by a person, script, migration, or AI agent.
 6. **Project separation.** Active open projects keep editable CAD history in a
    standalone canonical Git repository. PUB contains a metadata pointer, not a
    moving copy of project CAD files.
+7. **Public delivery.** A catalog change is not complete while it exists only in
+   a local branch, worktree, commit, or pull request. Completion requires the
+   released files and metadata to be visible and usable on the production site.
 
 ## 2. Required workflow
 
@@ -37,7 +40,15 @@ All changes follow this order:
 9. Open a PR using the repository template. Agent-authored PRs require human
    approval. Never force-push or delete protected history.
 10. Merge only after required CI passes. Create the matching `vX.Y.Z` release tag
-    on the protected `main` merge commit, then verify the website.
+    on the protected `main` merge commit.
+11. Refresh the production catalog from the merged `PUB/main` and
+    `narys-index/main`, then verify the public HTTPS website. A local preview,
+    localhost response, branch deployment, or successful PR check is not a
+    substitute for this production verification.
+12. Report the task as complete only after the public package/object page, search,
+    downloads, and 3D preview pass. If merge, deployment, credentials, or refresh
+    is pending, report the exact pending state and never describe the change as
+    finished or published.
 
 Direct commits to `main`, unversioned changes, and release tags pointing outside
 protected `main` are prohibited.
@@ -179,10 +190,16 @@ python tools/validate_release.py . origin/main
 New or changed 3D sources must additionally render successfully through the same
 conversion path used by `narys-web`. After index merge, verify:
 
-- the package is present under `/repository` in the expected directory;
-- search returns the package and objects;
-- every changed model preview returns HTTP 200;
+- the production HTTPS package and object URLs return HTTP 200;
+- production search returns the package and every changed object;
+- every required representation is listed and downloadable from production;
+- every changed production model preview returns HTTP 200 and visibly renders;
 - the website tree coverage workflow passes in `narys-index`.
+
+These checks must target the public production domain, currently
+`https://narysai.drone-age.org`. Passing the same checks against localhost or a
+temporary deployment is useful pre-release evidence but does not satisfy the
+definition of done.
 
 ## 7. Ownership and recovery
 
