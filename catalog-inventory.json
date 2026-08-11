@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.5.0",
+  "catalog_version": "5.0.0",
   "summary": {
-    "packages": 84,
-    "objects": 432,
-    "assets": 541,
-    "asset_bytes": 517794198
+    "packages": 83,
+    "objects": 431,
+    "assets": 540,
+    "asset_bytes": 518194702
   },
   "packages": [
     {
@@ -33,15 +33,9 @@
       "entry_type": "package"
     },
     {
-      "name": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
-      "config": "electromechanics/switches/kcd1-203-dpdt-rocker/partcad.yaml",
-      "config_sha256": "fef7a768b1ea56aebd0b24e6253a56c9498843bcab8057f4ddede77759b5b433",
-      "entry_type": "package"
-    },
-    {
-      "name": "/pub/electromechanics/switches/kcd1-rocker",
-      "config": "electromechanics/switches/kcd1-rocker/partcad.yaml",
-      "config_sha256": "08800619b58be7666690e055c047e040126d5d790f0754e8ac7692d469ccfbc6",
+      "name": "/pub/electromechanics/switches/mini-dpdt-rocker",
+      "config": "electromechanics/switches/mini-dpdt-rocker/partcad.yaml",
+      "config_sha256": "ceabb0b0c3fba7be8db3259a317eb4a03f626473a222df20e387d652b2c46efd",
       "entry_type": "package"
     },
     {
@@ -567,32 +561,24 @@
       "source": "electromechanics/switches/button-a6/button-a6.scad"
     },
     {
-      "package": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
+      "package": "/pub/electromechanics/switches/mini-dpdt-rocker",
       "section": "parts",
-      "name": "kcd1-203-on-off-on",
+      "name": "mini-dpdt-ii-o-i",
       "type": "scad",
       "model_role": "electronic_component",
-      "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
+      "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad",
       "representations": [
         {
           "format": "scad",
           "scope": "exterior",
-          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad"
+          "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad"
         },
         {
           "format": "stl",
           "scope": "exterior",
-          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl"
+          "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.stl"
         }
       ]
-    },
-    {
-      "package": "/pub/electromechanics/switches/kcd1-rocker",
-      "section": "parts",
-      "name": "kcd1-on-off-on",
-      "type": "scad",
-      "model_role": "electronic_component",
-      "source": "electromechanics/switches/kcd1-rocker/kcd1-on-off-on.scad"
     },
     {
       "package": "/electromechanics/towerpro",
@@ -3362,19 +3348,14 @@
       "sha256": "a78117f703e6c1b66905c0317c37abf24bac082252e210ae096e3a64df9754bb"
     },
     {
-      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
-      "bytes": 5859,
-      "sha256": "95114c2bed7fb1ed108d88d04e02fd1e77f3aa9eda37ec15781be30dff5e449c"
+      "path": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad",
+      "bytes": 5015,
+      "sha256": "2b7d17a8c8a3c27ab67122e14be2ef8eb31c9905deac7e290c5d50367d0cd281"
     },
     {
-      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl",
-      "bytes": 190684,
-      "sha256": "794ac3d8ce55dd9e731e09b8c9596a852cd85c18664362a0f0eb5442483487c3"
-    },
-    {
-      "path": "electromechanics/switches/kcd1-rocker/kcd1-on-off-on.scad",
-      "bytes": 5680,
-      "sha256": "f6bfd767369c26303579fb7a8ecb50261686c6aa2103c82b507881fdc5e371ba"
+      "path": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.stl",
+      "bytes": 597712,
+      "sha256": "abf21a095b3a2ede75ddb1cbdb95850ccd5b7d7011494e957056e9334e83bc1c"
     },
     {
       "path": "electromechanics/towerpro/example/mg90s.assy",

@@ -3,6 +3,27 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [5.0.0] - 2026-08-11
+
+### Removed
+
+- Removed `//pub/electromechanics/switches/kcd1-rocker:kcd1-on-off-on` and
+  `//pub/electromechanics/switches/kcd1-203-dpdt-rocker:kcd1-203-on-off-on`.
+  Their 19 x 13 mm KCD1-family geometries did not match the supplied component.
+
+### Added
+
+- Added `//pub/electromechanics/switches/mini-dpdt-rocker:mini-dpdt-ii-o-i`
+  as the single replacement model, reconstructed at 15.0 x 10.5 mm from the
+  ruler photographs with six terminals on an approximately 5.08 mm grid.
+- Added a self-contained SCAD/STL exterior bundle and four semantic preview
+  materials for the housing, rocker, face markings and terminals.
+
+### Migration
+
+- See `MIGRATIONS/5.0.0-ROCKER-REPLACEMENT.md` for removed identities,
+  replacement path and dimensional rationale.
+
 ## [4.5.0] - 2026-08-11
 
 ### Added
