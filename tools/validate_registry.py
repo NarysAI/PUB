@@ -14,6 +14,19 @@ root = Path(sys.argv[1]).resolve()
 errors: list[str] = []
 config_count = 0
 source_count = 0
+MAX_STL_TRIANGLES = 250_000
+
+
+def stl_triangle_count(path: Path) -> int:
+    content = path.read_bytes()
+    if len(content) >= 84:
+        binary_count = int.from_bytes(content[80:84], "little")
+        if 84 + binary_count * 50 == len(content):
+            return binary_count
+    ascii_count = len(re.findall(rb"(?im)^\s*facet\s+normal\b", content))
+    if ascii_count:
+        return ascii_count
+    raise ValueError("not a valid binary or ASCII STL")
 known_object_refs: set[tuple[str, str]] = set()
 pending_component_refs: list[tuple[str, str, str]] = []
 STEP_PRODUCT_PATTERN = re.compile(
@@ -179,6 +192,25 @@ for config_path in root.rglob("partcad.yaml"):
                                 continue
                             if rep_path.suffix.casefold() not in suffixes[source_format]:
                                 errors.append(f"{label} representation does not match format: {relative_rep}")
+                            if source_format == "scad":
+                                try:
+                                    scad_content = rep_path.read_text(encoding="utf-8")
+                                except (OSError, UnicodeError) as exc:
+                                    errors.append(f"{label} cannot read SCAD representation: {exc}")
+                                else:
+                                    if re.search(r"\b(?:import|include|use)\s*(?:\(|<)", scad_content):
+                                        errors.append(f"{label} optimized SCAD must be self-contained")
+                            elif source_format == "stl":
+                                try:
+                                    triangle_count = stl_triangle_count(rep_path)
+                                except (OSError, ValueError) as exc:
+                                    errors.append(f"{label} invalid STL representation: {exc}")
+                                else:
+                                    if triangle_count > MAX_STL_TRIANGLES:
+                                        errors.append(
+                                            f"{label} optimized STL has {triangle_count} triangles; "
+                                            f"maximum is {MAX_STL_TRIANGLES}"
+                                        )
                             expected_scope = "interior" if source_format == "step" else "exterior"
                             if representation.get("geometry_scope") != expected_scope:
                                 errors.append(f"{label} {source_format} requires geometry_scope: {expected_scope}")

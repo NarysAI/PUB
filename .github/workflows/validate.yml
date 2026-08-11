@@ -14,6 +14,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml jinja2
+      - run: python -m unittest discover -s tools/tests -p "test_*.py"
       - run: python tools/validate_registry.py .
       - run: python tools/catalog_inventory.py . --check
       - if: github.event_name == 'pull_request'

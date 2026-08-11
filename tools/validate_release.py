@@ -10,6 +10,7 @@ from pathlib import Path, PurePosixPath
 SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 CANONICAL_CAD_EXTENSIONS = {".scad", ".fcstd", ".stl", ".step", ".stp"}
 DECLARATIVE_ASSEMBLY_EXTENSION = ".assy"
+MAX_STL_TRIANGLES = 250_000
 
 
 def parse_version(value: str) -> tuple[int, int, int]:
@@ -53,6 +54,63 @@ def asset_digests(inventory: dict) -> dict[str, str]:
         str(item["path"]): str(item["sha256"])
         for item in inventory.get("assets", [])
     }
+
+
+def stl_triangle_count(path: Path) -> int:
+    content = path.read_bytes()
+    if len(content) >= 84:
+        binary_count = int.from_bytes(content[80:84], "little")
+        if 84 + binary_count * 50 == len(content):
+            return binary_count
+    ascii_count = len(re.findall(rb"(?im)^\s*facet\s+normal\b", content))
+    if ascii_count:
+        return ascii_count
+    raise ValueError("not a valid binary or ASCII STL")
+
+
+def validate_scad_stl_bundle(
+    root: Path, record: dict, current_assets: dict[str, str], label: str
+) -> list[str]:
+    bundle_errors: list[str] = []
+    representations = {
+        str(item.get("format", "")).casefold(): item
+        for item in record.get("representations", [])
+        if isinstance(item, dict)
+    }
+    missing = sorted({"scad", "stl"} - representations.keys())
+    if missing:
+        return [f"{label}: new 3D part requires optimized SCAD and STL representations"]
+
+    scad_source = PurePosixPath(str(representations["scad"].get("source", "")))
+    stl_source = PurePosixPath(str(representations["stl"].get("source", "")))
+    if scad_source.with_suffix("") != stl_source.with_suffix(""):
+        bundle_errors.append(f"{label}: SCAD and STL representations must use the same path and base filename")
+
+    if str(scad_source) not in current_assets or str(stl_source) not in current_assets:
+        bundle_errors.append(f"{label}: SCAD/STL delivery bundle is missing from the catalog inventory")
+        return bundle_errors
+
+    try:
+        scad_content = (root / Path(str(scad_source))).read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        bundle_errors.append(f"{label}: cannot read SCAD representation: {exc}")
+    else:
+        if re.search(r"\b(?:import|include|use)\s*(?:\(|<)", scad_content):
+            bundle_errors.append(f"{label}: optimized SCAD must be self-contained without import/include/use")
+
+    try:
+        triangle_count = stl_triangle_count(root / Path(str(stl_source)))
+    except (OSError, ValueError) as exc:
+        bundle_errors.append(f"{label}: invalid STL representation: {exc}")
+    else:
+        if triangle_count == 0:
+            bundle_errors.append(f"{label}: STL representation must not be empty")
+        elif triangle_count > MAX_STL_TRIANGLES:
+            bundle_errors.append(
+                f"{label}: optimized STL has {triangle_count} triangles; "
+                f"maximum is {MAX_STL_TRIANGLES}"
+            )
+    return bundle_errors
 
 
 def expected_version(
@@ -134,6 +192,13 @@ def main() -> int:
         for representation in record.get("representations", [])
         if isinstance(representation, dict) and representation.get("source")
     }
+
+    for key in sorted(added_objects):
+        record = current_records[key]
+        if record.get("section") != "parts":
+            continue
+        label = ":".join(key)
+        errors.extend(validate_scad_stl_bundle(root, record, current_assets, label))
     assembly_sources = {
         str(
             PurePosixPath(str(record["package"]).lstrip("/"))

@@ -3,6 +3,18 @@
 Policy versions follow Semantic Versioning independently from catalog releases
 and use Git tags named `policy-vX.Y.Z`.
 
+## [4.0.0] - 2026-08-11
+
+### Changed
+
+- Every newly added 3D part now requires a complete optimized same-stem SCAD/STL
+  representation pair, regardless of its canonical model role.
+- Defined machine-checkable optimization limits: self-contained SCAD without
+  external geometry imports and a valid nonempty STL with at most 250,000
+  triangles.
+- Printable parts retain FCStd as their canonical engineering master while
+  adding SCAD and STL delivery representations.
+
 ## [3.1.1] - 2026-08-10
 
 ### Fixed

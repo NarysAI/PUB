@@ -75,9 +75,9 @@ For new or imported models:
 - do not commit caches, generated temporary files, secrets, credentials, or
   unrelated inherited test artifacts.
 
-Generated GLB/STL previews are derivatives, not replacements for the canonical
-CAD source. A source may be removed only when the changelog explains why and the
-package remains reproducible.
+Generated GLB previews and STL representations are derivatives, not replacements
+for the canonical CAD source. A source may be removed only when the changelog
+explains why and the package remains reproducible.
 
 ### Canonical CAD formats
 
@@ -91,13 +91,35 @@ determines its only canonical source format:
   an FCStd master in PUB.
 - **`printable_part` → `.FCStd` only.** A custom part intended to be manufactured
   or 3D-printed uses an editable FreeCAD document with correct units, construction
-  history, and a final valid solid/body. STL and STEP are generated from this
-  master outside the canonical source tree.
+  history, and a final valid solid/body. Its delivery bundle additionally contains
+  optimized SCAD and STL representations; neither replaces the FCStd master.
 
-The roles and formats are mutually exclusive. A standalone object must not carry
-both SCAD and FCStd sources. Shared SCAD libraries whose filename begins with `_`
-are implementation helpers for electronic-component models and are not catalog
-objects themselves.
+The roles and canonical source formats are mutually exclusive. A standalone
+object must not declare both SCAD and FCStd as canonical sources. Companion SCAD
+and STL representations belong to the delivery bundle described below and do not
+create additional catalog objects. Shared SCAD libraries whose filename begins
+with `_` are implementation helpers and are not catalog objects themselves.
+
+### Required SCAD/STL delivery bundle
+
+Every newly added 3D part, regardless of `model_role`, must declare
+`narys.representations` schema version 1 and include the complete optimized pair:
+
+- a self-contained `.scad` exterior representation created for the object;
+- an `.stl` exterior representation generated from that SCAD file.
+
+The SCAD and STL paths must be inside the package, use the same directory and
+base filename, and both must be listed in `representations.files`. Exactly one
+representation is primary and must match the object's declared `path`. Optional
+STEP may describe interior structure, but it never substitutes for either member
+of the required SCAD/STL pair.
+
+An optimized SCAD representation must not import, include, or use external mesh
+or CAD geometry. It must omit hidden and irrelevant detail, use intentional curve
+resolution, and render without errors. The generated STL must contain the same
+exterior envelope, contain no supports or unrelated geometry, be a valid nonempty
+STL, and contain no more than 250,000 triangles. The pull request must record that
+both representations were rendered and visually compared.
 
 Two-dimensional `sketches` and interface profiles do not declare a 3D
 `model_role`. They use the PartCAD-supported sketch sources appropriate to
@@ -107,11 +129,10 @@ compatible geometry correction when the semantic profile is unchanged or
 made more accurate.
 
 STEP/STP, STL, 3MF, OBJ, GLB/glTF, IGES, BREP, DXF, F3D, and other CAD/mesh
-formats are not accepted as new canonical PUB data. They may be generated outside
-PUB for interchange, slicing, download, or browser caching, but they do not
-replace the role-selected `.scad` or `.FCStd` source. Generated STL and STEP files
-for printable parts are created from the FreeCAD master and are not stored as
-canonical PUB data.
+formats are not accepted as the sole new canonical PUB source. The required STL
+is stored as a generated delivery representation paired with SCAD; it does not
+replace the role-selected `.scad` or `.FCStd` source. Other derivatives may be
+generated for interchange, slicing, download, or browser caching.
 
 Legacy non-canonical assets already present in a released inventory are retained
 until a lossless, reviewed migration is available. They must not be deleted in

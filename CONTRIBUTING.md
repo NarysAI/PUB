@@ -7,11 +7,10 @@ It is the authoritative rule set; this file is the short operational checklist.
 
 1. Update from `origin/main` and create one purpose-specific branch.
 2. Add or change the package and its provenance/license documentation.
-   For a 3D part, declare `model_role: electronic_component` with one `.scad`
-   source for a real-world component, or `model_role: printable_part` with one
-   `.FCStd` FreeCAD master for a manufactured/printed custom part. Never add
-   both. Two-dimensional sketches use PartCAD sketch source types and do not
-   declare a 3D model role.
+   Every new 3D part must include an optimized same-stem `.scad` + `.stl` pair
+   in `narys.representations`. Declare the appropriate `model_role`; a printable
+   part additionally keeps its canonical `.FCStd` FreeCAD master. Two-dimensional
+   sketches use PartCAD sketch source types and do not declare a 3D model role.
 3. Bump `VERSION` and add the matching `CHANGELOG.md` entry.
 4. Run `python tools/catalog_inventory.py .` to regenerate the inventory.
 5. Run the registry, inventory, and release validators.

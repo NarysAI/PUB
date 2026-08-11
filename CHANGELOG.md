@@ -3,6 +3,14 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.4] - 2026-08-11
+
+### Changed
+
+- Required every newly added 3D part to ship a complete optimized SCAD/STL
+  representation pair, with automated validation of pairing, self-containment,
+  STL validity, and a 250,000-triangle ceiling.
+
 ## [4.1.3] - 2026-08-11
 
 ### Changed
