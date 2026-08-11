@@ -22,6 +22,25 @@ parts:
             path: xl4015-step-down-5a-cc-cv.stl
             geometry_scope: exterior
 
+  xl4015-1:
+    type: scad
+    path: xl4015-1.scad
+    model_role: electronic_component
+    desc: Distinct XL4015-1 50 W 5 A buck-converter module with solder-pad connections
+    sku: XL4015-1
+    url: https://grabcad.com/library/xl4015-1
+    narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: xl4015-1.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: xl4015-1.stl
+            geometry_scope: exterior
+
 render:
   svg:
   readme:
