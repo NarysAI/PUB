@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.1.6",
+  "catalog_version": "4.2.0",
   "summary": {
     "packages": 78,
-    "objects": 428,
-    "assets": 533,
-    "asset_bytes": 515781599
+    "objects": 429,
+    "assets": 535,
+    "asset_bytes": 516554030
   },
   "packages": [
     {
@@ -83,7 +83,7 @@
     {
       "name": "/pub/electronics/power-converters/xl4015",
       "config": "electronics/power-converters/xl4015/partcad.yaml",
-      "config_sha256": "74db747f6f5dc34c49ef8fd5f201a603de124b44cc4a72ebc9896ef8a9f6b59e",
+      "config_sha256": "ac9af400a1bae92c2dc09954a1b606ad4a65cbe548742e98a001564666d8cd3a",
       "entry_type": "package"
     },
     {
@@ -746,6 +746,26 @@
           "format": "stl",
           "scope": "exterior",
           "source": "electronics/modules/wheeltec-h30/h30-plastic-damper-screw.stl"
+        }
+      ]
+    },
+    {
+      "package": "/pub/electronics/power-converters/xl4015",
+      "section": "parts",
+      "name": "xl4015-1",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/power-converters/xl4015/xl4015-1.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/power-converters/xl4015/xl4015-1.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/power-converters/xl4015/xl4015-1.stl"
         }
       ]
     },
@@ -3424,6 +3444,16 @@
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",
       "bytes": 4690841,
       "sha256": "7d82027a0d2be80a73930d74927f6b22984ad8a26d315798fbd3cb33f8b34918"
+    },
+    {
+      "path": "electronics/power-converters/xl4015/xl4015-1.scad",
+      "bytes": 3469,
+      "sha256": "8e51ef2535b70e08e04732e8c6c0fb33da7be3019f2b2cccce9d4d19e16e9386"
+    },
+    {
+      "path": "electronics/power-converters/xl4015/xl4015-1.stl",
+      "bytes": 768962,
+      "sha256": "e620314666b40ee661bc1883c79b3bce3e5714463ecf24ef145a6c31207d41b6"
     },
     {
       "path": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.scad",

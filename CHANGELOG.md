@@ -3,6 +3,24 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.2.0] - 2026-08-11
+
+### Added
+
+- Added `electronics/power-converters/xl4015:xl4015-1` as a second, distinct
+  XL4015-family object with its own optimized SCAD/STL exterior bundle.
+- Reconstructed the visibly different 55 × 25 × 15 mm solder-pad layout from
+  public GrabCAD renderings and the linked UNIT Electronics product envelope.
+
+### Changed
+
+- Documented the original screw-terminal XL4015 and the new `XL4015-1` as two
+  separate catalog identities; neither replaces or aliases the other.
+
+### Migration
+
+- See `MIGRATIONS/4.2.0-XL4015-TWO-VARIANTS.md` for identity and accuracy notes.
+
 ## [4.1.6] - 2026-08-11
 
 ### Changed
