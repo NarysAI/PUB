@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.5.2",
+  "catalog_version": "5.0.0",
   "summary": {
-    "packages": 84,
-    "objects": 432,
-    "assets": 541,
-    "asset_bytes": 517488004
+    "packages": 83,
+    "objects": 431,
+    "assets": 540,
+    "asset_bytes": 517869217
   },
   "packages": [
     {
@@ -33,15 +33,9 @@
       "entry_type": "package"
     },
     {
-      "name": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
-      "config": "electromechanics/switches/kcd1-203-dpdt-rocker/partcad.yaml",
-      "config_sha256": "fef7a768b1ea56aebd0b24e6253a56c9498843bcab8057f4ddede77759b5b433",
-      "entry_type": "package"
-    },
-    {
-      "name": "/pub/electromechanics/switches/kcd1-rocker",
-      "config": "electromechanics/switches/kcd1-rocker/partcad.yaml",
-      "config_sha256": "08800619b58be7666690e055c047e040126d5d790f0754e8ac7692d469ccfbc6",
+      "name": "/pub/electromechanics/switches/mini-rocker",
+      "config": "electromechanics/switches/mini-rocker/partcad.yaml",
+      "config_sha256": "668fda0b742a5495cf09fa0ca00684c4c13fa739be3ff64d30a7a2b79e925479",
       "entry_type": "package"
     },
     {
@@ -567,32 +561,107 @@
       "source": "electromechanics/switches/button-a6/button-a6.scad"
     },
     {
-      "package": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
+      "package": "/pub/electromechanics/switches/mini-rocker",
       "section": "parts",
-      "name": "kcd1-203-on-off-on",
+      "name": "mini-ii-o-i",
       "type": "scad",
       "model_role": "electronic_component",
-      "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
+      "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
+      "accuracy": {
+        "schema_version": 2,
+        "basis": "manufacturer_drawing_cross_checked_with_calibrated_physical_measurement",
+        "datum": "Panel plane is Z=0; bezel and terminal matrix are centered on X=0 and Y=0",
+        "critical_dimensions": [
+          {
+            "id": "bezel_width",
+            "nominal": 15.0,
+            "model_value": 15.0,
+            "unit": "mm",
+            "tolerance": 0.1,
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension D"
+          },
+          {
+            "id": "bezel_height",
+            "nominal": 10.5,
+            "model_value": 10.5,
+            "unit": "mm",
+            "tolerance": 0.1,
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension E"
+          },
+          {
+            "id": "panel_cutout_width",
+            "nominal": 13.8,
+            "model_value": 13.8,
+            "unit": "mm",
+            "tolerance": 0.5,
+            "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
+          },
+          {
+            "id": "panel_cutout_height",
+            "nominal": 9.2,
+            "model_value": 9.2,
+            "unit": "mm",
+            "tolerance": 0.3,
+            "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
+          },
+          {
+            "id": "body_depth_below_panel",
+            "nominal": 10.2,
+            "model_value": 10.2,
+            "unit": "mm",
+            "tolerance": 0.5,
+            "source": "Top Willing RS-001G (KCD11) series drawing"
+          },
+          {
+            "id": "terminal_pitch",
+            "nominal": 5.0,
+            "model_value": 5.0,
+            "unit": "mm",
+            "tolerance": 0.1,
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension C"
+          },
+          {
+            "id": "terminal_thickness",
+            "nominal": 0.4,
+            "model_value": 0.4,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension A"
+          },
+          {
+            "id": "terminal_blade_width",
+            "nominal": 3.7,
+            "model_value": 3.7,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension B"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "rocker_curvature_face_markings_and_snap_clip_surface_detail",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "visual identification and coarse exterior clearance only"
+          },
+          {
+            "feature": "terminal_eye_slots",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "visual identification; not a tooling profile"
+          }
+        ]
+      },
       "representations": [
         {
           "format": "scad",
           "scope": "exterior",
-          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad"
+          "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad"
         },
         {
           "format": "stl",
           "scope": "exterior",
-          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl"
+          "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.stl"
         }
       ]
-    },
-    {
-      "package": "/pub/electromechanics/switches/kcd1-rocker",
-      "section": "parts",
-      "name": "kcd1-on-off-on",
-      "type": "scad",
-      "model_role": "electronic_component",
-      "source": "electromechanics/switches/kcd1-rocker/kcd1-on-off-on.scad"
     },
     {
       "package": "/electromechanics/towerpro",
@@ -3519,19 +3588,14 @@
       "sha256": "a78117f703e6c1b66905c0317c37abf24bac082252e210ae096e3a64df9754bb"
     },
     {
-      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
-      "bytes": 5859,
-      "sha256": "95114c2bed7fb1ed108d88d04e02fd1e77f3aa9eda37ec15781be30dff5e449c"
+      "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
+      "bytes": 4914,
+      "sha256": "31631ada97a73c90dae7f2c4736ad6c9bfd79ac4c497ed8f6d10b64d2436183f"
     },
     {
-      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl",
-      "bytes": 190684,
-      "sha256": "794ac3d8ce55dd9e731e09b8c9596a852cd85c18664362a0f0eb5442483487c3"
-    },
-    {
-      "path": "electromechanics/switches/kcd1-rocker/kcd1-on-off-on.scad",
-      "bytes": 5680,
-      "sha256": "f6bfd767369c26303579fb7a8ecb50261686c6aa2103c82b507881fdc5e371ba"
+      "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.stl",
+      "bytes": 578522,
+      "sha256": "0ed4341d772a9fd8ba5f1a18b826d58a75d53ae531cdc52de34552495aa6f703"
     },
     {
       "path": "electromechanics/towerpro/example/mg90s.assy",
