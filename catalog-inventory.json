@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.5.1",
+  "catalog_version": "4.5.2",
   "summary": {
     "packages": 84,
     "objects": 432,
     "assets": 541,
-    "asset_bytes": 517818071
+    "asset_bytes": 517488004
   },
   "packages": [
     {
@@ -95,7 +95,7 @@
     {
       "name": "//pub/electronics/connectors/usb/usb-c-male-cable",
       "config": "electronics/connectors/usb/usb-c-male-cable/partcad.yaml",
-      "config_sha256": "e13f92f42e4d14a44f9a547ac364f388866fc23ec3265bd69daa89500a9401d8",
+      "config_sha256": "81563b1ccc1c1c95d3e739b196473ba7c3f98d9c5bb47c1ea4fdca3fcaade969",
       "entry_type": "package"
     },
     {
@@ -745,6 +745,100 @@
       "type": "scad",
       "model_role": "electronic_component",
       "source": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
+      "accuracy": {
+        "schema_version": 2,
+        "basis": "original_cad_viewer_measurement",
+        "datum": "Mating face at X=0; connector and cable centerline is Y=0 and Z=0",
+        "critical_dimensions": [
+          {
+            "id": "overall_length",
+            "nominal": 48.77,
+            "model_value": 48.77,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "exposed_shell_length",
+            "nominal": 7.24,
+            "model_value": 7.24,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "housing_length",
+            "nominal": 17.01,
+            "model_value": 17.01,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "housing_width",
+            "nominal": 10.65,
+            "model_value": 10.65,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer edge and radius measurements (4.95 mm straight plus two R2.85 mm ends)"
+          },
+          {
+            "id": "housing_height",
+            "nominal": 5.7,
+            "model_value": 5.7,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer end-profile radius measurement (2 x R2.85 mm)"
+          },
+          {
+            "id": "strain_relief_length",
+            "nominal": 5.69,
+            "model_value": 5.69,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "strain_relief_diameter",
+            "nominal": 4.5,
+            "model_value": 4.5,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer diameter measurement of the original STEP assembly"
+          },
+          {
+            "id": "cable_diameter",
+            "nominal": 3.3,
+            "model_value": 3.3,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer diameter measurement of the original STEP assembly"
+          },
+          {
+            "id": "mating_shell_width",
+            "nominal": 8.25,
+            "model_value": 8.25,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer"
+          },
+          {
+            "id": "mating_shell_height",
+            "nominal": 2.4,
+            "model_value": 2.4,
+            "unit": "mm",
+            "tolerance": 0.03,
+            "source": "USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "internal_contact_and_tongue_detail",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "recognizable website preview only; not for connector manufacturing"
+          }
+        ]
+      },
       "representations": [
         {
           "format": "scad",
@@ -3531,13 +3625,13 @@
     },
     {
       "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
-      "bytes": 2503,
-      "sha256": "8ffc055c3ce93f487f8199ee69416451d9b6ce0628f0d6276f2a1aed9a741321"
+      "bytes": 3967,
+      "sha256": "d3ad30fe499a1dd98d3c831c5a478bce0c0f48a87618e2a6116cf6fa4249783e"
     },
     {
       "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.stl",
-      "bytes": 624787,
-      "sha256": "9bd935cb00e8939c0a422fef5ebd1fb08162ea0bec230bc0361dc946b171cd38"
+      "bytes": 293256,
+      "sha256": "c68224c9d931ee4d8d72eaa175eac2ec43df795a1d026041be3d6cc8dafe3d6a"
     },
     {
       "path": "electronics/modules/ec-buying/_led-module-common.scad",

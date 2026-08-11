@@ -127,12 +127,21 @@ of the required SCAD/STL pair.
 
 ### Dimensional fidelity and functional geometry
 
-Every new or changed 3D part must declare `narys.accuracy` schema version 1.
-The metadata must state the dimensional basis, mating or placement datum, every
-critical dimension with its unit and tolerance, and the authoritative source for
-each value. Functional geometry includes mating profiles, mounting holes, pin
-pitch, contact locations, keep-outs, and any dimension that controls fit or
-interchangeability.
+Every new or changed 3D part must declare `narys.accuracy` schema version 2.
+Unchanged released objects may retain legacy schema version 1. The metadata must
+state the dimensional basis, mating or placement datum, and every critical
+dimension with its unit, authoritative reference value (`nominal`), numerically
+measured generated-model value (`model_value`), numeric tolerance, and source.
+Functional geometry includes mating profiles, mounting holes, pin pitch, contact
+locations, keep-outs, the overall envelope, major housing sections, and any
+dimension that controls fit, clearance, or interchangeability.
+
+Key dimensions must match the original authoritative CAD, drawing, or calibrated
+physical reference. A dimension passes only when
+`abs(model_value - nominal) <= tolerance`; a visually similar shape does not
+waive this requirement. The package `README.md` must include a comparison table
+showing the reference value, generated-model value, deviation, tolerance, and
+measurement source or method for every declared critical dimension.
 
 Use sources in this order: original editable vendor CAD, manufacturer or
 standards-body drawings, then calibrated physical measurement. Photographs and
@@ -142,8 +151,9 @@ approximation must be listed separately with its scope and intended use.
 
 Before merge, render front, side, top, and isometric views and compare them with
 the source. Also measure the generated representation numerically against every
-declared critical dimension. Visual resemblance alone is not dimensional
-verification.
+declared critical dimension and record the results in schema version 2 metadata.
+Release validation must fail any missing measurement or out-of-tolerance value.
+Visual resemblance alone is not dimensional verification.
 
 An optimized SCAD representation must not import, include, or use external mesh
 or CAD geometry. It must omit hidden and irrelevant detail, use intentional curve

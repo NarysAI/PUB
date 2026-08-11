@@ -116,8 +116,8 @@ def validate_scad_stl_bundle(
 def validate_accuracy(record: dict, label: str) -> list[str]:
     accuracy_errors: list[str] = []
     accuracy = record.get("accuracy")
-    if not isinstance(accuracy, dict) or accuracy.get("schema_version") != 1:
-        return [f"{label}: new or changed 3D part requires narys.accuracy schema_version 1"]
+    if not isinstance(accuracy, dict) or accuracy.get("schema_version") != 2:
+        return [f"{label}: new or changed 3D part requires narys.accuracy schema_version 2"]
     if not str(accuracy.get("basis", "")).strip() or not str(accuracy.get("datum", "")).strip():
         accuracy_errors.append(f"{label}: accuracy metadata requires basis and datum")
     dimensions = accuracy.get("critical_dimensions")
@@ -129,11 +129,27 @@ def validate_accuracy(record: dict, label: str) -> list[str]:
                 accuracy_errors.append(f"{label}: critical dimension must be a mapping")
                 continue
             nominal = dimension.get("nominal")
-            required = ("id", "unit", "tolerance", "source")
+            model_value = dimension.get("model_value")
+            tolerance = dimension.get("tolerance")
+            required = ("id", "unit", "source")
             if isinstance(nominal, bool) or not isinstance(nominal, (int, float)) or any(
                 not str(dimension.get(field, "")).strip() for field in required
             ):
-                accuracy_errors.append(f"{label}: every critical dimension requires id, numeric nominal, unit, tolerance, and source")
+                accuracy_errors.append(f"{label}: every critical dimension requires id, numeric nominal, unit, and source")
+            if isinstance(model_value, bool) or not isinstance(model_value, (int, float)):
+                accuracy_errors.append(f"{label}: every critical dimension requires numeric model_value")
+            if isinstance(tolerance, bool) or not isinstance(tolerance, (int, float)) or tolerance < 0:
+                accuracy_errors.append(f"{label}: every critical dimension requires non-negative numeric tolerance")
+            if (
+                isinstance(nominal, (int, float)) and not isinstance(nominal, bool)
+                and isinstance(model_value, (int, float)) and not isinstance(model_value, bool)
+                and isinstance(tolerance, (int, float)) and not isinstance(tolerance, bool)
+                and abs(model_value - nominal) > tolerance + 1e-12
+            ):
+                accuracy_errors.append(
+                    f"{label}: {dimension.get('id', 'critical dimension')} is out of tolerance: "
+                    f"reference {nominal}, model {model_value}, tolerance {tolerance}"
+                )
     return accuracy_errors
 
 

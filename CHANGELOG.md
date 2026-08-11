@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.5.2] - 2026-08-11
+
+### Fixed
+
+- Rebuilt `usb-c-male-cable` from measurements taken from the linked original
+  GrabCAD CAD viewer instead of visual estimates.
+- Corrected the overall length to `48.77 mm`, the exposed plug to `7.24 mm`, the
+  housing to `17.01 x 10.65 x 5.70 mm`, the smooth strain relief to
+  `5.69 mm / 4.50 mm diameter`, and the cable to `3.30 mm diameter`.
+- Added machine-checked reference-versus-model values for all key dimensions.
+
 ## [4.5.1] - 2026-08-11
 
 - Corrected the Micro HDMI Type D male mating interface to the manufacturer

@@ -40,9 +40,10 @@ def step_product_has_identifier(content: bytes, identifier: bytes) -> bool:
 
 
 def validate_accuracy(accuracy: object, label: str) -> None:
-    if not isinstance(accuracy, dict) or accuracy.get("schema_version") != 1:
-        errors.append(f"{label} narys.accuracy requires schema_version 1")
+    if not isinstance(accuracy, dict) or accuracy.get("schema_version") not in {1, 2}:
+        errors.append(f"{label} narys.accuracy requires schema_version 1 or 2")
         return
+    schema_version = accuracy["schema_version"]
     for field in ("basis", "datum"):
         if not str(accuracy.get(field, "")).strip():
             errors.append(f"{label} narys.accuracy.{field} must not be empty")
@@ -65,6 +66,23 @@ def validate_accuracy(accuracy: object, label: str) -> None:
             for field in ("unit", "tolerance", "source"):
                 if not str(dimension.get(field, "")).strip():
                     errors.append(f"{label} {identifier or 'critical dimension'} requires {field}")
+            if schema_version == 2:
+                model_value = dimension.get("model_value")
+                tolerance = dimension.get("tolerance")
+                if isinstance(model_value, bool) or not isinstance(model_value, (int, float)):
+                    errors.append(f"{label} {identifier or 'critical dimension'} requires numeric model_value")
+                if isinstance(tolerance, bool) or not isinstance(tolerance, (int, float)) or tolerance < 0:
+                    errors.append(f"{label} {identifier or 'critical dimension'} requires non-negative numeric tolerance")
+                if (
+                    isinstance(nominal, (int, float)) and not isinstance(nominal, bool)
+                    and isinstance(model_value, (int, float)) and not isinstance(model_value, bool)
+                    and isinstance(tolerance, (int, float)) and not isinstance(tolerance, bool)
+                    and abs(model_value - nominal) > tolerance + 1e-12
+                ):
+                    errors.append(
+                        f"{label} {identifier or 'critical dimension'} is out of tolerance: "
+                        f"reference {nominal}, model {model_value}, tolerance {tolerance}"
+                    )
     approximations = accuracy.get("approximations", [])
     if not isinstance(approximations, list):
         errors.append(f"{label} narys.accuracy.approximations must be a list")
