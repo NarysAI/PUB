@@ -15,6 +15,8 @@ The manufacturer and exact part number are not legible. The 15.0 x 10.5 mm
 front, 13.8 x 9.2 mm panel opening and 10.2 mm body depth are consistent with a
 miniature KCD11/RS-001G-size housing. The exact manufacturer is still unknown,
 so the part is cataloged generically rather than assigned an unsupported SKU.
+Functional envelope dimensions are cross-checked against the
+[Top Willing RS-001G (KCD11) drawing](https://probots.co.in/technical_data/switches/Probots-KCD11-Rocker-Switch-Datasheet.pdf).
 
 ## Dimensions and coordinate system
 

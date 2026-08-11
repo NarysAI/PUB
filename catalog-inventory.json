@@ -5,7 +5,7 @@
     "packages": 83,
     "objects": 431,
     "assets": 540,
-    "asset_bytes": 518175411
+    "asset_bytes": 518199284
   },
   "packages": [
     {
@@ -35,7 +35,7 @@
     {
       "name": "/pub/electromechanics/switches/mini-rocker",
       "config": "electromechanics/switches/mini-rocker/partcad.yaml",
-      "config_sha256": "82bc87ab1c1d7198e854ab8834750a28beb58fe4ebd0b11d073ce97a5e61c931",
+      "config_sha256": "8316ae354b391a5ad796954896a8c64f0f816c2785f534397bbeaaeaf0dd2c8d",
       "entry_type": "package"
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "//pub/electronics/connectors/hdmi/micro-hdmi-type-d-cable-male",
       "config": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/partcad.yaml",
-      "config_sha256": "6f1b068da4e3019742071b2cb88513efb18a6ac6baf213ad750c4fba32c65e73",
+      "config_sha256": "81618495201bea576ac36e690494cf3032ab334a2d5b609e2c8d86738cbff9ae",
       "entry_type": "package"
     },
     {
@@ -567,6 +567,81 @@
       "type": "scad",
       "model_role": "electronic_component",
       "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
+      "accuracy": {
+        "schema_version": 1,
+        "basis": "Manufacturer RS-001G (KCD11) drawing cross-checked against calibrated ruler photographs",
+        "datum": "Panel plane is Z=0; bezel and terminal matrix are centered on X=0 and Y=0",
+        "critical_dimensions": [
+          {
+            "id": "bezel_width",
+            "nominal": 15.0,
+            "unit": "mm",
+            "tolerance": "+/-0.10 mm",
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension D"
+          },
+          {
+            "id": "bezel_height",
+            "nominal": 10.5,
+            "unit": "mm",
+            "tolerance": "+/-0.10 mm",
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension E"
+          },
+          {
+            "id": "panel_cutout_width",
+            "nominal": 13.8,
+            "unit": "mm",
+            "tolerance": "+/-0.5 mm drawing general tolerance",
+            "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
+          },
+          {
+            "id": "panel_cutout_height",
+            "nominal": 9.2,
+            "unit": "mm",
+            "tolerance": "+/-0.3 mm drawing general tolerance",
+            "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
+          },
+          {
+            "id": "body_depth_below_panel",
+            "nominal": 10.2,
+            "unit": "mm",
+            "tolerance": "+/-0.5 mm drawing general tolerance",
+            "source": "Top Willing RS-001G (KCD11) series drawing"
+          },
+          {
+            "id": "terminal_pitch",
+            "nominal": 5.0,
+            "unit": "mm",
+            "tolerance": "+/-0.10 mm",
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension C"
+          },
+          {
+            "id": "terminal_thickness",
+            "nominal": 0.4,
+            "unit": "mm",
+            "tolerance": "+/-0.02 mm",
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension A"
+          },
+          {
+            "id": "terminal_blade_width",
+            "nominal": 3.7,
+            "unit": "mm",
+            "tolerance": "+/-0.05 mm",
+            "source": "Top Willing RS-001G (KCD11) series drawing, dimension B"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "rocker_curvature_face_markings_and_snap_clip_surface_detail",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "visual identification and coarse exterior clearance only"
+          },
+          {
+            "feature": "terminal_eye_slots",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "visual identification; not a tooling profile"
+          }
+        ]
+      },
       "representations": [
         {
           "format": "scad",
@@ -648,6 +723,69 @@
       "type": "scad",
       "model_role": "electronic_component",
       "source": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.scad",
+      "accuracy": {
+        "schema_version": 1,
+        "basis": "manufacturer_drawing",
+        "datum": "Mating face at X=0; connector centerline is Y=0 and Z=0",
+        "critical_dimensions": [
+          {
+            "id": "mating_shell_width",
+            "nominal": 5.83,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "mating_shell_height",
+            "nominal": 2.2,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "lower_shell_edge",
+            "nominal": 4.65,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "exposed_shell_length",
+            "nominal": 7.15,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "contact_pitch",
+            "nominal": 0.4,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "contact_row_stagger",
+            "nominal": 0.2,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          },
+          {
+            "id": "contact_field_span",
+            "nominal": 3.6,
+            "unit": "mm",
+            "tolerance": "drawing_nominal",
+            "source": "AMTEK MIHDMI-M19 drawing, catalogue page 5-53"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "cable_overmould_strain_relief_and_cable",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "enclosure visualization and coarse cable clearance"
+          }
+        ]
+      },
       "representations": [
         {
           "format": "scad",
@@ -3439,13 +3577,13 @@
     },
     {
       "path": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.scad",
-      "bytes": 3141,
-      "sha256": "1016261bc1bbfed96aa96d2ef636641bdaa5b502a375492fac4d6264e57f788d"
+      "bytes": 4116,
+      "sha256": "723f16847db401367b490684859e89464141d1db20d847200b7d3ddb44858cfe"
     },
     {
       "path": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.stl",
-      "bytes": 413194,
-      "sha256": "29c5eb8d2bfa12e4807b91394908fb3e3baa0112c32d20cf91f933b154d328e0"
+      "bytes": 436092,
+      "sha256": "886b7cd157320ce819edf6c0ae55c5951d113d662aeba394db165c522a911331"
     },
     {
       "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",

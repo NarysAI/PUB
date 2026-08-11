@@ -24,6 +24,16 @@ Changelog, and catalog versions follow Semantic Versioning.
 - See `MIGRATIONS/5.0.0-ROCKER-REPLACEMENT.md` for removed identities,
   replacement path and dimensional rationale.
 
+## [4.5.1] - 2026-08-11
+
+- Corrected the Micro HDMI Type D male mating interface to the manufacturer
+  drawing: `5.83 x 2.20 mm` shell, `4.65 mm` lower edge, `7.15 mm` engagement
+  length, and the asymmetric Type D profile with `R0.25 mm` upper corners.
+- Rebuilt the 19 contacts as two staggered rows on `0.40 mm` pitch with a
+  `0.20 mm` row offset and documented which cable-body features remain cosmetic.
+- Added dimensional-accuracy metadata and catalog policy enforcement for all
+  new or changed 3D parts.
+
 ## [4.5.0] - 2026-08-11
 
 ### Added

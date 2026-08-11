@@ -97,6 +97,9 @@ def build_inventory(root: Path) -> dict:
                 if raw.get("path"):
                     item["source"] = (config_path.parent / str(raw["path"])).relative_to(root).as_posix()
                 narys = raw.get("narys") if isinstance(raw.get("narys"), dict) else {}
+                accuracy = narys.get("accuracy") if isinstance(narys.get("accuracy"), dict) else None
+                if accuracy:
+                    item["accuracy"] = accuracy
                 representation_meta = narys.get("representations") if isinstance(narys.get("representations"), dict) else {}
                 representation_files = representation_meta.get("files", [])
                 if isinstance(representation_files, list) and representation_files:

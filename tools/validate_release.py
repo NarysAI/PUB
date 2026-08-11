@@ -113,6 +113,30 @@ def validate_scad_stl_bundle(
     return bundle_errors
 
 
+def validate_accuracy(record: dict, label: str) -> list[str]:
+    accuracy_errors: list[str] = []
+    accuracy = record.get("accuracy")
+    if not isinstance(accuracy, dict) or accuracy.get("schema_version") != 1:
+        return [f"{label}: new or changed 3D part requires narys.accuracy schema_version 1"]
+    if not str(accuracy.get("basis", "")).strip() or not str(accuracy.get("datum", "")).strip():
+        accuracy_errors.append(f"{label}: accuracy metadata requires basis and datum")
+    dimensions = accuracy.get("critical_dimensions")
+    if not isinstance(dimensions, list) or not dimensions:
+        accuracy_errors.append(f"{label}: accuracy metadata requires critical_dimensions")
+    else:
+        for dimension in dimensions:
+            if not isinstance(dimension, dict):
+                accuracy_errors.append(f"{label}: critical dimension must be a mapping")
+                continue
+            nominal = dimension.get("nominal")
+            required = ("id", "unit", "tolerance", "source")
+            if isinstance(nominal, bool) or not isinstance(nominal, (int, float)) or any(
+                not str(dimension.get(field, "")).strip() for field in required
+            ):
+                accuracy_errors.append(f"{label}: every critical dimension requires id, numeric nominal, unit, tolerance, and source")
+    return accuracy_errors
+
+
 def expected_version(
     base: tuple[int, int, int], breaking: bool, additive: bool
 ) -> tuple[int, int, int]:
@@ -199,6 +223,7 @@ def main() -> int:
             continue
         label = ":".join(key)
         errors.extend(validate_scad_stl_bundle(root, record, current_assets, label))
+        errors.extend(validate_accuracy(record, label))
     assembly_sources = {
         str(
             PurePosixPath(str(record["package"]).lstrip("/"))
@@ -224,7 +249,9 @@ def main() -> int:
 
     for key, record in changed_records.items():
         if record.get("section") == "parts":
-            validate_role(record, ":".join(key))
+            label = ":".join(key)
+            validate_role(record, label)
+            errors.extend(validate_accuracy(record, label))
 
     for path in sorted(changed_assets):
         source = PurePosixPath(path)
@@ -237,8 +264,11 @@ def main() -> int:
             continue
         if source.suffix.casefold() in CANONICAL_CAD_EXTENSIONS and not record:
             errors.append(f"{path}: canonical model asset is not referenced by a catalog object")
-        elif record and source_records.get(path.casefold()):
-            validate_role(record, path)
+        elif record:
+            if source_records.get(path.casefold()):
+                validate_role(record, path)
+            if record.get("section") == "parts":
+                errors.extend(validate_accuracy(record, path))
 
     if errors:
         print("\n".join(errors))
