@@ -3,6 +3,22 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.5] - 2026-08-11
+
+### Changed
+
+- Migrated XL4015 from its legacy STEP-only catalog entry to a complete,
+  optimized, same-stem SCAD/STL exterior bundle while retaining the original
+  STEP and Fusion 360 sources for engineering reference.
+- Reduced the XL4015 browser mesh from 124,840 STEP-scene faces to 3,696 STL
+  triangles while preserving its 51 × 26 mm board envelope, mounting pattern,
+  controls, connectors, and major clearance volumes.
+
+### Migration
+
+- See `MIGRATIONS/4.1.5-XL4015-SCAD-STL.md` for the source-preservation and
+  compatibility record.
+
 ## [4.1.4] - 2026-08-11
 
 ### Changed

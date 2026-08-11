@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.1.4",
+  "catalog_version": "4.1.5",
   "summary": {
     "packages": 78,
     "objects": 428,
-    "assets": 531,
-    "asset_bytes": 515170326
+    "assets": 533,
+    "asset_bytes": 515781599
   },
   "packages": [
     {
@@ -83,7 +83,7 @@
     {
       "name": "/pub/electronics/power-converters/xl4015",
       "config": "electronics/power-converters/xl4015/partcad.yaml",
-      "config_sha256": "7c380a57322a93d4e0155f5c6fbada092d8f2ddb8446fb2e76b020fddd92b316",
+      "config_sha256": "bc5f2c1f75f78ba2ee59b9dc75faa950d1949850775e33c6b516fc09feceb6a3",
       "entry_type": "package"
     },
     {
@@ -753,8 +753,21 @@
       "package": "/pub/electronics/power-converters/xl4015",
       "section": "parts",
       "name": "xl4015-step-down-5a-cc-cv",
-      "type": "step",
-      "source": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.step"
+      "type": "stl",
+      "model_role": "electronic_component",
+      "source": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.stl",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.stl"
+        }
+      ]
     },
     {
       "package": "/pub/electronics/sbcs/arduino",
@@ -3413,9 +3426,19 @@
       "sha256": "7d82027a0d2be80a73930d74927f6b22984ad8a26d315798fbd3cb33f8b34918"
     },
     {
+      "path": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.scad",
+      "bytes": 3469,
+      "sha256": "b46e593738f976899e84b3a80237a05663bc6d3587f0233d894c2fdefdd3b0c9"
+    },
+    {
       "path": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.step",
       "bytes": 5947260,
       "sha256": "98466c5db6e99695e381161b97c50fb48b86fdcc1db03bb8a87a0dc9e01880e5"
+    },
+    {
+      "path": "electronics/power-converters/xl4015/xl4015-step-down-5a-cc-cv.stl",
+      "bytes": 607804,
+      "sha256": "2020582b7c20823806649f54eb9ad827b055f92d0c9e4d6acdab2edd78a1f68e"
     },
     {
       "path": "electronics/sbcs/arduino/mega2560.step",
