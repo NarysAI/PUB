@@ -20,6 +20,9 @@ whether it is made by a person, script, migration, or AI agent.
 6. **Project separation.** Active open projects keep editable CAD history in a
    standalone canonical Git repository. PUB contains a metadata pointer, not a
    moving copy of project CAD files.
+7. **Public delivery.** A catalog change is not complete while it exists only in
+   a local branch, worktree, commit, or pull request. Completion requires the
+   released files and metadata to be visible and usable on the production site.
 
 ## 2. Required workflow
 
@@ -37,7 +40,15 @@ All changes follow this order:
 9. Open a PR using the repository template. Agent-authored PRs require human
    approval. Never force-push or delete protected history.
 10. Merge only after required CI passes. Create the matching `vX.Y.Z` release tag
-    on the protected `main` merge commit, then verify the website.
+    on the protected `main` merge commit.
+11. Refresh the production catalog from the merged `PUB/main` and
+    `narys-index/main`, then verify the public HTTPS website. A local preview,
+    localhost response, branch deployment, or successful PR check is not a
+    substitute for this production verification.
+12. Report the task as complete only after the public package/object page, search,
+    downloads, and 3D preview pass. If merge, deployment, credentials, or refresh
+    is pending, report the exact pending state and never describe the change as
+    finished or published.
 
 Direct commits to `main`, unversioned changes, and release tags pointing outside
 protected `main` are prohibited.
@@ -75,9 +86,9 @@ For new or imported models:
 - do not commit caches, generated temporary files, secrets, credentials, or
   unrelated inherited test artifacts.
 
-Generated GLB/STL previews are derivatives, not replacements for the canonical
-CAD source. A source may be removed only when the changelog explains why and the
-package remains reproducible.
+Generated GLB previews and STL representations are derivatives, not replacements
+for the canonical CAD source. A source may be removed only when the changelog
+explains why and the package remains reproducible.
 
 ### Canonical CAD formats
 
@@ -91,13 +102,35 @@ determines its only canonical source format:
   an FCStd master in PUB.
 - **`printable_part` → `.FCStd` only.** A custom part intended to be manufactured
   or 3D-printed uses an editable FreeCAD document with correct units, construction
-  history, and a final valid solid/body. STL and STEP are generated from this
-  master outside the canonical source tree.
+  history, and a final valid solid/body. Its delivery bundle additionally contains
+  optimized SCAD and STL representations; neither replaces the FCStd master.
 
-The roles and formats are mutually exclusive. A standalone object must not carry
-both SCAD and FCStd sources. Shared SCAD libraries whose filename begins with `_`
-are implementation helpers for electronic-component models and are not catalog
-objects themselves.
+The roles and canonical source formats are mutually exclusive. A standalone
+object must not declare both SCAD and FCStd as canonical sources. Companion SCAD
+and STL representations belong to the delivery bundle described below and do not
+create additional catalog objects. Shared SCAD libraries whose filename begins
+with `_` are implementation helpers and are not catalog objects themselves.
+
+### Required SCAD/STL delivery bundle
+
+Every newly added 3D part, regardless of `model_role`, must declare
+`narys.representations` schema version 1 and include the complete optimized pair:
+
+- a self-contained `.scad` exterior representation created for the object;
+- an `.stl` exterior representation generated from that SCAD file.
+
+The SCAD and STL paths must be inside the package, use the same directory and
+base filename, and both must be listed in `representations.files`. Exactly one
+representation is primary and must match the object's declared `path`. Optional
+STEP may describe interior structure, but it never substitutes for either member
+of the required SCAD/STL pair.
+
+An optimized SCAD representation must not import, include, or use external mesh
+or CAD geometry. It must omit hidden and irrelevant detail, use intentional curve
+resolution, and render without errors. The generated STL must contain the same
+exterior envelope, contain no supports or unrelated geometry, be a valid nonempty
+STL, and contain no more than 250,000 triangles. The pull request must record that
+both representations were rendered and visually compared.
 
 Two-dimensional `sketches` and interface profiles do not declare a 3D
 `model_role`. They use the PartCAD-supported sketch sources appropriate to
@@ -107,11 +140,10 @@ compatible geometry correction when the semantic profile is unchanged or
 made more accurate.
 
 STEP/STP, STL, 3MF, OBJ, GLB/glTF, IGES, BREP, DXF, F3D, and other CAD/mesh
-formats are not accepted as new canonical PUB data. They may be generated outside
-PUB for interchange, slicing, download, or browser caching, but they do not
-replace the role-selected `.scad` or `.FCStd` source. Generated STL and STEP files
-for printable parts are created from the FreeCAD master and are not stored as
-canonical PUB data.
+formats are not accepted as the sole new canonical PUB source. The required STL
+is stored as a generated delivery representation paired with SCAD; it does not
+replace the role-selected `.scad` or `.FCStd` source. Other derivatives may be
+generated for interchange, slicing, download, or browser caching.
 
 Legacy non-canonical assets already present in a released inventory are retained
 until a lossless, reviewed migration is available. They must not be deleted in
@@ -158,10 +190,16 @@ python tools/validate_release.py . origin/main
 New or changed 3D sources must additionally render successfully through the same
 conversion path used by `narys-web`. After index merge, verify:
 
-- the package is present under `/repository` in the expected directory;
-- search returns the package and objects;
-- every changed model preview returns HTTP 200;
+- the production HTTPS package and object URLs return HTTP 200;
+- production search returns the package and every changed object;
+- every required representation is listed and downloadable from production;
+- every changed production model preview returns HTTP 200 and visibly renders;
 - the website tree coverage workflow passes in `narys-index`.
+
+These checks must target the public production domain, currently
+`https://narysai.drone-age.org`. Passing the same checks against localhost or a
+temporary deployment is useful pre-release evidence but does not satisfy the
+definition of done.
 
 ## 7. Ownership and recovery
 

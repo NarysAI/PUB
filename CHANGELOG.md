@@ -3,6 +3,28 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.4] - 2026-08-11
+
+### Changed
+
+- Required every newly added 3D part to ship a complete optimized SCAD/STL
+  representation pair, with automated validation of pairing, self-containment,
+  STL validity, and a 250,000-triangle ceiling.
+- Defined catalog completion as successful production publication: merge,
+  release tag, production refresh, public search/download checks, and visible
+  3D-preview verification are mandatory before work may be reported done.
+- Migrated XL4015 from its legacy STEP-only catalog entry to a complete,
+  optimized, same-stem SCAD/STL exterior bundle while retaining the original
+  STEP and Fusion 360 sources for engineering reference.
+- Reduced the XL4015 browser mesh from 124,840 STEP-scene faces to 3,696 STL
+  triangles while preserving its 51 × 26 mm board envelope, mounting pattern,
+  controls, connectors, and major clearance volumes.
+
+### Migration
+
+- See `MIGRATIONS/4.1.4-XL4015-SCAD-STL.md` for the source-preservation and
+  compatibility record.
+
 ## [4.1.3] - 2026-08-11
 
 ### Changed
