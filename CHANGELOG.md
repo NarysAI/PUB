@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.5.0] - 2026-08-11
+
+### Added
+
+- Added the `usb-c-male-cable` connector package with an independently authored,
+  self-contained SCAD clearance model and a generated STL representation.
+- Recorded Omri Datz's 2025 GrabCAD STEP model as the visual reference while
+  keeping its unverified redistribution terms and sign-in-gated source archive
+  out of PUB.
+
 ## [4.4.0] - 2026-08-11
 
 ### Added

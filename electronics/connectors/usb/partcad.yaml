@@ -1,0 +1,9 @@
+name: /pub/electronics/connectors/usb
+desc: USB connector and cable-end reference models
+cover:
+  package: usb-c-male-cable
+
+import:
+  usb-c-male-cable:
+    type: local
+    path: usb-c-male-cable

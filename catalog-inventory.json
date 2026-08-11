@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.4.0",
+  "catalog_version": "4.5.0",
   "summary": {
-    "packages": 82,
-    "objects": 431,
-    "assets": 539,
-    "asset_bytes": 517166908
+    "packages": 84,
+    "objects": 432,
+    "assets": 541,
+    "asset_bytes": 517794198
   },
   "packages": [
     {
@@ -83,7 +83,19 @@
     {
       "name": "/pub/electronics/connectors",
       "config": "electronics/connectors/partcad.yaml",
-      "config_sha256": "481aae9e791fef108defb410d4b9eea90147b18cff8cdfe57682c8a9bfd60048",
+      "config_sha256": "426d6b4775e9757f27added9c429862ccb997ad6922904640d179dc720c01f85",
+      "entry_type": "package"
+    },
+    {
+      "name": "/pub/electronics/connectors/usb",
+      "config": "electronics/connectors/usb/partcad.yaml",
+      "config_sha256": "ea5aeb3e9ac72bed042fbc0a12c22c7c044cfec32f43f7bddc43bc8c546ac47e",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/electronics/connectors/usb/usb-c-male-cable",
+      "config": "electronics/connectors/usb/usb-c-male-cable/partcad.yaml",
+      "config_sha256": "e13f92f42e4d14a44f9a547ac364f388866fc23ec3265bd69daa89500a9401d8",
       "entry_type": "package"
     },
     {
@@ -660,6 +672,26 @@
           "format": "stl",
           "scope": "exterior",
           "source": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.stl"
+        }
+      ]
+    },
+    {
+      "package": "//pub/electronics/connectors/usb/usb-c-male-cable",
+      "section": "parts",
+      "name": "usb-c-male-cable",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.stl"
         }
       ]
     },
@@ -3433,6 +3465,16 @@
       "path": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.stl",
       "bytes": 413194,
       "sha256": "29c5eb8d2bfa12e4807b91394908fb3e3baa0112c32d20cf91f933b154d328e0"
+    },
+    {
+      "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
+      "bytes": 2503,
+      "sha256": "8ffc055c3ce93f487f8199ee69416451d9b6ce0628f0d6276f2a1aed9a741321"
+    },
+    {
+      "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.stl",
+      "bytes": 624787,
+      "sha256": "9bd935cb00e8939c0a422fef5ebd1fb08162ea0bec230bc0361dc946b171cd38"
     },
     {
       "path": "electronics/modules/ec-buying/_led-module-common.scad",
