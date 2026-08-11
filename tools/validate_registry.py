@@ -39,6 +39,44 @@ def step_product_has_identifier(content: bytes, identifier: bytes) -> bool:
     return any(identifier in product_id or identifier in name for product_id, name in STEP_PRODUCT_PATTERN.findall(content))
 
 
+def validate_accuracy(accuracy: object, label: str) -> None:
+    if not isinstance(accuracy, dict) or accuracy.get("schema_version") != 1:
+        errors.append(f"{label} narys.accuracy requires schema_version 1")
+        return
+    for field in ("basis", "datum"):
+        if not str(accuracy.get(field, "")).strip():
+            errors.append(f"{label} narys.accuracy.{field} must not be empty")
+    dimensions = accuracy.get("critical_dimensions")
+    if not isinstance(dimensions, list) or not dimensions:
+        errors.append(f"{label} narys.accuracy.critical_dimensions must not be empty")
+    else:
+        seen: set[str] = set()
+        for dimension in dimensions:
+            if not isinstance(dimension, dict):
+                errors.append(f"{label} critical dimension must be a mapping")
+                continue
+            identifier = str(dimension.get("id", "")).strip()
+            if not identifier or identifier in seen:
+                errors.append(f"{label} critical dimension requires a unique id")
+            seen.add(identifier)
+            nominal = dimension.get("nominal")
+            if isinstance(nominal, bool) or not isinstance(nominal, (int, float)):
+                errors.append(f"{label} {identifier or 'critical dimension'} requires numeric nominal")
+            for field in ("unit", "tolerance", "source"):
+                if not str(dimension.get(field, "")).strip():
+                    errors.append(f"{label} {identifier or 'critical dimension'} requires {field}")
+    approximations = accuracy.get("approximations", [])
+    if not isinstance(approximations, list):
+        errors.append(f"{label} narys.accuracy.approximations must be a list")
+    else:
+        for approximation in approximations:
+            if not isinstance(approximation, dict) or any(
+                not str(approximation.get(field, "")).strip()
+                for field in ("feature", "scope", "intended_use")
+            ):
+                errors.append(f"{label} approximation requires feature, scope, and intended_use")
+
+
 def load_config(path: Path) -> dict:
     source = path.read_text(encoding="utf-8")
     if "{%" in source or "{{" in source:
@@ -163,6 +201,9 @@ for config_path in root.rglob("partcad.yaml"):
                         f"{config_path.relative_to(root)}: {section}.{name} has invalid model_role: {role}"
                     )
             narys = raw.get("narys") if isinstance(raw, dict) and isinstance(raw.get("narys"), dict) else {}
+            accuracy = narys.get("accuracy")
+            if accuracy is not None:
+                validate_accuracy(accuracy, f"{config_path.relative_to(root)}: {section}.{name}")
             representations = narys.get("representations")
             if representations is not None:
                 label = f"{config_path.relative_to(root)}: {section}.{name}"

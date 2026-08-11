@@ -1,5 +1,12 @@
 # Policy changelog
 
+## [4.1.0] - 2026-08-11
+
+- Require new or changed 3D parts to declare authoritative dimensional sources,
+  critical dimensions, datums, tolerances, and non-functional approximations.
+- Prohibit deriving functional or mating geometry solely from photographs or
+  perspective renders, and require orthographic plus numerical verification.
+
 Policy versions follow Semantic Versioning independently from catalog releases
 and use Git tags named `policy-vX.Y.Z`.
 
