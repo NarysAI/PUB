@@ -1,0 +1,31 @@
+name: //pub/electronics/connectors/usb/usb-c-male-cable
+desc: USB Type-C male cable connector reference model
+license_status: unverified
+cover:
+  part: usb-c-male-cable
+
+parts:
+  usb-c-male-cable:
+    type: scad
+    path: usb-c-male-cable.scad
+    model_role: electronic_component
+    desc: Approximate USB Type-C male cable-end plug for placement and clearance checks
+    vendor: Generic
+    sku: USB-C-MALE-CABLE
+    url: https://grabcad.com/library/usb-c-type-c-male-connector-cable-1
+    narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: usb-c-male-cable.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: usb-c-male-cable.stl
+            geometry_scope: exterior
+
+render:
+  readme:
+  png:
+    prefix: ./

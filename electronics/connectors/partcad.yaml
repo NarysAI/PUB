@@ -1,9 +1,12 @@
 name: /pub/electronics/connectors
 desc: Cable and board-level electrical connectors
 cover:
-  package: hdmi
+  package: usb
 
 import:
   hdmi:
     type: local
     path: hdmi
+  usb:
+    type: local
+    path: usb
