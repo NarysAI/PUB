@@ -1,5 +1,14 @@
 # Policy changelog
 
+## [4.2.0] - 2026-08-11
+
+- Require key dimensions of every new or changed 3D model to match the original
+  authoritative reference within a declared numeric tolerance.
+- Add `narys.accuracy` schema version 2 with generated-model measurements and
+  automated rejection of missing or out-of-tolerance dimensions.
+- Require a human-readable reference-versus-model dimension table in each
+  affected package README.
+
 ## [4.1.0] - 2026-08-11
 
 - Require new or changed 3D parts to declare authoritative dimensional sources,

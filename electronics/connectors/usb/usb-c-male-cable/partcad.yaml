@@ -9,11 +9,80 @@ parts:
     type: scad
     path: usb-c-male-cable.scad
     model_role: electronic_component
-    desc: Approximate USB Type-C male cable-end plug for placement and clearance checks
+    desc: Dimensioned USB Type-C male cable-end plug reconstructed from the linked original CAD viewer
     vendor: Generic
     sku: USB-C-MALE-CABLE
     url: https://grabcad.com/library/usb-c-type-c-male-connector-cable-1
     narys:
+      accuracy:
+        schema_version: 2
+        basis: original_cad_viewer_measurement
+        datum: Mating face at X=0; connector and cable centerline is Y=0 and Z=0
+        critical_dimensions:
+          - id: overall_length
+            nominal: 48.77
+            model_value: 48.77
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer point-to-point measurement of the original STEP assembly
+          - id: exposed_shell_length
+            nominal: 7.24
+            model_value: 7.24
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer point-to-point measurement of the original STEP assembly
+          - id: housing_length
+            nominal: 17.01
+            model_value: 17.01
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer point-to-point measurement of the original STEP assembly
+          - id: housing_width
+            nominal: 10.65
+            model_value: 10.65
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer edge and radius measurements (4.95 mm straight plus two R2.85 mm ends)
+          - id: housing_height
+            nominal: 5.70
+            model_value: 5.70
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer end-profile radius measurement (2 x R2.85 mm)
+          - id: strain_relief_length
+            nominal: 5.69
+            model_value: 5.69
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer point-to-point measurement of the original STEP assembly
+          - id: strain_relief_diameter
+            nominal: 4.50
+            model_value: 4.50
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer diameter measurement of the original STEP assembly
+          - id: cable_diameter
+            nominal: 3.30
+            model_value: 3.30
+            unit: mm
+            tolerance: 0.02
+            source: GrabCAD 3D viewer diameter measurement of the original STEP assembly
+          - id: mating_shell_width
+            nominal: 8.25
+            model_value: 8.25
+            unit: mm
+            tolerance: 0.05
+            source: USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer
+          - id: mating_shell_height
+            nominal: 2.40
+            model_value: 2.40
+            unit: mm
+            tolerance: 0.03
+            source: USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer
+        approximations:
+          - feature: internal_contact_and_tongue_detail
+            scope: non_functional_cosmetic
+            intended_use: recognizable website preview only; not for connector manufacturing
       representations:
         schema_version: 1
         files:
