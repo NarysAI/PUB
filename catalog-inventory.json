@@ -5,7 +5,7 @@
     "packages": 83,
     "objects": 431,
     "assets": 540,
-    "asset_bytes": 518199284
+    "asset_bytes": 517869217
   },
   "packages": [
     {
@@ -35,7 +35,7 @@
     {
       "name": "/pub/electromechanics/switches/mini-rocker",
       "config": "electromechanics/switches/mini-rocker/partcad.yaml",
-      "config_sha256": "8316ae354b391a5ad796954896a8c64f0f816c2785f534397bbeaaeaf0dd2c8d",
+      "config_sha256": "668fda0b742a5495cf09fa0ca00684c4c13fa739be3ff64d30a7a2b79e925479",
       "entry_type": "package"
     },
     {
@@ -89,7 +89,7 @@
     {
       "name": "//pub/electronics/connectors/usb/usb-c-male-cable",
       "config": "electronics/connectors/usb/usb-c-male-cable/partcad.yaml",
-      "config_sha256": "e13f92f42e4d14a44f9a547ac364f388866fc23ec3265bd69daa89500a9401d8",
+      "config_sha256": "81563b1ccc1c1c95d3e739b196473ba7c3f98d9c5bb47c1ea4fdca3fcaade969",
       "entry_type": "package"
     },
     {
@@ -568,64 +568,72 @@
       "model_role": "electronic_component",
       "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
       "accuracy": {
-        "schema_version": 1,
-        "basis": "Manufacturer RS-001G (KCD11) drawing cross-checked against calibrated ruler photographs",
+        "schema_version": 2,
+        "basis": "manufacturer_drawing_cross_checked_with_calibrated_physical_measurement",
         "datum": "Panel plane is Z=0; bezel and terminal matrix are centered on X=0 and Y=0",
         "critical_dimensions": [
           {
             "id": "bezel_width",
             "nominal": 15.0,
+            "model_value": 15.0,
             "unit": "mm",
-            "tolerance": "+/-0.10 mm",
+            "tolerance": 0.1,
             "source": "Top Willing RS-001G (KCD11) series drawing, dimension D"
           },
           {
             "id": "bezel_height",
             "nominal": 10.5,
+            "model_value": 10.5,
             "unit": "mm",
-            "tolerance": "+/-0.10 mm",
+            "tolerance": 0.1,
             "source": "Top Willing RS-001G (KCD11) series drawing, dimension E"
           },
           {
             "id": "panel_cutout_width",
             "nominal": 13.8,
+            "model_value": 13.8,
             "unit": "mm",
-            "tolerance": "+/-0.5 mm drawing general tolerance",
+            "tolerance": 0.5,
             "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
           },
           {
             "id": "panel_cutout_height",
             "nominal": 9.2,
+            "model_value": 9.2,
             "unit": "mm",
-            "tolerance": "+/-0.3 mm drawing general tolerance",
+            "tolerance": 0.3,
             "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
           },
           {
             "id": "body_depth_below_panel",
             "nominal": 10.2,
+            "model_value": 10.2,
             "unit": "mm",
-            "tolerance": "+/-0.5 mm drawing general tolerance",
+            "tolerance": 0.5,
             "source": "Top Willing RS-001G (KCD11) series drawing"
           },
           {
             "id": "terminal_pitch",
             "nominal": 5.0,
+            "model_value": 5.0,
             "unit": "mm",
-            "tolerance": "+/-0.10 mm",
+            "tolerance": 0.1,
             "source": "Top Willing RS-001G (KCD11) series drawing, dimension C"
           },
           {
             "id": "terminal_thickness",
             "nominal": 0.4,
+            "model_value": 0.4,
             "unit": "mm",
-            "tolerance": "+/-0.02 mm",
+            "tolerance": 0.02,
             "source": "Top Willing RS-001G (KCD11) series drawing, dimension A"
           },
           {
             "id": "terminal_blade_width",
             "nominal": 3.7,
+            "model_value": 3.7,
             "unit": "mm",
-            "tolerance": "+/-0.05 mm",
+            "tolerance": 0.05,
             "source": "Top Willing RS-001G (KCD11) series drawing, dimension B"
           }
         ],
@@ -806,6 +814,100 @@
       "type": "scad",
       "model_role": "electronic_component",
       "source": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
+      "accuracy": {
+        "schema_version": 2,
+        "basis": "original_cad_viewer_measurement",
+        "datum": "Mating face at X=0; connector and cable centerline is Y=0 and Z=0",
+        "critical_dimensions": [
+          {
+            "id": "overall_length",
+            "nominal": 48.77,
+            "model_value": 48.77,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "exposed_shell_length",
+            "nominal": 7.24,
+            "model_value": 7.24,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "housing_length",
+            "nominal": 17.01,
+            "model_value": 17.01,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "housing_width",
+            "nominal": 10.65,
+            "model_value": 10.65,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer edge and radius measurements (4.95 mm straight plus two R2.85 mm ends)"
+          },
+          {
+            "id": "housing_height",
+            "nominal": 5.7,
+            "model_value": 5.7,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer end-profile radius measurement (2 x R2.85 mm)"
+          },
+          {
+            "id": "strain_relief_length",
+            "nominal": 5.69,
+            "model_value": 5.69,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer point-to-point measurement of the original STEP assembly"
+          },
+          {
+            "id": "strain_relief_diameter",
+            "nominal": 4.5,
+            "model_value": 4.5,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer diameter measurement of the original STEP assembly"
+          },
+          {
+            "id": "cable_diameter",
+            "nominal": 3.3,
+            "model_value": 3.3,
+            "unit": "mm",
+            "tolerance": 0.02,
+            "source": "GrabCAD 3D viewer diameter measurement of the original STEP assembly"
+          },
+          {
+            "id": "mating_shell_width",
+            "nominal": 8.25,
+            "model_value": 8.25,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer"
+          },
+          {
+            "id": "mating_shell_height",
+            "nominal": 2.4,
+            "model_value": 2.4,
+            "unit": "mm",
+            "tolerance": 0.03,
+            "source": "USB Type-C nominal plug envelope, cross-checked against the original GrabCAD viewer"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "internal_contact_and_tongue_detail",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "recognizable website preview only; not for connector manufacturing"
+          }
+        ]
+      },
       "representations": [
         {
           "format": "scad",
@@ -3587,13 +3689,13 @@
     },
     {
       "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.scad",
-      "bytes": 2503,
-      "sha256": "8ffc055c3ce93f487f8199ee69416451d9b6ce0628f0d6276f2a1aed9a741321"
+      "bytes": 3967,
+      "sha256": "d3ad30fe499a1dd98d3c831c5a478bce0c0f48a87618e2a6116cf6fa4249783e"
     },
     {
       "path": "electronics/connectors/usb/usb-c-male-cable/usb-c-male-cable.stl",
-      "bytes": 624787,
-      "sha256": "9bd935cb00e8939c0a422fef5ebd1fb08162ea0bec230bc0361dc946b171cd38"
+      "bytes": 293256,
+      "sha256": "c68224c9d931ee4d8d72eaa175eac2ec43df795a1d026041be3d6cc8dafe3d6a"
     },
     {
       "path": "electronics/modules/ec-buying/_led-module-common.scad",

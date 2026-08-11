@@ -14,49 +14,57 @@ parts:
     url: https://probots.co.in/technical_data/switches/Probots-KCD11-Rocker-Switch-Datasheet.pdf
     narys:
       accuracy:
-        schema_version: 1
-        basis: Manufacturer RS-001G (KCD11) drawing cross-checked against calibrated ruler photographs
+        schema_version: 2
+        basis: manufacturer_drawing_cross_checked_with_calibrated_physical_measurement
         datum: Panel plane is Z=0; bezel and terminal matrix are centered on X=0 and Y=0
         critical_dimensions:
           - id: bezel_width
             nominal: 15.0
+            model_value: 15.0
             unit: mm
-            tolerance: "+/-0.10 mm"
+            tolerance: 0.10
             source: Top Willing RS-001G (KCD11) series drawing, dimension D
           - id: bezel_height
             nominal: 10.5
+            model_value: 10.5
             unit: mm
-            tolerance: "+/-0.10 mm"
+            tolerance: 0.10
             source: Top Willing RS-001G (KCD11) series drawing, dimension E
           - id: panel_cutout_width
             nominal: 13.8
+            model_value: 13.8
             unit: mm
-            tolerance: "+/-0.5 mm drawing general tolerance"
+            tolerance: 0.5
             source: Top Willing RS-001G (KCD11) series drawing, panel cutout
           - id: panel_cutout_height
             nominal: 9.2
+            model_value: 9.2
             unit: mm
-            tolerance: "+/-0.3 mm drawing general tolerance"
+            tolerance: 0.3
             source: Top Willing RS-001G (KCD11) series drawing, panel cutout
           - id: body_depth_below_panel
             nominal: 10.2
+            model_value: 10.2
             unit: mm
-            tolerance: "+/-0.5 mm drawing general tolerance"
+            tolerance: 0.5
             source: Top Willing RS-001G (KCD11) series drawing
           - id: terminal_pitch
             nominal: 5.0
+            model_value: 5.0
             unit: mm
-            tolerance: "+/-0.10 mm"
+            tolerance: 0.10
             source: Top Willing RS-001G (KCD11) series drawing, dimension C
           - id: terminal_thickness
             nominal: 0.4
+            model_value: 0.4
             unit: mm
-            tolerance: "+/-0.02 mm"
+            tolerance: 0.02
             source: Top Willing RS-001G (KCD11) series drawing, dimension A
           - id: terminal_blade_width
             nominal: 3.7
+            model_value: 3.7
             unit: mm
-            tolerance: "+/-0.05 mm"
+            tolerance: 0.05
             source: Top Willing RS-001G (KCD11) series drawing, dimension B
         approximations:
           - feature: rocker_curvature_face_markings_and_snap_clip_surface_detail
