@@ -1,0 +1,9 @@
+name: /pub/electronics/connectors
+desc: Cable and board-level electrical connectors
+cover:
+  package: hdmi
+
+import:
+  hdmi:
+    type: local
+    path: hdmi

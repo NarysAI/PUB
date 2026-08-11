@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.2.0",
+  "catalog_version": "4.3.0",
   "summary": {
-    "packages": 78,
-    "objects": 429,
-    "assets": 535,
-    "asset_bytes": 516554030
+    "packages": 81,
+    "objects": 430,
+    "assets": 537,
+    "asset_bytes": 516970365
   },
   "packages": [
     {
@@ -60,6 +60,24 @@
       "name": "/pub/electronics/cameras/raspberry-pi/hq-camera",
       "config": "electronics/cameras/raspberry-pi/hq-camera/partcad.yaml",
       "config_sha256": "8a0af6743a72ac93d368ee083501a142f3d0f9800360cc10035923db2627eeae",
+      "entry_type": "package"
+    },
+    {
+      "name": "//pub/electronics/connectors/hdmi/micro-hdmi-type-d-cable-male",
+      "config": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/partcad.yaml",
+      "config_sha256": "6f1b068da4e3019742071b2cb88513efb18a6ac6baf213ad750c4fba32c65e73",
+      "entry_type": "package"
+    },
+    {
+      "name": "/pub/electronics/connectors/hdmi",
+      "config": "electronics/connectors/hdmi/partcad.yaml",
+      "config_sha256": "399dc449c91c55e46200e18426ad71d058fc1fb1384034ac96ff6486888c452a",
+      "entry_type": "package"
+    },
+    {
+      "name": "/pub/electronics/connectors",
+      "config": "electronics/connectors/partcad.yaml",
+      "config_sha256": "481aae9e791fef108defb410d4b9eea90147b18cff8cdfe57682c8a9bfd60048",
       "entry_type": "package"
     },
     {
@@ -598,6 +616,26 @@
       "name": "hq-camera-with-6mm-lens",
       "type": "stl",
       "source": "electronics/cameras/raspberry-pi/hq-camera/models/raspberry-pi-hq-camera-with-6mm-lens.stl"
+    },
+    {
+      "package": "//pub/electronics/connectors/hdmi/micro-hdmi-type-d-cable-male",
+      "section": "parts",
+      "name": "micro-hdmi-type-d-cable-male",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.stl"
+        }
+      ]
     },
     {
       "package": "/pub/electronics/modules/ec-buying",
@@ -3349,6 +3387,16 @@
       "path": "electronics/cameras/raspberry-pi/hq-camera/sources/raspi_HQ_cam_and_lens.scad",
       "bytes": 4292,
       "sha256": "554576582bed81b9cfdc962299390e78f9cb8c5096b513ec4d0823ae4e739e53"
+    },
+    {
+      "path": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.scad",
+      "bytes": 3141,
+      "sha256": "1016261bc1bbfed96aa96d2ef636641bdaa5b502a375492fac4d6264e57f788d"
+    },
+    {
+      "path": "electronics/connectors/hdmi/micro-hdmi-type-d-cable-male/micro-hdmi-type-d-cable-male.stl",
+      "bytes": 413194,
+      "sha256": "29c5eb8d2bfa12e4807b91394908fb3e3baa0112c32d20cf91f933b154d328e0"
     },
     {
       "path": "electronics/modules/ec-buying/_led-module-common.scad",

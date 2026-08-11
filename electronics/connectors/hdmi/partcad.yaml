@@ -1,0 +1,9 @@
+name: /pub/electronics/connectors/hdmi
+desc: HDMI connector and cable-end reference models
+cover:
+  package: micro-hdmi-type-d-cable-male
+
+import:
+  micro-hdmi-type-d-cable-male:
+    type: local
+    path: micro-hdmi-type-d-cable-male

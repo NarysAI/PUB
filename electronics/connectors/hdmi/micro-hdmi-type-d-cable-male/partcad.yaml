@@ -1,0 +1,31 @@
+name: //pub/electronics/connectors/hdmi/micro-hdmi-type-d-cable-male
+desc: Micro HDMI Type D male cable connector reference model
+license_status: unverified
+cover:
+  part: micro-hdmi-type-d-cable-male
+
+parts:
+  micro-hdmi-type-d-cable-male:
+    type: scad
+    path: micro-hdmi-type-d-cable-male.scad
+    model_role: electronic_component
+    desc: Approximate Micro HDMI Type D male cable plug for placement and clearance checks
+    vendor: Generic
+    sku: HDMI-TYPE-D-MALE-CABLE
+    url: https://grabcad.com/library/micro-hdmi-connector-type-d-cable-male-1
+    narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: micro-hdmi-type-d-cable-male.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: micro-hdmi-type-d-cable-male.stl
+            geometry_scope: exterior
+
+render:
+  readme:
+  png:
+    prefix: ./
