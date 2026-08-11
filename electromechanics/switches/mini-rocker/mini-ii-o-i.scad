@@ -16,7 +16,7 @@ bezel_corner_r = 0.35;
 bezel_opening = [11.4, 7.3];
 
 panel_cutout = [13.8, 9.2];
-body_size = [13.2, 9.0];
+body_size = [12.0, 8.0];
 body_depth = 10.2;
 body_corner_r = 0.35;
 

@@ -3,7 +3,7 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
-## [5.0.0] - 2026-08-11
+## [4.5.3] - 2026-08-11
 
 ### Removed
 
@@ -21,7 +21,7 @@ Changelog, and catalog versions follow Semantic Versioning.
 
 ### Migration
 
-- See `MIGRATIONS/5.0.0-ROCKER-REPLACEMENT.md` for removed identities,
+- See `MIGRATIONS/4.5.3-ROCKER-CORRECTION.md` for removed identities,
   replacement path and dimensional rationale.
 
 ## [4.5.2] - 2026-08-11

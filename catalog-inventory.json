@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "5.0.0",
+  "catalog_version": "4.5.3",
   "summary": {
     "packages": 83,
     "objects": 431,
     "assets": 540,
-    "asset_bytes": 517869217
+    "asset_bytes": 517869009
   },
   "packages": [
     {
@@ -35,7 +35,7 @@
     {
       "name": "/pub/electromechanics/switches/mini-rocker",
       "config": "electromechanics/switches/mini-rocker/partcad.yaml",
-      "config_sha256": "668fda0b742a5495cf09fa0ca00684c4c13fa739be3ff64d30a7a2b79e925479",
+      "config_sha256": "a839e2240b21dcf18530ac3cf49033630a00bbc5cbb64760a1c8a5a5e0f806c6",
       "entry_type": "package"
     },
     {
@@ -603,6 +603,22 @@
             "unit": "mm",
             "tolerance": 0.3,
             "source": "Top Willing RS-001G (KCD11) series drawing, panel cutout"
+          },
+          {
+            "id": "body_width",
+            "nominal": 12.0,
+            "model_value": 12.0,
+            "unit": "mm",
+            "tolerance": 0.2,
+            "source": "User measurement from supplied ruler photographs"
+          },
+          {
+            "id": "body_height",
+            "nominal": 8.0,
+            "model_value": 8.0,
+            "unit": "mm",
+            "tolerance": 0.2,
+            "source": "User measurement from supplied ruler photographs"
           },
           {
             "id": "body_depth_below_panel",
@@ -3590,12 +3606,12 @@
     {
       "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
       "bytes": 4914,
-      "sha256": "31631ada97a73c90dae7f2c4736ad6c9bfd79ac4c497ed8f6d10b64d2436183f"
+      "sha256": "6226aca3e0c24a684dfe57d9d379c755fe32aad3a892bce44726465c5d985f60"
     },
     {
       "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.stl",
-      "bytes": 578522,
-      "sha256": "0ed4341d772a9fd8ba5f1a18b826d58a75d53ae531cdc52de34552495aa6f703"
+      "bytes": 578314,
+      "sha256": "ce953646cdf015911ee2234525bd58ccf861cf2623370ad3cfe36a2b97799510"
     },
     {
       "path": "electromechanics/towerpro/example/mg90s.assy",

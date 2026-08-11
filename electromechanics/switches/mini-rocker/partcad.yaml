@@ -42,6 +42,18 @@ parts:
             unit: mm
             tolerance: 0.3
             source: Top Willing RS-001G (KCD11) series drawing, panel cutout
+          - id: body_width
+            nominal: 12.0
+            model_value: 12.0
+            unit: mm
+            tolerance: 0.2
+            source: User measurement from supplied ruler photographs
+          - id: body_height
+            nominal: 8.0
+            model_value: 8.0
+            unit: mm
+            tolerance: 0.2
+            source: User measurement from supplied ruler photographs
           - id: body_depth_below_panel
             nominal: 10.2
             model_value: 10.2

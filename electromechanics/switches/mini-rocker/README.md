@@ -27,17 +27,18 @@ extend in negative Z.
 |---|---:|
 | Front bezel | 15.0 x 10.5 mm |
 | Nominal panel cutout | 13.8 x 9.2 mm |
-| Main body | 13.2 x 9.0 mm |
+| Main body | 12.0 x 8.0 mm |
 | Body depth below panel | 10.2 mm |
 | Depth to terminal tips | 16.5 mm |
 | Rocker face | 10.6 x 6.5 mm |
 | Terminal pitch | 5.0 mm |
 | Terminal blade section | 0.40 x 3.70 mm |
 
-The bezel dimensions and three-terminal construction come directly from the
-supplied photos. Hidden dimensions were cross-checked against the public
-RS-001G (KCD11) housing drawing. Panel openings still require manufacturing
-clearance and verification against the physical sample before production tooling.
+The bezel dimensions, 12.0 x 8.0 mm body envelope and three-terminal
+construction come directly from the supplied photos and user measurements.
+Other hidden dimensions were cross-checked against the public RS-001G (KCD11)
+housing drawing. Panel openings still require manufacturing clearance and
+verification against the physical sample before production tooling.
 
 ## Electrical interpretation
 
