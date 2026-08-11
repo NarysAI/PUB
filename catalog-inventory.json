@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.3.0",
+  "catalog_version": "4.4.0",
   "summary": {
-    "packages": 81,
-    "objects": 430,
-    "assets": 537,
-    "asset_bytes": 516970365
+    "packages": 82,
+    "objects": 431,
+    "assets": 539,
+    "asset_bytes": 517166908
   },
   "packages": [
     {
@@ -30,6 +30,12 @@
       "name": "/pub/electromechanics/switches/button-a6",
       "config": "electromechanics/switches/button-a6/partcad.yaml",
       "config_sha256": "97d1b1efc74a3ea61891f2cf8b9c8de310adcec7f3cc2d73d4a093b3fc8e0e4d",
+      "entry_type": "package"
+    },
+    {
+      "name": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
+      "config": "electromechanics/switches/kcd1-203-dpdt-rocker/partcad.yaml",
+      "config_sha256": "fef7a768b1ea56aebd0b24e6253a56c9498843bcab8057f4ddede77759b5b433",
       "entry_type": "package"
     },
     {
@@ -547,6 +553,26 @@
       "type": "scad",
       "model_role": "electronic_component",
       "source": "electromechanics/switches/button-a6/button-a6.scad"
+    },
+    {
+      "package": "/pub/electromechanics/switches/kcd1-203-dpdt-rocker",
+      "section": "parts",
+      "name": "kcd1-203-on-off-on",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl"
+        }
+      ]
     },
     {
       "package": "/pub/electromechanics/switches/kcd1-rocker",
@@ -3302,6 +3328,16 @@
       "path": "electromechanics/switches/button-a6/button-a6.scad",
       "bytes": 3136,
       "sha256": "a78117f703e6c1b66905c0317c37abf24bac082252e210ae096e3a64df9754bb"
+    },
+    {
+      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.scad",
+      "bytes": 5859,
+      "sha256": "95114c2bed7fb1ed108d88d04e02fd1e77f3aa9eda37ec15781be30dff5e449c"
+    },
+    {
+      "path": "electromechanics/switches/kcd1-203-dpdt-rocker/kcd1-203-on-off-on.stl",
+      "bytes": 190684,
+      "sha256": "794ac3d8ce55dd9e731e09b8c9596a852cd85c18664362a0f0eb5442483487c3"
     },
     {
       "path": "electromechanics/switches/kcd1-rocker/kcd1-on-off-on.scad",
