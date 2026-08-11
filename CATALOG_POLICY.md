@@ -125,6 +125,26 @@ representation is primary and must match the object's declared `path`. Optional
 STEP may describe interior structure, but it never substitutes for either member
 of the required SCAD/STL pair.
 
+### Dimensional fidelity and functional geometry
+
+Every new or changed 3D part must declare `narys.accuracy` schema version 1.
+The metadata must state the dimensional basis, mating or placement datum, every
+critical dimension with its unit and tolerance, and the authoritative source for
+each value. Functional geometry includes mating profiles, mounting holes, pin
+pitch, contact locations, keep-outs, and any dimension that controls fit or
+interchangeability.
+
+Use sources in this order: original editable vendor CAD, manufacturer or
+standards-body drawings, then calibrated physical measurement. Photographs and
+perspective renders may guide only explicitly labelled non-functional cosmetic
+features; they must never be the sole source for functional geometry. Any
+approximation must be listed separately with its scope and intended use.
+
+Before merge, render front, side, top, and isometric views and compare them with
+the source. Also measure the generated representation numerically against every
+declared critical dimension. Visual resemblance alone is not dimensional
+verification.
+
 An optimized SCAD representation must not import, include, or use external mesh
 or CAD geometry. It must omit hidden and irrelevant detail, use intentional curve
 resolution, and render without errors. The generated STL must contain the same

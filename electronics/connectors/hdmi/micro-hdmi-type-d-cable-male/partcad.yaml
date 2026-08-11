@@ -9,11 +9,55 @@ parts:
     type: scad
     path: micro-hdmi-type-d-cable-male.scad
     model_role: electronic_component
-    desc: Approximate Micro HDMI Type D male cable plug for placement and clearance checks
+    desc: Dimensioned Micro HDMI Type D male cable plug for placement and clearance checks
     vendor: Generic
     sku: HDMI-TYPE-D-MALE-CABLE
     url: https://grabcad.com/library/micro-hdmi-connector-type-d-cable-male-1
     narys:
+      accuracy:
+        schema_version: 1
+        basis: manufacturer_drawing
+        datum: Mating face at X=0; connector centerline is Y=0 and Z=0
+        critical_dimensions:
+          - id: mating_shell_width
+            nominal: 5.83
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: mating_shell_height
+            nominal: 2.20
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: lower_shell_edge
+            nominal: 4.65
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: exposed_shell_length
+            nominal: 7.15
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: contact_pitch
+            nominal: 0.40
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: contact_row_stagger
+            nominal: 0.20
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+          - id: contact_field_span
+            nominal: 3.60
+            unit: mm
+            tolerance: drawing_nominal
+            source: AMTEK MIHDMI-M19 drawing, catalogue page 5-53
+        approximations:
+          - feature: cable_overmould_strain_relief_and_cable
+            scope: non_functional_cosmetic
+            intended_use: enclosure visualization and coarse cable clearance
       representations:
         schema_version: 1
         files:
