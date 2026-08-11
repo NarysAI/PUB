@@ -5,11 +5,22 @@ cover:
 
 parts:
   xl4015-step-down-5a-cc-cv:
-    type: step
-    path: xl4015-step-down-5a-cc-cv.step
+    type: scad
+    path: xl4015-step-down-5a-cc-cv.scad
     model_role: electronic_component
     desc: XL4015 adjustable 5 A constant-current and constant-voltage buck converter module
     sku: XL4015
+    narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: xl4015-step-down-5a-cc-cv.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: xl4015-step-down-5a-cc-cv.stl
+            geometry_scope: exterior
 
 render:
   svg:
