@@ -1,4 +1,4 @@
-// Miniature six-terminal II-O-I rocker switch reconstructed from ruler photos.
+// Miniature three-terminal II-O-I rocker switch reconstructed from ruler photos.
 // Units: millimetres. Panel plane: Z=0; actuator is +Z; body and pins are -Z.
 // Intended for panel layout, PCB placement, clearance checks and catalog preview.
 // NARYS_MATERIAL: housing=#17191C
@@ -28,7 +28,6 @@ rocker_corner_r = 0.32;
 rocker_slices = 20;
 
 terminal_column_pitch = 5.0;
-terminal_row_pitch = 5.08;
 terminal_thickness = 0.40;
 terminal_width = 3.70;
 terminal_length = 6.30;
@@ -152,16 +151,15 @@ module terminal_blade(x, y) {
 }
 
 module terminals() {
-    for (y=[-terminal_row_pitch/2, terminal_row_pitch/2])
-        for (x=[-terminal_column_pitch, 0, terminal_column_pitch])
-            terminal_blade(x, y);
+    for (x=[-terminal_column_pitch, 0, terminal_column_pitch])
+        terminal_blade(x, 0);
 }
 
-module mini_dpdt_ii_o_i() {
+module mini_ii_o_i() {
     if (narys_material == "all" || narys_material == "housing") housing();
     if (narys_material == "all" || narys_material == "rocker") rocker();
     if (narys_material == "all" || narys_material == "markings") markings();
     if (narys_material == "all" || narys_material == "terminals") terminals();
 }
 
-mini_dpdt_ii_o_i();
+mini_ii_o_i();

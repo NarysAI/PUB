@@ -1,20 +1,20 @@
-# Miniature six-terminal II-O-I rocker switch
+# Miniature three-terminal II-O-I rocker switch
 
 Self-contained OpenSCAD exterior of the black three-position snap-in rocker
 switch shown in the supplied videos and ruler photographs. The physical sample
-has two rows of three blade terminals and a horizontal `II-O-I` face legend.
+has one row of three blade terminals and a horizontal `II-O-I` face legend.
 
 ## Provenance and identification
 
 The geometry was reconstructed on 2026-08-11 from the user-provided videos
 `video_2026-08-09_19-18-49.mp4` and `video_2026-08-09_19-19-01.mp4`, plus four
-ruler photographs showing the front, base, short side and six terminals. The
+ruler photographs showing the front, base, short side and three terminals. The
 media are not redistributed in this package.
 
 The manufacturer and exact part number are not legible. The 15.0 x 10.5 mm
 front, 13.8 x 9.2 mm panel opening and 10.2 mm body depth are consistent with a
-miniature KCD11/RS-001G-size housing, but the photographed six-terminal DPDT
-variant is cataloged generically rather than assigned an unsupported SKU.
+miniature KCD11/RS-001G-size housing. The exact manufacturer is still unknown,
+so the part is cataloged generically rather than assigned an unsupported SKU.
 
 ## Dimensions and coordinate system
 
@@ -29,26 +29,25 @@ extend in negative Z.
 | Body depth below panel | 10.2 mm |
 | Depth to terminal tips | 16.5 mm |
 | Rocker face | 10.6 x 6.5 mm |
-| Terminal matrix pitch | 5.0 x 5.08 mm |
+| Terminal pitch | 5.0 mm |
 | Terminal blade section | 0.40 x 3.70 mm |
 
-The bezel dimensions and terminal count come directly from the supplied photos.
-Hidden dimensions were cross-checked against the public RS-001G (KCD11) housing
-drawing and the 5.08 mm miniature DPDT PCB-terminal convention. Panel openings
-still require manufacturing clearance and verification against the physical
-sample before production tooling.
+The bezel dimensions and three-terminal construction come directly from the
+supplied photos. Hidden dimensions were cross-checked against the public
+RS-001G (KCD11) housing drawing. Panel openings still require manufacturing
+clearance and verification against the physical sample before production tooling.
 
 ## Electrical interpretation
 
-Six terminals are represented as two independent rows of three contacts. The
-internal contact mechanism is omitted. The `II-O-I` marking indicates a
-three-position center-off function, but terminal continuity was not measured;
-verify the switching table with a multimeter before wiring the physical part.
+Three terminals are represented as one SPDT contact group. The internal contact
+mechanism is omitted. The `II-O-I` marking indicates a three-position center-off
+function, but terminal continuity was not measured; verify the switching table
+with a multimeter before wiring the physical part.
 
 ## Representations and limitations
 
-- `mini-dpdt-ii-o-i.scad` is the canonical parametric exterior.
-- `mini-dpdt-ii-o-i.stl` is generated from the same SCAD for interchange and
+- `mini-ii-o-i.scad` is the canonical parametric exterior.
+- `mini-ii-o-i.stl` is generated from the same SCAD for interchange and
   browser delivery.
 - Four semantic preview materials separate housing, rocker, markings and metal
   terminals.

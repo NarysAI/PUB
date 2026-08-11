@@ -1,0 +1,28 @@
+name: /pub/electromechanics/switches/mini-rocker
+desc: Photo-derived miniature three-terminal II-O-I rocker switch
+cover:
+  part: mini-ii-o-i
+
+parts:
+  mini-ii-o-i:
+    type: scad
+    path: mini-ii-o-i.scad
+    model_role: electronic_component
+    desc: Parametric exterior of the photographed miniature three-terminal rocker switch
+    vendor: unknown
+    sku: unknown
+    narys:
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: mini-ii-o-i.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: mini-ii-o-i.stl
+            geometry_scope: exterior
+
+render:
+  svg:
+  readme:

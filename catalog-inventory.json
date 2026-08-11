@@ -5,7 +5,7 @@
     "packages": 83,
     "objects": 431,
     "assets": 540,
-    "asset_bytes": 518194702
+    "asset_bytes": 518175411
   },
   "packages": [
     {
@@ -33,9 +33,9 @@
       "entry_type": "package"
     },
     {
-      "name": "/pub/electromechanics/switches/mini-dpdt-rocker",
-      "config": "electromechanics/switches/mini-dpdt-rocker/partcad.yaml",
-      "config_sha256": "ceabb0b0c3fba7be8db3259a317eb4a03f626473a222df20e387d652b2c46efd",
+      "name": "/pub/electromechanics/switches/mini-rocker",
+      "config": "electromechanics/switches/mini-rocker/partcad.yaml",
+      "config_sha256": "82bc87ab1c1d7198e854ab8834750a28beb58fe4ebd0b11d073ce97a5e61c931",
       "entry_type": "package"
     },
     {
@@ -561,22 +561,22 @@
       "source": "electromechanics/switches/button-a6/button-a6.scad"
     },
     {
-      "package": "/pub/electromechanics/switches/mini-dpdt-rocker",
+      "package": "/pub/electromechanics/switches/mini-rocker",
       "section": "parts",
-      "name": "mini-dpdt-ii-o-i",
+      "name": "mini-ii-o-i",
       "type": "scad",
       "model_role": "electronic_component",
-      "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad",
+      "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
       "representations": [
         {
           "format": "scad",
           "scope": "exterior",
-          "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad"
+          "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad"
         },
         {
           "format": "stl",
           "scope": "exterior",
-          "source": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.stl"
+          "source": "electromechanics/switches/mini-rocker/mini-ii-o-i.stl"
         }
       ]
     },
@@ -3348,14 +3348,14 @@
       "sha256": "a78117f703e6c1b66905c0317c37abf24bac082252e210ae096e3a64df9754bb"
     },
     {
-      "path": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.scad",
-      "bytes": 5015,
-      "sha256": "2b7d17a8c8a3c27ab67122e14be2ef8eb31c9905deac7e290c5d50367d0cd281"
+      "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.scad",
+      "bytes": 4914,
+      "sha256": "31631ada97a73c90dae7f2c4736ad6c9bfd79ac4c497ed8f6d10b64d2436183f"
     },
     {
-      "path": "electromechanics/switches/mini-dpdt-rocker/mini-dpdt-ii-o-i.stl",
-      "bytes": 597712,
-      "sha256": "abf21a095b3a2ede75ddb1cbdb95850ccd5b7d7011494e957056e9334e83bc1c"
+      "path": "electromechanics/switches/mini-rocker/mini-ii-o-i.stl",
+      "bytes": 578522,
+      "sha256": "0ed4341d772a9fd8ba5f1a18b826d58a75d53ae531cdc52de34552495aa6f703"
     },
     {
       "path": "electromechanics/towerpro/example/mg90s.assy",

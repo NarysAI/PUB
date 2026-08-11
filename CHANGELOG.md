@@ -13,9 +13,9 @@ Changelog, and catalog versions follow Semantic Versioning.
 
 ### Added
 
-- Added `//pub/electromechanics/switches/mini-dpdt-rocker:mini-dpdt-ii-o-i`
+- Added `//pub/electromechanics/switches/mini-rocker:mini-ii-o-i`
   as the single replacement model, reconstructed at 15.0 x 10.5 mm from the
-  ruler photographs with six terminals on an approximately 5.08 mm grid.
+  ruler photographs with three terminals on a 5.0 mm pitch.
 - Added a self-contained SCAD/STL exterior bundle and four semantic preview
   materials for the housing, rocker, face markings and terminals.
 
