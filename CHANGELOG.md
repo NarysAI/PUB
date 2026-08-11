@@ -3,6 +3,17 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.3.0] - 2026-08-11
+
+### Added
+
+- Added the `micro-hdmi-type-d-cable-male` connector package with an
+  independently authored, self-contained SCAD clearance model and a generated
+  STL representation.
+- Recorded Alexandre Willame's 2015 GrabCAD model as the visual reference while
+  keeping its unverified redistribution terms and unavailable sign-in-gated CAD
+  archive out of PUB.
+
 ## [4.2.0] - 2026-08-11
 
 ### Added
