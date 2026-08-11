@@ -3,6 +3,21 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.1.6] - 2026-08-11
+
+### Changed
+
+- Restored the existing optimized SCAD and generated STL bundle to the public
+  `xl4015-step-down-5a-cc-cv` object.
+- Kept the original detailed STEP and Fusion 360 sources unchanged in the package
+  and documented that the SCAD/STL exterior is a simplified clearance model.
+- Kept the unrelated GrabCAD `xl4015-1` variant out of this stable object; it must
+  be published separately from its own source geometry.
+
+### Migration
+
+- See `MIGRATIONS/4.1.6-XL4015-REPRESENTATIONS.md` for the representation record.
+
 ## [4.1.5] - 2026-08-11
 
 ### Fixed
