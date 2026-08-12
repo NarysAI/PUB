@@ -3,6 +3,15 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.5.4] - 2026-08-12
+
+### Added
+
+- Added the repository-scoped `ai-skills-cad-engineering` Codex skill, pinned
+  to upstream commit `b5f9fc3310131bc8ffaa0d5f73ef25055e4fc895`, for governed
+  CAD, FreeCAD, PartCAD, validation, and release work. Catalog objects and CAD
+  assets are unchanged.
+
 ## [4.5.3] - 2026-08-11
 
 ### Removed
