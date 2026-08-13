@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "catalog_version": "4.5.3",
+  "catalog_version": "4.6.0",
   "summary": {
-    "packages": 83,
-    "objects": 431,
-    "assets": 540,
-    "asset_bytes": 517869009
+    "packages": 84,
+    "objects": 432,
+    "assets": 542,
+    "asset_bytes": 518271623
   },
   "packages": [
     {
@@ -105,9 +105,15 @@
       "entry_type": "package"
     },
     {
+      "name": "//pub/electronics/power-converters/matek-bec12s-pro",
+      "config": "electronics/power-converters/matek-bec12s-pro/partcad.yaml",
+      "config_sha256": "74e7b4bcae84279e4811cac8da5ecdad3a3178b9e3fe700f4ac446a1c9c37b11",
+      "entry_type": "package"
+    },
+    {
       "name": "/pub/electronics/power-converters",
       "config": "electronics/power-converters/partcad.yaml",
-      "config_sha256": "f48ead724c4d42677a55b8160cfbf97ac533eb24a2c5f65ef8673f64f2a24eb5",
+      "config_sha256": "b34b4ce7468304a334d87bf2548feb8c782fcb7e87d470f2c4d1558dbf23cba4",
       "entry_type": "package"
     },
     {
@@ -1084,6 +1090,77 @@
           "format": "stl",
           "scope": "exterior",
           "source": "electronics/modules/wheeltec-h30/h30-plastic-damper-screw.stl"
+        }
+      ]
+    },
+    {
+      "package": "//pub/electronics/power-converters/matek-bec12s-pro",
+      "section": "parts",
+      "name": "matek-bec12s-pro",
+      "type": "scad",
+      "model_role": "electronic_component",
+      "source": "electronics/power-converters/matek-bec12s-pro/matek-bec12s-pro.scad",
+      "accuracy": {
+        "schema_version": 2,
+        "basis": "manufacturer_specification_and_public_reference_renderings",
+        "datum": "PCB lower face is Z=0; board center is X=0 and Y=0",
+        "critical_dimensions": [
+          {
+            "id": "overall_length",
+            "nominal": 35.0,
+            "model_value": 35.0,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "Matek Systems BEC12S-PRO product specification"
+          },
+          {
+            "id": "overall_width",
+            "nominal": 24.0,
+            "model_value": 24.0,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "Matek Systems BEC12S-PRO product specification"
+          },
+          {
+            "id": "overall_height",
+            "nominal": 5.5,
+            "model_value": 5.5,
+            "unit": "mm",
+            "tolerance": 0.05,
+            "source": "Matek Systems BEC12S-PRO product specification"
+          },
+          {
+            "id": "input_pad_pitch",
+            "nominal": 3.81,
+            "model_value": 3.81,
+            "unit": "mm",
+            "tolerance": 0.01,
+            "source": "Matek Systems BEC12S-PRO product specification"
+          }
+        ],
+        "approximations": [
+          {
+            "feature": "component_bodies_pad_shapes_and_silkscreen",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "recognizable preview and coarse enclosure clearance only"
+          },
+          {
+            "feature": "pcb_corner_radius",
+            "scope": "non_functional_cosmetic",
+            "intended_use": "placement visualization; not a fabrication outline"
+          }
+        ]
+      },
+      "representations": [
+        {
+          "format": "scad",
+          "scope": "exterior",
+          "source": "electronics/power-converters/matek-bec12s-pro/matek-bec12s-pro.scad"
+        },
+        {
+          "format": "stl",
+          "scope": "exterior",
+          "source": "electronics/power-converters/matek-bec12s-pro/matek-bec12s-pro.stl"
         }
       ]
     },
@@ -3802,6 +3879,16 @@
       "path": "electronics/modules/wheeltec-h30/h30-plastic-damper-screw.stl",
       "bytes": 94384,
       "sha256": "cfc846385a9750c55dec248c150238a1fd650c377c390bd75cc6ccd03607b794"
+    },
+    {
+      "path": "electronics/power-converters/matek-bec12s-pro/matek-bec12s-pro.scad",
+      "bytes": 3651,
+      "sha256": "812b4ebc3787756e24b88d418330e6c2b869db78543c6469b4e4336e17548783"
+    },
+    {
+      "path": "electronics/power-converters/matek-bec12s-pro/matek-bec12s-pro.stl",
+      "bytes": 398963,
+      "sha256": "3efdae4d4a2ee674f5c0005d2ad0f92c6d6dcc98641c5804b694970ac50894ec"
     },
     {
       "path": "electronics/power-converters/xl4015/sources/xl4015-step-down-5a-cc-cv.f3d",

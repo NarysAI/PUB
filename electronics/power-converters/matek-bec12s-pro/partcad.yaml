@@ -1,0 +1,67 @@
+name: //pub/electronics/power-converters/matek-bec12s-pro
+desc: Matek BEC12S-PRO 9-55 V input, selectable 5.2/8/12 V 5 A buck regulator
+license_status: unverified
+cover:
+  part: matek-bec12s-pro
+
+parts:
+  matek-bec12s-pro:
+    type: scad
+    path: matek-bec12s-pro.scad
+    model_role: electronic_component
+    desc: Dimensioned Matek BEC12S-PRO placement and clearance model
+    vendor: Matek Systems
+    sku: BEC12S-PRO
+    url: https://grabcad.com/library/matek-12s-pro-bec-9-55v-input-5v-8v-12v-5a-output-1
+    narys:
+      accuracy:
+        schema_version: 2
+        basis: manufacturer_specification_and_public_reference_renderings
+        datum: PCB lower face is Z=0; board center is X=0 and Y=0
+        critical_dimensions:
+          - id: overall_length
+            nominal: 35.0
+            model_value: 35.0
+            unit: mm
+            tolerance: 0.05
+            source: Matek Systems BEC12S-PRO product specification
+          - id: overall_width
+            nominal: 24.0
+            model_value: 24.0
+            unit: mm
+            tolerance: 0.05
+            source: Matek Systems BEC12S-PRO product specification
+          - id: overall_height
+            nominal: 5.5
+            model_value: 5.5
+            unit: mm
+            tolerance: 0.05
+            source: Matek Systems BEC12S-PRO product specification
+          - id: input_pad_pitch
+            nominal: 3.81
+            model_value: 3.81
+            unit: mm
+            tolerance: 0.01
+            source: Matek Systems BEC12S-PRO product specification
+        approximations:
+          - feature: component_bodies_pad_shapes_and_silkscreen
+            scope: non_functional_cosmetic
+            intended_use: recognizable preview and coarse enclosure clearance only
+          - feature: pcb_corner_radius
+            scope: non_functional_cosmetic
+            intended_use: placement visualization; not a fabrication outline
+      representations:
+        schema_version: 1
+        files:
+          - format: scad
+            path: matek-bec12s-pro.scad
+            geometry_scope: exterior
+            primary: true
+          - format: stl
+            path: matek-bec12s-pro.stl
+            geometry_scope: exterior
+
+render:
+  readme:
+  png:
+    prefix: ./

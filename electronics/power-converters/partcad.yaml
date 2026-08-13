@@ -4,6 +4,9 @@ cover:
   package: xl4015
 
 import:
+  matek-bec12s-pro:
+    type: local
+    path: matek-bec12s-pro
   xl4015:
     type: local
     path: xl4015
