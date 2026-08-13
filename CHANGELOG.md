@@ -3,6 +3,16 @@
 All notable catalog changes are recorded here. The format follows Keep a
 Changelog, and catalog versions follow Semantic Versioning.
 
+## [4.6.0] - 2026-08-13
+
+### Added
+
+- Added `//pub/electronics/power-converters/matek-bec12s-pro:matek-bec12s-pro`
+  as a dimensioned placement and clearance model of the Matek BEC12S-PRO
+  9-55 V to 5.2/8/12 V, 5 A buck regulator.
+- Added the required self-contained SCAD/STL exterior bundle, using the
+  manufacturer-specified 35 x 24 x 5.5 mm envelope and 3.81 mm pin pitch.
+
 ## [4.5.3] - 2026-08-11
 
 ### Removed
